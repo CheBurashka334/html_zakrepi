@@ -64,10 +64,10 @@
 				</div>
 				<div class="soc-box">
 					<ul class="soc-list horizontal">
-						<li class="soc-item"><a class="soc-link" href="#">fb</a></li>
-						<li class="soc-item"><a class="soc-link" href="#">vk</a></li>
-						<li class="soc-item"><a class="soc-link" href="#">ok</a></li>
-						<li class="soc-item"><a class="soc-link" href="#">yt</a></li>
+						<li class="soc-item"><a class="soc-link" href="#"><svg class="icon"><use xlink:href="#fb"/></svg></a></li>
+						<li class="soc-item"><a class="soc-link" href="#"><svg class="icon"><use xlink:href="#vk"/></svg></a></li>
+						<li class="soc-item"><a class="soc-link" href="#"><svg class="icon"><use xlink:href="#ok"/></svg></a></li>
+						<li class="soc-item"><a class="soc-link" href="#"><svg class="icon"><use xlink:href="#youtube"/></svg></a></li>
 					</ul>
 				</div>
 			</div>

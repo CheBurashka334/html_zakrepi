@@ -1,0 +1,15 @@
+// banners
+.banner-box {
+	margin-top: 0;
+	margin-bottom: $gutter-width*1.5;
+}
+.banner {
+	margin-bottom: $gutter-width;
+	overflow: hidden;
+	&.big {
+		height: 560px;
+	}
+	&.small {
+		height: 270px;
+	}
+}

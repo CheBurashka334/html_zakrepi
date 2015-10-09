@@ -1,259 +1,269 @@
-/* line 61, scss/_color.scss */
+/* line 62, scss/_color.scss */
 .primary {
   background-color: #ce2127 !important;
 }
 
-/* line 64, scss/_color.scss */
+/* line 65, scss/_color.scss */
 .primary-text {
   color: #ce2127 !important;
 }
 
-/* line 69, scss/_color.scss */
+/* line 70, scss/_color.scss */
 .text.lighter {
   background-color: #b9b9b9 !important;
 }
 
-/* line 72, scss/_color.scss */
+/* line 73, scss/_color.scss */
 .text-text.text-lighter {
   color: #b9b9b9 !important;
 }
 
-/* line 69, scss/_color.scss */
+/* line 70, scss/_color.scss */
 .text.light, footer.page-footer .text.footer-copyright, .text.page-title, .text.box-title {
   background-color: #8c8c8c !important;
 }
 
-/* line 72, scss/_color.scss */
+/* line 73, scss/_color.scss */
 .text-text.text-light {
   color: #8c8c8c !important;
 }
 
-/* line 61, scss/_color.scss */
+/* line 62, scss/_color.scss */
 .text {
   background-color: #434343 !important;
 }
 
-/* line 64, scss/_color.scss */
+/* line 65, scss/_color.scss */
 .text-text {
   color: #434343 !important;
 }
 
-/* line 69, scss/_color.scss */
+/* line 70, scss/_color.scss */
 .text.dark {
   background-color: #363636 !important;
 }
 
-/* line 72, scss/_color.scss */
+/* line 73, scss/_color.scss */
 .text-text.text-dark {
   color: #363636 !important;
 }
 
-/* line 69, scss/_color.scss */
+/* line 70, scss/_color.scss */
 .text.darker {
   background-color: #333333 !important;
 }
 
-/* line 72, scss/_color.scss */
+/* line 73, scss/_color.scss */
 .text-text.text-darker {
   color: #333333 !important;
 }
 
-/* line 69, scss/_color.scss */
+/* line 70, scss/_color.scss */
 .bg.light, footer.page-footer .bg.footer-copyright, .bg.page-title, .bg.box-title {
   background-color: #f9f9f9 !important;
 }
 
-/* line 72, scss/_color.scss */
+/* line 73, scss/_color.scss */
 .bg-text.text-light {
   color: #f9f9f9 !important;
 }
 
-/* line 61, scss/_color.scss */
+/* line 62, scss/_color.scss */
 .bg {
   background-color: #f6f6f6 !important;
 }
 
-/* line 64, scss/_color.scss */
+/* line 65, scss/_color.scss */
 .bg-text {
   color: #f6f6f6 !important;
 }
 
-/* line 69, scss/_color.scss */
+/* line 70, scss/_color.scss */
 .bg.topbar {
   background-color: #efefef !important;
 }
 
-/* line 72, scss/_color.scss */
+/* line 73, scss/_color.scss */
 .bg-text.text-topbar {
   color: #efefef !important;
 }
 
-/* line 69, scss/_color.scss */
+/* line 70, scss/_color.scss */
 .bg.dark {
   background-color: #363636 !important;
 }
 
-/* line 72, scss/_color.scss */
+/* line 73, scss/_color.scss */
 .bg-text.text-dark {
   color: #363636 !important;
 }
 
-/* line 69, scss/_color.scss */
+/* line 70, scss/_color.scss */
+.icons.soc {
+  background-color: #939393 !important;
+}
+
+/* line 73, scss/_color.scss */
+.icons-text.text-soc {
+  color: #939393 !important;
+}
+
+/* line 70, scss/_color.scss */
 .icons.lightest {
   background-color: #d8d8d8 !important;
 }
 
-/* line 72, scss/_color.scss */
+/* line 73, scss/_color.scss */
 .icons-text.text-lightest {
   color: #d8d8d8 !important;
 }
 
-/* line 69, scss/_color.scss */
+/* line 70, scss/_color.scss */
 .icons.lighter {
   background-color: #d4d4d4 !important;
 }
 
-/* line 72, scss/_color.scss */
+/* line 73, scss/_color.scss */
 .icons-text.text-lighter {
   color: #d4d4d4 !important;
 }
 
-/* line 69, scss/_color.scss */
+/* line 70, scss/_color.scss */
 .icons.light, footer.page-footer .icons.footer-copyright, .icons.page-title, .icons.box-title {
   background-color: #9d9d9d !important;
 }
 
-/* line 72, scss/_color.scss */
+/* line 73, scss/_color.scss */
 .icons-text.text-light {
   color: #9d9d9d !important;
 }
 
-/* line 61, scss/_color.scss */
+/* line 62, scss/_color.scss */
 .icons {
   background-color: #6b6b6b !important;
 }
 
-/* line 64, scss/_color.scss */
+/* line 65, scss/_color.scss */
 .icons-text {
   color: #6b6b6b !important;
 }
 
-/* line 69, scss/_color.scss */
+/* line 70, scss/_color.scss */
 .icons.dark {
   background-color: #242424 !important;
 }
 
-/* line 72, scss/_color.scss */
+/* line 73, scss/_color.scss */
 .icons-text.text-dark {
   color: #242424 !important;
 }
 
-/* line 69, scss/_color.scss */
+/* line 70, scss/_color.scss */
 .border.lighter {
   background-color: #f6f6f6 !important;
 }
 
-/* line 72, scss/_color.scss */
+/* line 73, scss/_color.scss */
 .border-text.text-lighter {
   color: #f6f6f6 !important;
 }
 
-/* line 69, scss/_color.scss */
+/* line 70, scss/_color.scss */
 .border.light, footer.page-footer .border.footer-copyright, .border.page-title, .border.box-title {
   background-color: #d7d7d7 !important;
 }
 
-/* line 72, scss/_color.scss */
+/* line 73, scss/_color.scss */
 .border-text.text-light {
   color: #d7d7d7 !important;
 }
 
-/* line 61, scss/_color.scss */
+/* line 62, scss/_color.scss */
 .border {
   background-color: #c9c9c9 !important;
 }
 
-/* line 64, scss/_color.scss */
+/* line 65, scss/_color.scss */
 .border-text {
   color: #c9c9c9 !important;
 }
 
-/* line 69, scss/_color.scss */
+/* line 70, scss/_color.scss */
 .border.dark {
   background-color: #aaaaaa !important;
 }
 
-/* line 72, scss/_color.scss */
+/* line 73, scss/_color.scss */
 .border-text.text-dark {
   color: #aaaaaa !important;
 }
 
-/* line 69, scss/_color.scss */
+/* line 70, scss/_color.scss */
 .border.darker {
   background-color: #9c9c9c !important;
 }
 
-/* line 72, scss/_color.scss */
+/* line 73, scss/_color.scss */
 .border-text.text-darker {
   color: #9c9c9c !important;
 }
 
-/* line 69, scss/_color.scss */
+/* line 70, scss/_color.scss */
 .shades.black {
   background-color: #000000 !important;
 }
 
-/* line 72, scss/_color.scss */
+/* line 73, scss/_color.scss */
 .shades-text.text-black {
   color: #000000 !important;
 }
 
-/* line 69, scss/_color.scss */
+/* line 70, scss/_color.scss */
 .shades.white {
   background-color: #FFFFFF !important;
 }
 
-/* line 72, scss/_color.scss */
+/* line 73, scss/_color.scss */
 .shades-text.text-white {
   color: #FFFFFF !important;
 }
 
-/* line 69, scss/_color.scss */
+/* line 70, scss/_color.scss */
 .shades.transparent {
   background-color: transparent !important;
 }
 
-/* line 72, scss/_color.scss */
+/* line 73, scss/_color.scss */
 .shades-text.text-transparent {
   color: transparent !important;
 }
 
-/* line 81, scss/_color.scss */
+/* line 82, scss/_color.scss */
 .black {
   background-color: #000000 !important;
 }
 
-/* line 84, scss/_color.scss */
+/* line 85, scss/_color.scss */
 .black-text {
   color: #000000 !important;
 }
 
-/* line 81, scss/_color.scss */
+/* line 82, scss/_color.scss */
 .white {
   background-color: #FFFFFF !important;
 }
 
-/* line 84, scss/_color.scss */
+/* line 85, scss/_color.scss */
 .white-text {
   color: #FFFFFF !important;
 }
 
-/* line 81, scss/_color.scss */
+/* line 82, scss/_color.scss */
 .transparent {
   background-color: transparent !important;
 }
 
-/* line 84, scss/_color.scss */
+/* line 85, scss/_color.scss */
 .transparent-text {
   color: transparent !important;
 }
@@ -369,7 +379,7 @@ $progress-bar-color: $secondary-color !default;*/
   width: calc(100% + 20px);
 }
 /* line 18, scss/_grid.scss */
-.row:after, .carousel .carousel-inner:after {
+.row:after {
   content: "";
   display: table;
   clear: both;
@@ -2309,34 +2319,60 @@ html, body {
 }
 /* line 51, scss/_layout.scss */
 .subscribe-box .sbscr-text {
-  padding-top: 10px;
+  padding-top: 5px;
   padding-bottom: 10px;
 }
 
 /* line 60, scss/_layout.scss */
 .soc-list .soc-item {
-  margin-right: 20px;
+  margin-right: 10px;
+}
+/* line 63, scss/_layout.scss */
+.soc-list .soc-link {
+  display: block;
+  width: 31px;
+  height: 31px;
+  padding: 6px;
+  border: 1px solid #939393;
+  border-radius: 50%;
+  line-height: 17px;
+  vertical-align: middle;
+  text-align: center;
+  color: #939393;
+}
+/* line 74, scss/_layout.scss */
+.soc-list .soc-link .icon {
+  fill: #939393;
 }
 
-/* line 65, scss/_layout.scss */
+/* line 80, scss/_layout.scss */
 .footer {
-  padding: 30px 0;
+  padding: 30px 0 25px;
 }
-/* line 67, scss/_layout.scss */
+/* line 82, scss/_layout.scss */
 .footer .box-title {
   margin-top: 0;
+  margin-bottom: 13.2px;
+  font-weight: normal;
+  color: #ce2127;
 }
-/* line 70, scss/_layout.scss */
+/* line 89, scss/_layout.scss */
 .footer .phone-box,
 .footer .schedule-box {
   margin-bottom: 20px;
 }
-/* line 74, scss/_layout.scss */
+/* line 93, scss/_layout.scss */
+.footer .phone-box .phone-link {
+  font-size: 22px;
+  margin: 1em 0 0;
+  display: block;
+}
+/* line 98, scss/_layout.scss */
 .footer .schedule-box p {
   margin: 10px 0;
 }
 
-/* line 78, scss/_layout.scss */
+/* line 102, scss/_layout.scss */
 .bottombar {
   padding: 30px 0;
   border-top: 1px solid #f6f6f6;
@@ -2426,7 +2462,7 @@ i {
   line-height: inherit;
 }
 /* line 98, scss/elements/_global.scss */
-i.left, .carousel i.item {
+i.left {
   float: left;
   margin-right: 15px;
 }
@@ -3098,7 +3134,7 @@ span.badge.new:after {
 }
 
 /* line 713, scss/elements/_global.scss */
-.left, .carousel .item {
+.left {
   float: left !important;
 }
 
@@ -3408,7 +3444,7 @@ em {
 }
 
 /* line 17, scss/elements/_typography.scss */
-.uppercase, .horizontal-multilvl-menu > .menu-item > .menu-link {
+.uppercase, .horizontal-multilevel-menu > .menu-item > .menu-link {
   text-transform: uppercase;
 }
 
@@ -3472,12 +3508,12 @@ textarea + .textfield-placeholder, .breadcrumbs {
 }
 
 /* line 50, scss/elements/_typography.scss */
-.medium-text, .collapsible .collapsible-header, .horizontal-multilvl-menu > .menu-item > .menu-link, .product-card .item-name, .product-card .product-price .old-price {
+.medium-text, .collapsible .collapsible-header, .horizontal-multilevel-menu > .menu-item > .menu-link, .horizontal-multilevel-menu .submenu-link.default, .horizontal-multilevel-menu .submenu.level-2 > .submenu-item > .submenu-link, .horizontal-multilevel-menu .submenu.level-3 > .submenu-item > .submenu-link, .product-card .item-name, .product-card .product-price .old-price {
   font-size: 16px;
 }
 
 /* line 53, scss/elements/_typography.scss */
-.big-text, .subscribe-box .sbscr-text {
+.big-text, .subscribe-box .sbscr-text, .footer .box-title {
   font-size: 18px;
 }
 
@@ -3497,18 +3533,18 @@ textarea + .textfield-placeholder, .breadcrumbs {
 }
 
 /* line 67, scss/elements/_typography.scss */
-ul.nostyle, .soc-list, .pagination, .menu, .filter .filters-list, ol.nostyle {
+ul.nostyle, .soc-list, .pagination, .menu, .horizontal-multilevel-menu .submenu, .filter .filters-list, .carousel-nav, .brand-list, ol.nostyle {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 /* line 71, scss/elements/_typography.scss */
-ul.nostyle li, .soc-list li, .pagination li, .menu li, .filter .filters-list li, ol.nostyle li {
+ul.nostyle li, .soc-list li, .pagination li, .menu li, .horizontal-multilevel-menu .submenu li, .filter .filters-list li, .carousel-nav li, .brand-list li, ol.nostyle li {
   padding: 0;
   margin: 0;
 }
 /* line 76, scss/elements/_typography.scss */
-ul.horizontal li, .horizontal-menu li, .horizontal-multilvl-menu li, ol.horizontal li {
+ul.horizontal li, .horizontal-menu li, .horizontal-multilevel-menu li, .carousel-nav li, .brand-list li, ol.horizontal li {
   display: inline-block;
 }
 
@@ -3519,98 +3555,78 @@ a {
   -webkit-tap-highlight-color: transparent;
 }
 /* line 88, scss/elements/_typography.scss */
-a.nostyle, .menu .menu-link, .auth-box .auth-link, .breadcrumbs .brdcmb-link, .product-card .item-name a {
+a.nostyle, .menu .menu-link, .horizontal-multilevel-menu .submenu .menu-link,
+.menu .submenu-link,
+.horizontal-multilevel-menu .submenu .submenu-link, .auth-box .auth-link, .breadcrumbs .brdcmb-link, .product-card .item-name a {
   color: inherit;
 }
+/* line 91, scss/elements/_typography.scss */
+a.img-link {
+  display: block;
+  border: 0;
+}
 
-/* line 94, scss/elements/_typography.scss */
+/* line 98, scss/elements/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   line-height: 1.5;
 }
 
-/* line 100, scss/elements/_typography.scss */
+/* line 104, scss/elements/_typography.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   font-weight: inherit;
 }
 
-/* line 101, scss/elements/_typography.scss */
+/* line 105, scss/elements/_typography.scss */
 h1 {
   font-size: 4.2rem;
   line-height: 1.5;
   margin: 1em 0;
 }
 
-/* line 102, scss/elements/_typography.scss */
+/* line 106, scss/elements/_typography.scss */
 h2 {
   font-size: 3.56rem;
   line-height: 1.5;
   margin: 1em 0;
 }
 
-/* line 103, scss/elements/_typography.scss */
+/* line 107, scss/elements/_typography.scss */
 h3 {
   font-size: 2.92rem;
   line-height: 1.5;
   margin: 1em 0;
 }
 
-/* line 104, scss/elements/_typography.scss */
+/* line 108, scss/elements/_typography.scss */
 h4 {
   font-size: 1.5rem;
   line-height: 1.5;
   margin: 1em 0;
 }
 
-/* line 105, scss/elements/_typography.scss */
+/* line 109, scss/elements/_typography.scss */
 h5 {
   font-size: 1.313rem;
   line-height: 1.5;
   margin: 1em 0;
 }
 
-/* line 106, scss/elements/_typography.scss */
+/* line 110, scss/elements/_typography.scss */
 h6 {
   font-size: 1.125rem;
   line-height: 1.5;
   margin: 1em 0;
 }
 
-/* line 108, scss/elements/_typography.scss */
+/* line 112, scss/elements/_typography.scss */
 .page-title {
   margin: 30px 0;
 }
 
-/* line 113, scss/elements/_typography.scss */
+/* line 117, scss/elements/_typography.scss */
 .box-title {
   margin: 20px 0;
-}
-
-/* line 2, scss/elements/_carousel.scss */
-.carousel {
-  margin: 10px auto 40px;
-}
-/* line 4, scss/elements/_carousel.scss */
-.carousel .carousel-content {
-  overflow: hidden;
-  z-index: 2;
-}
-/* line 8, scss/elements/_carousel.scss */
-.carousel .carousel-inner {
-  width: 9999px;
-}
-/* line 17, scss/elements/_carousel.scss */
-.carousel .carousel-controlls {
-  position: absolute;
-  z-index: 3;
-  width: 100%;
-  height: 48px;
-  top: 50%;
-  margin-top: -24px;
-  left: 0;
-  overflow: hidden;
-  -webkit-transition: width .3s, left .3s;
-          transition: width .3s, left .3s;
 }
 
 /* line 2, scss/elements/_form.scss */
@@ -3947,31 +3963,158 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
           transform: scale(2, 1) rotate(-90deg) translateZ(0);
 }
 
-/* line 10, scss/components/_menu.scss */
+/* line 11, scss/components/_menu.scss */
 .horizontal-menu .menu-link {
   display: block;
   padding: 10px;
 }
-/* line 14, scss/components/_menu.scss */
+/* line 15, scss/components/_menu.scss */
 .horizontal-menu .menu-item:first-of-type .menu-link {
   padding-left: 0;
 }
 
-/* line 19, scss/components/_menu.scss */
+/* line 20, scss/components/_menu.scss */
 .vertical-menu .menu-item {
-  margin: 10px 0;
+  margin: 9px 0;
 }
 
-/* line 26, scss/components/_menu.scss */
-.horizontal-multilvl-menu .menu-link {
+/* line 25, scss/components/_menu.scss */
+.horizontal-multilevel-menu {
+  width: 100%;
+}
+/* line 28, scss/components/_menu.scss */
+.horizontal-multilevel-menu .menu-link,
+.horizontal-multilevel-menu .submenu-link {
   display: block;
 }
-/* line 29, scss/components/_menu.scss */
-.horizontal-multilvl-menu > .menu-item > .menu-link {
+/* line 32, scss/components/_menu.scss */
+.horizontal-multilevel-menu > .menu-item {
+  position: static;
+}
+/* line 35, scss/components/_menu.scss */
+.horizontal-multilevel-menu > .menu-item > .menu-link {
   font-size: 13px;
   font-weight: 600;
   line-height: 1;
   padding: 19px 22px;
+}
+/* line 45, scss/components/_menu.scss */
+.horizontal-multilevel-menu .submenu {
+  position: absolute;
+  left: 0;
+  z-index: 9999;
+  padding: 20px 0;
+  color: #434343;
+}
+/* line 53, scss/components/_menu.scss */
+.horizontal-multilevel-menu .submenu-item {
+  display: block;
+  position: static;
+}
+/* line 57, scss/components/_menu.scss */
+.horizontal-multilevel-menu .submenu-link.default, .horizontal-multilevel-menu .submenu.level-2 > .submenu-item > .submenu-link, .horizontal-multilevel-menu .submenu.level-3 > .submenu-item > .submenu-link {
+  line-height: 18px;
+  padding: 1em 20px;
+  position: static;
+}
+/* line 64, scss/components/_menu.scss */
+.horizontal-multilevel-menu .submenu.level-2 {
+  display: none;
+  left: auto;
+  background: #d8d8d8;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+}
+/* line 73, scss/components/_menu.scss */
+.horizontal-multilevel-menu .submenu.level-2.parent-box {
+  width: 100%;
+  width: calc(100% - 20px);
+  left: 10px;
+  background: white;
+}
+/* line 78, scss/components/_menu.scss */
+.horizontal-multilevel-menu .submenu.level-2.parent-box:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #d8d8d8;
+  z-index: -1;
+}
+/* line 89, scss/components/_menu.scss */
+.horizontal-multilevel-menu .submenu.level-2.parent-box > .submenu-item {
+  width: 25%;
+}
+/* line 95, scss/components/_menu.scss */
+.horizontal-multilevel-menu .submenu.level-3 {
+  display: none;
+  top: 0;
+  left: 25%;
+  width: 75%;
+  min-height: 100%;
+  background: white;
+}
+/* line 102, scss/components/_menu.scss */
+.horizontal-multilevel-menu .submenu.level-3 > .submenu-item {
+  width: 33.33%;
+}
+/* line 105, scss/components/_menu.scss */
+.horizontal-multilevel-menu .submenu.level-3.col-2 > .submenu-item {
+  width: 45%;
+  display: inline-block;
+}
+/* line 109, scss/components/_menu.scss */
+.horizontal-multilevel-menu .submenu.level-3 > .submenu-item > .submenu-link {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+/* line 116, scss/components/_menu.scss */
+.horizontal-multilevel-menu .submenu.level-4 {
+  top: 0;
+  left: 33.34%;
+  width: 66.67%;
+  min-height: 100%;
+  background: #efefef;
+  display: none;
+  font-size: 0;
+}
+/* line 124, scss/components/_menu.scss */
+.horizontal-multilevel-menu .submenu.level-4 .submenu-item {
+  display: inline-block;
+  width: 100%;
+}
+/* line 128, scss/components/_menu.scss */
+.horizontal-multilevel-menu .submenu.level-4.col-2 .submenu-item {
+  width: 49%;
+}
+/* line 131, scss/components/_menu.scss */
+.horizontal-multilevel-menu .submenu.level-4 .submenu-link {
+  font-size: 14px;
+  padding: 10px 30px;
+}
+/* line 138, scss/components/_menu.scss */
+.horizontal-multilevel-menu .menu-item:hover .menu-link {
+  background: #ce2127;
+}
+/* line 141, scss/components/_menu.scss */
+.horizontal-multilevel-menu .menu-item:hover > .submenu {
+  display: block;
+}
+/* line 146, scss/components/_menu.scss */
+.horizontal-multilevel-menu .submenu-item.active > .submenu-link {
+  color: #ce2127;
+}
+/* line 149, scss/components/_menu.scss */
+.horizontal-multilevel-menu .submenu-item.active > .submenu {
+  display: block;
+}
+/* line 154, scss/components/_menu.scss */
+.horizontal-multilevel-menu .submenu.level-2 > .submenu-item.active > .submenu-link,
+.horizontal-multilevel-menu .submenu.level-2 > .submenu-item:hover > .submenu-link {
+  color: #434343;
+  background: white;
 }
 
 /* line 2, scss/components/_geo.scss */
@@ -4096,6 +4239,26 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
 /* line 16, scss/components/_shopping-card.scss */
 .shopping-card-box .btn-favorite .icon {
   fill: #d8d8d8;
+}
+/* line 20, scss/components/_shopping-card.scss */
+.shopping-card-box .notification {
+  position: absolute;
+  top: 5px;
+  left: 30px;
+  width: 14px;
+  height: 14px;
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 14px;
+  background: #ce2127;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 34, scss/components/_shopping-card.scss */
+.shopping-card-box .notification:empty {
+  display: none;
 }
 
 /* line 2, scss/components/_product-card.scss */
@@ -4269,6 +4432,113 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+/* line 40, scss/components/_carousel.scss */
+.carousel-nav {
+  position: absolute;
+  width: 100%;
+  height: 13px;
+  left: 0;
+  bottom: 20px;
+  z-index: 999;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 51, scss/components/_carousel.scss */
+.carousel-nav .nav-item {
+  margin: 0 3px;
+}
+/* line 54, scss/components/_carousel.scss */
+.carousel-nav .nav-link {
+  display: block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #f3f3f3;
+  opacity: 0.4;
+  will-change: opacity;
+  -webkit-transition: opacity .3s ease;
+          transition: opacity .3s ease;
+}
+/* line 63, scss/components/_carousel.scss */
+.carousel-nav .nav-link.active {
+  opacity: 1;
+}
+
+/* line 68, scss/components/_carousel.scss */
+.carousel.home-carousel {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+/* line 72, scss/components/_carousel.scss */
+.carousel.home-carousel .item {
+  height: 450px;
+  overflow: hidden;
+}
+/* line 76, scss/components/_carousel.scss */
+.carousel.home-carousel .item-img {
+  width: 100%;
+  height: auto;
+}
+/* line 80, scss/components/_carousel.scss */
+.carousel.home-carousel .item-link {
+  height: 100%;
+}
+
+/* line 5, scss/components/_brands.scss */
+.brand-list .brand-item {
+  padding: 20px;
+  width: 12.2%;
+  font-size: 34px;
+  line-height: 1;
+  text-align: center;
+  vertical-align: middle;
+}
+/* line 13, scss/components/_brands.scss */
+.brand-list .brand-link {
+  height: 1em;
+  overflow: hidden;
+  display: block;
+}
+/* line 18, scss/components/_brands.scss */
+.brand-list .brand-img {
+  will-change: transform;
+  -webkit-transform: translate(0, 0) translateZ(0);
+          transform: translate(0, 0) translateZ(0);
+}
+/* line 22, scss/components/_brands.scss */
+.brand-list .brand-link:hover .brand-img {
+  -webkit-transform: translate(0, -1em) translateZ(0);
+          transform: translate(0, -1em) translateZ(0);
+}
+/* line 25, scss/components/_brands.scss */
+.brand-list .brand-item:last-child .brand-link {
+  font-size: 14px;
+  height: 1rem;
+  line-height: 1rem;
+  vertical-align: middle;
+}
+
+/* line 2, scss/components/_banners.scss */
+.banner-box {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* line 6, scss/components/_banners.scss */
+.banner {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+/* line 9, scss/components/_banners.scss */
+.banner.big {
+  height: 560px;
+}
+/* line 12, scss/components/_banners.scss */
+.banner.small {
+  height: 270px;
 }
 
 /* line 2, scss/pages/_catalog.scss */

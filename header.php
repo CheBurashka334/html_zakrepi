@@ -63,30 +63,26 @@
 				</div>
 				<div class="shopping-card-box col l3">
 					<a href="#" class="btn btn-favorite btn-icon col"><svg class="icon"><use xlink:href="#heart"/></svg></a>
-					<a class="btn standart btn-with-icon col l2 btn-minicart" href="#"><svg class="icon"><use xlink:href="#cart"/></svg> Нет товаров</a>
+					<a class="btn standart btn-with-icon col l2 btn-minicart" href="#"><svg class="icon"><use xlink:href="#cart"/></svg><div class="notification"></div> Нет товаров</a>
+					<!-- товар добавлен в корзину
+					<a class="btn standart btn-with-icon col l2 btn-minicart" href="#"><svg class="icon"><use xlink:href="#cart"/></svg><div class="notification">1</div> 7&nbsp;299 <span class="rouble">i</span></a>-->
 				</div>
 			</div>
 		</div>
 		<div class="main-menu">
 			<div class="container row">
-				<ul class="menu horizontal-multilvl-menu col">
-					<li class="menu-item"><a class="menu-link" href="#">строительство и ремонт</a></li>
-					<li class="menu-item"><a class="menu-link" href="#">сад и огород</a></li>
-					<li class="menu-item"><a class="menu-link" href="#">отдых и туризм</a></li>
-					<li class="menu-item"><a class="menu-link" href="#">спецодежда</a></li>
-					<li class="menu-item"><a class="menu-link" href="#">акции</a></li>
-				</ul>
+				<?include('main-menu.php');?>
 			</div>
 		</div>
 	</div>
 	<!-- /если не 404 -->
 	<div class="workarea-wrapper container">
 		<!-- если не главная -->
-		<div class="breadcrumbs">
+		<!--<div class="breadcrumbs">
 			<a class="brdcmb-link" href="#">Главная</a> / 
 			<a class="brdcmb-link" href="#">Строительство и ремонт</a> / 
 			<a class="brdcmb-link" href="#">Инструменты</a> / 
 			<span class="brdcmb-curpage">Электроинструменты</span>
-		</div>
+		</div>-->
 		<!-- /если не главная -->
 		<!--div class="workarea"-->

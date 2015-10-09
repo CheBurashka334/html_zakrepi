@@ -88,6 +88,10 @@ a {
 	&.nostyle {
 		color: inherit;
 	}
+	&.img-link {
+		display: block;
+		border: 0;
+	}
 }
 
 

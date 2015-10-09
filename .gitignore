@@ -1,3 +1,4 @@
 *.psd
 .sass-cache/*
+makety/*
 config.rb

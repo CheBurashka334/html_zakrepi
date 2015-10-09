@@ -1,0 +1,31 @@
+// brands
+.brand-list {
+	@extend ul.nostyle;
+	@extend ul.horizontal;
+	.brand-item {
+		padding: $gutter-width;
+		width: 12.2%;
+		font-size: 34px;
+		line-height: 1;
+		text-align: center;
+		vertical-align: middle;
+	}
+	.brand-link {
+		height: 1em;
+		overflow: hidden;
+		display: block;
+	}
+	.brand-img {
+		will-change: transform;
+		transform: translate(0,0) translateZ(0);
+	}
+	.brand-link:hover .brand-img {
+		transform: translate(0,-1em) translateZ(0);
+	}
+	.brand-item:last-child .brand-link {
+		font-size: $base-size;
+		height: 1rem;
+		line-height: 1rem;
+		vertical-align: middle;
+	}
+}

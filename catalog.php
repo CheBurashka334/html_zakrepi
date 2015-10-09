@@ -1,4 +1,10 @@
 <?php include('header.php');?>
+<div class="breadcrumbs">
+	<a class="brdcmb-link" href="#">Главная</a> / 
+	<a class="brdcmb-link" href="#">Строительство и ремонт</a> / 
+	<a class="brdcmb-link" href="#">Инструменты</a> / 
+	<span class="brdcmb-curpage">Электроинструменты</span>
+</div>
 <div class="workarea" ng-controller="CatalogProductsCtrl">
 <div class="page-title">Гайковерты</div>
 <div class="row">
