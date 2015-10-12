@@ -33,7 +33,6 @@
 			$perc: unquote((100 / ($num-cols / $i)) + "%");
 			&.s#{$i} {
 				width: $perc;
-				margin-left: 0;
 			}
 			$i: $i + 1;
 		}
@@ -113,6 +112,11 @@
 				$i: $i + 1;
 			}
 
+		}
+		&.center {
+			float: none;
+			margin-right: auto;
+			margin-left: auto;
 		}
 	}
 }

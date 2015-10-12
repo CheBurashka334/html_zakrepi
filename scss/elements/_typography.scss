@@ -113,6 +113,11 @@ h6 { font-size: $h6-fontsize; line-height: 1.5; margin: 1em 0;}
 	@extend .large-text;
 	@extend .light;
 	margin: $gutter-width*1.5 0;
+	& + .archive-box {
+		margin: $gutter-width*1.5 0;
+		line-height: 51px;
+		vertical-align: middle;
+	}
 }
 .box-title {
 	@extend .xxbig-text;

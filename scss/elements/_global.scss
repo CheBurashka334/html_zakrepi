@@ -706,7 +706,7 @@ span.badge {
 .right-align {
   text-align: right
 }
-.center, .center-align {
+.center-align {
   text-align: center;
 }
 
@@ -715,6 +715,11 @@ span.badge {
 }
 .right {
   float: right !important;
+}
+.center {
+	float: none;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 // No Text Select

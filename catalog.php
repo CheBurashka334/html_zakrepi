@@ -43,6 +43,7 @@
 						</div>
 						<div class="product-price">
 							<div class="old-price" ng-if="product.oldprice">{{product.oldprice}} <i class="rouble">i</i></div>
+							<!-- в цене тысячи отделить неразрывным пробелом &nbsp; -->
 							<div class="price">{{product.price}} <i class="rouble">i</i></div>
 						</div>
 						<a href="#" class="shopping-card btn btn-icon primary">
@@ -56,6 +57,7 @@
 				</div>
 			</div>
 		</div>
+		<a class="btn flat fullsize btn-more" href="#">Показать еще</a>
 		<?php include('pagination.php');?>
 		<div class="text-box">
 			<p>Гайковертом называется инструмент, предназначенный для сборки/разборки различных резьбовых соединений. Его используют в случаях, когда невозможно обойтись простым гаечным ключом: к примеру, когда необходимо разобрать труднодоступные соединения, заржавевший металл, прикипевшие гайки и т.п. </p>

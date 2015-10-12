@@ -1,0 +1,53 @@
+// news-card
+.news-card {
+	color: white;
+	margin-bottom: $gutter-width;
+	.img-link {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		color: inherit;
+		overflow: hidden;
+	}
+	.item-img {
+		display: block;
+		will-change: transform;
+		transform: scale(1);
+		transition: transform .3s ease;
+	}
+	.overlay {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: linear-gradient(to top, rgba(0,0,0,.4) 0%, transparent 100%);
+		will-change: background;
+		transition: background .3s ease;
+	}
+	.item-terms {
+		position: absolute;
+		width: 100%;
+		top: 0;
+		left: 0;
+		padding: $gutter-width*0.67 $gutter-width;
+		background: color('primary', 'base');
+	}
+	.item-text {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		padding: $gutter-width;
+	}
+	&:hover {
+		.item-img {
+			transform: scale(1.1,1.1);
+			transition: transform .3s ease;
+		}
+		.overlay {
+			background: linear-gradient(to top, rgba(0,0,0,.4) 0%, rgba(0,0,0,.4) 100%);
+			transition: background .3s ease;
+		}
+	}
+}

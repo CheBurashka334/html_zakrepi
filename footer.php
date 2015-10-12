@@ -21,7 +21,7 @@
 				<ul class="menu vertical-menu">
 					<li class="menu-item"><a class="menu-link" href="#">История компании</a></li>
 					<li class="menu-item"><a class="menu-link" href="#">Структура компании</a></li>
-					<li class="menu-item"><a class="menu-link" href="#">Новости компании</a></li>
+					<li class="menu-item"><a class="menu-link" href="news.php">Новости компании</a></li>
 					<li class="menu-item"><a class="menu-link" href="#">Вакансии</a></li>
 					<li class="menu-item"><a class="menu-link" href="#">Франшиза</a></li>
 					<li class="menu-item"><a class="menu-link" href="#">Наши магазины</a></li>
@@ -31,7 +31,7 @@
 			<div class="footer-menu col l3">
 				<div class="menu-title box-title">Покупателю</div>
 				<ul class="menu vertical-menu">
-					<li class="menu-item"><a class="menu-link" href="#">Акции</a></li>
+					<li class="menu-item"><a class="menu-link" href="actsii.php">Акции</a></li>
 					<li class="menu-item"><a class="menu-link" href="#">Помощь в выборе товара</a></li>
 					<li class="menu-item"><a class="menu-link" href="#">Тест-драйв</a></li>
 					<li class="menu-item"><a class="menu-link" href="#">Сервисный центр</a></li>

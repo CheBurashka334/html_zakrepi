@@ -40,6 +40,11 @@
 		color: color('primary', 'base');
 		border-color: color('primary', 'base');
 	}
+	&.flat {
+		background: white;
+		border-color: white;
+		color: color('text', 'dark');
+	}
 	
 	&.mediumsize {
 		width: 140px;
@@ -80,4 +85,7 @@
 	width: 100%;
 	height: 100%;
 	vertical-align: top;
+}
+.btn-more {
+	margin-top: $gutter-width/2;	
 }

@@ -413,5 +413,5 @@
 			<li class="submenu-item"><a class="submenu-link" href="#">Средства индивидуальной защиты</a></li>
 		</ul>
 	</li>
-	<li class="menu-item"><a class="menu-link" href="#">акции</a></li>
+	<li class="menu-item"><a class="menu-link" href="actsii.php">акции</a></li>
 </ul>

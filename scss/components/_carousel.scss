@@ -7,6 +7,9 @@
 		width: 99999px;
 		z-index: 2;
 	}
+	.item {
+		margin-bottom: 0;
+	}
 }
 .carousel-controlls {
 	position: absolute;
@@ -80,4 +83,7 @@
 	.item-link {
 		height: 100%;
 	}
+}
+.product-carousel {
+	margin-bottom: $gutter-width*2;
 }
