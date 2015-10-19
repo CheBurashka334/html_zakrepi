@@ -1,15 +1,18 @@
 // auth-box
 .auth-box {
-	padding-top: $gutter-width/2;
+	padding-top: $gutter-width*0.8;
 	padding-bottom: $gutter-width/2;
 	text-align: right;
 	.auth-link {
 		@extend a.nostyle;
 		display: inline-block;
-		padding: 0 $gutter-width/2;
+		padding: 0 $gutter-width*0.35;
+		line-height: 1;
+		height: 1em;
 	}
 	.auth-link.login {
 		border-right: 1px solid;
+		padding-right: $gutter-width/2;
 	}
 	.icon {
 		display: inline-block;
@@ -17,7 +20,8 @@
 		height: 1.5em;
 		padding: 2px;
 		fill: color('icons', 'dark');
-		margin-right: $gutter-width/3;
-		vertical-align: top;
+		vertical-align: middle;
+		margin-right: $gutter-width*0.25;
+		margin-top: -0.25*$gutter-width;
 	}
 }

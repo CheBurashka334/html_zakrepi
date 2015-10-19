@@ -17,6 +17,7 @@ html, body {
 
 .page {
 	background: color("bg", "base");
+	overflow-x: hidden;
 }
 .header-wrapper,
 .footer-wrapper {
@@ -34,16 +35,17 @@ html, body {
 .phone-box {
 	line-height: 1;
 	.phone-link {
-		margin-bottom: $gutter-width/2;
+		display: inline-block;
+		margin-bottom: 3px;
 	}
 }
 
 // header
 .header {
 	padding-top: $gutter-width;
-	padding-bottom: $gutter-width;
+	padding-bottom: $gutter-width*0.75;
 	.phone-box {
-		padding-top: $gutter-width/2;
+		padding-top: $gutter-width*0.4;
 	}
 }
 // subsribe-box

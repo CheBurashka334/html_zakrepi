@@ -10,6 +10,7 @@
 	<!--link rel="shortcut icon" href="favicon.ico" type="image/x-icon"-->
 	<!--link rel="shortcut icon" href="favicon.png" type="image/png"-->
 	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script src="js/modernizr-custom.js"></script>
 	<script src="js/materialize.min.js"></script>
 	<script src="js/angular.js"></script>
@@ -29,7 +30,7 @@
 	<div class="header-wrapper">
 		<div class="topbar">
 			<div class="container row">
-				<div class="geo-box col l3 small-text">
+				<div class="geo-box col l3">
 					<svg class="icon"><use xlink:href="#location"/></svg>
 					Петропавловск-Камчатский
 				</div>
@@ -64,8 +65,8 @@
 				<div class="shopping-card-box col l3">
 					<a href="#" class="btn btn-favorite btn-icon col"><svg class="icon"><use xlink:href="#heart"/></svg></a>
 					<a class="btn standart btn-with-icon col l2 btn-minicart" href="#"><svg class="icon"><use xlink:href="#cart"/></svg><div class="notification"></div> Нет товаров</a>
-					<!-- товар добавлен в корзину
-					<a class="btn standart btn-with-icon col l2 btn-minicart" href="#"><svg class="icon"><use xlink:href="#cart"/></svg><div class="notification">1</div> 7&nbsp;299 <span class="rouble">i</span></a>-->
+					<!-- товар добавлен в корзину-->
+					<!-- <a class="btn standart btn-with-icon col l2 btn-minicart" href="#"><svg class="icon"><use xlink:href="#cart"/></svg><div class="notification">1</div> 7&nbsp;299 <span class="rouble">i</span></a>-->
 				</div>
 			</div>
 		</div>

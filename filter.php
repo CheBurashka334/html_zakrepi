@@ -16,9 +16,11 @@
 			</div>
 		</li>
 		<li>
+			<!-- .active - по умолчанию развернуто -->
 			<div class="collapsible-header active">Бренд</div>
 			<div class="collapsible-body">
-				<div class="collapsible-body-content">
+				<!-- если больше, чем data-show - .toggle-content-box, data-show - нужное количество, чтоб можно было настраивать в настройках компонента/фильтра, data-state - состояние по умолчанию (less/more) -->
+				<div class="collapsible-body-content toggle-content-box" data-show="5" data-state="less">
 					<p class="range-field">
 						<input type="checkbox" id="brend-1" class="custom" />
 						<label class="checkbox-lbl" for="brend-1">Bosch (10)</label>
@@ -47,6 +49,11 @@
 						<input type="checkbox" id="brend-4" class="custom" />
 						<label class="checkbox-lbl" for="brend-4">FEIN (2)</label>
 					</p>
+					<!-- если больше, чем data-show -->
+					<div class="show-buttons">
+						<button class="btn-link show-more">Показать все</button>
+						<button class="btn-link show-less">Свернуть</button>
+					</div>
 				</div>
 			</div>
 		</li>

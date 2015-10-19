@@ -162,7 +162,7 @@ $(document).ready(function(){
 	$('.carousel')
 		.on('jcarousel:createend', function(){
 			if($(this).attr('data-jcarouselautoscroll') == 'true'){
-				if($(this).attr('data-interval')){
+				/*if($(this).attr('data-interval')){
 					var $interval = $(this).attr('data-interval');
 				} else {
 					var $interval = 3000;
@@ -176,13 +176,13 @@ $(document).ready(function(){
 					interval: $interval,
 					target: $target,
 					autostart: true
-				});
+				});*/
 			}
-			if($(this).attr('data-wrap') == 'circular'){
+			/*if($(this).attr('data-wrap') == 'circular'){
 				$(this).jcarousel({
 					wrap: 'circular',
 				});
-			}
+			}*/
 		})
 		.jcarousel({
 			list: '.carousel-inner'
@@ -237,19 +237,7 @@ $(document).ready(function(){
 		.jcarouselControl();
 	
 	
-	// anchor-menu
-	$('.anchor-manu .menu-link.anchor:not(.inactive)').click(function(e){
-		var el = $(this).attr('href');
-		$(el).addClass('show').siblings().removeClass('show');
-		var scrollto = $(el).position();
-		$('html,body').animate({scrollTop: scrollto.top},700);
-		return false;
-		//e.preventDefault;
-	});
-	// неактивная ссылка меню
-	$('.inactive').click(function(){
-		return false;
-	});
+	
 	// anchor-link
 	$('.anchor-link').click(function(e){
 		var el = $(this).attr('href');
@@ -261,29 +249,134 @@ $(document).ready(function(){
 	
 	// yandex.map
 	// https://tech.yandex.ru/maps/doc/jsapi/2.1/quick-start/tasks/quick-start-docpage/
-	/*ymaps.ready(init);
-	var luxMap, luxPlacemark;
+	ymaps.ready(init);
+	var shopsMap;
 	
 	function init(){
-		luxMap = new ymaps.Map("map",{
-			center: [57.13319444, 65.56589206],
-			zoom: 17
+		shopsMap = new ymaps.Map("shops-map",{
+			center: [57.16565145867384,65.54499550000001], // Тюмень
+			zoom: 12,
+			controls: ['smallMapDefaultSet','routeEditor','trafficControl']
 		});
-		luxPlacemark = new ymaps.Placemark(luxMap.getCenter(),{},{
+		// тут бы еще сделать что-то с балунами, действия при клике на метку, 
+		// связать со списком магазинов рядом с картой, например центрировать 
+		// и увеличивать карут при клике на адрес магазина в списке....
+		// но я этого делать не буду, заебала меня эта карта
+		var coords = [
+			[57.15689047935417,65.45087498346709],	// Черепанова 29
+			[57.15370227137238,65.56400849999996],	// 50 лет Октября, 8/1
+			[57.194878271190895,65.5943265],		// Ветеранов Труда, 47
+			[57.13485277148095,65.60593249999998],	// Пермякова, 1а
+			[57.13079877143909,65.54357149999998],	// Молодежная, 72
+			[57.13420827141365,65.4935445],			// Московский тракт, 120/1
+		];
+		shopsCollection = new ymaps.GeoObjectCollection({},{
 			iconLayout: 'default#image',
 			iconImageHref: 'images/map-marker.png',
-			iconImageSize: [50, 90],
-			iconImageOffset: [-30,-70]
+			iconImageSize: [30, 36],
 		});
-		luxMap.behaviors.disable('scrollZoom');
-		luxMap.geoObjects.add(luxPlacemark);
-	}*/
+		for (var i=0;i<coords.length;i++){
+			shopsCollection.add(new ymaps.Placemark(coords[i]));
+		}
+		shopsMap.behaviors.disable('scrollZoom');
+		shopsMap.geoObjects.add(shopsCollection);
+		if($('#shops-map').parents('.tab-content-item')){
+			$('#shops-map').parents('.tab-content-item').on("tabshow", function(){
+				shopsMap.container.fitToViewport();
+			});
+		}
+	}
+	$('.toggle-content-box').each(function(){
+		if($(this).attr('data-state')){
+			var state = $(this).attr('data-state');
+		} else {
+			var state = 'less';
+		}
+		if($(this).attr('data-show')){
+			var num = $(this).attr('data-show');
+		} else {
+			var num = 5;
+		}
+		toggleContent($(this), 'init', state, num);
+	});
+	$('.show-buttons .show-more').click(function(){
+		toggleContent($(this).parents('.toggle-content-box'), 'toggle', 'more', $(this).parents('.toggle-content-box').attr('data-show'));
+		$(this).hide().siblings().show();
+	});
+	$('.show-buttons .show-less').click(function(){
+		toggleContent($(this).parents('.toggle-content-box'), 'toggle', 'less', $(this).parents('.toggle-content-box').attr('data-show'));
+		$(this).hide().siblings().show();
+	});
+	
+	// tabs
+	//$('.tabs').tabs();
+	// init
+	$('.tabs').each(function(){
+		var actID = $(this).find('.tab-header-item.active .tab-link').attr('href');
+		$(this).children('.tab-content').find(actID).addClass('open');
+		if($('.workarea .tab-hide-box').length > 0){
+			$('.tab-hide-box[data-hide-id='+actID+']').hide();
+		}
+	});
+	// action
+	$('.tab-link').click(function(){
+		var actID = $(this).attr('href');
+		var tabs = $(actID).parents('.tabs');
+		if($(this).parent().hasClass('tab-header-item')){
+			$(this).parent('.tab-header-item').addClass('active').siblings().removeClass('active');
+		} else {
+			$('.tab-header-item [href='+actID+']').parent('.tab-header-item').addClass('active').siblings().removeClass('active');
+		}
+		tabs.children('.tab-content').find(actID).addClass('open').siblings().removeClass('open');
+		if($('.workarea .tab-hide-box').length > 0){
+			$('.tab-hide-box[data-hide-id!='+actID+']').show();
+			$('.tab-hide-box[data-hide-id='+actID+']').hide();
+		}
+		$(actID).trigger("tabshow");
+		return false;
+	});
 
 });
 
 function position() {
 	var pos = $(window).scrollTop();
 	$('.page').css({'position': 'fixed', 'top': - pos+'px'});
+}
+function toggleContent(el,action,state,num){
+	// default
+	if(!action){
+		action = 'init';
+	}
+	if(!state){
+		state = 'less';
+	}
+	if(!num){
+		num = 5;
+	}
+	var lessHeight = el.children('.show-buttons').outerHeight();
+	el.children('*:lt('+num+')').each(function(){
+		lessHeight = lessHeight + $(this).outerHeight() + parseFloat($(this).css('margin-bottom'),10);
+	});
+	var moreHeight = el.children('.show-buttons').outerHeight();
+	el.children('[class!="show-buttons"]').each(function(){
+		moreHeight = moreHeight + $(this).outerHeight() + parseFloat($(this).css('margin-bottom'),10);
+	});
+	if(action == 'init'){
+		if(state == 'less'){
+			el.css('height', lessHeight);
+		} else if (state == 'more') {
+			el.css('height', moreHeight);
+		}
+	} else if (action == 'toggle'){
+		if(state == 'less'){
+			el.animate({'height': lessHeight},300).attr('data-state', 'more');
+		} else if (state == 'more') {
+			el.animate({'height': moreHeight},300).attr('data-state', 'less');;
+		}
+	}
+}
+function tab(){
+	console.log('ok');
 }
 
 // angularjs 

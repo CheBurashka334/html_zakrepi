@@ -1,0 +1,22 @@
+// reviews
+.reviews-list {
+	margin-top: $gutter-width;
+	.review-item {
+		border-top: 1px solid color('border', 'table-border');
+		padding-top: $gutter-width*1.5;
+		padding-bottom: $gutter-width*1.5;
+		&:first-child {
+			border-top: 0;
+		}
+		&:last-child {
+			padding-bottom: 0;
+		}
+		.subtitle {
+			@extend .medium;
+			color: color('text', 'dark');
+		}
+		p + .subtitle {
+			margin-top: $gutter-width*1.5;
+		}
+	}
+}

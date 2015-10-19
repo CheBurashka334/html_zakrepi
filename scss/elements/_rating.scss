@@ -1,0 +1,19 @@
+// rating
+.rating {
+	height: 15px;
+	margin: $gutter-width*0.4 0 $gutter-width;
+	.star {
+		width: 15px;
+		height: 100%;
+		fill: color('icons','lighter');
+	}
+	@for $i from 1 through 5 {
+		&.rate-#{$i}{
+			@for $c from 1 through $i {
+				.star:nth-child(#{$c}){
+					fill: color("primary", "base");
+				}
+			}
+		}
+	}
+}

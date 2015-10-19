@@ -20,7 +20,7 @@
 		<label class="sort-item" for="sort-rating">рейтингу</label>
 	</div>
 	<div class="compare-box col l3">
-		<span class="compare-text">Нет товаров к сравнению</span>
+		<span class="compare-text"><svg class="icon"><use xlink:href="#stat"/></svg> Нет товаров к сравнению</span>
 	</div>
 </div>
 <div class="row">
@@ -32,8 +32,8 @@
 			<div class="item col l3" ng-repeat="product in products | orderBy:sort:true">
 				<div class="product-card">
 					<div class="product-info">
-						<a class="item-img" href="#" style="background-image:url({{product.image}});"></a>
-						<div class="item-name"><a href="#">{{product.name}}</a></div>
+						<a class="item-img" href="product__single.php" style="background-image:url({{product.image}});"></a>
+						<div class="item-name"><a href="product__single.php">{{product.name}}</a></div>
 						<div ng-class="'rating rate-'+product.rating">
 							<svg class="star"><use xlink:href="#star"/></svg>
 							<svg class="star"><use xlink:href="#star"/></svg>

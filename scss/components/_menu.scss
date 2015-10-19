@@ -10,7 +10,7 @@
 	@extend ul.horizontal;
 	.menu-link {
 		display: block;
-		padding: $gutter-width/2;
+		padding: $gutter-width*0.8 7px $gutter-width/2;
 	}
 	.menu-item:first-of-type .menu-link {
 		padding-left: 0;
@@ -19,6 +19,26 @@
 .vertical-menu {
 	.menu-item {
 		margin: $gutter-width/2 - 1px 0;
+	}
+}
+.sidebar-menu {
+	max-width: 260px;
+	background: white;
+	@extend .z-depth-1;
+	border-radius: $base-border-radius;
+	.menu-link {
+		display: block;
+		padding: 1em $gutter-width;
+	}
+	.menu-item {
+		border-top: 1px solid #eeeeee;
+		&:first-child {
+			border-top: 0;
+		}
+		&.active .menu-link,
+		.menu-link:hover {
+			color: color('primary', 'base');
+		}
 	}
 }
 
@@ -38,7 +58,7 @@
 		font-size: 13px;
 		font-weight: 600;
 		line-height: 1;
-		padding: $gutter-width - 1px $gutter-width + 2px;
+		padding: $gutter-width - 1px $gutter-width + 2px $gutter-width - 2px;
 	}
 	
 	// submenu

@@ -57,7 +57,7 @@ small {
 	font-size: 26px;
 }
 .xxbig-text {
-	font-size: 29px;
+	font-size: 30px;
 }
 .large-text {
 	font-size: 34px;
@@ -102,14 +102,14 @@ h1, h2, h3, h4, h5, h6 {
 
 // Header Styles
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
-h1 { font-size: $h1-fontsize; line-height: 1.5; margin: 1em 0;}
+//h1 { font-size: $h1-fontsize; line-height: 1.5; margin: 1em 0;}
 h2 { font-size: $h2-fontsize; line-height: 1.5; margin: 1em 0;}
 h3 { font-size: $h3-fontsize; line-height: 1.5; margin: 1em 0;}
 h4 { font-size: $h4-fontsize; line-height: 1.5; margin: 1em 0;}
 h5 { font-size: $h5-fontsize; line-height: 1.5; margin: 1em 0;}
 h6 { font-size: $h6-fontsize; line-height: 1.5; margin: 1em 0;}
 
-.page-title {
+.page-title, h1 {
 	@extend .large-text;
 	@extend .light;
 	margin: $gutter-width*1.5 0;
@@ -120,7 +120,7 @@ h6 { font-size: $h6-fontsize; line-height: 1.5; margin: 1em 0;}
 	}
 }
 .box-title {
-	@extend .xxbig-text;
 	@extend .light;
-	margin: $gutter-width 0;
+	font-size: 28px;
+	margin: $gutter-width 0 $gutter-width/2;
 }

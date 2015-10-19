@@ -23,29 +23,11 @@
 		background-size: cover;
 	}
 	.item-name {
-		margin: $gutter-width 0 $gutter-width/2;
+		margin: $gutter-width + 3px 0 $gutter-width*0.4;
 		@extend .medium-text;
 		min-height: 3em;
 		a {
 			@extend a.nostyle;
-		}
-	}
-	.rating {
-		height: 15px;
-		margin: $gutter-width/2 0 $gutter-width;
-		.star {
-			width: 15px;
-			height: 100%;
-			fill: color('icons','lighter');
-		}
-		@for $i from 1 through 5 {
-			&.rate-#{$i}{
-				@for $c from 1 through $i {
-					.star:nth-child(#{$c}){
-						fill: color("primary", "base");
-					}
-				}
-			}
 		}
 	}
 	.product-price {

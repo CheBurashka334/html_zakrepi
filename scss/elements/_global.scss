@@ -380,18 +380,22 @@ td, th{
 .table-row {
 	display: table-row;
 	width: 100%;
+	border-top: 1px solid color('border', 'table-border');
+	@extend .clearfix;
+	&:first-child {
+		border-top: 0;
+	}
 }
 .table-col {
 	display: table-cell;
 }
 .table {
 	width: 100%;
-	display: table;
+	//display: table;
 	margin: $gutter-width 0 $gutter-width*1.5;
-	color: color("grey", "darken-4");
+	@extend .clearfix;
 	.table-col {
-		padding: $gutter-width 2%;
-		vertical-align: middle;
+		padding: $gutter-width*0.8 0;
 	}
 	.status-icon {
 		width: 45px;
@@ -715,6 +719,9 @@ span.badge {
 }
 .right {
   float: right !important;
+}
+.nofloat {
+	float: none!important;
 }
 .center {
 	float: none;

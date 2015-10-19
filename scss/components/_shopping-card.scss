@@ -4,6 +4,9 @@
 	.btn-minicart {
 		padding-left: $gutter-width*3;
 		text-align: left;
+		&.col.l2 {
+			max-width: 180px;
+		}
 		.icon {
 			position: absolute;
 			left: 15px;
@@ -11,7 +14,7 @@
 		}
 	}
 	.btn-favorite {
-		margin: $gutter-width/2 7% $gutter-width/2 16%;
+		margin: $gutter-width/2 6.7% $gutter-width/2 20%;
 		padding: 0;
 		.icon {
 			fill: color('icons', 'lightest');

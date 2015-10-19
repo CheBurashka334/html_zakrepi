@@ -1,269 +1,279 @@
-/* line 62, scss/_color.scss */
+/* line 63, scss/_color.scss */
 .primary {
   background-color: #ce2127 !important;
 }
 
-/* line 65, scss/_color.scss */
+/* line 66, scss/_color.scss */
 .primary-text {
   color: #ce2127 !important;
 }
 
-/* line 70, scss/_color.scss */
+/* line 71, scss/_color.scss */
 .text.lighter {
   background-color: #b9b9b9 !important;
 }
 
-/* line 73, scss/_color.scss */
+/* line 74, scss/_color.scss */
 .color-text.text-lighter {
   color: #b9b9b9 !important;
 }
 
-/* line 70, scss/_color.scss */
-.text.light, footer.page-footer .text.footer-copyright, .text.page-title, .text.box-title {
+/* line 71, scss/_color.scss */
+.text.light, footer.page-footer .text.footer-copyright, .text.page-title, h1.text, .text.box-title, .product-page .main-info .text.product-title {
   background-color: #8c8c8c !important;
 }
 
-/* line 73, scss/_color.scss */
+/* line 74, scss/_color.scss */
 .color-text.text-light {
   color: #8c8c8c !important;
 }
 
-/* line 62, scss/_color.scss */
+/* line 63, scss/_color.scss */
 .text {
   background-color: #434343 !important;
 }
 
-/* line 65, scss/_color.scss */
+/* line 66, scss/_color.scss */
 .text-text {
   color: #434343 !important;
 }
 
-/* line 70, scss/_color.scss */
+/* line 71, scss/_color.scss */
 .text.dark {
   background-color: #363636 !important;
 }
 
-/* line 73, scss/_color.scss */
+/* line 74, scss/_color.scss */
 .color-text.text-dark {
   color: #363636 !important;
 }
 
-/* line 70, scss/_color.scss */
+/* line 71, scss/_color.scss */
 .text.darker {
   background-color: #333333 !important;
 }
 
-/* line 73, scss/_color.scss */
+/* line 74, scss/_color.scss */
 .color-text.text-darker {
   color: #333333 !important;
 }
 
-/* line 70, scss/_color.scss */
-.bg.light, footer.page-footer .bg.footer-copyright, .bg.page-title, .bg.box-title {
+/* line 71, scss/_color.scss */
+.bg.light, footer.page-footer .bg.footer-copyright, .bg.page-title, h1.bg, .bg.box-title, .product-page .main-info .bg.product-title {
   background-color: #f9f9f9 !important;
 }
 
-/* line 73, scss/_color.scss */
+/* line 74, scss/_color.scss */
 .color-bg.text-light {
   color: #f9f9f9 !important;
 }
 
-/* line 62, scss/_color.scss */
+/* line 63, scss/_color.scss */
 .bg {
   background-color: #f6f6f6 !important;
 }
 
-/* line 65, scss/_color.scss */
+/* line 66, scss/_color.scss */
 .bg-text {
   color: #f6f6f6 !important;
 }
 
-/* line 70, scss/_color.scss */
+/* line 71, scss/_color.scss */
 .bg.topbar {
   background-color: #efefef !important;
 }
 
-/* line 73, scss/_color.scss */
+/* line 74, scss/_color.scss */
 .color-bg.text-topbar {
   color: #efefef !important;
 }
 
-/* line 70, scss/_color.scss */
+/* line 71, scss/_color.scss */
 .bg.dark {
   background-color: #363636 !important;
 }
 
-/* line 73, scss/_color.scss */
+/* line 74, scss/_color.scss */
 .color-bg.text-dark {
   color: #363636 !important;
 }
 
-/* line 70, scss/_color.scss */
+/* line 71, scss/_color.scss */
 .icons.soc {
   background-color: #939393 !important;
 }
 
-/* line 73, scss/_color.scss */
+/* line 74, scss/_color.scss */
 .color-icons.text-soc {
   color: #939393 !important;
 }
 
-/* line 70, scss/_color.scss */
+/* line 71, scss/_color.scss */
 .icons.lightest {
   background-color: #d8d8d8 !important;
 }
 
-/* line 73, scss/_color.scss */
+/* line 74, scss/_color.scss */
 .color-icons.text-lightest {
   color: #d8d8d8 !important;
 }
 
-/* line 70, scss/_color.scss */
+/* line 71, scss/_color.scss */
 .icons.lighter {
   background-color: #d4d4d4 !important;
 }
 
-/* line 73, scss/_color.scss */
+/* line 74, scss/_color.scss */
 .color-icons.text-lighter {
   color: #d4d4d4 !important;
 }
 
-/* line 70, scss/_color.scss */
-.icons.light, footer.page-footer .icons.footer-copyright, .icons.page-title, .icons.box-title {
+/* line 71, scss/_color.scss */
+.icons.light, footer.page-footer .icons.footer-copyright, .icons.page-title, h1.icons, .icons.box-title, .product-page .main-info .icons.product-title {
   background-color: #9d9d9d !important;
 }
 
-/* line 73, scss/_color.scss */
+/* line 74, scss/_color.scss */
 .color-icons.text-light {
   color: #9d9d9d !important;
 }
 
-/* line 62, scss/_color.scss */
+/* line 63, scss/_color.scss */
 .icons {
   background-color: #6b6b6b !important;
 }
 
-/* line 65, scss/_color.scss */
+/* line 66, scss/_color.scss */
 .icons-text {
   color: #6b6b6b !important;
 }
 
-/* line 70, scss/_color.scss */
+/* line 71, scss/_color.scss */
 .icons.dark {
   background-color: #242424 !important;
 }
 
-/* line 73, scss/_color.scss */
+/* line 74, scss/_color.scss */
 .color-icons.text-dark {
   color: #242424 !important;
 }
 
-/* line 70, scss/_color.scss */
+/* line 71, scss/_color.scss */
 .border.lighter {
   background-color: #f6f6f6 !important;
 }
 
-/* line 73, scss/_color.scss */
+/* line 74, scss/_color.scss */
 .color-border.text-lighter {
   color: #f6f6f6 !important;
 }
 
-/* line 70, scss/_color.scss */
-.border.light, footer.page-footer .border.footer-copyright, .border.page-title, .border.box-title {
+/* line 71, scss/_color.scss */
+.border.light, footer.page-footer .border.footer-copyright, .border.page-title, h1.border, .border.box-title, .product-page .main-info .border.product-title {
   background-color: #d7d7d7 !important;
 }
 
-/* line 73, scss/_color.scss */
+/* line 74, scss/_color.scss */
 .color-border.text-light {
   color: #d7d7d7 !important;
 }
 
-/* line 62, scss/_color.scss */
+/* line 63, scss/_color.scss */
 .border {
   background-color: #c9c9c9 !important;
 }
 
-/* line 65, scss/_color.scss */
+/* line 66, scss/_color.scss */
 .border-text {
   color: #c9c9c9 !important;
 }
 
-/* line 70, scss/_color.scss */
+/* line 71, scss/_color.scss */
 .border.dark {
   background-color: #aaaaaa !important;
 }
 
-/* line 73, scss/_color.scss */
+/* line 74, scss/_color.scss */
 .color-border.text-dark {
   color: #aaaaaa !important;
 }
 
-/* line 70, scss/_color.scss */
+/* line 71, scss/_color.scss */
 .border.darker {
   background-color: #9c9c9c !important;
 }
 
-/* line 73, scss/_color.scss */
+/* line 74, scss/_color.scss */
 .color-border.text-darker {
   color: #9c9c9c !important;
 }
 
-/* line 70, scss/_color.scss */
+/* line 71, scss/_color.scss */
+.border.table-border {
+  background-color: #e5e5e5 !important;
+}
+
+/* line 74, scss/_color.scss */
+.color-border.text-table-border {
+  color: #e5e5e5 !important;
+}
+
+/* line 71, scss/_color.scss */
 .shades.black {
   background-color: #000000 !important;
 }
 
-/* line 73, scss/_color.scss */
+/* line 74, scss/_color.scss */
 .color-shades.text-black {
   color: #000000 !important;
 }
 
-/* line 70, scss/_color.scss */
+/* line 71, scss/_color.scss */
 .shades.white {
   background-color: #FFFFFF !important;
 }
 
-/* line 73, scss/_color.scss */
+/* line 74, scss/_color.scss */
 .color-shades.text-white {
   color: #FFFFFF !important;
 }
 
-/* line 70, scss/_color.scss */
+/* line 71, scss/_color.scss */
 .shades.transparent {
   background-color: transparent !important;
 }
 
-/* line 73, scss/_color.scss */
+/* line 74, scss/_color.scss */
 .color-shades.text-transparent {
   color: transparent !important;
 }
 
-/* line 82, scss/_color.scss */
+/* line 83, scss/_color.scss */
 .black {
   background-color: #000000 !important;
 }
 
-/* line 85, scss/_color.scss */
+/* line 86, scss/_color.scss */
 .black-text {
   color: #000000 !important;
 }
 
-/* line 82, scss/_color.scss */
+/* line 83, scss/_color.scss */
 .white {
   background-color: #FFFFFF !important;
 }
 
-/* line 85, scss/_color.scss */
+/* line 86, scss/_color.scss */
 .white-text {
   color: #FFFFFF !important;
 }
 
-/* line 82, scss/_color.scss */
+/* line 83, scss/_color.scss */
 .transparent {
   background-color: transparent !important;
 }
 
-/* line 85, scss/_color.scss */
+/* line 86, scss/_color.scss */
 .transparent-text {
   color: transparent !important;
 }
@@ -1786,6 +1796,43 @@ $progress-bar-color: $secondary-color !default;*/
   margin-left: auto;
 }
 
+/* line 124, scss/_grid.scss */
+.full-width {
+  width: 100vw;
+  margin-left: calc(-1*(100vw - 100%)/2);
+}
+
+@media only screen and (max-width: 650px) {
+  /* line 129, scss/_grid.scss */
+  .s-full-width {
+    width: 100vw;
+    margin-left: calc(-1*(100vw - 100%)/2);
+  }
+  /* line 133, scss/_grid.scss */
+  .s-full-width .col {
+    padding-left: 40px;
+    padding-right: 40px;
+    float: none;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 651px) and (max-width: 992px) {
+  /* line 141, scss/_grid.scss */
+  .m-full-width {
+    width: 100vw;
+    margin-left: calc(-1*(100vw - 100%)/2);
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  /* line 147, scss/_grid.scss */
+  .l-full-width {
+    width: 100vw;
+    margin-left: calc(-1*(100vw - 100%)/2);
+  }
+}
+
 @font-face {
   font-family: rouble;
   src: url("fonts/rouble/rouble.eot#iefix") format("embedded-opentype"), url("fonts/rouble/rouble.woff") format("woff"), url("fonts/rouble/rouble.ttf") format("truetype"), url("fonts/rouble/rouble.otf") format("opentype"), url("fonts/rouble/rouble.svg") format("svg");
@@ -1889,7 +1936,7 @@ template {
  * Remove the gray background color from active links in IE 10.
  */
 /* line 95, scss/_normalize.scss */
-a {
+a, .btn-link {
   background-color: transparent;
 }
 
@@ -1897,8 +1944,9 @@ a {
  * Improve readability when focused and also mouse hovered in all browsers.
  */
 /* line 103, scss/_normalize.scss */
-a:active,
-a:hover {
+a:active, .btn-link:active,
+a:hover,
+.btn-link:hover {
   outline: 0;
 }
 
@@ -2268,63 +2316,65 @@ html, body {
 /* line 18, scss/_layout.scss */
 .page {
   background: #f6f6f6;
+  overflow-x: hidden;
 }
 
-/* line 21, scss/_layout.scss */
+/* line 22, scss/_layout.scss */
 .header-wrapper,
 .footer-wrapper {
   background: white;
   color: #434343;
 }
 
-/* line 26, scss/_layout.scss */
+/* line 27, scss/_layout.scss */
 .topbar {
   background: #efefef;
   color: #333333;
 }
 
-/* line 30, scss/_layout.scss */
+/* line 31, scss/_layout.scss */
 .main-menu {
   background: #363636;
   color: white;
 }
 
-/* line 34, scss/_layout.scss */
+/* line 35, scss/_layout.scss */
 .phone-box {
   line-height: 1;
 }
-/* line 36, scss/_layout.scss */
+/* line 37, scss/_layout.scss */
 .phone-box .phone-link {
-  margin-bottom: 10px;
+  display: inline-block;
+  margin-bottom: 3px;
 }
 
-/* line 42, scss/_layout.scss */
+/* line 44, scss/_layout.scss */
 .header {
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
 }
-/* line 45, scss/_layout.scss */
+/* line 47, scss/_layout.scss */
 .header .phone-box {
-  padding-top: 10px;
+  padding-top: 8px;
 }
 
-/* line 50, scss/_layout.scss */
+/* line 52, scss/_layout.scss */
 .subscribe-box {
   padding-top: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #f6f6f6;
 }
-/* line 54, scss/_layout.scss */
+/* line 56, scss/_layout.scss */
 .subscribe-box .sbscr-text {
   padding-top: 5px;
   padding-bottom: 10px;
 }
 
-/* line 63, scss/_layout.scss */
+/* line 65, scss/_layout.scss */
 .soc-list .soc-item {
   margin-right: 10px;
 }
-/* line 66, scss/_layout.scss */
+/* line 68, scss/_layout.scss */
 .soc-list .soc-link {
   display: block;
   width: 31px;
@@ -2337,39 +2387,39 @@ html, body {
   text-align: center;
   color: #939393;
 }
-/* line 77, scss/_layout.scss */
+/* line 79, scss/_layout.scss */
 .soc-list .soc-link .icon {
   fill: #939393;
 }
 
-/* line 83, scss/_layout.scss */
+/* line 85, scss/_layout.scss */
 .footer {
   padding: 30px 0 25px;
 }
-/* line 85, scss/_layout.scss */
+/* line 87, scss/_layout.scss */
 .footer .box-title {
   margin-top: 0;
   margin-bottom: 13.2px;
   font-weight: normal;
   color: #ce2127;
 }
-/* line 92, scss/_layout.scss */
+/* line 94, scss/_layout.scss */
 .footer .phone-box,
 .footer .schedule-box {
   margin-bottom: 20px;
 }
-/* line 96, scss/_layout.scss */
+/* line 98, scss/_layout.scss */
 .footer .phone-box .phone-link {
   font-size: 22px;
   margin: 1em 0 0;
   display: block;
 }
-/* line 101, scss/_layout.scss */
+/* line 103, scss/_layout.scss */
 .footer .schedule-box p {
   margin: 10px 0;
 }
 
-/* line 105, scss/_layout.scss */
+/* line 107, scss/_layout.scss */
 .bottombar {
   padding: 30px 0;
   border-top: 1px solid #f6f6f6;
@@ -2391,11 +2441,11 @@ html {
 }
 
 /* line 37, scss/elements/_global.scss */
-.clearfix {
+.clearfix, .table-row, .table {
   clear: both;
 }
 /* line 39, scss/elements/_global.scss */
-.clearfix:before, .clearfix:after {
+.clearfix:before, .table-row:before, .table:before, .clearfix:after, .table-row:after, .table:after {
   content: '';
   display: block;
   width: 0;
@@ -2410,7 +2460,7 @@ html {
 }
 
 /* line 55, scss/elements/_global.scss */
-.z-depth-1, .table .status-icon, .filter, .product-card {
+.z-depth-1, .table .status-icon, .sidebar-menu, .filter, .product-card, .product-page .main-info {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -2477,7 +2527,7 @@ i.small {
   font-size: 2rem;
 }
 /* line 112, scss/elements/_global.scss */
-i.medium {
+i.medium, .tabs .tab-header-item i.tab-link, .reviews-list .review-item i.subtitle {
   font-size: 4rem;
 }
 /* line 115, scss/elements/_global.scss */
@@ -2780,25 +2830,28 @@ td, th {
 .table-row {
   display: table-row;
   width: 100%;
+  border-top: 1px solid #e5e5e5;
+}
+/* line 385, scss/elements/_global.scss */
+.table-row:first-child {
+  border-top: 0;
 }
 
-/* line 384, scss/elements/_global.scss */
+/* line 389, scss/elements/_global.scss */
 .table-col {
   display: table-cell;
 }
 
-/* line 387, scss/elements/_global.scss */
+/* line 392, scss/elements/_global.scss */
 .table {
   width: 100%;
-  display: table;
   margin: 20px 0 30px;
 }
-/* line 392, scss/elements/_global.scss */
+/* line 397, scss/elements/_global.scss */
 .table .table-col {
-  padding: 20px 2%;
-  vertical-align: middle;
+  padding: 16px 0;
 }
-/* line 396, scss/elements/_global.scss */
+/* line 400, scss/elements/_global.scss */
 .table .status-icon {
   width: 45px;
   height: 45px;
@@ -2807,83 +2860,83 @@ td, th {
   float: left;
   margin-right: 30px;
 }
-/* line 404, scss/elements/_global.scss */
+/* line 408, scss/elements/_global.scss */
 .table .status-icon .icon {
   fill: #ce2127;
 }
-/* line 408, scss/elements/_global.scss */
+/* line 412, scss/elements/_global.scss */
 .table .info {
   width: 38%;
 }
-/* line 411, scss/elements/_global.scss */
+/* line 415, scss/elements/_global.scss */
 .table .date {
   width: 24%;
 }
-/* line 414, scss/elements/_global.scss */
+/* line 418, scss/elements/_global.scss */
 .table .sum {
   width: 16%;
 }
-/* line 417, scss/elements/_global.scss */
+/* line 421, scss/elements/_global.scss */
 .table .detail {
   width: 22%;
 }
-/* line 420, scss/elements/_global.scss */
+/* line 424, scss/elements/_global.scss */
 .table + .btn {
   margin-bottom: 20px;
 }
-/* line 423, scss/elements/_global.scss */
+/* line 427, scss/elements/_global.scss */
 .table .status-done {
   color: #757575;
 }
-/* line 426, scss/elements/_global.scss */
+/* line 430, scss/elements/_global.scss */
 .table .status-paid {
   background: #f7f7f7;
 }
 
 @media only screen and (max-width: 992px) {
-  /* line 432, scss/elements/_global.scss */
+  /* line 436, scss/elements/_global.scss */
   .table .info {
     width: 35.6%;
   }
-  /* line 435, scss/elements/_global.scss */
+  /* line 439, scss/elements/_global.scss */
   .table .date {
     width: 22%;
   }
-  /* line 438, scss/elements/_global.scss */
+  /* line 442, scss/elements/_global.scss */
   .table .sum {
     width: 15%;
   }
-  /* line 441, scss/elements/_global.scss */
+  /* line 445, scss/elements/_global.scss */
   .table .detail {
     width: 27.4%;
   }
 }
 @media screen and (max-width: 550px) {
-  /* line 447, scss/elements/_global.scss */
+  /* line 451, scss/elements/_global.scss */
   .table {
     display: block;
     margin-top: 0;
   }
-  /* line 450, scss/elements/_global.scss */
+  /* line 454, scss/elements/_global.scss */
   .table .status-icon {
     position: absolute;
     top: 0;
     left: 20px;
     float: none;
   }
-  /* line 456, scss/elements/_global.scss */
+  /* line 460, scss/elements/_global.scss */
   .table .table-row {
     display: block;
     padding: 20px 0;
   }
-  /* line 460, scss/elements/_global.scss */
+  /* line 464, scss/elements/_global.scss */
   .table .table-col {
     display: block;
     width: 100%;
     padding: 0 20px;
     padding-left: 85px;
   }
-  /* line 466, scss/elements/_global.scss */
+  /* line 470, scss/elements/_global.scss */
   .table .info,
   .table .date {
     margin-bottom: 10px;
@@ -2986,7 +3039,7 @@ td, th {
   color: $secondary-color;
 }
 */
-/* line 573, scss/elements/_global.scss */
+/* line 577, scss/elements/_global.scss */
 span.badge {
   min-width: 3rem;
   padding: 0 6px;
@@ -2996,19 +3049,19 @@ span.badge {
   position: absolute;
   right: 15px;
 }
-/* line 584, scss/elements/_global.scss */
+/* line 588, scss/elements/_global.scss */
 span.badge.new {
   font-weight: 300;
   font-size: 0.8rem;
   color: #fff;
   border-radius: 2px;
 }
-/* line 591, scss/elements/_global.scss */
+/* line 595, scss/elements/_global.scss */
 span.badge.new:after {
   content: " new";
 }
 
-/* line 597, scss/elements/_global.scss */
+/* line 601, scss/elements/_global.scss */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -3016,11 +3069,11 @@ span.badge.new:after {
   height: 0;
   overflow: hidden;
 }
-/* line 603, scss/elements/_global.scss */
+/* line 607, scss/elements/_global.scss */
 .video-container.no-controls {
   padding-top: 0;
 }
-/* line 607, scss/elements/_global.scss */
+/* line 611, scss/elements/_global.scss */
 .video-container iframe, .video-container object, .video-container embed {
   position: absolute;
   top: 0;
@@ -3110,44 +3163,49 @@ span.badge.new:after {
 /*******************
   Utility Classes
 *******************/
-/* line 698, scss/elements/_global.scss */
+/* line 702, scss/elements/_global.scss */
 .hide {
   display: none !important;
 }
 
-/* line 703, scss/elements/_global.scss */
+/* line 707, scss/elements/_global.scss */
 .left-align {
   text-align: left;
 }
 
-/* line 706, scss/elements/_global.scss */
+/* line 710, scss/elements/_global.scss */
 .right-align {
   text-align: right;
 }
 
-/* line 709, scss/elements/_global.scss */
+/* line 713, scss/elements/_global.scss */
 .center-align {
   text-align: center;
 }
 
-/* line 713, scss/elements/_global.scss */
+/* line 717, scss/elements/_global.scss */
 .left {
   float: left !important;
 }
 
-/* line 716, scss/elements/_global.scss */
+/* line 720, scss/elements/_global.scss */
 .right {
   float: right !important;
 }
 
-/* line 719, scss/elements/_global.scss */
+/* line 723, scss/elements/_global.scss */
+.nofloat {
+  float: none !important;
+}
+
+/* line 726, scss/elements/_global.scss */
 .center {
   float: none;
   margin-right: auto;
   margin-left: auto;
 }
 
-/* line 726, scss/elements/_global.scss */
+/* line 733, scss/elements/_global.scss */
 .no-select {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -3157,19 +3215,19 @@ span.badge.new:after {
   user-select: none;
 }
 
-/* line 735, scss/elements/_global.scss */
+/* line 742, scss/elements/_global.scss */
 .circle {
   border-radius: 50%;
 }
 
-/* line 739, scss/elements/_global.scss */
+/* line 746, scss/elements/_global.scss */
 .center-block {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 745, scss/elements/_global.scss */
+/* line 752, scss/elements/_global.scss */
 .truncate {
   display: block;
   white-space: nowrap;
@@ -3177,7 +3235,7 @@ span.badge.new:after {
   text-overflow: ellipsis;
 }
 
-/* line 752, scss/elements/_global.scss */
+/* line 759, scss/elements/_global.scss */
 .no-padding {
   padding: 0 !important;
 }
@@ -3437,6 +3495,13 @@ span.badge.new:after {
   margin-top: 10px;
 }
 
+/* line 92, scss/elements/_buttons.scss */
+.btn-link {
+  background: none;
+  border: 0;
+  padding: 0;
+}
+
 /* line 1, scss/elements/_typography.scss */
 html {
   font-family: 'open sans', roboto, arial, sans-serif;
@@ -3464,12 +3529,12 @@ em {
 }
 
 /* line 21, scss/elements/_typography.scss */
-.light, footer.page-footer .footer-copyright, .page-title, .box-title {
+.light, footer.page-footer .footer-copyright, .page-title, h1, .box-title, .product-page .main-info .product-title {
   font-weight: 300;
 }
 
 /* line 24, scss/elements/_typography.scss */
-strong, .medium {
+strong, .medium, .tabs .tab-header-item .tab-link, .reviews-list .review-item .subtitle {
   font-weight: 600;
 }
 
@@ -3518,7 +3583,7 @@ input[type="tel"] + .textfield-placeholder,
 input[type="password"] + .textfield-placeholder,
 input[type="search"] + .textfield-placeholder,
 .inputtext + .textfield-placeholder,
-textarea + .textfield-placeholder, .breadcrumbs {
+textarea + .textfield-placeholder, .breadcrumbs, .tabs .tab-header-item .tab-link {
   font-size: 13px;
 }
 
@@ -3538,45 +3603,45 @@ textarea + .textfield-placeholder, .breadcrumbs {
 }
 
 /* line 59, scss/elements/_typography.scss */
-.xxbig-text, .box-title {
-  font-size: 29px;
+.xxbig-text, .product-page .main-info .product-price {
+  font-size: 30px;
 }
 
 /* line 62, scss/elements/_typography.scss */
-.large-text, .page-title {
+.large-text, .page-title, h1 {
   font-size: 34px;
 }
 
 /* line 67, scss/elements/_typography.scss */
-ul.nostyle, .soc-list, .pagination, .menu, .horizontal-multilevel-menu .submenu, .filter .filters-list, .carousel-nav, .brand-list, ol.nostyle {
+ul.nostyle, .soc-list, .pagination, .menu, .horizontal-multilevel-menu .submenu, .filter .filters-list, .carousel-nav, .brand-list, .tabs .tab-header-list, ol.nostyle {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 /* line 71, scss/elements/_typography.scss */
-ul.nostyle li, .soc-list li, .pagination li, .menu li, .horizontal-multilevel-menu .submenu li, .filter .filters-list li, .carousel-nav li, .brand-list li, ol.nostyle li {
+ul.nostyle li, .soc-list li, .pagination li, .menu li, .horizontal-multilevel-menu .submenu li, .filter .filters-list li, .carousel-nav li, .brand-list li, .tabs .tab-header-list li, ol.nostyle li {
   padding: 0;
   margin: 0;
 }
 /* line 76, scss/elements/_typography.scss */
-ul.horizontal li, .horizontal-menu li, .horizontal-multilevel-menu li, .carousel-nav li, .brand-list li, ol.horizontal li {
+ul.horizontal li, .horizontal-menu li, .horizontal-multilevel-menu li, .carousel-nav li, .brand-list li, .tabs .tab-header-list li, ol.horizontal li {
   display: inline-block;
 }
 
 /* line 81, scss/elements/_typography.scss */
-a {
+a, .btn-link {
   color: #ce2127;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
 /* line 88, scss/elements/_typography.scss */
-a.nostyle, .menu .menu-link, .horizontal-multilevel-menu .submenu .menu-link,
+a.nostyle, .nostyle.btn-link, .menu .menu-link, .horizontal-multilevel-menu .submenu .menu-link,
 .menu .submenu-link,
-.horizontal-multilevel-menu .submenu .submenu-link, .auth-box .auth-link, .breadcrumbs .brdcmb-link, .product-card .item-name a {
+.horizontal-multilevel-menu .submenu .submenu-link, .auth-box .auth-link, .breadcrumbs .brdcmb-link, .product-card .item-name a, .product-card .item-name .btn-link {
   color: inherit;
 }
 /* line 91, scss/elements/_typography.scss */
-a.img-link {
+a.img-link, .img-link.btn-link {
   display: block;
   border: 0;
 }
@@ -3588,15 +3653,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* line 104, scss/elements/_typography.scss */
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+h1 a, h1 .btn-link, h2 a, h2 .btn-link, h3 a, h3 .btn-link, h4 a, h4 .btn-link, h5 a, h5 .btn-link, h6 a, h6 .btn-link {
   font-weight: inherit;
-}
-
-/* line 105, scss/elements/_typography.scss */
-h1 {
-  font-size: 4.2rem;
-  line-height: 1.5;
-  margin: 1em 0;
 }
 
 /* line 106, scss/elements/_typography.scss */
@@ -3635,11 +3693,11 @@ h6 {
 }
 
 /* line 112, scss/elements/_typography.scss */
-.page-title {
+.page-title, h1 {
   margin: 30px 0;
 }
 /* line 116, scss/elements/_typography.scss */
-.page-title + .archive-box {
+.page-title + .archive-box, h1 + .archive-box {
   margin: 30px 0;
   line-height: 51px;
   vertical-align: middle;
@@ -3647,7 +3705,8 @@ h6 {
 
 /* line 122, scss/elements/_typography.scss */
 .box-title {
-  margin: 20px 0;
+  font-size: 28px;
+  margin: 20px 0 10px;
 }
 
 /* line 2, scss/elements/_form.scss */
@@ -3836,6 +3895,86 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
 .compare-box {
   margin: 0 0 20px;
 }
+/* line 4, scss/elements/_compare.scss */
+.compare-box .icon {
+  display: inline-block;
+  width: 16px;
+  height: 18px;
+  margin-right: 15px;
+  fill: #d8d8d8;
+}
+
+/* line 2, scss/elements/_rating.scss */
+.rating {
+  height: 15px;
+  margin: 8px 0 20px;
+}
+/* line 5, scss/elements/_rating.scss */
+.rating .star {
+  width: 15px;
+  height: 100%;
+  fill: #d4d4d4;
+}
+/* line 13, scss/elements/_rating.scss */
+.rating.rate-1 .star:nth-child(1) {
+  fill: #ce2127;
+}
+/* line 13, scss/elements/_rating.scss */
+.rating.rate-2 .star:nth-child(1) {
+  fill: #ce2127;
+}
+/* line 13, scss/elements/_rating.scss */
+.rating.rate-2 .star:nth-child(2) {
+  fill: #ce2127;
+}
+/* line 13, scss/elements/_rating.scss */
+.rating.rate-3 .star:nth-child(1) {
+  fill: #ce2127;
+}
+/* line 13, scss/elements/_rating.scss */
+.rating.rate-3 .star:nth-child(2) {
+  fill: #ce2127;
+}
+/* line 13, scss/elements/_rating.scss */
+.rating.rate-3 .star:nth-child(3) {
+  fill: #ce2127;
+}
+/* line 13, scss/elements/_rating.scss */
+.rating.rate-4 .star:nth-child(1) {
+  fill: #ce2127;
+}
+/* line 13, scss/elements/_rating.scss */
+.rating.rate-4 .star:nth-child(2) {
+  fill: #ce2127;
+}
+/* line 13, scss/elements/_rating.scss */
+.rating.rate-4 .star:nth-child(3) {
+  fill: #ce2127;
+}
+/* line 13, scss/elements/_rating.scss */
+.rating.rate-4 .star:nth-child(4) {
+  fill: #ce2127;
+}
+/* line 13, scss/elements/_rating.scss */
+.rating.rate-5 .star:nth-child(1) {
+  fill: #ce2127;
+}
+/* line 13, scss/elements/_rating.scss */
+.rating.rate-5 .star:nth-child(2) {
+  fill: #ce2127;
+}
+/* line 13, scss/elements/_rating.scss */
+.rating.rate-5 .star:nth-child(3) {
+  fill: #ce2127;
+}
+/* line 13, scss/elements/_rating.scss */
+.rating.rate-5 .star:nth-child(4) {
+  fill: #ce2127;
+}
+/* line 13, scss/elements/_rating.scss */
+.rating.rate-5 .star:nth-child(5) {
+  fill: #ce2127;
+}
 
 /* line 2, scss/elements/_pagination.scss */
 .pagination-box {
@@ -3889,7 +4028,7 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
   border-color: transparent;
 }
 /* line 45, scss/elements/_pagination.scss */
-.pagination .pagin-item.disabled a {
+.pagination .pagin-item.disabled a, .pagination .pagin-item.disabled .btn-link {
   cursor: default;
   color: #999;
 }
@@ -3984,10 +4123,37 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
           transform: scale(2, 1) rotate(-90deg) translateZ(0);
 }
 
+/* line 2, scss/elements/_toggle-content.scss */
+.toggle-content-box {
+  position: relative;
+  overflow: hidden;
+}
+/* line 5, scss/elements/_toggle-content.scss */
+.toggle-content-box .show-buttons {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 0 20px 1em;
+  background: white;
+}
+/* line 13, scss/elements/_toggle-content.scss */
+.toggle-content-box.table .show-buttons {
+  padding: 0 0 1em;
+}
+/* line 16, scss/elements/_toggle-content.scss */
+.toggle-content-box[data-state="less"] .show-less {
+  display: none;
+}
+/* line 19, scss/elements/_toggle-content.scss */
+.toggle-content-box[data-state="more"] .show-more {
+  display: none;
+}
+
 /* line 11, scss/components/_menu.scss */
 .horizontal-menu .menu-link {
   display: block;
-  padding: 10px;
+  padding: 16px 7px 10px;
 }
 /* line 15, scss/components/_menu.scss */
 .horizontal-menu .menu-item:first-of-type .menu-link {
@@ -3999,27 +4165,52 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
   margin: 9px 0;
 }
 
-/* line 25, scss/components/_menu.scss */
+/* line 24, scss/components/_menu.scss */
+.sidebar-menu {
+  max-width: 260px;
+  background: white;
+  border-radius: 6px;
+}
+/* line 29, scss/components/_menu.scss */
+.sidebar-menu .menu-link {
+  display: block;
+  padding: 1em 20px;
+}
+/* line 33, scss/components/_menu.scss */
+.sidebar-menu .menu-item {
+  border-top: 1px solid #eeeeee;
+}
+/* line 35, scss/components/_menu.scss */
+.sidebar-menu .menu-item:first-child {
+  border-top: 0;
+}
+/* line 38, scss/components/_menu.scss */
+.sidebar-menu .menu-item.active .menu-link,
+.sidebar-menu .menu-item .menu-link:hover {
+  color: #ce2127;
+}
+
+/* line 45, scss/components/_menu.scss */
 .horizontal-multilevel-menu {
   width: 100%;
 }
-/* line 28, scss/components/_menu.scss */
+/* line 48, scss/components/_menu.scss */
 .horizontal-multilevel-menu .menu-link,
 .horizontal-multilevel-menu .submenu-link {
   display: block;
 }
-/* line 32, scss/components/_menu.scss */
+/* line 52, scss/components/_menu.scss */
 .horizontal-multilevel-menu > .menu-item {
   position: static;
 }
-/* line 35, scss/components/_menu.scss */
+/* line 55, scss/components/_menu.scss */
 .horizontal-multilevel-menu > .menu-item > .menu-link {
   font-size: 13px;
   font-weight: 600;
   line-height: 1;
-  padding: 19px 22px;
+  padding: 19px 22px 18px;
 }
-/* line 45, scss/components/_menu.scss */
+/* line 65, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu {
   position: absolute;
   left: 0;
@@ -4027,32 +4218,32 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
   padding: 20px 0;
   color: #434343;
 }
-/* line 53, scss/components/_menu.scss */
+/* line 73, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu-item {
   display: block;
   position: static;
 }
-/* line 57, scss/components/_menu.scss */
+/* line 77, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu-link.default, .horizontal-multilevel-menu .submenu.level-2 > .submenu-item > .submenu-link, .horizontal-multilevel-menu .submenu.level-3 > .submenu-item > .submenu-link {
   line-height: 18px;
   padding: 1em 20px;
   position: static;
 }
-/* line 64, scss/components/_menu.scss */
+/* line 84, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu.level-2 {
   display: none;
   left: auto;
   background: #d8d8d8;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
 }
-/* line 73, scss/components/_menu.scss */
+/* line 93, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu.level-2.parent-box {
   width: 100%;
   width: calc(100% - 20px);
   left: 10px;
   background: white;
 }
-/* line 78, scss/components/_menu.scss */
+/* line 98, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu.level-2.parent-box:before {
   content: '';
   display: block;
@@ -4064,11 +4255,11 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
   background: #d8d8d8;
   z-index: -1;
 }
-/* line 89, scss/components/_menu.scss */
+/* line 109, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu.level-2.parent-box > .submenu-item {
   width: 25%;
 }
-/* line 95, scss/components/_menu.scss */
+/* line 115, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu.level-3 {
   display: none;
   top: 0;
@@ -4077,21 +4268,21 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
   min-height: 100%;
   background: white;
 }
-/* line 102, scss/components/_menu.scss */
+/* line 122, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu.level-3 > .submenu-item {
   width: 33.33%;
 }
-/* line 105, scss/components/_menu.scss */
+/* line 125, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu.level-3.col-2 > .submenu-item {
   width: 45%;
   display: inline-block;
 }
-/* line 109, scss/components/_menu.scss */
+/* line 129, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu.level-3 > .submenu-item > .submenu-link {
   padding-left: 30px;
   padding-right: 30px;
 }
-/* line 116, scss/components/_menu.scss */
+/* line 136, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu.level-4 {
   top: 0;
   left: 33.34%;
@@ -4101,37 +4292,37 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
   display: none;
   font-size: 0;
 }
-/* line 124, scss/components/_menu.scss */
+/* line 144, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu.level-4 .submenu-item {
   display: inline-block;
   width: 100%;
 }
-/* line 128, scss/components/_menu.scss */
+/* line 148, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu.level-4.col-2 .submenu-item {
   width: 49%;
 }
-/* line 131, scss/components/_menu.scss */
+/* line 151, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu.level-4 .submenu-link {
   font-size: 14px;
   padding: 10px 30px;
 }
-/* line 138, scss/components/_menu.scss */
+/* line 158, scss/components/_menu.scss */
 .horizontal-multilevel-menu .menu-item:hover .menu-link {
   background: #ce2127;
 }
-/* line 141, scss/components/_menu.scss */
+/* line 161, scss/components/_menu.scss */
 .horizontal-multilevel-menu .menu-item:hover > .submenu {
   display: block;
 }
-/* line 146, scss/components/_menu.scss */
+/* line 166, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu-item.active > .submenu-link {
   color: #ce2127;
 }
-/* line 149, scss/components/_menu.scss */
+/* line 169, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu-item.active > .submenu {
   display: block;
 }
-/* line 154, scss/components/_menu.scss */
+/* line 174, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu.level-2 > .submenu-item.active > .submenu-link,
 .horizontal-multilevel-menu .submenu.level-2 > .submenu-item:hover > .submenu-link {
   color: #434343;
@@ -4140,7 +4331,7 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
 
 /* line 2, scss/components/_geo.scss */
 .geo-box {
-  padding-top: 10px;
+  padding-top: 16px;
   padding-bottom: 10px;
 }
 /* line 5, scss/components/_geo.scss */
@@ -4148,35 +4339,39 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
   display: inline-block;
   width: 15px;
   height: 1.5em;
-  margin-right: 5px;
+  margin-right: 3px;
   fill: #242424;
   vertical-align: top;
 }
 
 /* line 2, scss/components/_auth.scss */
 .auth-box {
-  padding-top: 10px;
+  padding-top: 16px;
   padding-bottom: 10px;
   text-align: right;
 }
 /* line 6, scss/components/_auth.scss */
 .auth-box .auth-link {
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 7px;
+  line-height: 1;
+  height: 1em;
 }
-/* line 11, scss/components/_auth.scss */
+/* line 13, scss/components/_auth.scss */
 .auth-box .auth-link.login {
   border-right: 1px solid;
+  padding-right: 10px;
 }
-/* line 14, scss/components/_auth.scss */
+/* line 17, scss/components/_auth.scss */
 .auth-box .icon {
   display: inline-block;
   width: 1.5em;
   height: 1.5em;
   padding: 2px;
   fill: #242424;
-  margin-right: 6.66667px;
-  vertical-align: top;
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-top: -5px;
 }
 
 /* line 2, scss/components/_breadcrumbs.scss */
@@ -4247,21 +4442,25 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
   text-align: left;
 }
 /* line 7, scss/components/_shopping-card.scss */
+.shopping-card-box .btn-minicart.col.l2 {
+  max-width: 180px;
+}
+/* line 10, scss/components/_shopping-card.scss */
 .shopping-card-box .btn-minicart .icon {
   position: absolute;
   left: 15px;
   fill: #242424;
 }
-/* line 13, scss/components/_shopping-card.scss */
+/* line 16, scss/components/_shopping-card.scss */
 .shopping-card-box .btn-favorite {
-  margin: 10px 7% 10px 16%;
+  margin: 10px 6.7% 10px 20%;
   padding: 0;
 }
-/* line 16, scss/components/_shopping-card.scss */
+/* line 19, scss/components/_shopping-card.scss */
 .shopping-card-box .btn-favorite .icon {
   fill: #d8d8d8;
 }
-/* line 20, scss/components/_shopping-card.scss */
+/* line 23, scss/components/_shopping-card.scss */
 .shopping-card-box .notification {
   position: absolute;
   top: 5px;
@@ -4277,7 +4476,7 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
   text-align: center;
   vertical-align: middle;
 }
-/* line 34, scss/components/_shopping-card.scss */
+/* line 37, scss/components/_shopping-card.scss */
 .shopping-card-box .notification:empty {
   display: none;
 }
@@ -4309,95 +4508,24 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
 }
 /* line 25, scss/components/_product-card.scss */
 .product-card .item-name {
-  margin: 20px 0 10px;
+  margin: 23px 0 8px;
   min-height: 3em;
 }
 /* line 33, scss/components/_product-card.scss */
-.product-card .rating {
-  height: 15px;
-  margin: 10px 0 20px;
-}
-/* line 36, scss/components/_product-card.scss */
-.product-card .rating .star {
-  width: 15px;
-  height: 100%;
-  fill: #d4d4d4;
-}
-/* line 44, scss/components/_product-card.scss */
-.product-card .rating.rate-1 .star:nth-child(1) {
-  fill: #ce2127;
-}
-/* line 44, scss/components/_product-card.scss */
-.product-card .rating.rate-2 .star:nth-child(1) {
-  fill: #ce2127;
-}
-/* line 44, scss/components/_product-card.scss */
-.product-card .rating.rate-2 .star:nth-child(2) {
-  fill: #ce2127;
-}
-/* line 44, scss/components/_product-card.scss */
-.product-card .rating.rate-3 .star:nth-child(1) {
-  fill: #ce2127;
-}
-/* line 44, scss/components/_product-card.scss */
-.product-card .rating.rate-3 .star:nth-child(2) {
-  fill: #ce2127;
-}
-/* line 44, scss/components/_product-card.scss */
-.product-card .rating.rate-3 .star:nth-child(3) {
-  fill: #ce2127;
-}
-/* line 44, scss/components/_product-card.scss */
-.product-card .rating.rate-4 .star:nth-child(1) {
-  fill: #ce2127;
-}
-/* line 44, scss/components/_product-card.scss */
-.product-card .rating.rate-4 .star:nth-child(2) {
-  fill: #ce2127;
-}
-/* line 44, scss/components/_product-card.scss */
-.product-card .rating.rate-4 .star:nth-child(3) {
-  fill: #ce2127;
-}
-/* line 44, scss/components/_product-card.scss */
-.product-card .rating.rate-4 .star:nth-child(4) {
-  fill: #ce2127;
-}
-/* line 44, scss/components/_product-card.scss */
-.product-card .rating.rate-5 .star:nth-child(1) {
-  fill: #ce2127;
-}
-/* line 44, scss/components/_product-card.scss */
-.product-card .rating.rate-5 .star:nth-child(2) {
-  fill: #ce2127;
-}
-/* line 44, scss/components/_product-card.scss */
-.product-card .rating.rate-5 .star:nth-child(3) {
-  fill: #ce2127;
-}
-/* line 44, scss/components/_product-card.scss */
-.product-card .rating.rate-5 .star:nth-child(4) {
-  fill: #ce2127;
-}
-/* line 44, scss/components/_product-card.scss */
-.product-card .rating.rate-5 .star:nth-child(5) {
-  fill: #ce2127;
-}
-/* line 51, scss/components/_product-card.scss */
 .product-card .product-price {
   line-height: 1;
   height: 50px;
 }
-/* line 58, scss/components/_product-card.scss */
+/* line 40, scss/components/_product-card.scss */
 .product-card .product-price .price {
   font-size: 24px;
   padding: 13px 0 12px;
 }
-/* line 62, scss/components/_product-card.scss */
+/* line 44, scss/components/_product-card.scss */
 .product-card .product-price .old-price + .price {
   padding: 5px 0;
 }
-/* line 66, scss/components/_product-card.scss */
+/* line 48, scss/components/_product-card.scss */
 .product-card .btn.shopping-card {
   width: 70px;
   position: absolute;
@@ -4586,33 +4714,40 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
   margin-bottom: 40px;
 }
 
-/* line 5, scss/components/_brands.scss */
+/* line 2, scss/components/_brands.scss */
+.brand-list {
+  font-size: 0;
+}
+/* line 6, scss/components/_brands.scss */
 .brand-list .brand-item {
-  padding: 20px;
-  width: 12.2%;
+  padding: 22px 35px 23px 20px;
   font-size: 34px;
   line-height: 1;
   text-align: center;
   vertical-align: middle;
 }
 /* line 13, scss/components/_brands.scss */
+.brand-list .brand-item:last-child {
+  padding: 22px 20px 23px 35px;
+}
+/* line 17, scss/components/_brands.scss */
 .brand-list .brand-link {
   height: 1em;
   overflow: hidden;
   display: block;
 }
-/* line 18, scss/components/_brands.scss */
+/* line 22, scss/components/_brands.scss */
 .brand-list .brand-img {
   will-change: transform;
   -webkit-transform: translate(0, 0) translateZ(0);
           transform: translate(0, 0) translateZ(0);
 }
-/* line 22, scss/components/_brands.scss */
+/* line 26, scss/components/_brands.scss */
 .brand-list .brand-link:hover .brand-img {
   -webkit-transform: translate(0, -1em) translateZ(0);
           transform: translate(0, -1em) translateZ(0);
 }
-/* line 25, scss/components/_brands.scss */
+/* line 29, scss/components/_brands.scss */
 .brand-list .brand-item:last-child .brand-link {
   font-size: 14px;
   height: 1rem;
@@ -4623,7 +4758,7 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
 /* line 2, scss/components/_banners.scss */
 .banner-box {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 }
 
 /* line 6, scss/components/_banners.scss */
@@ -4638,6 +4773,230 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
 /* line 12, scss/components/_banners.scss */
 .banner.small {
   height: 270px;
+}
+
+/* line 3, scss/components/_product.scss */
+.product-page .main-info {
+  background: white;
+  border-radius: 6px;
+}
+/* line 7, scss/components/_product.scss */
+.product-page .main-info .card-header {
+  padding-left: 20px;
+}
+/* line 10, scss/components/_product.scss */
+.product-page .main-info .product-title {
+  font-size: 28px;
+  margin: 30px 0 0;
+}
+/* line 15, scss/components/_product.scss */
+.product-page .main-info .btn-favorite {
+  padding: 0;
+  margin-top: 40px;
+}
+/* line 18, scss/components/_product.scss */
+.product-page .main-info .btn-favorite .icon {
+  fill: #363636;
+}
+/* line 22, scss/components/_product.scss */
+.product-page .main-info .rating,
+.product-page .main-info .articul {
+  margin-left: 10px;
+}
+/* line 26, scss/components/_product.scss */
+.product-page .main-info .action-panel {
+  margin-left: 10px;
+  border-left: 1px solid #d7d7d7;
+  min-height: 520px;
+}
+/* line 31, scss/components/_product.scss */
+.product-page .main-info .product-price {
+  padding: 40px;
+  line-height: 1em;
+}
+/* line 35, scss/components/_product.scss */
+.product-page .main-info .product-price .old-price {
+  display: inline-block;
+  font-size: 0.67em;
+  color: #8c8c8c;
+}
+/* line 39, scss/components/_product.scss */
+.product-page .main-info .product-price .old-price:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #8c8c8c;
+  left: 0;
+  top: 0.8em;
+}
+/* line 50, scss/components/_product.scss */
+.product-page .main-info .product-price .price {
+  text-align: center;
+}
+/* line 53, scss/components/_product.scss */
+.product-page .main-info .product-price .old-price + .price {
+  display: inline-block;
+  margin-left: 5px;
+  text-align: left;
+}
+/* line 59, scss/components/_product.scss */
+.product-page .main-info .action-buttons {
+  padding: 0 40px;
+}
+/* line 61, scss/components/_product.scss */
+.product-page .main-info .action-buttons .btn {
+  max-width: 200px;
+  margin-top: 20px;
+}
+/* line 66, scss/components/_product.scss */
+.product-page .main-info .delivery-text {
+  padding: 25px;
+}
+/* line 69, scss/components/_product.scss */
+.product-page .main-info .compare {
+  border-top: 1px solid #d7d7d7;
+  padding: 35px 25px;
+}
+/* line 74, scss/components/_product.scss */
+.product-page .more-info {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+/* line 77, scss/components/_product.scss */
+.product-page .more-info #accs {
+  background: none;
+  padding-top: 40px;
+  padding-bottom: 0;
+}
+
+/* line 3, scss/components/_tabs.scss */
+.tabs .tab-header {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  background: white;
+  z-index: 2;
+}
+/* line 8, scss/components/_tabs.scss */
+.tabs .tab-header-list {
+  padding: 0 10px;
+}
+/* line 13, scss/components/_tabs.scss */
+.tabs .tab-header-item .tab-link {
+  display: block;
+  padding: 24px 20px 23px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #363636;
+}
+/* line 21, scss/components/_tabs.scss */
+.tabs .tab-header-item .tab-link:after {
+  display: block;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: #ce2127;
+  -webkit-transform: scale(0, 1);
+      -ms-transform: scale(0, 1);
+          transform: scale(0, 1);
+  will-change: transform;
+  -webkit-transition: -webkit-transform .3s ease;
+          transition: transform .3s ease;
+}
+/* line 35, scss/components/_tabs.scss */
+.tabs .tab-header-item.active .tab-link:after {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+/* line 38, scss/components/_tabs.scss */
+.tabs .tab-content-item {
+  background: white;
+  padding: 10px 0 50px;
+  position: absolute;
+  -webkit-transform: scale(1, 0);
+      -ms-transform: scale(1, 0);
+          transform: scale(1, 0);
+  overflow: hidden;
+}
+/* line 44, scss/components/_tabs.scss */
+.tabs .tab-content-item.open {
+  position: relative;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+/* line 48, scss/components/_tabs.scss */
+.tabs .tab-content-item .container {
+  padding: 0 10px;
+}
+
+/* line 2, scss/components/_reviews.scss */
+.reviews-list {
+  margin-top: 20px;
+}
+/* line 4, scss/components/_reviews.scss */
+.reviews-list .review-item {
+  border-top: 1px solid #e5e5e5;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* line 8, scss/components/_reviews.scss */
+.reviews-list .review-item:first-child {
+  border-top: 0;
+}
+/* line 11, scss/components/_reviews.scss */
+.reviews-list .review-item:last-child {
+  padding-bottom: 0;
+}
+/* line 14, scss/components/_reviews.scss */
+.reviews-list .review-item .subtitle {
+  color: #363636;
+}
+/* line 18, scss/components/_reviews.scss */
+.reviews-list .review-item p + .subtitle {
+  margin-top: 30px;
+}
+
+/* line 2, scss/components/_shops.scss */
+.shops-list,
+.shops-map {
+  margin-top: 20px;
+}
+
+/* line 7, scss/components/_shops.scss */
+.shops-list .shop-item {
+  margin-bottom: 20px;
+}
+/* line 10, scss/components/_shops.scss */
+.shops-list .shop-title {
+  color: #ce2127;
+}
+/* line 13, scss/components/_shops.scss */
+.shops-list .shop-address,
+.shops-list .shop-workhours {
+  padding-left: 25px;
+  margin: 10px 0;
+}
+/* line 17, scss/components/_shops.scss */
+.shops-list .shop-address .icon,
+.shops-list .shop-workhours .icon {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 2px;
+  left: 0;
+  fill: #434343;
+}
+
+/* line 27, scss/components/_shops.scss */
+.shops-map,
+.shops-map .map {
+  width: 100%;
+  height: 650px;
 }
 
 /* line 2, scss/pages/_catalog.scss */
