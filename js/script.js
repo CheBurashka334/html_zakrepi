@@ -69,19 +69,19 @@ $(document).ready(function(){
 							l4.addClass('col-2');
 							if((l4height / 2 + 20) > l2.outerHeight()){
 								//console.log('l4 height > l2');
-								l2.animate({'height':l4.outerHeight()},300);
+								l2.stop().animate({'height':l4.outerHeight()},300);
 							}
 						} else {
 							//console.log('l4 childs < 4');
-							l2.animate({'height':l4.outerHeight()},300);
+							l2.stop().animate({'height':l4.outerHeight()},300);
 						}
 					} else {
 						//console.log('l2 > l4');
-						l2.animate({'height':l2height},300);
+						l2.stop().animate({'height':l2height},300);
 					}
 				} else {
 					//console.log('l3 hasn\'t childs');
-					l2.animate({'height':l2height},300);
+					l2.stop().animate({'height':l2height},300);
 				}
 			} else {
 				//console.log('l3 > l2');
@@ -90,17 +90,17 @@ $(document).ready(function(){
 					//console.log('l3 childs >=3');
 					if(l3.children('.submenu-item.parent').length > 0){
 						//console.log('l3 has childs');
-						l2.animate({'height':l3height},300);
+						l2.stop().animate({'height':l3height},300);
 					} else {
 						//console.log('l3 hasn\'t childs');
 						l3.addClass('col-2');
 						if((l3height / 2) > l2height){
-							l2.animate({'height':(l3height / 2 + 20)},300);
+							l2.stop().animate({'height':(l3height / 2 + 20)},300);
 						}
 					}
 				} else {
 					//console.log('l3 childs < 3');
-					l2.animate({'height':l3height},300);
+					l2.stop().animate({'height':l3height},300);
 				}
 			}
 		} else {
@@ -162,7 +162,7 @@ $(document).ready(function(){
 	$('.carousel')
 		.on('jcarousel:createend', function(){
 			if($(this).attr('data-jcarouselautoscroll') == 'true'){
-				/*if($(this).attr('data-interval')){
+				if($(this).attr('data-interval')){
 					var $interval = $(this).attr('data-interval');
 				} else {
 					var $interval = 3000;
@@ -176,13 +176,13 @@ $(document).ready(function(){
 					interval: $interval,
 					target: $target,
 					autostart: true
-				});*/
+				});
 			}
-			/*if($(this).attr('data-wrap') == 'circular'){
+			if($(this).attr('data-wrap') == 'circular'){
 				$(this).jcarousel({
 					wrap: 'circular',
 				});
-			}*/
+			}
 		})
 		.jcarousel({
 			list: '.carousel-inner'
