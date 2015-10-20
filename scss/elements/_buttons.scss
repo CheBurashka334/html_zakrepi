@@ -49,8 +49,12 @@
 	&.mediumsize {
 		width: 140px;
 	}
-	&.fullsize {
+	&.fullwidth {
 		width: 100%;
+	}
+	&.big {
+		line-height: 48px;
+		height: 50px;
 	}
 	&.center {
 		display: block;
@@ -79,6 +83,9 @@
 .btn-favorite {
 	width: 25px;
 	height: 20px;
+	&:hover .icon {
+		fill: color('primary', 'base');
+	}
 }
 
 .icon {
@@ -88,6 +95,19 @@
 }
 .btn-more {
 	margin-top: $gutter-width/2;	
+}
+.btn-close {
+	width: 17px;
+	height: 17px;
+	will-change: transform;
+	transform: rotate(0deg);
+	transition: transform .3s ease;	
+	.icon {
+		fill: color('primary', 'base');
+	}
+	&:hover {
+		transform: rotate(90deg);
+	}
 }
 .btn-link {
 	background: none;

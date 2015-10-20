@@ -5,13 +5,13 @@
 	@extend .z-depth-1;
 	transition: box-shadow .3s ease;
 	&:hover {
-		@extend .z-depth-2;
+		@extend .z-depth-3;
 	}
 	.product-info {
-		padding: $gutter-width*1.5 $gutter-width $gutter-width;
+		padding: $gutter-width*1.5 $gutter-width $gutter-width*0.75;
 	}
 	.compare {
-		padding: $gutter-width*0.67 $gutter-width $gutter-width;
+		padding: $gutter-width*0.6 $gutter-width $gutter-width;
 		border-top: 1px solid #eeeeee;
 	}
 	.item-img {
@@ -36,19 +36,20 @@
 		.old-price {
 			@extend .medium-text;
 			@extend .lighter-color;
+			lone-height: 21px;
 		}
 		.price {
 			font-size: 24px;
 			padding: 13px 0 12px;
 		}
 		.old-price + .price {
-			padding: 5px 0;
+			//padding: 5px 0;
 		}
 	}
 	.btn.shopping-card {
 		width: 70px;
 		position: absolute;
 		right: $gutter-width;
-		bottom: 25px;
+		bottom: $gutter-width;
 	}
 }

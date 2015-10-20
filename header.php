@@ -64,9 +64,9 @@
 				</div>
 				<div class="shopping-card-box col l3">
 					<a href="#" class="btn btn-favorite btn-icon col"><svg class="icon"><use xlink:href="#heart"/></svg></a>
-					<a class="btn standart btn-with-icon col l2 btn-minicart" href="#"><svg class="icon"><use xlink:href="#cart"/></svg><div class="notification"></div> Нет товаров</a>
+					<!-- <a class="btn standart btn-with-icon col l2 btn-minicart" href="#"><svg class="icon"><use xlink:href="#cart"/></svg><div class="notification"></div> Нет товаров</a>-->
 					<!-- товар добавлен в корзину-->
-					<!-- <a class="btn standart btn-with-icon col l2 btn-minicart" href="#"><svg class="icon"><use xlink:href="#cart"/></svg><div class="notification">1</div> 7&nbsp;299 <span class="rouble">i</span></a>-->
+					<a class="btn standart btn-with-icon col l2 btn-minicart" href="#" id="minicard"><svg class="icon"><use xlink:href="#cart"/></svg><div class="notification">1</div> 7&nbsp;299 <span class="rouble">i</span></a>
 				</div>
 			</div>
 		</div>

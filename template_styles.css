@@ -1,3 +1,13 @@
+/* line 71, scss/_color.scss */
+.primary.light, footer.page-footer .primary.footer-copyright, .primary.page-title, h1.primary, .primary.box-title, .primary.subtitle, .product-page .main-info .primary.product-title {
+  background-color: #f33b42 !important;
+}
+
+/* line 74, scss/_color.scss */
+.color-primary.text-light {
+  color: #f33b42 !important;
+}
+
 /* line 63, scss/_color.scss */
 .primary {
   background-color: #ce2127 !important;
@@ -19,7 +29,7 @@
 }
 
 /* line 71, scss/_color.scss */
-.text.light, footer.page-footer .text.footer-copyright, .text.page-title, h1.text, .text.box-title, .product-page .main-info .text.product-title {
+.text.light, footer.page-footer .text.footer-copyright, .text.page-title, h1.text, .text.box-title, .text.subtitle, .product-page .main-info .text.product-title {
   background-color: #8c8c8c !important;
 }
 
@@ -59,7 +69,7 @@
 }
 
 /* line 71, scss/_color.scss */
-.bg.light, footer.page-footer .bg.footer-copyright, .bg.page-title, h1.bg, .bg.box-title, .product-page .main-info .bg.product-title {
+.bg.light, footer.page-footer .bg.footer-copyright, .bg.page-title, h1.bg, .bg.box-title, .bg.subtitle, .product-page .main-info .bg.product-title {
   background-color: #f9f9f9 !important;
 }
 
@@ -129,7 +139,7 @@
 }
 
 /* line 71, scss/_color.scss */
-.icons.light, footer.page-footer .icons.footer-copyright, .icons.page-title, h1.icons, .icons.box-title, .product-page .main-info .icons.product-title {
+.icons.light, footer.page-footer .icons.footer-copyright, .icons.page-title, h1.icons, .icons.box-title, .icons.subtitle, .product-page .main-info .icons.product-title {
   background-color: #9d9d9d !important;
 }
 
@@ -169,7 +179,7 @@
 }
 
 /* line 71, scss/_color.scss */
-.border.light, footer.page-footer .border.footer-copyright, .border.page-title, h1.border, .border.box-title, .product-page .main-info .border.product-title {
+.border.light, footer.page-footer .border.footer-copyright, .border.page-title, h1.border, .border.box-title, .border.subtitle, .product-page .main-info .border.product-title {
   background-color: #d7d7d7 !important;
 }
 
@@ -2307,7 +2317,7 @@ html, body {
 .workarea-wrapper {
   min-height: calc(100vh - 770px);
   padding: 0 10px;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
 }
 
 /*.workarea *:last-child {
@@ -2465,13 +2475,13 @@ html {
 }
 
 /* line 58, scss/elements/_global.scss */
-.z-depth-2, .product-card:hover {
-  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2);
+.z-depth-2, .dropdown-list, .tooltip {
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* line 61, scss/elements/_global.scss */
-.z-depth-3 {
-  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+.z-depth-3, .product-card:hover {
+  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* line 64, scss/elements/_global.scss */
@@ -2705,42 +2715,49 @@ table {
   display: table;
 }
 /* line 266, scss/elements/_global.scss */
-table.bordered > thead > tr, table.bordered > tbody > tr {
+table thead {
   border-bottom: 1px solid #d0d0d0;
 }
-/* line 272, scss/elements/_global.scss */
-table.striped > tbody > tr:nth-child(odd) {
-  background-color: #f2f2f2;
-}
-/* line 276, scss/elements/_global.scss */
-table.striped > tbody > tr > td {
-  border-radius: 0px;
-}
-/* line 283, scss/elements/_global.scss */
-table.hoverable > tbody > tr:hover {
-  background-color: #f2f2f2;
-}
-/* line 289, scss/elements/_global.scss */
-table.centered thead tr th, table.centered tbody tr td {
-  text-align: center;
-}
-
-/* line 297, scss/elements/_global.scss */
-thead {
-  border-bottom: 1px solid #d0d0d0;
-}
-
-/* line 301, scss/elements/_global.scss */
-td, th {
+/* line 269, scss/elements/_global.scss */
+table td, table th {
   padding: 15px 5px;
   display: table-cell;
   text-align: left;
   vertical-align: middle;
   border-radius: 2px;
 }
+/* line 277, scss/elements/_global.scss */
+table.bordered > thead > tr, table.bordered > tbody > tr {
+  border-bottom: 1px solid #d0d0d0;
+}
+/* line 283, scss/elements/_global.scss */
+table.striped > tbody > tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+/* line 287, scss/elements/_global.scss */
+table.striped > tbody > tr > td {
+  border-radius: 0px;
+}
+/* line 293, scss/elements/_global.scss */
+table.hoverable > tbody > tr:hover {
+  background-color: #f2f2f2;
+}
+/* line 299, scss/elements/_global.scss */
+table.centered thead tr th, table.centered tbody tr td {
+  text-align: center;
+}
+/* line 304, scss/elements/_global.scss */
+table.nostyle {
+  border: 0;
+  margin: 0;
+}
+/* line 307, scss/elements/_global.scss */
+table.nostyle td {
+  padding: 0;
+}
 
 @media only screen and (max-width: 992px) {
-  /* line 312, scss/elements/_global.scss */
+  /* line 316, scss/elements/_global.scss */
   table.responsive-table {
     width: 100%;
     border-collapse: collapse;
@@ -2749,31 +2766,31 @@ td, th {
     position: relative
     /* sort out borders */
   }
-  /* line 319, scss/elements/_global.scss */
+  /* line 323, scss/elements/_global.scss */
   table.responsive-table th,
   table.responsive-table td {
     margin: 0;
     vertical-align: top;
   }
-  /* line 325, scss/elements/_global.scss */
+  /* line 329, scss/elements/_global.scss */
   table.responsive-table th {
     text-align: left;
   }
-  /* line 326, scss/elements/_global.scss */
+  /* line 330, scss/elements/_global.scss */
   table.responsive-table thead {
     display: block;
     float: left;
   }
-  /* line 330, scss/elements/_global.scss */
+  /* line 334, scss/elements/_global.scss */
   table.responsive-table thead tr {
     display: block;
     padding: 0 10px 0 0;
   }
-  /* line 334, scss/elements/_global.scss */
+  /* line 338, scss/elements/_global.scss */
   table.responsive-table thead tr th::before {
     content: "\00a0";
   }
-  /* line 339, scss/elements/_global.scss */
+  /* line 343, scss/elements/_global.scss */
   table.responsive-table tbody {
     display: block;
     width: auto;
@@ -2781,77 +2798,77 @@ td, th {
     overflow-x: auto;
     white-space: nowrap;
   }
-  /* line 346, scss/elements/_global.scss */
+  /* line 350, scss/elements/_global.scss */
   table.responsive-table tbody tr {
     display: inline-block;
     vertical-align: top;
   }
-  /* line 351, scss/elements/_global.scss */
+  /* line 355, scss/elements/_global.scss */
   table.responsive-table th {
     display: block;
     text-align: right;
   }
-  /* line 355, scss/elements/_global.scss */
+  /* line 359, scss/elements/_global.scss */
   table.responsive-table td {
     display: block;
     min-height: 1.25em;
     text-align: left;
   }
-  /* line 360, scss/elements/_global.scss */
+  /* line 364, scss/elements/_global.scss */
   table.responsive-table tr {
     padding: 0 10px;
   }
-  /* line 363, scss/elements/_global.scss */
+  /* line 367, scss/elements/_global.scss */
   table.responsive-table thead {
     border: 0;
     border-right: 1px solid #d0d0d0;
   }
-  /* line 369, scss/elements/_global.scss */
+  /* line 373, scss/elements/_global.scss */
   table.responsive-table.bordered th {
     border-bottom: 0;
     border-left: 0;
   }
-  /* line 370, scss/elements/_global.scss */
+  /* line 374, scss/elements/_global.scss */
   table.responsive-table.bordered td {
     border-left: 0;
     border-right: 0;
     border-bottom: 0;
   }
-  /* line 371, scss/elements/_global.scss */
+  /* line 375, scss/elements/_global.scss */
   table.responsive-table.bordered tr {
     border: 0;
   }
-  /* line 372, scss/elements/_global.scss */
+  /* line 376, scss/elements/_global.scss */
   table.responsive-table.bordered tbody tr {
     border-right: 1px solid #d0d0d0;
   }
 }
-/* line 380, scss/elements/_global.scss */
+/* line 384, scss/elements/_global.scss */
 .table-row {
   display: table-row;
   width: 100%;
   border-top: 1px solid #e5e5e5;
 }
-/* line 385, scss/elements/_global.scss */
+/* line 389, scss/elements/_global.scss */
 .table-row:first-child {
   border-top: 0;
 }
 
-/* line 389, scss/elements/_global.scss */
+/* line 393, scss/elements/_global.scss */
 .table-col {
   display: table-cell;
 }
 
-/* line 392, scss/elements/_global.scss */
+/* line 396, scss/elements/_global.scss */
 .table {
   width: 100%;
   margin: 20px 0 30px;
 }
-/* line 397, scss/elements/_global.scss */
+/* line 401, scss/elements/_global.scss */
 .table .table-col {
   padding: 16px 0;
 }
-/* line 400, scss/elements/_global.scss */
+/* line 404, scss/elements/_global.scss */
 .table .status-icon {
   width: 45px;
   height: 45px;
@@ -2860,83 +2877,83 @@ td, th {
   float: left;
   margin-right: 30px;
 }
-/* line 408, scss/elements/_global.scss */
+/* line 412, scss/elements/_global.scss */
 .table .status-icon .icon {
   fill: #ce2127;
 }
-/* line 412, scss/elements/_global.scss */
+/* line 416, scss/elements/_global.scss */
 .table .info {
   width: 38%;
 }
-/* line 415, scss/elements/_global.scss */
+/* line 419, scss/elements/_global.scss */
 .table .date {
   width: 24%;
 }
-/* line 418, scss/elements/_global.scss */
+/* line 422, scss/elements/_global.scss */
 .table .sum {
   width: 16%;
 }
-/* line 421, scss/elements/_global.scss */
+/* line 425, scss/elements/_global.scss */
 .table .detail {
   width: 22%;
 }
-/* line 424, scss/elements/_global.scss */
+/* line 428, scss/elements/_global.scss */
 .table + .btn {
   margin-bottom: 20px;
 }
-/* line 427, scss/elements/_global.scss */
+/* line 431, scss/elements/_global.scss */
 .table .status-done {
   color: #757575;
 }
-/* line 430, scss/elements/_global.scss */
+/* line 434, scss/elements/_global.scss */
 .table .status-paid {
   background: #f7f7f7;
 }
 
 @media only screen and (max-width: 992px) {
-  /* line 436, scss/elements/_global.scss */
+  /* line 440, scss/elements/_global.scss */
   .table .info {
     width: 35.6%;
   }
-  /* line 439, scss/elements/_global.scss */
+  /* line 443, scss/elements/_global.scss */
   .table .date {
     width: 22%;
   }
-  /* line 442, scss/elements/_global.scss */
+  /* line 446, scss/elements/_global.scss */
   .table .sum {
     width: 15%;
   }
-  /* line 445, scss/elements/_global.scss */
+  /* line 449, scss/elements/_global.scss */
   .table .detail {
     width: 27.4%;
   }
 }
 @media screen and (max-width: 550px) {
-  /* line 451, scss/elements/_global.scss */
+  /* line 455, scss/elements/_global.scss */
   .table {
     display: block;
     margin-top: 0;
   }
-  /* line 454, scss/elements/_global.scss */
+  /* line 458, scss/elements/_global.scss */
   .table .status-icon {
     position: absolute;
     top: 0;
     left: 20px;
     float: none;
   }
-  /* line 460, scss/elements/_global.scss */
+  /* line 464, scss/elements/_global.scss */
   .table .table-row {
     display: block;
     padding: 20px 0;
   }
-  /* line 464, scss/elements/_global.scss */
+  /* line 468, scss/elements/_global.scss */
   .table .table-col {
     display: block;
     width: 100%;
     padding: 0 20px;
     padding-left: 85px;
   }
-  /* line 470, scss/elements/_global.scss */
+  /* line 474, scss/elements/_global.scss */
   .table .info,
   .table .date {
     margin-bottom: 10px;
@@ -3039,7 +3056,7 @@ td, th {
   color: $secondary-color;
 }
 */
-/* line 577, scss/elements/_global.scss */
+/* line 581, scss/elements/_global.scss */
 span.badge {
   min-width: 3rem;
   padding: 0 6px;
@@ -3049,19 +3066,19 @@ span.badge {
   position: absolute;
   right: 15px;
 }
-/* line 588, scss/elements/_global.scss */
+/* line 592, scss/elements/_global.scss */
 span.badge.new {
   font-weight: 300;
   font-size: 0.8rem;
   color: #fff;
   border-radius: 2px;
 }
-/* line 595, scss/elements/_global.scss */
+/* line 599, scss/elements/_global.scss */
 span.badge.new:after {
   content: " new";
 }
 
-/* line 601, scss/elements/_global.scss */
+/* line 605, scss/elements/_global.scss */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -3069,11 +3086,11 @@ span.badge.new:after {
   height: 0;
   overflow: hidden;
 }
-/* line 607, scss/elements/_global.scss */
+/* line 611, scss/elements/_global.scss */
 .video-container.no-controls {
   padding-top: 0;
 }
-/* line 611, scss/elements/_global.scss */
+/* line 615, scss/elements/_global.scss */
 .video-container iframe, .video-container object, .video-container embed {
   position: absolute;
   top: 0;
@@ -3163,49 +3180,49 @@ span.badge.new:after {
 /*******************
   Utility Classes
 *******************/
-/* line 702, scss/elements/_global.scss */
+/* line 706, scss/elements/_global.scss */
 .hide {
   display: none !important;
 }
 
-/* line 707, scss/elements/_global.scss */
+/* line 711, scss/elements/_global.scss */
 .left-align {
   text-align: left;
 }
 
-/* line 710, scss/elements/_global.scss */
+/* line 714, scss/elements/_global.scss */
 .right-align {
   text-align: right;
 }
 
-/* line 713, scss/elements/_global.scss */
+/* line 717, scss/elements/_global.scss */
 .center-align {
   text-align: center;
 }
 
-/* line 717, scss/elements/_global.scss */
+/* line 721, scss/elements/_global.scss */
 .left {
   float: left !important;
 }
 
-/* line 720, scss/elements/_global.scss */
+/* line 724, scss/elements/_global.scss */
 .right {
   float: right !important;
 }
 
-/* line 723, scss/elements/_global.scss */
+/* line 727, scss/elements/_global.scss */
 .nofloat {
   float: none !important;
 }
 
-/* line 726, scss/elements/_global.scss */
+/* line 730, scss/elements/_global.scss */
 .center {
   float: none;
   margin-right: auto;
   margin-left: auto;
 }
 
-/* line 733, scss/elements/_global.scss */
+/* line 737, scss/elements/_global.scss */
 .no-select {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -3215,19 +3232,19 @@ span.badge.new:after {
   user-select: none;
 }
 
-/* line 742, scss/elements/_global.scss */
+/* line 746, scss/elements/_global.scss */
 .circle {
   border-radius: 50%;
 }
 
-/* line 746, scss/elements/_global.scss */
+/* line 750, scss/elements/_global.scss */
 .center-block {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 752, scss/elements/_global.scss */
+/* line 756, scss/elements/_global.scss */
 .truncate {
   display: block;
   white-space: nowrap;
@@ -3235,7 +3252,7 @@ span.badge.new:after {
   text-overflow: ellipsis;
 }
 
-/* line 759, scss/elements/_global.scss */
+/* line 763, scss/elements/_global.scss */
 .no-padding {
   padding: 0 !important;
 }
@@ -3448,23 +3465,28 @@ span.badge.new:after {
   width: 140px;
 }
 /* line 52, scss/elements/_buttons.scss */
-.btn.fullsize {
+.btn.fullwidth {
   width: 100%;
 }
 /* line 55, scss/elements/_buttons.scss */
+.btn.big {
+  line-height: 48px;
+  height: 50px;
+}
+/* line 59, scss/elements/_buttons.scss */
 .btn.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 60, scss/elements/_buttons.scss */
+/* line 64, scss/elements/_buttons.scss */
 .btn.btn-icon {
   background: transparent;
   line-height: 100%;
   border: 0;
   padding: 2px;
 }
-/* line 67, scss/elements/_buttons.scss */
+/* line 71, scss/elements/_buttons.scss */
 .btn.btn-with-icon .icon {
   display: inline-block;
   width: 25px;
@@ -3472,30 +3494,56 @@ span.badge.new:after {
   line-height: 100%;
   margin-right: 20px;
 }
-/* line 75, scss/elements/_buttons.scss */
+/* line 79, scss/elements/_buttons.scss */
 .btn.shopping-card {
   padding: 8px 0;
 }
 
-/* line 79, scss/elements/_buttons.scss */
+/* line 83, scss/elements/_buttons.scss */
 .btn-favorite {
   width: 25px;
   height: 20px;
 }
+/* line 86, scss/elements/_buttons.scss */
+.btn-favorite:hover .icon {
+  fill: #ce2127;
+}
 
-/* line 84, scss/elements/_buttons.scss */
+/* line 91, scss/elements/_buttons.scss */
 .icon {
   width: 100%;
   height: 100%;
   vertical-align: top;
 }
 
-/* line 89, scss/elements/_buttons.scss */
+/* line 96, scss/elements/_buttons.scss */
 .btn-more {
   margin-top: 10px;
 }
 
-/* line 92, scss/elements/_buttons.scss */
+/* line 99, scss/elements/_buttons.scss */
+.btn-close {
+  width: 17px;
+  height: 17px;
+  will-change: transform;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: -webkit-transform .3s ease;
+          transition: transform .3s ease;
+}
+/* line 105, scss/elements/_buttons.scss */
+.btn-close .icon {
+  fill: #ce2127;
+}
+/* line 108, scss/elements/_buttons.scss */
+.btn-close:hover {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+/* line 112, scss/elements/_buttons.scss */
 .btn-link {
   background: none;
   border: 0;
@@ -3529,7 +3577,7 @@ em {
 }
 
 /* line 21, scss/elements/_typography.scss */
-.light, footer.page-footer .footer-copyright, .page-title, h1, .box-title, .product-page .main-info .product-title {
+.light, footer.page-footer .footer-copyright, .page-title, h1, .box-title, .subtitle, .product-page .main-info .product-title {
   font-weight: 300;
 }
 
@@ -3583,7 +3631,7 @@ input[type="tel"] + .textfield-placeholder,
 input[type="password"] + .textfield-placeholder,
 input[type="search"] + .textfield-placeholder,
 .inputtext + .textfield-placeholder,
-textarea + .textfield-placeholder, .breadcrumbs, .tabs .tab-header-item .tab-link {
+textarea + .textfield-placeholder, .tabs .tab-header-item .tab-link {
   font-size: 13px;
 }
 
@@ -3613,13 +3661,13 @@ textarea + .textfield-placeholder, .breadcrumbs, .tabs .tab-header-item .tab-lin
 }
 
 /* line 67, scss/elements/_typography.scss */
-ul.nostyle, .soc-list, .pagination, .menu, .horizontal-multilevel-menu .submenu, .filter .filters-list, .carousel-nav, .brand-list, .tabs .tab-header-list, ol.nostyle {
+ul.nostyle, .soc-list, .pagination, .dropdown-list, .menu, .horizontal-multilevel-menu .submenu, .filter .filters-list, .carousel-nav, .brand-list, .tabs .tab-header-list, ol.nostyle {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 /* line 71, scss/elements/_typography.scss */
-ul.nostyle li, .soc-list li, .pagination li, .menu li, .horizontal-multilevel-menu .submenu li, .filter .filters-list li, .carousel-nav li, .brand-list li, .tabs .tab-header-list li, ol.nostyle li {
+ul.nostyle li, .soc-list li, .pagination li, .dropdown-list li, .menu li, .horizontal-multilevel-menu .submenu li, .filter .filters-list li, .carousel-nav li, .brand-list li, .tabs .tab-header-list li, ol.nostyle li {
   padding: 0;
   margin: 0;
 }
@@ -3694,7 +3742,7 @@ h6 {
 
 /* line 112, scss/elements/_typography.scss */
 .page-title, h1 {
-  margin: 30px 0;
+  margin: 10px 0 15px;
 }
 /* line 116, scss/elements/_typography.scss */
 .page-title + .archive-box, h1 + .archive-box {
@@ -3706,7 +3754,13 @@ h6 {
 /* line 122, scss/elements/_typography.scss */
 .box-title {
   font-size: 28px;
-  margin: 20px 0 10px;
+  margin: 20px 0;
+}
+
+/* line 127, scss/elements/_typography.scss */
+.subtitle {
+  font-size: 24px;
+  margin: 1em 0 10px;
 }
 
 /* line 2, scss/elements/_form.scss */
@@ -3836,8 +3890,8 @@ input[type="checkbox"] + .checkbox-lbl {
 input[type="checkbox"] + .checkbox-lbl:before {
   content: '';
   display: inline-block;
-  width: 17px;
-  height: 17px;
+  width: 19px;
+  height: 19px;
   border: 1px solid #c9c9c9;
   border-radius: 3px;
   margin-right: 8px;
@@ -3847,6 +3901,71 @@ input[type="checkbox"] + .checkbox-lbl:before {
 /* line 97, scss/elements/_form.scss */
 input[type="checkbox"]:checked + .checkbox-lbl:before {
   background: white url("images/tick.png") center no-repeat;
+}
+
+/* line 101, scss/elements/_form.scss */
+.inline-field {
+  vertical-align: baseline;
+}
+/* line 103, scss/elements/_form.scss */
+.inline-field .label {
+  display: inline-block;
+  margin-right: 25px;
+}
+/* line 107, scss/elements/_form.scss */
+.inline-field input:not(.dropdown-inp),
+.inline-field select,
+.inline-field .select-box,
+.inline-field .dropdown-box {
+  display: inline-block;
+}
+
+/* line 116, scss/elements/_form.scss */
+select {
+  box-sizing: border-box;
+  border: 1px solid #d7d7d7;
+  border-radius: 3px;
+  padding: 0 15px;
+  font-family: inherit;
+  line-height: 38px;
+  height: 40px;
+  vertical-align: baseline;
+  cursor: pointer;
+}
+/* line 126, scss/elements/_form.scss */
+select option {
+  max-width: 100%;
+  color: #434343;
+}
+
+/* line 131, scss/elements/_form.scss */
+.select-box select {
+  width: 100%;
+}
+
+/* line 134, scss/elements/_form.scss */
+.triangle {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 30px;
+  height: 38px;
+  background: #fff;
+  font-size: 15px;
+  border-radius: 3px;
+}
+/* line 143, scss/elements/_form.scss */
+.triangle:after {
+  content: '>';
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #8c8c8c;
+  font-weight: 100;
+  -webkit-transform: rotate(90deg) scale(1, 2);
+      -ms-transform: rotate(90deg) scale(1, 2);
+          transform: rotate(90deg) scale(1, 2);
 }
 
 /* line 2, scss/elements/_search.scss */
@@ -3877,7 +3996,7 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
 
 /* line 2, scss/elements/_sort.scss */
 .sort-box {
-  margin: 0 0 20px;
+  margin: 0 0 25px;
 }
 /* line 4, scss/elements/_sort.scss */
 .sort-box .sort-item {
@@ -3893,7 +4012,7 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
 
 /* line 2, scss/elements/_compare.scss */
 .compare-box {
-  margin: 0 0 20px;
+  margin: 0 0 25px;
 }
 /* line 4, scss/elements/_compare.scss */
 .compare-box .icon {
@@ -3907,11 +4026,11 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
 /* line 2, scss/elements/_rating.scss */
 .rating {
   height: 15px;
-  margin: 8px 0 20px;
+  margin: 8px 0 17px;
 }
 /* line 5, scss/elements/_rating.scss */
 .rating .star {
-  width: 15px;
+  width: 14px;
   height: 100%;
   fill: #d4d4d4;
 }
@@ -3978,7 +4097,7 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
 
 /* line 2, scss/elements/_pagination.scss */
 .pagination-box {
-  margin: 30px auto 50px;
+  margin: 30px auto 55px;
   text-align: center;
 }
 
@@ -4041,7 +4160,7 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
 .pagination .pagin-next {
   display: inline-block;
   vertical-align: top;
-  margin: 0 10px;
+  margin: 0 6px;
   width: 40px;
   height: 40px;
 }
@@ -4051,7 +4170,7 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
 .pagination .pagin-next .prev,
 .pagination .pagin-next .next {
   display: block;
-  padding: 10px;
+  padding: 12px;
   width: 100%;
   height: 100%;
   cursor: pointer;
@@ -4090,11 +4209,11 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
 }
 /* line 9, scss/elements/_collapsible.scss */
 .collapsible .collapsible-body-content *:first-child {
-  margin-top: 0;
+  margin-top: 0.5rem;
 }
 /* line 13, scss/elements/_collapsible.scss */
 .collapsible .collapsible-header {
-  padding: 18px 20px 18px;
+  padding: 22px 20px 12px;
   line-height: 1;
   cursor: pointer;
   height: 50px;
@@ -4104,9 +4223,9 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
   content: '>';
   display: block;
   position: absolute;
-  right: 20px;
-  top: 19px;
-  font-size: 14px;
+  right: 22px;
+  top: 22px;
+  font-size: 16px;
   line-height: 1;
   color: #6b6b6b;
   -webkit-transform: scale(2, 1) rotate(90deg) translateZ(0);
@@ -4148,6 +4267,188 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
 /* line 19, scss/elements/_toggle-content.scss */
 .toggle-content-box[data-state="more"] .show-more {
   display: none;
+}
+
+/* line 2, scss/elements/_dropdown.scss */
+.dropdown-inp {
+  display: none;
+}
+
+/* line 5, scss/elements/_dropdown.scss */
+.dropdown-value {
+  cursor: pointer;
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+  -webkit-transition: all .3s;
+          transition: all .3s;
+  border: 1px solid #d7d7d7;
+  border-radius: 3px;
+  padding: 0 15px;
+  padding-right: 30px;
+  line-height: 38px;
+  height: 40px;
+  vertical-align: baseline;
+  overflow: hidden;
+}
+/* line 17, scss/elements/_dropdown.scss */
+.dropdown-value .triangle {
+  top: 0;
+  right: 0;
+}
+/* line 20, scss/elements/_dropdown.scss */
+.dropdown-value .triangle:after {
+  width: 10px;
+  height: 15px;
+  top: 13px;
+  right: -12px;
+}
+
+/* line 28, scss/elements/_dropdown.scss */
+.dropdown-list {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  background: #fff;
+  z-index: 99;
+  padding: 10px 0;
+  border: 1px solid #d7d7d7;
+  -webkit-transition: all .3s;
+          transition: all .3s;
+  display: none;
+}
+
+/* line 44, scss/elements/_dropdown.scss */
+.dropdown-box.open {
+  /*.dropdown-value {
+  	transform: translate(0,10px);
+  }*/
+}
+/* line 48, scss/elements/_dropdown.scss */
+.dropdown-box.open .dropdown-list {
+  display: block;
+}
+
+/* line 54, scss/elements/_dropdown.scss */
+.dropdown-title {
+  display: block;
+  padding: 2px 15px;
+  position: relative;
+  margin: 0;
+  cursor: pointer;
+}
+
+/* line 61, scss/elements/_dropdown.scss */
+.dropdown-item {
+  display: block;
+  color: #ce2127;
+}
+/* line 64, scss/elements/_dropdown.scss */
+.dropdown-item:hover {
+  color: #f33b42;
+}
+
+/* line 68, scss/elements/_dropdown.scss */
+.dropdown-item[data-active="active"],
+.dropdown-item[data-active="active"]:hover {
+  color: #434343;
+}
+/* line 71, scss/elements/_dropdown.scss */
+.dropdown-item[data-active="active"] .dropdown-title,
+.dropdown-item[data-active="active"]:hover .dropdown-title {
+  cursor: default;
+}
+
+/* line 2, scss/elements/_tooltip.scss */
+.tooltip {
+  position: absolute;
+  z-index: -999;
+  opacity: 0;
+  background: white;
+  border: 1px solid #d7d7d7;
+  padding: 20px 45px 25px 15px;
+}
+/* line 10, scss/elements/_tooltip.scss */
+.tooltip.show {
+  opacity: 1;
+  z-index: 999;
+}
+/* line 14, scss/elements/_tooltip.scss */
+.tooltip .btn-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+/* line 19, scss/elements/_tooltip.scss */
+.tooltip .tooltip-tngl {
+  width: 25px;
+  height: 16px;
+  position: absolute;
+  background: url("images/tooltip-tngl.png") center no-repeat;
+  bottom: -16px;
+  left: 30px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+/* line 29, scss/elements/_tooltip.scss */
+.tooltip[data-position^="top-"] .tooltip-tngl {
+  top: auto;
+  bottom: -16px;
+}
+/* line 33, scss/elements/_tooltip.scss */
+.tooltip[data-position^="bottom-"] .tooltip-tngl {
+  top: -16px;
+  -webkit-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+/* line 37, scss/elements/_tooltip.scss */
+.tooltip[data-position^="left-"] .tooltip-tngl {
+  left: auto;
+  right: -20px;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+/* line 42, scss/elements/_tooltip.scss */
+.tooltip[data-position^="right-"] .tooltip-tngl {
+  left: -20px;
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+/* line 46, scss/elements/_tooltip.scss */
+.tooltip[data-position$="-center"] .tooltip-tngl {
+  left: 50%;
+  margin-left: -15px;
+}
+/* line 50, scss/elements/_tooltip.scss */
+.tooltip[data-position$="-left"] .tooltip-tngl {
+  left: 30px;
+}
+/* line 53, scss/elements/_tooltip.scss */
+.tooltip[data-position$="-right"] .tooltip-tngl {
+  left: auto;
+  right: 30px;
+}
+/* line 57, scss/elements/_tooltip.scss */
+.tooltip[data-position$="-top"] .tooltip-tngl {
+  top: 30px;
+}
+/* line 60, scss/elements/_tooltip.scss */
+.tooltip[data-position$="-middle"] .tooltip-tngl {
+  top: 50%;
+  margin-top: -8px;
+}
+/* line 64, scss/elements/_tooltip.scss */
+.tooltip[data-position$="-bottom"] .tooltip-tngl {
+  top: auto;
+  bottom: 30px;
+}
+/* line 68, scss/elements/_tooltip.scss */
+.tooltip .tooltip-content p {
+  margin: 0.5em 0;
 }
 
 /* line 11, scss/components/_menu.scss */
@@ -4376,9 +4677,9 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
 
 /* line 2, scss/components/_breadcrumbs.scss */
 .breadcrumbs {
-  margin: 30px 0;
+  margin: 26px 0 10px;
 }
-/* line 8, scss/components/_breadcrumbs.scss */
+/* line 7, scss/components/_breadcrumbs.scss */
 .breadcrumbs .brdcmb-curpage {
   color: #ce2127;
 }
@@ -4490,11 +4791,11 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
 }
 /* line 10, scss/components/_product-card.scss */
 .product-card .product-info {
-  padding: 30px 20px 20px;
+  padding: 30px 20px 15px;
 }
 /* line 13, scss/components/_product-card.scss */
 .product-card .compare {
-  padding: 13.4px 20px 20px;
+  padding: 12px 20px 20px;
   border-top: 1px solid #eeeeee;
 }
 /* line 17, scss/components/_product-card.scss */
@@ -4516,21 +4817,21 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
   line-height: 1;
   height: 50px;
 }
-/* line 40, scss/components/_product-card.scss */
+/* line 36, scss/components/_product-card.scss */
+.product-card .product-price .old-price {
+  lone-height: 21px;
+}
+/* line 41, scss/components/_product-card.scss */
 .product-card .product-price .price {
   font-size: 24px;
   padding: 13px 0 12px;
 }
-/* line 44, scss/components/_product-card.scss */
-.product-card .product-price .old-price + .price {
-  padding: 5px 0;
-}
-/* line 48, scss/components/_product-card.scss */
+/* line 49, scss/components/_product-card.scss */
 .product-card .btn.shopping-card {
   width: 70px;
   position: absolute;
   right: 20px;
-  bottom: 25px;
+  bottom: 20px;
 }
 
 /* line 2, scss/components/_news-card.scss */
@@ -4635,7 +4936,7 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
   margin-top: -20px;
   width: 40px;
   height: 40px;
-  padding: 2px;
+  padding: 7px;
   background: none;
   border: 0;
 }
@@ -4646,11 +4947,11 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
 }
 /* line 35, scss/components/_carousel.scss */
 .carousel-controlls .prev {
-  left: -60px;
+  left: -55px;
 }
 /* line 38, scss/components/_carousel.scss */
 .carousel-controlls .next {
-  right: -60px;
+  right: -55px;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -4711,7 +5012,7 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
 
 /* line 87, scss/components/_carousel.scss */
 .product-carousel {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 /* line 2, scss/components/_brands.scss */
@@ -4779,48 +5080,52 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
 .product-page .main-info {
   background: white;
   border-radius: 6px;
+  margin-top: 13px;
 }
-/* line 7, scss/components/_product.scss */
+/* line 8, scss/components/_product.scss */
 .product-page .main-info .card-header {
   padding-left: 20px;
 }
-/* line 10, scss/components/_product.scss */
+/* line 11, scss/components/_product.scss */
 .product-page .main-info .product-title {
   font-size: 28px;
-  margin: 30px 0 0;
+  margin: 1em 0 0;
 }
-/* line 15, scss/components/_product.scss */
+/* line 16, scss/components/_product.scss */
 .product-page .main-info .btn-favorite {
   padding: 0;
-  margin-top: 40px;
+  margin-top: 38px;
+  margin-right: 8px;
+  width: 22px;
+  height: 22px;
 }
-/* line 18, scss/components/_product.scss */
+/* line 22, scss/components/_product.scss */
 .product-page .main-info .btn-favorite .icon {
   fill: #363636;
 }
-/* line 22, scss/components/_product.scss */
+/* line 26, scss/components/_product.scss */
 .product-page .main-info .rating,
 .product-page .main-info .articul {
-  margin-left: 10px;
+  margin: 7px 13px 13px;
 }
-/* line 26, scss/components/_product.scss */
+/* line 30, scss/components/_product.scss */
 .product-page .main-info .action-panel {
-  margin-left: 10px;
+  margin-left: 15px;
   border-left: 1px solid #d7d7d7;
   min-height: 520px;
 }
-/* line 31, scss/components/_product.scss */
+/* line 35, scss/components/_product.scss */
 .product-page .main-info .product-price {
-  padding: 40px;
+  padding: 35px 25px 20px;
   line-height: 1em;
 }
-/* line 35, scss/components/_product.scss */
+/* line 39, scss/components/_product.scss */
 .product-page .main-info .product-price .old-price {
   display: inline-block;
   font-size: 0.67em;
   color: #8c8c8c;
 }
-/* line 39, scss/components/_product.scss */
+/* line 43, scss/components/_product.scss */
 .product-page .main-info .product-price .old-price:after {
   content: '';
   display: block;
@@ -4831,40 +5136,60 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
   left: 0;
   top: 0.8em;
 }
-/* line 50, scss/components/_product.scss */
+/* line 54, scss/components/_product.scss */
 .product-page .main-info .product-price .price {
   text-align: center;
 }
-/* line 53, scss/components/_product.scss */
+/* line 57, scss/components/_product.scss */
 .product-page .main-info .product-price .old-price + .price {
   display: inline-block;
   margin-left: 5px;
   text-align: left;
 }
-/* line 59, scss/components/_product.scss */
-.product-page .main-info .action-buttons {
-  padding: 0 40px;
+/* line 63, scss/components/_product.scss */
+.product-page .main-info .product-options {
+  padding: 25px 25px 20px;
 }
-/* line 61, scss/components/_product.scss */
-.product-page .main-info .action-buttons .btn {
-  max-width: 200px;
-  margin-top: 20px;
-}
-/* line 66, scss/components/_product.scss */
-.product-page .main-info .delivery-text {
-  padding: 25px;
+/* line 65, scss/components/_product.scss */
+.product-page .main-info .product-options .label {
+  margin-top: 9px;
 }
 /* line 69, scss/components/_product.scss */
+.product-page .main-info .action-buttons {
+  margin-top: 100px;
+  padding: 0 25px;
+}
+/* line 72, scss/components/_product.scss */
+.product-page .main-info .action-buttons .btn {
+  margin-top: 20px;
+}
+/* line 76, scss/components/_product.scss */
+.product-page .main-info .product-options + .action-buttons {
+  margin-top: 0;
+}
+/* line 79, scss/components/_product.scss */
+.product-page .main-info .delivery-text {
+  padding: 50px 25px 30px;
+}
+/* line 82, scss/components/_product.scss */
+.product-page .main-info .delivery-text table td {
+  padding: 0.3em 2px;
+}
+/* line 85, scss/components/_product.scss */
+.product-page .main-info .delivery-text table tr td:last-child {
+  text-align: right;
+}
+/* line 90, scss/components/_product.scss */
 .product-page .main-info .compare {
   border-top: 1px solid #d7d7d7;
   padding: 35px 25px;
 }
-/* line 74, scss/components/_product.scss */
+/* line 95, scss/components/_product.scss */
 .product-page .more-info {
   margin-top: 30px;
   margin-bottom: 10px;
 }
-/* line 77, scss/components/_product.scss */
+/* line 98, scss/components/_product.scss */
 .product-page .more-info #accs {
   background: none;
   padding-top: 40px;
@@ -4933,16 +5258,24 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
 .tabs .tab-content-item .container {
   padding: 0 10px;
 }
+/* line 51, scss/components/_tabs.scss */
+.tabs .tab-content-item .subtitle {
+  margin: 22px 0 25px;
+}
+/* line 54, scss/components/_tabs.scss */
+.tabs .tab-content-item p {
+  line-height: 24px;
+}
 
 /* line 2, scss/components/_reviews.scss */
 .reviews-list {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 /* line 4, scss/components/_reviews.scss */
 .reviews-list .review-item {
   border-top: 1px solid #e5e5e5;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 /* line 8, scss/components/_reviews.scss */
 .reviews-list .review-item:first-child {
@@ -4954,11 +5287,17 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
 }
 /* line 14, scss/components/_reviews.scss */
 .reviews-list .review-item .subtitle {
+  font-size: 14px;
   color: #363636;
+  margin: 0 0 8px;
 }
-/* line 18, scss/components/_reviews.scss */
+/* line 20, scss/components/_reviews.scss */
+.reviews-list .review-item p {
+  margin: 8px 0;
+}
+/* line 23, scss/components/_reviews.scss */
 .reviews-list .review-item p + .subtitle {
-  margin-top: 30px;
+  margin-top: 22px;
 }
 
 /* line 2, scss/components/_shops.scss */

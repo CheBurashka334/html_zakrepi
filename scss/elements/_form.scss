@@ -85,8 +85,8 @@ input[type="checkbox"] {
 		&:before {
 			content: '';
 			display: inline-block;
-			width: 17px;
-			height: 17px;
+			width: 19px;
+			height: 19px;
 			border: 1px solid color('border', 'base');
 			border-radius: $small-border-radius;
 			margin-right: 8px;
@@ -96,5 +96,58 @@ input[type="checkbox"] {
 	}
 	&:checked + .checkbox-lbl:before {
 		background: white url('images/tick.png') center no-repeat;
+	}
+}
+.inline-field {
+	vertical-align: baseline;
+	.label {
+		display: inline-block;
+		margin-right: $gutter-width*1.25;
+	}
+	input:not(.dropdown-inp),
+	select,
+	.select-box,
+	.dropdown-box {
+		display: inline-block;
+	}
+}
+
+// select
+select {
+	box-sizing: border-box;
+	border: 1px solid color('border', 'light');
+	border-radius: $small-border-radius;
+	padding: 0 15px;
+	font-family: inherit;
+	line-height: 38px;
+	height: 40px;
+	vertical-align: baseline;
+	cursor: pointer;
+	option {
+		max-width: 100%;
+		color: color('text', 'base');
+	}
+}
+.select-box select {
+	width: 100%;
+}
+.triangle {
+	position: absolute;
+	top: 1px;
+	right: 1px;
+	width: 30px;
+	height: 38px;
+	background: #fff;
+	font-size: 15px;
+	border-radius: $small-border-radius;
+	&:after {
+		content: '>';
+		display: block;
+		position: absolute;
+		top: 10px;
+		right: 15px;
+		color: color('text', 'light');
+		font-weight: 100;
+		transform: rotate(90deg) scale(1,2);
 	}
 }

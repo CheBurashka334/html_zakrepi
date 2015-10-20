@@ -4,32 +4,36 @@
 		@extend .z-depth-1;
 		background: white;
 		border-radius: $base-border-radius;
+		margin-top: $gutter-width*0.65;
 		.card-header {
 			padding-left: $gutter-width;
 		}
 		.product-title {
 			font-size: 28px;
 			@extend .light;
-			margin: $gutter-width*1.5 0 0;
+			margin: 1em 0 0;
 		}
 		.btn-favorite {
 			padding: 0;
-			margin-top: $gutter-width*2;
+			margin-top: 38px;
+			margin-right: 8px;
+			width: 22px;
+			height: 22px;
 			.icon {
 				fill: color('text', 'dark');
 			}
 		}
 		.rating,
 		.articul {
-			margin-left: $gutter-width/2;
+			margin: $gutter-width*0.35 $gutter-width*0.65 $gutter-width*0.65;
 		}
 		.action-panel {
-			margin-left: $gutter-width/2;
+			margin-left: $gutter-width*0.75;
 			border-left: 1px solid color('border', 'light');
 			min-height: 520px;
 		}
 		.product-price {
-			padding: $gutter-width*2;
+			padding: $gutter-width*1.75 $gutter-width*1.25 $gutter-width;
 			@extend .xxbig-text;
 			line-height: 1em;
 			.old-price {
@@ -56,15 +60,32 @@
 				text-align: left;
 			}
 		}
+		.product-options {
+			padding: $gutter-width*1.25 $gutter-width*1.25 $gutter-width;
+			.label {
+				margin-top: 9px;
+			}
+		}
 		.action-buttons {
-			padding: 0 $gutter-width*2;
+			margin-top: $gutter-width*5;
+			padding: 0 $gutter-width*1.25;
 			.btn {
-				max-width: 200px;
 				margin-top: $gutter-width;
 			}
 		}
+		.product-options + .action-buttons {
+			margin-top: 0;
+		}
 		.delivery-text {
-			padding: $gutter-width*1.25;
+			padding: $gutter-width*2.5 $gutter-width*1.25 $gutter-width*1.5;
+			table {
+				td {
+					padding: 0.3em 2px;
+				}
+				tr td:last-child {
+					text-align: right;
+				}
+			}
 		}
 		.compare {
 			border-top: 1px solid color('border', 'light');

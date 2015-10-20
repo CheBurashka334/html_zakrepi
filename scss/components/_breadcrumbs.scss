@@ -1,7 +1,6 @@
 // breadcrumbs
 .breadcrumbs {
-	@extend .small-text;
-	margin: $gutter-width*1.5 0;
+	margin: $gutter-width*1.3 0 $gutter-width/2;
 	.brdcmb-link {
 		@extend a.nostyle;
 	}

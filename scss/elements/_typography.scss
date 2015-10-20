@@ -112,7 +112,7 @@ h6 { font-size: $h6-fontsize; line-height: 1.5; margin: 1em 0;}
 .page-title, h1 {
 	@extend .large-text;
 	@extend .light;
-	margin: $gutter-width*1.5 0;
+	margin: $gutter-width/2 0 $gutter-width*0.75;
 	& + .archive-box {
 		margin: $gutter-width*1.5 0;
 		line-height: 51px;
@@ -122,5 +122,10 @@ h6 { font-size: $h6-fontsize; line-height: 1.5; margin: 1em 0;}
 .box-title {
 	@extend .light;
 	font-size: 28px;
-	margin: $gutter-width 0 $gutter-width/2;
+	margin: $gutter-width 0;
+}
+.subtitle {
+	@extend .light;
+	font-size: 24px;
+	margin: 1em 0 $gutter-width*0.5;
 }

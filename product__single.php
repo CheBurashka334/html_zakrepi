@@ -13,7 +13,7 @@
 			<div class="col l9">
 				<div class="card-header">
 					<h1 class="product-title col l11">Гайковерт ударный Hitachi WR14VB-NA 420 Вт</h1>
-					<div class="col l1 right-align">
+					<div class="col l1 right-align no-padding">
 						<a href="#" class="btn btn-favorite btn-icon"><svg class="icon"><use xlink:href="#heart"/></svg></a>
 					</div>
 					<div class="clearfix"></div>
@@ -30,18 +30,74 @@
 			</div>
 			<div class="col l3 no-padding">
 				<div class="action-panel">
-					<div class="product-price">
+					<div class="product-price center-align">
 						<!-- если скидки нет, .old-price не выводить -->
 						<div class="old-price">8&nbsp;699&nbsp;<i class="rouble">i</i></div>
 						<div class="price">6&nbsp;699&nbsp;<i class="rouble">i</i></div>
 					</div>
+					<!-- если есть -->
+					<div class="product-options">
+						<div class="inline-field clearfix">
+							<span class="label">Размер</span>
+							<div class="select-box hide-on-large-only">
+								<select id="prod-size" name="prod-size-sel">
+									<option value="v1" selected>44-46  170-176</option>
+									<option value="v2">48-50  170-176</option>
+									<option value="v3">52-54  170-176</option>
+									<option value="v4">56-58  170-176</option>
+									<option value="v5">60-62  170-176</option>
+								</select>
+								<div class="triangle"></div>
+							</div>
+							<div class="dropdown-box hide-on-med-and-down second-line right">
+								<div class="dropdown-value">
+									<div class="item-text"></div>
+									<div class="triangle"></div>
+								</div>
+								<ul class="dropdown-list select-synh hide-on-med-and-down" data-select="prod-size">
+									<li class="dropdown-item" data-active="active">
+										<input type="radio" class="dropdown-inp" name="prod-size" value="v1" id="prod-size-rad-v1" checked="checked" data-value-text="44-46  170-176"/>
+										<label class="dropdown-title" for="prod-size-rad-v1">
+											<div class="item-text">44-46  170-176</div>
+										</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="radio" class="dropdown-inp" name="prod-size" value="v2" id="prod-size-rad-v2" data-value-text="48-50  170-176"/>
+										<label class="dropdown-title" for="prod-size-rad-v2">
+											<div class="item-text">48-50  170-176</div>
+										</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="radio" class="dropdown-inp" name="prod-size" value="v3" id="prod-size-rad-v3" data-value-text="52-54  170-176"/>
+										<label class="dropdown-title" for="prod-size-rad-v3">
+											<div class="item-text">52-54  170-176</div>
+										</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="radio" class="dropdown-inp" name="prod-size" value="v4" id="prod-size-rad-v4" data-value-text="56-58  170-176"/>
+										<label class="dropdown-title" for="prod-size-rad-v4">
+											<div class="item-text">56-58  170-176</div>
+										</label>
+									</li>
+									<li class="dropdown-item">
+										<input type="radio" class="dropdown-inp" name="prod-size" value="v5" id="prod-size-rad-v5" data-value-text="60-62  170-176"/>
+										<label class="dropdown-title" for="prod-size-rad-v5">
+											<div class="item-text">60-62  170-176</div>
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 					<div class="action-buttons">
-						<a class="btn primary center" href="#">В корзину</a>
-						<a class="btn standart-color center" href="#">Купить в 1 клик</a>
+						<a class="btn primary center fullwidth" href="#">В корзину</a>
+						<a class="btn standart-color center fullwidth" href="#">Купить в 1 клик</a>
 					</div>
 					<div class="delivery-text">
-						<p>Самовывоз: Сегодня, Бесплатно</p>
-						<p>Доставим: 5 сентября, 8 699 <i class="rouble">i</i> </p>
+						<table>
+							<tr><td>Самовывоз:</td><td>Сегодня, Бесплатно</td></tr>
+							<tr><td>Доставим:</td><td>5 сентября, 8 699<i class="rouble">i</i></td></tr>
+						</table>
 					</div>
 					<div class="compare">
 						<input type="checkbox" id="compare_today_{{product.id}}" />
@@ -75,7 +131,7 @@
 		<div class="tab-content">
 			<div class="tab-content-item" id="desc">
 				<div class="container">
-					<div class="box-title">Описание</div>
+					<div class="subtitle">Описание</div>
 					<div class="desc-text col l9 no-padding nofloat">
 						<p>Ударный гайковерт Hitachi WR 14 VB - инструмент с регулировкой скорости. Это делает работу более точной и надежной. Гайковерт защищен двойной изоляцией. Вы сможете бепрепятственно произвести замену угольных щеток, так как к ним имеется внешний доступ. Функция реверса делает работу оператора еще более удобной.</p>
 						<div class="table col l5 nofloat no-padding">
@@ -108,7 +164,7 @@
 			</div>
 			<div class="tab-content-item" id="tech">
 				<div class="container">
-					<div class="box-title">Характеристики гайковерта Hitachi WR14VB-NA 420 Вт</div>
+					<div class="subtitle">Характеристики гайковерта Hitachi WR14VB-NA 420 Вт</div>
 					<div class="table col l7 nofloat no-padding">
 						<div class="table-row no-padding col l12">
 							<div class="table-col col l8">Максимальный крутящий момент</div>
@@ -209,7 +265,7 @@
 			</div>
 			<div class="tab-content-item" id="reviews">
 				<div class="container">
-					<div class="box-title">Отзывы о гайковерте Hitachi WR14VB-NA 420 Вт</div>
+					<div class="subtitle">Отзывы о гайковерте Hitachi WR14VB-NA 420 Вт</div>
 					<div class="row">
 						<div class="sort-box col l6">
 							<span class="sort-text">Сортировать по:</span>
@@ -268,7 +324,7 @@
 			</div>
 			<div class="tab-content-item" id="shops">
 				<div class="container">
-					<div class="box-title">Наличие товара в розничных магазинах «Крепыж»</div>
+					<div class="subtitle">Наличие товара в розничных магазинах «Крепыж»</div>
 					<div class="row">
 						<div class="col l3 shops-list">
 							<div class="shop-item">
@@ -360,7 +416,7 @@
 	</div>
 </div>
 <div class="tab-hide-box" data-hide-id="#accs">
-	<div class="box-title">Вместе с этим товаром покупают</div>
+	<div class="subtitle">Вместе с этим товаром покупают</div>
 	<div class="product-carousel carousel-box" ng-controller="CatalogProductsCtrl">
 		<div class="carousel row" data-jcarouselautoscroll="true" data-target="+=4" data-wrap="circular" data-interval="5000">
 			<div class="carousel-inner product-list clearfix">

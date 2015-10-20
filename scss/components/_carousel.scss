@@ -25,7 +25,7 @@
 		margin-top: -1*$gutter-width;
 		width: $gutter-width*2;
 		height: $gutter-width*2;
-		padding: 2px;
+		padding: 7px;
 		background: none;
 		border: 0;
 		.icon {
@@ -33,10 +33,10 @@
 		}
 	}
 	.prev {
-		left: -3*$gutter-width;
+		left: -2.75*$gutter-width;
 	}
 	.next {
-		right: -3*$gutter-width;
+		right: -2.75*$gutter-width;
 		transform: rotate(180deg);
 	}
 }
@@ -85,5 +85,5 @@
 	}
 }
 .product-carousel {
-	margin-bottom: $gutter-width*2;
+	margin-bottom: $gutter-width;
 }

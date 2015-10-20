@@ -157,6 +157,45 @@ $(document).ready(function(){
 	// collapsible 
 	$('.collapsible').collapsible();
 	
+	if($(window).outerWidth() < 992){
+		$('select.mobile-synh').change(function(){
+			var radio = $('.select-synh[data-select="'+$(this).attr('id')+'"]');
+			radio.find('input[type="radio"]').not('[value="'+$(this).val()+'"]').prop('checked', false);
+			radio.find('input[type="radio"][value="'+$(this).val()+'"]').prop('checked', true);
+			radio.find('input[type="radio"]:checked').parent('.dropdown-item').click();
+		});
+	}
+	$('.select-synh input[type="radio"]').change(function(){
+		var select = $(this).parents('.select-synh').attr('data-select');
+		if(($(window).outerWidth() > 992) || (!$('#'+select).hasClass('mobile-synh'))){
+			$('#'+select).val($(this).val());
+			$('#'+select).change();
+		}
+	});
+	// dropdown init
+	$('.dropdown-box').each(function(){
+		var value = $(this).find('.dropdown-item[data-active="active"]').find('[data-value-text]');
+		$(this).find('.dropdown-value > .item-text').html(value.attr('data-value-text'));
+	});
+	// dropdown open
+	$('.dropdown-box').click(function(e){
+		$('.dropdown-box').not($(this)).removeClass('open');
+		$(this).toggleClass('open');
+		e.stopPropagation();
+	});
+	$('.page').click(function(){
+		$('.dropdown-box').removeClass('open');
+	});
+	// dropdown change
+	$('.dropdown-box .dropdown-item').click(function(e){
+		var value = $(this).find('[data-value-text]');
+		var box = $(this).parents('.dropdown-box');
+		$(this).attr('data-active', 'active').siblings().removeAttr('data-active');
+		box.find('.dropdown-value > .item-text').html(value.attr('data-value-text'));
+		e.stopPropagation();
+		box.removeClass('open');
+	});
+	
 	// jcarousel
 	// http://sorgalla.com/jcarousel/docs/
 	$('.carousel')
@@ -334,6 +373,99 @@ $(document).ready(function(){
 		}
 		$(actID).trigger("tabshow");
 		return false;
+	});
+	
+	// tooltips 
+	// init
+	$('.tooltip').each(function(){
+		if($(this).attr('data-box')){
+			var box = $($(this).attr('data-box'));
+		} else {
+			var box = 'page';
+		}
+		if($(this).attr('data-position')){
+			var pos = $(this).attr('data-position');
+		} else {
+			var pos = 'top-left';
+		}
+		if($(this).attr('data-offset')){
+			var off = parseInt($(this).attr('data-offset'),10);
+		} else {
+			var off = 23;
+		}
+		var tooltipW = $(this).outerWidth();
+		var tooltipH = $(this).outerHeight();
+		var posTop = 0;
+		var posLeft = 0;
+		if(box != 'page'){
+			switch(pos){
+				case 'left-top':
+					posTop = box.offset().top;
+					posLeft = box.offset().left - off - tooltipW;
+				break;
+				case 'left-middle':
+					posTop = box.offset().top + ((box.outerHeight() - tooltipH)/2);
+					posLeft = box.offset().left - off - tooltipW;
+				break;
+				case 'left-bottom':
+					posTop = box.offset().top + box.outerHeight() - tooltipH;
+					posLeft = box.offset().left - off - tooltipW;
+				break;
+				case 'right-top':
+					posTop = box.offset().top;
+					posLeft = box.offset().left + off + box.outerWidth();
+				break;
+				case 'right-middle':
+					posTop = box.offset().top + ((box.outerHeight() - tooltipH)/2);
+					posLeft = box.offset().left + off + box.outerWidth();
+				break;
+				case 'right-bottom':
+					posTop = box.offset().top + box.outerHeight() - tooltipH;
+					posLeft = box.offset().left + off + box.outerWidth();
+				break;
+				case 'bottom-left':
+					posTop = box.offset().top + box.outerHeight() + off;
+					posLeft = box.offset().left;
+				break;
+				case 'bottom-center':
+					posTop = box.offset().top + box.outerHeight() + off;
+					console.log(box.offset().left+' - '+box.outerWidth()+' - '+tooltipW);
+					posLeft =  box.offset().left + ((box.outerWidth() - tooltipW)/2);
+				break;
+				case 'bottom-right':
+					posTop = box.offset().top + box.outerHeight() + off;
+					posLeft = box.offset().left + box.outerWidth() - tooltipW;
+				break;
+				case 'top-center':
+					posTop = box.offset().top - off - tooltipW;
+					posLeft = box.offset().left + ((box.outerWidth() - tooltipW)/2);
+				break;
+				case 'top-right':
+					posTop = box.offset().top - off - tooltipW;
+					posLeft = box.offset().left + box.outerWidth() - tooltipW;
+				break;
+				case 'top-left':
+				default:
+					posTop = box.offset().top - off - tooltipW;
+					posLeft = box.offset().left;
+				break;
+			}
+			$(this).offset({top:posTop,left:posLeft});
+		} else {
+			console.log('page');
+		}
+	});
+	// show
+	$('.show-tooltip').click(function(){
+		var tooltip = $(this).attr('data-tooltip');
+		tooltip.addClass('show');
+	});
+	$('.btn.shopping-card').click(function(){
+		$('.tooltip[data-box="#minicard"]').addClass('show');
+	});
+	// hide
+	$('.tooltip .btn-close').click(function(){
+		$(this).parents('.tooltip').removeClass('show');
 	});
 
 });
