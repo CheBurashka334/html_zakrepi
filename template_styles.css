@@ -2467,7 +2467,7 @@ html {
 }
 
 /* line 55, scss/elements/_global.scss */
-.z-depth-1, .table .status-icon, .sidebar-menu, .filter, .product-card, .product-page .main-info {
+.z-depth-1, .base-card, .compare, .table .status-icon, .sidebar-menu, .filter, .product-card, .product-page .main-info {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -2491,72 +2491,78 @@ html {
   box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
 }
 
-/* line 71, scss/elements/_global.scss */
+/* line 70, scss/elements/_global.scss */
+.base-card, .compare {
+  background: white;
+  border-radius: 6px;
+}
+
+/* line 76, scss/elements/_global.scss */
 .hoverable:hover {
   -webkit-transition: box-shadow .25s;
           transition: box-shadow .25s;
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* line 78, scss/elements/_global.scss */
+/* line 83, scss/elements/_global.scss */
 .divider {
   height: 1px;
   overflow: hidden;
 }
 
-/* line 87, scss/elements/_global.scss */
+/* line 92, scss/elements/_global.scss */
 blockquote {
   margin: 20px 0;
   padding-left: 1.5rem;
   border-left: 5px solid #ce2127;
 }
 
-/* line 95, scss/elements/_global.scss */
+/* line 100, scss/elements/_global.scss */
 i {
   line-height: inherit;
 }
-/* line 98, scss/elements/_global.scss */
+/* line 103, scss/elements/_global.scss */
 i.left {
   float: left;
   margin-right: 15px;
 }
-/* line 102, scss/elements/_global.scss */
+/* line 107, scss/elements/_global.scss */
 i.right {
   float: right;
   margin-left: 15px;
 }
-/* line 106, scss/elements/_global.scss */
+/* line 111, scss/elements/_global.scss */
 i.tiny {
   font-size: 1rem;
 }
-/* line 109, scss/elements/_global.scss */
+/* line 114, scss/elements/_global.scss */
 i.small {
   font-size: 2rem;
 }
-/* line 112, scss/elements/_global.scss */
+/* line 117, scss/elements/_global.scss */
 i.medium, .tabs .tab-header-item i.tab-link, .reviews-list .review-item i.subtitle {
   font-size: 4rem;
 }
-/* line 115, scss/elements/_global.scss */
+/* line 120, scss/elements/_global.scss */
 i.large {
   font-size: 6rem;
 }
 
-/* line 121, scss/elements/_global.scss */
+/* line 126, scss/elements/_global.scss */
 img.responsive-img,
 video.responsive-video {
   max-width: 100%;
   height: auto;
 }
 
-/* line 130, scss/elements/_global.scss */
+/* line 135, scss/elements/_global.scss */
 .parallax-container {
   position: relative;
   overflow: hidden;
   height: 500px;
 }
 
-/* line 136, scss/elements/_global.scss */
+/* line 141, scss/elements/_global.scss */
 .parallax {
   position: absolute;
   top: 0;
@@ -2565,7 +2571,7 @@ video.responsive-video {
   bottom: 0;
   z-index: -1;
 }
-/* line 144, scss/elements/_global.scss */
+/* line 149, scss/elements/_global.scss */
 .parallax img {
   display: none;
   position: absolute;
@@ -2580,12 +2586,12 @@ video.responsive-video {
           transform: translateX(-50%);
 }
 
-/* line 158, scss/elements/_global.scss */
+/* line 163, scss/elements/_global.scss */
 .pin-top, .pin-bottom {
   position: relative;
 }
 
-/* line 161, scss/elements/_global.scss */
+/* line 166, scss/elements/_global.scss */
 .pinned {
   position: fixed !important;
 }
@@ -2593,12 +2599,12 @@ video.responsive-video {
 /*********************
   Transition Classes
 **********************/
-/* line 169, scss/elements/_global.scss */
+/* line 174, scss/elements/_global.scss */
 ul.staggered-list li {
   opacity: 0;
 }
 
-/* line 173, scss/elements/_global.scss */
+/* line 178, scss/elements/_global.scss */
 .fade-in {
   opacity: 0;
   -webkit-transform-origin: 0 50%;
@@ -2610,89 +2616,89 @@ ul.staggered-list li {
   Media Query Classes
 **********************/
 @media only screen and (max-width: 650px) {
-  /* line 182, scss/elements/_global.scss */
+  /* line 187, scss/elements/_global.scss */
   .hide-on-small-only, .hide-on-small-and-down {
     display: none !important;
   }
 }
 
 @media only screen and (max-width: 992px) {
-  /* line 187, scss/elements/_global.scss */
+  /* line 192, scss/elements/_global.scss */
   .hide-on-med-and-down {
     display: none !important;
   }
 }
 
 @media only screen and (min-width: 651px) {
-  /* line 192, scss/elements/_global.scss */
+  /* line 197, scss/elements/_global.scss */
   .hide-on-med-and-up {
     display: none !important;
   }
 }
 
 @media only screen and (min-width: 650px) and (max-width: 992px) {
-  /* line 197, scss/elements/_global.scss */
+  /* line 202, scss/elements/_global.scss */
   .hide-on-med-only {
     display: none !important;
   }
 }
 
 @media only screen and (min-width: 993px) {
-  /* line 202, scss/elements/_global.scss */
+  /* line 207, scss/elements/_global.scss */
   .hide-on-large-only {
     display: none !important;
   }
 }
 
 @media only screen and (min-width: 993px) {
-  /* line 207, scss/elements/_global.scss */
+  /* line 212, scss/elements/_global.scss */
   .show-on-large {
     display: initial !important;
   }
 }
 
 @media only screen and (min-width: 650px) and (max-width: 992px) {
-  /* line 212, scss/elements/_global.scss */
+  /* line 217, scss/elements/_global.scss */
   .show-on-medium {
     display: initial !important;
   }
 }
 
 @media only screen and (max-width: 650px) {
-  /* line 217, scss/elements/_global.scss */
+  /* line 222, scss/elements/_global.scss */
   .show-on-small {
     display: initial !important;
   }
 }
 
 @media only screen and (min-width: 651px) {
-  /* line 222, scss/elements/_global.scss */
+  /* line 227, scss/elements/_global.scss */
   .show-on-medium-and-up {
     display: initial !important;
   }
 }
 
 @media only screen and (max-width: 992px) {
-  /* line 227, scss/elements/_global.scss */
+  /* line 232, scss/elements/_global.scss */
   .show-on-medium-and-down {
     display: initial !important;
   }
 }
 
 @media only screen and (max-width: 650px) {
-  /* line 235, scss/elements/_global.scss */
+  /* line 240, scss/elements/_global.scss */
   .center-on-small-only {
     text-align: center;
   }
 }
 
-/* line 242, scss/elements/_global.scss */
+/* line 247, scss/elements/_global.scss */
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
   background-color: #ce2127;
 }
-/* line 247, scss/elements/_global.scss */
+/* line 252, scss/elements/_global.scss */
 footer.page-footer .footer-copyright {
   overflow: hidden;
   height: 50px;
@@ -2701,21 +2707,21 @@ footer.page-footer .footer-copyright {
   background-color: rgba(51, 51, 51, 0.08);
 }
 
-/* line 258, scss/elements/_global.scss */
+/* line 263, scss/elements/_global.scss */
 table, th, td {
   border: none;
 }
 
-/* line 262, scss/elements/_global.scss */
+/* line 267, scss/elements/_global.scss */
 table {
   width: 100%;
   display: table;
 }
-/* line 266, scss/elements/_global.scss */
+/* line 271, scss/elements/_global.scss */
 table thead {
   border-bottom: 1px solid #d0d0d0;
 }
-/* line 269, scss/elements/_global.scss */
+/* line 274, scss/elements/_global.scss */
 table td, table th {
   padding: 15px 5px;
   display: table-cell;
@@ -2723,38 +2729,38 @@ table td, table th {
   vertical-align: middle;
   border-radius: 2px;
 }
-/* line 277, scss/elements/_global.scss */
+/* line 282, scss/elements/_global.scss */
 table.bordered > thead > tr, table.bordered > tbody > tr {
   border-bottom: 1px solid #d0d0d0;
 }
-/* line 283, scss/elements/_global.scss */
+/* line 288, scss/elements/_global.scss */
 table.striped > tbody > tr:nth-child(odd) {
   background-color: #f2f2f2;
 }
-/* line 287, scss/elements/_global.scss */
+/* line 292, scss/elements/_global.scss */
 table.striped > tbody > tr > td {
   border-radius: 0px;
 }
-/* line 293, scss/elements/_global.scss */
+/* line 298, scss/elements/_global.scss */
 table.hoverable > tbody > tr:hover {
   background-color: #f2f2f2;
 }
-/* line 299, scss/elements/_global.scss */
+/* line 304, scss/elements/_global.scss */
 table.centered thead tr th, table.centered tbody tr td {
   text-align: center;
 }
-/* line 304, scss/elements/_global.scss */
+/* line 309, scss/elements/_global.scss */
 table.nostyle {
   border: 0;
   margin: 0;
 }
-/* line 307, scss/elements/_global.scss */
+/* line 312, scss/elements/_global.scss */
 table.nostyle td {
   padding: 0;
 }
 
 @media only screen and (max-width: 992px) {
-  /* line 316, scss/elements/_global.scss */
+  /* line 321, scss/elements/_global.scss */
   table.responsive-table {
     width: 100%;
     border-collapse: collapse;
@@ -2763,31 +2769,31 @@ table.nostyle td {
     position: relative
     /* sort out borders */
   }
-  /* line 323, scss/elements/_global.scss */
+  /* line 328, scss/elements/_global.scss */
   table.responsive-table th,
   table.responsive-table td {
     margin: 0;
     vertical-align: top;
   }
-  /* line 329, scss/elements/_global.scss */
+  /* line 334, scss/elements/_global.scss */
   table.responsive-table th {
     text-align: left;
   }
-  /* line 330, scss/elements/_global.scss */
+  /* line 335, scss/elements/_global.scss */
   table.responsive-table thead {
     display: block;
     float: left;
   }
-  /* line 334, scss/elements/_global.scss */
+  /* line 339, scss/elements/_global.scss */
   table.responsive-table thead tr {
     display: block;
     padding: 0 10px 0 0;
   }
-  /* line 338, scss/elements/_global.scss */
+  /* line 343, scss/elements/_global.scss */
   table.responsive-table thead tr th::before {
     content: "\00a0";
   }
-  /* line 343, scss/elements/_global.scss */
+  /* line 348, scss/elements/_global.scss */
   table.responsive-table tbody {
     display: block;
     width: auto;
@@ -2795,77 +2801,77 @@ table.nostyle td {
     overflow-x: auto;
     white-space: nowrap;
   }
-  /* line 350, scss/elements/_global.scss */
+  /* line 355, scss/elements/_global.scss */
   table.responsive-table tbody tr {
     display: inline-block;
     vertical-align: top;
   }
-  /* line 355, scss/elements/_global.scss */
+  /* line 360, scss/elements/_global.scss */
   table.responsive-table th {
     display: block;
     text-align: right;
   }
-  /* line 359, scss/elements/_global.scss */
+  /* line 364, scss/elements/_global.scss */
   table.responsive-table td {
     display: block;
     min-height: 1.25em;
     text-align: left;
   }
-  /* line 364, scss/elements/_global.scss */
+  /* line 369, scss/elements/_global.scss */
   table.responsive-table tr {
     padding: 0 10px;
   }
-  /* line 367, scss/elements/_global.scss */
+  /* line 372, scss/elements/_global.scss */
   table.responsive-table thead {
     border: 0;
     border-right: 1px solid #d0d0d0;
   }
-  /* line 373, scss/elements/_global.scss */
+  /* line 378, scss/elements/_global.scss */
   table.responsive-table.bordered th {
     border-bottom: 0;
     border-left: 0;
   }
-  /* line 374, scss/elements/_global.scss */
+  /* line 379, scss/elements/_global.scss */
   table.responsive-table.bordered td {
     border-left: 0;
     border-right: 0;
     border-bottom: 0;
   }
-  /* line 375, scss/elements/_global.scss */
+  /* line 380, scss/elements/_global.scss */
   table.responsive-table.bordered tr {
     border: 0;
   }
-  /* line 376, scss/elements/_global.scss */
+  /* line 381, scss/elements/_global.scss */
   table.responsive-table.bordered tbody tr {
     border-right: 1px solid #d0d0d0;
   }
 }
-/* line 384, scss/elements/_global.scss */
+/* line 389, scss/elements/_global.scss */
 .table-row {
   display: table-row;
   width: 100%;
   border-top: 1px solid #e5e5e5;
 }
-/* line 389, scss/elements/_global.scss */
+/* line 394, scss/elements/_global.scss */
 .table-row:first-child {
   border-top: 0;
 }
 
-/* line 393, scss/elements/_global.scss */
+/* line 398, scss/elements/_global.scss */
 .table-col {
   display: table-cell;
 }
 
-/* line 396, scss/elements/_global.scss */
+/* line 401, scss/elements/_global.scss */
 .table {
   width: 100%;
   margin: 20px 0 30px;
 }
-/* line 401, scss/elements/_global.scss */
+/* line 406, scss/elements/_global.scss */
 .table .table-col {
   padding: 16px 0;
 }
-/* line 404, scss/elements/_global.scss */
+/* line 409, scss/elements/_global.scss */
 .table .status-icon {
   width: 45px;
   height: 45px;
@@ -2874,83 +2880,83 @@ table.nostyle td {
   float: left;
   margin-right: 30px;
 }
-/* line 412, scss/elements/_global.scss */
+/* line 417, scss/elements/_global.scss */
 .table .status-icon .icon {
   fill: #ce2127;
 }
-/* line 416, scss/elements/_global.scss */
+/* line 421, scss/elements/_global.scss */
 .table .info {
   width: 38%;
 }
-/* line 419, scss/elements/_global.scss */
+/* line 424, scss/elements/_global.scss */
 .table .date {
   width: 24%;
 }
-/* line 422, scss/elements/_global.scss */
+/* line 427, scss/elements/_global.scss */
 .table .sum {
   width: 16%;
 }
-/* line 425, scss/elements/_global.scss */
+/* line 430, scss/elements/_global.scss */
 .table .detail {
   width: 22%;
 }
-/* line 428, scss/elements/_global.scss */
+/* line 433, scss/elements/_global.scss */
 .table + .btn {
   margin-bottom: 20px;
 }
-/* line 431, scss/elements/_global.scss */
+/* line 436, scss/elements/_global.scss */
 .table .status-done {
   color: #757575;
 }
-/* line 434, scss/elements/_global.scss */
+/* line 439, scss/elements/_global.scss */
 .table .status-paid {
   background: #f7f7f7;
 }
 
 @media only screen and (max-width: 992px) {
-  /* line 440, scss/elements/_global.scss */
+  /* line 445, scss/elements/_global.scss */
   .table .info {
     width: 35.6%;
   }
-  /* line 443, scss/elements/_global.scss */
+  /* line 448, scss/elements/_global.scss */
   .table .date {
     width: 22%;
   }
-  /* line 446, scss/elements/_global.scss */
+  /* line 451, scss/elements/_global.scss */
   .table .sum {
     width: 15%;
   }
-  /* line 449, scss/elements/_global.scss */
+  /* line 454, scss/elements/_global.scss */
   .table .detail {
     width: 27.4%;
   }
 }
 @media screen and (max-width: 550px) {
-  /* line 455, scss/elements/_global.scss */
+  /* line 460, scss/elements/_global.scss */
   .table {
     display: block;
     margin-top: 0;
   }
-  /* line 458, scss/elements/_global.scss */
+  /* line 463, scss/elements/_global.scss */
   .table .status-icon {
     position: absolute;
     top: 0;
     left: 20px;
     float: none;
   }
-  /* line 464, scss/elements/_global.scss */
+  /* line 469, scss/elements/_global.scss */
   .table .table-row {
     display: block;
     padding: 20px 0;
   }
-  /* line 468, scss/elements/_global.scss */
+  /* line 473, scss/elements/_global.scss */
   .table .table-col {
     display: block;
     width: 100%;
     padding: 0 20px;
     padding-left: 85px;
   }
-  /* line 474, scss/elements/_global.scss */
+  /* line 479, scss/elements/_global.scss */
   .table .info,
   .table .date {
     margin-bottom: 10px;
@@ -3053,7 +3059,7 @@ table.nostyle td {
   color: $secondary-color;
 }
 */
-/* line 581, scss/elements/_global.scss */
+/* line 586, scss/elements/_global.scss */
 span.badge {
   min-width: 3rem;
   padding: 0 6px;
@@ -3063,19 +3069,19 @@ span.badge {
   position: absolute;
   right: 15px;
 }
-/* line 592, scss/elements/_global.scss */
+/* line 597, scss/elements/_global.scss */
 span.badge.new {
   font-weight: 300;
   font-size: 0.8rem;
   color: #fff;
   border-radius: 2px;
 }
-/* line 599, scss/elements/_global.scss */
+/* line 604, scss/elements/_global.scss */
 span.badge.new:after {
   content: " new";
 }
 
-/* line 605, scss/elements/_global.scss */
+/* line 610, scss/elements/_global.scss */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -3083,11 +3089,11 @@ span.badge.new:after {
   height: 0;
   overflow: hidden;
 }
-/* line 611, scss/elements/_global.scss */
+/* line 616, scss/elements/_global.scss */
 .video-container.no-controls {
   padding-top: 0;
 }
-/* line 615, scss/elements/_global.scss */
+/* line 620, scss/elements/_global.scss */
 .video-container iframe, .video-container object, .video-container embed {
   position: absolute;
   top: 0;
@@ -3177,49 +3183,49 @@ span.badge.new:after {
 /*******************
   Utility Classes
 *******************/
-/* line 706, scss/elements/_global.scss */
+/* line 711, scss/elements/_global.scss */
 .hide {
   display: none !important;
 }
 
-/* line 711, scss/elements/_global.scss */
+/* line 716, scss/elements/_global.scss */
 .left-align {
   text-align: left;
 }
 
-/* line 714, scss/elements/_global.scss */
+/* line 719, scss/elements/_global.scss */
 .right-align {
   text-align: right;
 }
 
-/* line 717, scss/elements/_global.scss */
+/* line 722, scss/elements/_global.scss */
 .center-align {
   text-align: center;
 }
 
-/* line 721, scss/elements/_global.scss */
+/* line 726, scss/elements/_global.scss */
 .left {
   float: left !important;
 }
 
-/* line 724, scss/elements/_global.scss */
+/* line 729, scss/elements/_global.scss */
 .right {
   float: right !important;
 }
 
-/* line 727, scss/elements/_global.scss */
+/* line 732, scss/elements/_global.scss */
 .nofloat {
   float: none !important;
 }
 
-/* line 730, scss/elements/_global.scss */
+/* line 735, scss/elements/_global.scss */
 .center {
   float: none;
   margin-right: auto;
   margin-left: auto;
 }
 
-/* line 737, scss/elements/_global.scss */
+/* line 742, scss/elements/_global.scss */
 .no-select {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -3229,19 +3235,19 @@ span.badge.new:after {
   user-select: none;
 }
 
-/* line 746, scss/elements/_global.scss */
+/* line 751, scss/elements/_global.scss */
 .circle {
   border-radius: 50%;
 }
 
-/* line 750, scss/elements/_global.scss */
+/* line 755, scss/elements/_global.scss */
 .center-block {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 756, scss/elements/_global.scss */
+/* line 761, scss/elements/_global.scss */
 .truncate {
   display: block;
   white-space: nowrap;
@@ -3249,8 +3255,8 @@ span.badge.new:after {
   text-overflow: ellipsis;
 }
 
-/* line 763, scss/elements/_global.scss */
-.no-padding {
+/* line 768, scss/elements/_global.scss */
+.no-padding, .compare .compare-actions, .compare .compare-products {
   padding: 0 !important;
 }
 
@@ -4005,19 +4011,6 @@ select option {
 .sort-box .sort-ctrl:checked + .sort-item {
   color: #434343;
   cursor: default;
-}
-
-/* line 2, scss/elements/_compare.scss */
-.compare-box {
-  margin: 0 0 25px;
-}
-/* line 4, scss/elements/_compare.scss */
-.compare-box .icon {
-  display: inline-block;
-  width: 16px;
-  height: 18px;
-  margin-right: 15px;
-  fill: #d8d8d8;
 }
 
 /* line 2, scss/elements/_rating.scss */
@@ -5440,6 +5433,136 @@ select option {
 .shops-map .map {
   width: 100%;
   height: 650px;
+}
+
+/* line 2, scss/components/_compare.scss */
+.compare-box {
+  margin: 0 0 25px;
+}
+/* line 4, scss/components/_compare.scss */
+.compare-box .icon {
+  display: inline-block;
+  width: 16px;
+  height: 18px;
+  margin-right: 15px;
+  fill: #d8d8d8;
+}
+
+/* line 12, scss/components/_compare.scss */
+.compare {
+  padding: 20px 30px;
+  line-height: 18px;
+}
+/* line 16, scss/components/_compare.scss */
+.compare .compare-header {
+  height: 220px;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* line 19, scss/components/_compare.scss */
+.compare .compare-header.fixed {
+  position: fixed;
+  top: 0;
+  background: white;
+  z-index: 999;
+}
+/* line 25, scss/components/_compare.scss */
+.compare .compare-header.fixed + .compare-body {
+  padding-top: 240px;
+}
+/* line 29, scss/components/_compare.scss */
+.compare .compare-actions {
+  height: 100%;
+}
+/* line 32, scss/components/_compare.scss */
+.compare .compare-actions .btn-link {
+  margin-right: 18px;
+  margin-top: 168px;
+}
+/* line 35, scss/components/_compare.scss */
+.compare .compare-actions .btn-link.active {
+  color: #434343;
+}
+/* line 40, scss/components/_compare.scss */
+.compare .compare-products {
+  width: 68.4%;
+  max-width: 780px;
+}
+/* line 47, scss/components/_compare.scss */
+.compare .compare-products .prod-img {
+  padding: 15px 0 20px;
+  text-align: center;
+}
+/* line 50, scss/components/_compare.scss */
+.compare .compare-products .prod-img img {
+  height: 130px;
+  width: auto;
+}
+/* line 55, scss/components/_compare.scss */
+.compare .compare-products .prod-name {
+  padding: 0 30px 0 0;
+}
+/* line 57, scss/components/_compare.scss */
+.compare .compare-products .prod-name .btn-compare-delete {
+  position: absolute;
+  top: 2px;
+  right: 16px;
+  width: 1em;
+  height: 1em;
+}
+/* line 63, scss/components/_compare.scss */
+.compare .compare-products .prod-name .btn-compare-delete .icon {
+  fill: #434343;
+}
+/* line 69, scss/components/_compare.scss */
+.compare .carousel {
+  padding: 0;
+}
+/* line 73, scss/components/_compare.scss */
+.compare .carousel-controlls .prev,
+.compare .carousel-controlls .next {
+  margin-top: 0;
+  top: 55px;
+  opacity: 0;
+}
+/* line 78, scss/components/_compare.scss */
+.compare .carousel-controlls .prev.active,
+.compare .carousel-controlls .next.active {
+  opacity: 1;
+}
+/* line 82, scss/components/_compare.scss */
+.compare .carousel-controlls .prev {
+  left: -86px;
+}
+/* line 85, scss/components/_compare.scss */
+.compare .carousel-controlls .next {
+  right: -80px;
+}
+/* line 90, scss/components/_compare.scss */
+.compare .compare-body .param-line {
+  padding: 16px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+/* line 93, scss/components/_compare.scss */
+.compare .compare-body .param-line:last-child {
+  border-bottom: 0;
+}
+/* line 96, scss/components/_compare.scss */
+.compare .compare-body .param-line .param-name {
+  padding-left: 0;
+  padding-right: 25px;
+}
+/* line 100, scss/components/_compare.scss */
+.compare .compare-body .param-line .param-value {
+  width: 68.5%;
+  max-width: 780px;
+}
+/* line 104, scss/components/_compare.scss */
+.compare .compare-body .param-line.price {
+  line-height: 24px;
+}
+/* line 106, scss/components/_compare.scss */
+.compare .compare-body .param-line.price .param-value {
+  font-size: 24px;
 }
 
 /* line 2, scss/pages/_catalog.scss */

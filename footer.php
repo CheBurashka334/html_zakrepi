@@ -81,7 +81,7 @@
 	</div>
 </div> <!-- /.page -->
 </div> <!-- /.layout -->
-<div class="tooltip show" data-box="#minicard" data-position="bottom-right">
+<div class="tooltip" data-box="#minicard" data-position="bottom-right">
 	<div class="tooltip-tngl"></div>
 	<button class="btn btn-close btn-icon"><svg class="icon"><use xlink:href="#cross"/></svg></button>
 	<div class="tooltip-content">

@@ -146,6 +146,76 @@ zakrepi.controller('CatalogProductsCtrl', function($scope, $http){
 			"oldprice": "",
 			"price": 7299,
 			"quantity": 1,
+			"params" : [
+				{
+					'id': 1,
+					'value': 30,
+				},
+				{
+					'id': 2,
+					'value': 1,
+				},
+				{
+					'id': 3,
+					'value': 1.3,
+				},
+				{
+					'id': 4,
+					'value': 12,
+				},
+				{
+					'id': 5,
+					'value': 'Ni-Cd',
+				},
+				{
+					'id': 6,
+					'value': 1,
+				},
+				{
+					'id': 7,
+					'value': 'Импульсное',
+				},
+				{
+					'id': 8,
+					'value': 1300,
+				},
+				{
+					'id': 9,
+					'value': 25,
+				},
+				{
+					'id': 10,
+					'value': 10,
+				},
+				{
+					'id': 11,
+					'value': '-',
+				},
+				{
+					'id': 12,
+					'value': '+',
+				},
+				{
+					'id': 13,
+					'value': '-',
+				},
+				{
+					'id': 14,
+					'value': 192,
+				},
+				{
+					'id': 15,
+					'value': 240,
+				},
+				{
+					'id': 16,
+					'value': 1.5,
+				},
+				{
+					'id': 17,
+					'value': 'Два аккмулятора, зарядное устройство, кейс',
+				},
+			],
 		},
 		{
 			"id": 2,
@@ -156,6 +226,76 @@ zakrepi.controller('CatalogProductsCtrl', function($scope, $http){
 			"oldprice": "",
 			"price": 8599,
 			"quantity": 2,
+			"params" : [
+				{
+					'id': 1,
+					'value': 24,
+				},
+				{
+					'id': 2,
+					'value': 1,
+				},
+				{
+					'id': 3,
+					'value': 1.4,
+				},
+				{
+					'id': 4,
+					'value': 9,
+				},
+				{
+					'id': 5,
+					'value': 'Ni-Cd',
+				},
+				{
+					'id': 6,
+					'value': 1,
+				},
+				{
+					'id': 7,
+					'value': 'Импульсное',
+				},
+				{
+					'id': 8,
+					'value': 1300,
+				},
+				{
+					'id': 9,
+					'value': 21,
+				},
+				{
+					'id': 10,
+					'value': 12,
+				},
+				{
+					'id': 11,
+					'value': '-',
+				},
+				{
+					'id': 12,
+					'value': '+',
+				},
+				{
+					'id': 13,
+					'value': '-',
+				},
+				{
+					'id': 14,
+					'value': 182,
+				},
+				{
+					'id': 15,
+					'value': 239,
+				},
+				{
+					'id': 16,
+					'value': 1.4,
+				},
+				{
+					'id': 17,
+					'value': 'Два аккмулятора, зарядное устройство, кейс',
+				},
+			],
 		},
 		{
 			"id": 3,
@@ -166,6 +306,76 @@ zakrepi.controller('CatalogProductsCtrl', function($scope, $http){
 			"oldprice": 6600,
 			"price": 6060,
 			"quantity": 3,
+			"params" : [
+				{
+					'id': 1,
+					'value': 30,
+				},
+				{
+					'id': 2,
+					'value': 0.8,
+				},
+				{
+					'id': 3,
+					'value': 1.5,
+				},
+				{
+					'id': 4,
+					'value': 14,
+				},
+				{
+					'id': 5,
+					'value': 'Li-Ion',
+				},
+				{
+					'id': 6,
+					'value': 1,
+				},
+				{
+					'id': 7,
+					'value': 'Обычное',
+				},
+				{
+					'id': 8,
+					'value': 1300,
+				},
+				{
+					'id': 9,
+					'value': 25,
+				},
+				{
+					'id': 10,
+					'value': 12,
+				},
+				{
+					'id': 11,
+					'value': '-',
+				},
+				{
+					'id': 12,
+					'value': '+',
+				},
+				{
+					'id': 13,
+					'value': '-',
+				},
+				{
+					'id': 14,
+					'value': 204,
+				},
+				{
+					'id': 15,
+					'value': 229,
+				},
+				{
+					'id': 16,
+					'value': 1.3,
+				},
+				{
+					'id': 17,
+					'value': 'Два аккмулятора, зарядное устройство, кейс',
+				},
+			],
 		},
 		{
 			"id": 4,
@@ -176,6 +386,76 @@ zakrepi.controller('CatalogProductsCtrl', function($scope, $http){
 			"oldprice": 13990,
 			"price": 9990,
 			"quantity": 10,
+			"params" : [
+				{
+					'id': 1,
+					'value': 30,
+				},
+				{
+					'id': 2,
+					'value': 0.9,
+				},
+				{
+					'id': 3,
+					'value': 1.3,
+				},
+				{
+					'id': 4,
+					'value': 12,
+				},
+				{
+					'id': 5,
+					'value': 'Ni-Cd',
+				},
+				{
+					'id': 6,
+					'value': 1,
+				},
+				{
+					'id': 7,
+					'value': 'Импульсное',
+				},
+				{
+					'id': 8,
+					'value': 1200,
+				},
+				{
+					'id': 9,
+					'value': 21,
+				},
+				{
+					'id': 10,
+					'value': 10,
+				},
+				{
+					'id': 11,
+					'value': '-',
+				},
+				{
+					'id': 12,
+					'value': '+',
+				},
+				{
+					'id': 13,
+					'value': '-',
+				},
+				{
+					'id': 14,
+					'value': 192,
+				},
+				{
+					'id': 15,
+					'value': 240,
+				},
+				{
+					'id': 16,
+					'value': 1.5,
+				},
+				{
+					'id': 17,
+					'value': 'Два аккмулятора, зарядное устройство, кейс',
+				},
+			],
 		},
 		{
 			"id": 5,
@@ -186,6 +466,76 @@ zakrepi.controller('CatalogProductsCtrl', function($scope, $http){
 			"oldprice": "",
 			"price": 12395,
 			"quantity": 1,
+			"params" : [
+				{
+					'id': 1,
+					'value': 30,
+				},
+				{
+					'id': 2,
+					'value': 1,
+				},
+				{
+					'id': 3,
+					'value': 1.3,
+				},
+				{
+					'id': 4,
+					'value': 12,
+				},
+				{
+					'id': 5,
+					'value': 'Ni-Cd',
+				},
+				{
+					'id': 6,
+					'value': 1,
+				},
+				{
+					'id': 7,
+					'value': 'Импульсное',
+				},
+				{
+					'id': 8,
+					'value': 1300,
+				},
+				{
+					'id': 9,
+					'value': 25,
+				},
+				{
+					'id': 10,
+					'value': 10,
+				},
+				{
+					'id': 11,
+					'value': '-',
+				},
+				{
+					'id': 12,
+					'value': '+',
+				},
+				{
+					'id': 13,
+					'value': '-',
+				},
+				{
+					'id': 14,
+					'value': 192,
+				},
+				{
+					'id': 15,
+					'value': 240,
+				},
+				{
+					'id': 16,
+					'value': 1.5,
+				},
+				{
+					'id': 17,
+					'value': 'Два аккмулятора, зарядное устройство, кейс',
+				},
+			],
 		},
 		{
 			"id": 6,
@@ -196,6 +546,76 @@ zakrepi.controller('CatalogProductsCtrl', function($scope, $http){
 			"oldprice": 26060,
 			"price": 19060,
 			"quantity": 25,
+			"params" : [
+				{
+					'id': 1,
+					'value': 24,
+				},
+				{
+					'id': 2,
+					'value': 1,
+				},
+				{
+					'id': 3,
+					'value': 1.4,
+				},
+				{
+					'id': 4,
+					'value': 9,
+				},
+				{
+					'id': 5,
+					'value': 'Ni-Cd',
+				},
+				{
+					'id': 6,
+					'value': 1,
+				},
+				{
+					'id': 7,
+					'value': 'Импульсное',
+				},
+				{
+					'id': 8,
+					'value': 1300,
+				},
+				{
+					'id': 9,
+					'value': 21,
+				},
+				{
+					'id': 10,
+					'value': 12,
+				},
+				{
+					'id': 11,
+					'value': '-',
+				},
+				{
+					'id': 12,
+					'value': '+',
+				},
+				{
+					'id': 13,
+					'value': '-',
+				},
+				{
+					'id': 14,
+					'value': 182,
+				},
+				{
+					'id': 15,
+					'value': 239,
+				},
+				{
+					'id': 16,
+					'value': 1.4,
+				},
+				{
+					'id': 17,
+					'value': 'Два аккмулятора, зарядное устройство, кейс',
+				},
+			],
 		},
 		{
 			"id": 7,
@@ -206,6 +626,76 @@ zakrepi.controller('CatalogProductsCtrl', function($scope, $http){
 			"oldprice": "",
 			"price": 7299,
 			"quantity": 1,
+			"params" : [
+				{
+					'id': 1,
+					'value': 26,
+				},
+				{
+					'id': 2,
+					'value': 1,
+				},
+				{
+					'id': 3,
+					'value': 1.4,
+				},
+				{
+					'id': 4,
+					'value': 12,
+				},
+				{
+					'id': 5,
+					'value': 'Ni-Cd',
+				},
+				{
+					'id': 6,
+					'value': 1,
+				},
+				{
+					'id': 7,
+					'value': 'Обычное',
+				},
+				{
+					'id': 8,
+					'value': 1200,
+				},
+				{
+					'id': 9,
+					'value': 21,
+				},
+				{
+					'id': 10,
+					'value': 12,
+				},
+				{
+					'id': 11,
+					'value': '-',
+				},
+				{
+					'id': 12,
+					'value': '+',
+				},
+				{
+					'id': 13,
+					'value': '-',
+				},
+				{
+					'id': 14,
+					'value': 182,
+				},
+				{
+					'id': 15,
+					'value': 200,
+				},
+				{
+					'id': 16,
+					'value': 1.7,
+				},
+				{
+					'id': 17,
+					'value': 'Дрель Hitachi DS12DVF3, два аккумулятора EB1214S, зарядное устройство UC18НYG, фонарь UB12D, набор насадок, держатель насадок.',
+				},
+			],
 		},
 		{
 			"id": 8,
@@ -216,6 +706,76 @@ zakrepi.controller('CatalogProductsCtrl', function($scope, $http){
 			"oldprice": "9600",
 			"price": 8599,
 			"quantity": 2,
+			"params" : [
+				{
+					'id': 1,
+					'value': 30,
+				},
+				{
+					'id': 2,
+					'value': 1,
+				},
+				{
+					'id': 3,
+					'value': 1.3,
+				},
+				{
+					'id': 4,
+					'value': 12,
+				},
+				{
+					'id': 5,
+					'value': 'Ni-Cd',
+				},
+				{
+					'id': 6,
+					'value': 1,
+				},
+				{
+					'id': 7,
+					'value': 'Импульсное',
+				},
+				{
+					'id': 8,
+					'value': 1300,
+				},
+				{
+					'id': 9,
+					'value': 25,
+				},
+				{
+					'id': 10,
+					'value': 10,
+				},
+				{
+					'id': 11,
+					'value': '-',
+				},
+				{
+					'id': 12,
+					'value': '+',
+				},
+				{
+					'id': 13,
+					'value': '-',
+				},
+				{
+					'id': 14,
+					'value': 192,
+				},
+				{
+					'id': 15,
+					'value': 240,
+				},
+				{
+					'id': 16,
+					'value': 1.5,
+				},
+				{
+					'id': 17,
+					'value': 'Два аккмулятора, зарядное устройство, кейс',
+				},
+			],
 		},
 		{
 			"id": 9,
@@ -226,6 +786,76 @@ zakrepi.controller('CatalogProductsCtrl', function($scope, $http){
 			"oldprice": 6600,
 			"price": 6060,
 			"quantity": 3,
+			"params" : [
+				{
+					'id': 1,
+					'value': 30,
+				},
+				{
+					'id': 2,
+					'value': 1,
+				},
+				{
+					'id': 3,
+					'value': 1.3,
+				},
+				{
+					'id': 4,
+					'value': 12,
+				},
+				{
+					'id': 5,
+					'value': 'Ni-Cd',
+				},
+				{
+					'id': 6,
+					'value': 1,
+				},
+				{
+					'id': 7,
+					'value': 'Импульсное',
+				},
+				{
+					'id': 8,
+					'value': 1300,
+				},
+				{
+					'id': 9,
+					'value': 25,
+				},
+				{
+					'id': 10,
+					'value': 10,
+				},
+				{
+					'id': 11,
+					'value': '-',
+				},
+				{
+					'id': 12,
+					'value': '+',
+				},
+				{
+					'id': 13,
+					'value': '-',
+				},
+				{
+					'id': 14,
+					'value': 192,
+				},
+				{
+					'id': 15,
+					'value': 240,
+				},
+				{
+					'id': 16,
+					'value': 1.5,
+				},
+				{
+					'id': 17,
+					'value': 'Два аккмулятора, зарядное устройство, кейс',
+				},
+			],
 		},
 		{
 			"id": 10,
@@ -236,6 +866,76 @@ zakrepi.controller('CatalogProductsCtrl', function($scope, $http){
 			"oldprice": "",
 			"price": 9990,
 			"quantity": 10,
+			"params" : [
+				{
+					'id': 1,
+					'value': 24,
+				},
+				{
+					'id': 2,
+					'value': 1,
+				},
+				{
+					'id': 3,
+					'value': 1.4,
+				},
+				{
+					'id': 4,
+					'value': 9,
+				},
+				{
+					'id': 5,
+					'value': 'Ni-Cd',
+				},
+				{
+					'id': 6,
+					'value': 1,
+				},
+				{
+					'id': 7,
+					'value': 'Импульсное',
+				},
+				{
+					'id': 8,
+					'value': 1300,
+				},
+				{
+					'id': 9,
+					'value': 21,
+				},
+				{
+					'id': 10,
+					'value': 12,
+				},
+				{
+					'id': 11,
+					'value': '-',
+				},
+				{
+					'id': 12,
+					'value': '+',
+				},
+				{
+					'id': 13,
+					'value': '-',
+				},
+				{
+					'id': 14,
+					'value': 182,
+				},
+				{
+					'id': 15,
+					'value': 239,
+				},
+				{
+					'id': 16,
+					'value': 1.4,
+				},
+				{
+					'id': 17,
+					'value': 'Два аккмулятора, зарядное устройство, кейс',
+				},
+			],
 		},
 		{
 			"id": 11,
@@ -246,6 +946,76 @@ zakrepi.controller('CatalogProductsCtrl', function($scope, $http){
 			"oldprice": "",
 			"price": 12395,
 			"quantity": 1,
+			"params" : [
+				{
+					'id': 1,
+					'value': 30,
+				},
+				{
+					'id': 2,
+					'value': 1,
+				},
+				{
+					'id': 3,
+					'value': 1.3,
+				},
+				{
+					'id': 4,
+					'value': 12,
+				},
+				{
+					'id': 5,
+					'value': 'Ni-Cd',
+				},
+				{
+					'id': 6,
+					'value': 1,
+				},
+				{
+					'id': 7,
+					'value': 'Импульсное',
+				},
+				{
+					'id': 8,
+					'value': 1300,
+				},
+				{
+					'id': 9,
+					'value': 25,
+				},
+				{
+					'id': 10,
+					'value': 10,
+				},
+				{
+					'id': 11,
+					'value': '-',
+				},
+				{
+					'id': 12,
+					'value': '+',
+				},
+				{
+					'id': 13,
+					'value': '-',
+				},
+				{
+					'id': 14,
+					'value': 192,
+				},
+				{
+					'id': 15,
+					'value': 240,
+				},
+				{
+					'id': 16,
+					'value': 1.5,
+				},
+				{
+					'id': 17,
+					'value': 'Два аккмулятора, зарядное устройство, кейс',
+				},
+			],
 		},
 		{
 			"id": 12,
@@ -256,6 +1026,146 @@ zakrepi.controller('CatalogProductsCtrl', function($scope, $http){
 			"oldprice": 26060,
 			"price": 19060,
 			"quantity": 25,
+			"params" : [
+				{
+					'id': 1,
+					'value': 30,
+				},
+				{
+					'id': 2,
+					'value': 1,
+				},
+				{
+					'id': 3,
+					'value': 1.3,
+				},
+				{
+					'id': 4,
+					'value': 12,
+				},
+				{
+					'id': 5,
+					'value': 'Ni-Cd',
+				},
+				{
+					'id': 6,
+					'value': 1,
+				},
+				{
+					'id': 7,
+					'value': 'Импульсное',
+				},
+				{
+					'id': 8,
+					'value': 1300,
+				},
+				{
+					'id': 9,
+					'value': 25,
+				},
+				{
+					'id': 10,
+					'value': 10,
+				},
+				{
+					'id': 11,
+					'value': '-',
+				},
+				{
+					'id': 12,
+					'value': '+',
+				},
+				{
+					'id': 13,
+					'value': '-',
+				},
+				{
+					'id': 14,
+					'value': 192,
+				},
+				{
+					'id': 15,
+					'value': 240,
+				},
+				{
+					'id': 16,
+					'value': 1.5,
+				},
+				{
+					'id': 17,
+					'value': 'Два аккмулятора, зарядное устройство, кейс ',
+				},
+			],
+		},
+	];
+	$scope.params = [
+		{
+			'id': 0,
+			'name': 'Максимальный крутящий момент (Н/м)'
+		},
+		{
+			'id': 1,
+			'name': 'Диаметр патрона, мин. (мм)'
+		},
+		{
+			'id': 2,
+			'name': 'Емкость аккумулятора'
+		},
+		{
+			'id': 3,
+			'name': 'Напряжение аккумулятора (В)'
+		},
+		{
+			'id': 4,
+			'name': 'Тип аккумулятора'
+		},
+		{
+			'id': 5,
+			'name': 'Время зарядки аккумулятора (ч)'
+		},
+		{
+			'id': 6,
+			'name': 'Тип зарядного устройства'
+		},
+		{
+			'id': 7,
+			'name': 'Макс. число оборотов холостого хода (об/мин)'
+		},
+		{
+			'id': 8,
+			'name': 'Макс. диаметр сверления дерево (мм)'
+		},
+		{
+			'id': 9,
+			'name': 'Макс. диаметр сверления металл (мм)'
+		},
+		{
+			'id': 10,
+			'name': 'Гнездо в корпусе для крепления бит'
+		},
+		{
+			'id': 11,
+			'name': 'Фиксация шпинделя'
+		},
+		{
+			'id': 12,
+			'name': 'Тормоз двигателя'
+		},
+		{
+			'id': 13,
+			'name': 'Длина (мм)'
+		},
+		{
+			'id': 14,
+			'name': 'Высота (мм)'
+		},
+		{
+			'id': 15,
+			'name': 'Вес (кг)'
+		},
+		{
+			'id': 16,
+			'name': 'Комплектация'
 		},
 	];
 });

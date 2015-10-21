@@ -1,0 +1,112 @@
+// compare
+.compare-box {
+	margin: 0 0 $gutter-width*1.25;
+	.icon {
+		display: inline-block;
+		width: 16px;
+		height:18px;
+		margin-right: 15px;
+		fill: color('icons', 'lightest');
+	}
+}
+.compare {
+	@extend .base-card;
+	padding: $gutter-width $gutter-width*1.5;
+	line-height: 18px;
+	.compare-header {
+		height: 220px;
+		border-bottom: 1px solid color('border', 'table-border');
+		&.fixed {
+			position: fixed;
+			top: 0;
+			background: white;
+			z-index: 999;
+		}
+		&.fixed + .compare-body {
+			padding-top: 240px;
+		}
+	}
+	.compare-actions {
+		@extend .no-padding;
+		height: 100%;
+		.btn-link {
+			margin-right: $gutter-width*0.9;
+			margin-top: 168px;
+			&.active {
+				color: color('text', 'base');
+			}
+		}
+	}
+	.compare-products {
+		@extend .no-padding;
+		width: 68.4%;
+		max-width: 780px;
+		.compare-item {
+			
+		}
+		.prod-img {
+			padding: $gutter-width*0.75 0 $gutter-width;
+			text-align: center;
+			img {
+				height: 130px;
+				width: auto;
+			}
+		}
+		.prod-name {
+			padding: 0 $gutter-width*1.5 0 0;
+			.btn-compare-delete {
+				position: absolute;
+				top: 2px;
+				right: 16px;
+				width: 1em;
+				height: 1em;
+				.icon {
+					fill: color('text', 'base');
+				}
+			}
+		}
+	}
+	.carousel {
+		padding: 0;
+	}
+	.carousel-controlls {
+		.prev,
+		.next {
+			margin-top: 0;
+			top: 55px;
+			opacity: 0;
+			&.active {
+				opacity: 1;
+			}
+		}
+		.prev {
+			left: -86px;
+		}
+		.next {
+			right: -80px;
+		}
+	}
+	.compare-body {
+		.param-line {
+			padding: $gutter-width*0.8 0;
+			border-bottom: 1px solid color('border', 'table-border');
+			&:last-child {
+				border-bottom: 0;
+			}
+			.param-name {
+				padding-left: 0;
+				padding-right: $gutter-width*1.25;
+			}
+			.param-value {
+				width: 68.5%;
+				max-width: 780px;
+			}
+			&.price {
+				line-height: 24px;
+				.param-value {
+					font-size: 24px;
+				}
+			}
+		}
+	}
+}

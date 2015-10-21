@@ -67,6 +67,11 @@ main {
 .z-depth-5{
   box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
 }
+.base-card {
+	background: white;
+	@extend .z-depth-1;
+	border-radius: $base-border-radius;
+}
 
 .hoverable:hover {
   transition: box-shadow .25s;
