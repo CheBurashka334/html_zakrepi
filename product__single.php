@@ -26,7 +26,33 @@
 					</div>
 					<div class="articul">Артикул: WR22SA</div>
 				</div>
-				<div class="product-img"><img src="images/content/products/product-full.jpg"/></div>
+				<div class="product-imgs row">
+					<div class="thumbs carousel-box vertical col">
+						<div class="carousel">
+							<div class="carousel-inner">
+								<!-- ссылка на большое изображение -->
+								<a class="item thumb-link img-link active" href="images/content/products/product-full.jpg">
+									<!-- миниатюра -->
+									<img class="thumb-img" src="images/content/products/product-full.jpg"/>
+								</a>
+								<a class="item thumb-link img-link" href="images/content/products/cataloge-product-1.jpg">
+									<img class="thumb-img" src="images/content/products/cataloge-product-1.jpg"/>
+								</a>
+								<a class="item thumb-link img-link" href="images/content/products/cataloge-product-2.jpg">
+									<img class="thumb-img" src="images/content/products/cataloge-product-2.jpg"/>
+								</a>
+								<a class="item thumb-link img-link" href="images/content/products/cataloge-product-3.jpg">
+									<img class="thumb-img" src="images/content/products/cataloge-product-3.jpg"/>
+								</a>
+							</div>
+						</div>
+						<div class="carousel-controlls">
+							<button class="prev"><svg class="icon"><use xlink:href="#arrow"/></svg></button>
+							<button class="next"><svg class="icon"><use xlink:href="#arrow"/></svg></button>
+						</div>
+					</div>
+					<div class="full-img col"><img src="images/content/products/product-full.jpg"/></div>
+				</div>
 			</div>
 			<div class="col l3 no-padding">
 				<div class="action-panel">

@@ -275,6 +275,17 @@ $(document).ready(function(){
 		})
 		.jcarouselControl();
 	
+	// product-thumbs
+	$('.product-imgs .thumb-link').click(function(){
+		var fullImg = $(this).attr('href');
+		$(this).addClass('active').siblings('.thumb-link').removeClass('active');
+		$('.product-imgs .full-img img').attr({'src':fullImg});
+		/*if(($('.product-imgs .full-img').height() - $('.product-imgs .full-img img').height()) > 20){
+			$('.product-imgs .full-img img').css({'margin-top':($('.product-imgs .full-img').height() - $('.product-imgs .full-img img').height())/2});
+		}*/
+		return false;
+	});
+	
 	
 	
 	// anchor-link

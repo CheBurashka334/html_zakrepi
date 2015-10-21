@@ -9,6 +9,16 @@
 	}
 	.item {
 		margin-bottom: 0;
+		box-sizing: border-box;
+		position: relative;
+	}
+}
+.vertical {
+	padding-top: $gutter-width;
+	padding-bottom: $gutter-width;
+	.carousel-inner {
+		width: 100%;
+		height: 99999px;
 	}
 }
 .carousel-controlls {
@@ -31,6 +41,9 @@
 		.icon {
 			fill: color('icons', 'base');
 		}
+		&:hover .icon {
+			fill: color('primary', 'base');
+		}
 	}
 	.prev {
 		left: -2.75*$gutter-width;
@@ -38,6 +51,25 @@
 	.next {
 		right: -2.75*$gutter-width;
 		transform: rotate(180deg);
+	}
+}
+.vertical .carousel-controlls {
+	.prev,
+	.next {
+		left: 50%;
+		margin-left: -1em;
+		margin-top: 0;
+		width: 2em;
+		height: 2em;
+	}
+	.prev {
+		top: -0.5em;
+		transform: rotate(90deg);
+	}
+	.next {
+		top: auto;
+		bottom: -0.5em;
+		transform: rotate(-90deg);
 	}
 }
 .carousel-nav {
@@ -86,4 +118,13 @@
 }
 .product-carousel {
 	margin-bottom: $gutter-width;
+}
+.thumbs.carousel-box {
+	padding-top: $gutter-width;
+	padding-bottom: $gutter-width;
+	.carousel {
+		padding: 0;
+		width: 100%;
+		height: 100%;
+	}
 }
