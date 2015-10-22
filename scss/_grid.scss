@@ -119,6 +119,10 @@
 			margin-left: auto;
 		}
 	}
+	&.col {
+		padding-left: $gutter-width/2;
+		padding-right: $gutter-width/2;
+	}
 }
 
 .full-width {

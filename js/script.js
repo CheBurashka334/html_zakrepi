@@ -486,6 +486,12 @@ $(document).ready(function(){
 	$('.tooltip .btn-close').click(function(){
 		$(this).parents('.tooltip').removeClass('show');
 	});
+	
+	// show/hide block
+	$('.btn-toggle-block').click(function(){
+		$($(this).attr('data-block')).toggleClass('hide');
+		return false;
+	});
 
 });
 

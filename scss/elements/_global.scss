@@ -71,6 +71,8 @@ main {
 	background: white;
 	@extend .z-depth-1;
 	border-radius: $base-border-radius;
+	padding: $gutter-width;
+	margin-bottom: $gutter-width;
 }
 
 .hoverable:hover {
@@ -274,7 +276,6 @@ table {
 	td, th{
 		padding: 15px 5px;
 		display: table-cell;
-		text-align: left;
 		vertical-align: middle;
 		border-radius: 2px;
 	}
@@ -328,17 +329,13 @@ table {
     th,
     td {
       margin: 0;
-      vertical-align: top;
     }
 
-    th { text-align: left; }
     thead {
       display: block;
-      float: left;
 
       tr {
         display: block;
-        padding: 0 10px 0 0;
 
         th::before {
           content: "\00a0";
@@ -366,19 +363,17 @@ table {
       min-height: 1.25em;
       text-align: left;
     }
-    tr { padding: 0 10px; }
 
     /* sort out borders */
     thead {
       border: 0;
-      border-right: 1px solid $table-border-color;
     }
 
     &.bordered {
       th { border-bottom: 0; border-left: 0; }
       td { border-left: 0; border-right: 0; border-bottom: 0; }
       tr { border: 0; }
-      tbody tr { border-right: 1px solid $table-border-color; }
+      tbody tr { border-right: 1px solid color('border', 'table-border'); }
     }
 
   }
@@ -406,81 +401,30 @@ table {
 	.table-col {
 		padding: $gutter-width*0.8 0;
 	}
-	.status-icon {
-		width: 45px;
-		height: 45px;
-		background: #fff;
-		@extend .z-depth-1;
-		padding: 5px;
-		float: left;
-		margin-right: $gutter-width*1.5;
-		.icon {
-			fill: $primary-color;
-		}
-	}
-	.info {
-		width: 38%;
-	}
-	.date {
-		width: 24%;
-	}
-	.sum {
-		width: 16%;
-	}
-	.detail {
-		width: 22%;
-	}
-	& + .btn {
-		margin-bottom: $gutter-width;
-	}
-	.status-done {
-		color: #757575;
-	}
-	.status-paid {
-		background: #f7f7f7;
-	}
 }
-@media #{$medium-and-down}{
-	.table {
-		.info {
-			width: 35.6%;
-		}
-		.date {
-			width: 22%;
-		}
-		.sum {
-			width: 15%;
-		}
-		.detail {
-			width: 27.4%;
-		}
-	}
+.table-header {
+	text-align: center;
+	color: color('text', 'light');
 }
-@media screen and (max-width: 550px){
-	.table {
-		display: block;
-		margin-top: 0;
-		.status-icon {
-			position: absolute;
-			top: 0;
-			left: $gutter-width;
-			float: none;
-		}
-		.table-row {
-			display: block;
-			padding: $gutter-width 0;
-		}
-		.table-col {
-			display: block;
-			width: 100%;
-			padding: 0 $gutter-width;
-			padding-left: $gutter-width*2 + 45px;
-		}
-		.info,
-		.date {
-			margin-bottom: $gutter-width/2;
+.flex-table {
+	.table-row {
+		display: flex;
+		border-bottom: 1px solid color('border', 'table-border');
+		flex-direction: row;
+		align-items: center;
+		&:last-child {
+			border: 0;
 		}
 	}
+	.col {
+		padding: 1em $gutter-width;
+	}
+	.quantity,
+	.sum,
+	.delete {
+		text-align: center;
+	}
+	
 }
 
 

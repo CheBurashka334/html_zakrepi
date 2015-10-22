@@ -1,0 +1,32 @@
+// basket 
+.basket-table {
+	.product-item {
+		>.col {
+			padding-top: $gutter-width*1.5;
+			padding-bottom: $gutter-width*1.5;
+		}
+		.product-img {
+			text-align: center;
+			img {
+				max-height: 110px;
+			}
+		}
+	}
+}
+.basket-table .sum,
+.total-sum-box .sum {
+	font-size: 22px;
+}
+.total-sum-box {
+	margin-bottom: 90px;
+	table {
+		margin-top: $gutter-width;
+	}
+}
+.page-title-basket {
+	margin-top: $gutter-width/2;
+	margin-bottom: $gutter-width*0.75;
+	.btn-clear-basket {
+		margin-top: $gutter-width*1.75;
+	}
+}

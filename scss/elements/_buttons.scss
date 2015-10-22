@@ -56,6 +56,9 @@
 		line-height: 48px;
 		height: 50px;
 	}
+	&.small {
+		width: 60px;
+	}
 	&.center {
 		display: block;
 		margin-left: auto;
@@ -66,6 +69,9 @@
 		line-height: 100%;
 		border: 0;
 		padding: 2px;
+		&.primary {
+			background: color('primary', 'base');
+		}
 	}
 	&.btn-with-icon {
 		.icon {
@@ -107,6 +113,16 @@
 	}
 	&:hover {
 		transform: rotate(90deg);
+	}
+}
+.btn-delete-from-card {
+	width: 17px;
+	height: 17px;
+	.icon {
+		fill: color('text', 'light');
+	}
+	&:hover .icon {
+		fill: color('primary', 'base');
 	}
 }
 .btn-link {

@@ -24,7 +24,7 @@
 <div id="svg-placeholder" class="hide"></div>
 <div class="layout">
 <!-- для главной добавить класс home-page к page, для сравнения .compare-page -->
-<div class="page compare-page" ng-app="zakrepi">
+<div class="page" ng-app="zakrepi">
 	<!-- если не 404 -->
 	<div class="header-wrapper">
 		<div class="topbar">

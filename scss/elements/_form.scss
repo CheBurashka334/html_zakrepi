@@ -151,3 +151,74 @@ select {
 		transform: rotate(90deg) scale(1,2);
 	}
 }
+
+// quantity-field
+.quantity-field {
+	display: inline-block;
+	@extend .medium-text;
+	.quantity-value {
+		display: inline-block;
+		width: 3em;
+		max-width: 100%;
+		padding: 0 1em 0 $gutter-width/2;
+		font-size: inherit;
+		line-height: 2em;
+		height: 2em;
+		border: 0;
+		background: color('bg', 'base');
+		color: color('icons', 'dark');
+		border-radius: 0;
+	}
+	.btn-up,
+	.btn-down {
+		width: 1em;
+		height: 1em;
+		position: absolute;
+		right: 0;
+		background: color('primary', 'light');
+		border: 0;
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 0;
+			height: 0;
+			top: 5px;
+			left: 5px;
+			border-color: white;
+			border-right-color: transparent;
+			border-left-color: transparent;
+			border-style: solid;
+		}
+		&:hover {
+			background: color('primary', 'base');
+		}
+		&:disabled {
+			background: #decdcd;
+		}
+	}
+	.btn-up {
+		top: 0;
+		&:after {
+			border-width: 0 3px 6px 3px;
+		}
+	}
+	.btn-down {
+		top: 1em;
+		&:after {
+			border-width: 6px 3px 0 3px;
+		}
+	}
+}
+.promocode-field {
+	@extend .inline-field;
+	margin-top: $gutter-width/2;
+	input {
+		width: auto;
+		max-width: calc(100% - 80px);
+		margin-right: $gutter-width;
+	}
+	.btn {
+		padding: 0 $gutter-width;
+	}
+}

@@ -1805,20 +1805,25 @@ $progress-bar-color: $secondary-color !default;*/
   margin-right: auto;
   margin-left: auto;
 }
+/* line 122, scss/_grid.scss */
+.row.col {
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
-/* line 124, scss/_grid.scss */
+/* line 128, scss/_grid.scss */
 .full-width {
   width: 100vw;
   margin-left: calc(-1*(100vw - 100%)/2);
 }
 
 @media only screen and (max-width: 650px) {
-  /* line 129, scss/_grid.scss */
+  /* line 133, scss/_grid.scss */
   .s-full-width {
     width: 100vw;
     margin-left: calc(-1*(100vw - 100%)/2);
   }
-  /* line 133, scss/_grid.scss */
+  /* line 137, scss/_grid.scss */
   .s-full-width .col {
     padding-left: 40px;
     padding-right: 40px;
@@ -1828,7 +1833,7 @@ $progress-bar-color: $secondary-color !default;*/
 }
 
 @media only screen and (min-width: 651px) and (max-width: 992px) {
-  /* line 141, scss/_grid.scss */
+  /* line 145, scss/_grid.scss */
   .m-full-width {
     width: 100vw;
     margin-left: calc(-1*(100vw - 100%)/2);
@@ -1836,7 +1841,7 @@ $progress-bar-color: $secondary-color !default;*/
 }
 
 @media only screen and (min-width: 993px) {
-  /* line 147, scss/_grid.scss */
+  /* line 151, scss/_grid.scss */
   .l-full-width {
     width: 100vw;
     margin-left: calc(-1*(100vw - 100%)/2);
@@ -2467,7 +2472,7 @@ html {
 }
 
 /* line 55, scss/elements/_global.scss */
-.z-depth-1, .base-card, .compare, .table .status-icon, .sidebar-menu, .filter, .product-card, .product-page .main-info {
+.z-depth-1, .base-card, .compare, .sidebar-menu, .filter, .product-card, .product-page .main-info {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -2495,74 +2500,76 @@ html {
 .base-card, .compare {
   background: white;
   border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
-/* line 76, scss/elements/_global.scss */
+/* line 78, scss/elements/_global.scss */
 .hoverable:hover {
   -webkit-transition: box-shadow .25s;
           transition: box-shadow .25s;
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* line 83, scss/elements/_global.scss */
+/* line 85, scss/elements/_global.scss */
 .divider {
   height: 1px;
   overflow: hidden;
 }
 
-/* line 92, scss/elements/_global.scss */
+/* line 94, scss/elements/_global.scss */
 blockquote {
   margin: 20px 0;
   padding-left: 1.5rem;
   border-left: 5px solid #ce2127;
 }
 
-/* line 100, scss/elements/_global.scss */
+/* line 102, scss/elements/_global.scss */
 i {
   line-height: inherit;
 }
-/* line 103, scss/elements/_global.scss */
+/* line 105, scss/elements/_global.scss */
 i.left {
   float: left;
   margin-right: 15px;
 }
-/* line 107, scss/elements/_global.scss */
+/* line 109, scss/elements/_global.scss */
 i.right {
   float: right;
   margin-left: 15px;
 }
-/* line 111, scss/elements/_global.scss */
+/* line 113, scss/elements/_global.scss */
 i.tiny {
   font-size: 1rem;
 }
-/* line 114, scss/elements/_global.scss */
+/* line 116, scss/elements/_global.scss */
 i.small {
   font-size: 2rem;
 }
-/* line 117, scss/elements/_global.scss */
+/* line 119, scss/elements/_global.scss */
 i.medium, .tabs .tab-header-item i.tab-link, .reviews-list .review-item i.subtitle {
   font-size: 4rem;
 }
-/* line 120, scss/elements/_global.scss */
+/* line 122, scss/elements/_global.scss */
 i.large {
   font-size: 6rem;
 }
 
-/* line 126, scss/elements/_global.scss */
+/* line 128, scss/elements/_global.scss */
 img.responsive-img,
 video.responsive-video {
   max-width: 100%;
   height: auto;
 }
 
-/* line 135, scss/elements/_global.scss */
+/* line 137, scss/elements/_global.scss */
 .parallax-container {
   position: relative;
   overflow: hidden;
   height: 500px;
 }
 
-/* line 141, scss/elements/_global.scss */
+/* line 143, scss/elements/_global.scss */
 .parallax {
   position: absolute;
   top: 0;
@@ -2571,7 +2578,7 @@ video.responsive-video {
   bottom: 0;
   z-index: -1;
 }
-/* line 149, scss/elements/_global.scss */
+/* line 151, scss/elements/_global.scss */
 .parallax img {
   display: none;
   position: absolute;
@@ -2586,12 +2593,12 @@ video.responsive-video {
           transform: translateX(-50%);
 }
 
-/* line 163, scss/elements/_global.scss */
+/* line 165, scss/elements/_global.scss */
 .pin-top, .pin-bottom {
   position: relative;
 }
 
-/* line 166, scss/elements/_global.scss */
+/* line 168, scss/elements/_global.scss */
 .pinned {
   position: fixed !important;
 }
@@ -2599,12 +2606,12 @@ video.responsive-video {
 /*********************
   Transition Classes
 **********************/
-/* line 174, scss/elements/_global.scss */
+/* line 176, scss/elements/_global.scss */
 ul.staggered-list li {
   opacity: 0;
 }
 
-/* line 178, scss/elements/_global.scss */
+/* line 180, scss/elements/_global.scss */
 .fade-in {
   opacity: 0;
   -webkit-transform-origin: 0 50%;
@@ -2616,89 +2623,89 @@ ul.staggered-list li {
   Media Query Classes
 **********************/
 @media only screen and (max-width: 650px) {
-  /* line 187, scss/elements/_global.scss */
+  /* line 189, scss/elements/_global.scss */
   .hide-on-small-only, .hide-on-small-and-down {
     display: none !important;
   }
 }
 
 @media only screen and (max-width: 992px) {
-  /* line 192, scss/elements/_global.scss */
+  /* line 194, scss/elements/_global.scss */
   .hide-on-med-and-down {
     display: none !important;
   }
 }
 
 @media only screen and (min-width: 651px) {
-  /* line 197, scss/elements/_global.scss */
+  /* line 199, scss/elements/_global.scss */
   .hide-on-med-and-up {
     display: none !important;
   }
 }
 
 @media only screen and (min-width: 650px) and (max-width: 992px) {
-  /* line 202, scss/elements/_global.scss */
+  /* line 204, scss/elements/_global.scss */
   .hide-on-med-only {
     display: none !important;
   }
 }
 
 @media only screen and (min-width: 993px) {
-  /* line 207, scss/elements/_global.scss */
+  /* line 209, scss/elements/_global.scss */
   .hide-on-large-only {
     display: none !important;
   }
 }
 
 @media only screen and (min-width: 993px) {
-  /* line 212, scss/elements/_global.scss */
+  /* line 214, scss/elements/_global.scss */
   .show-on-large {
     display: initial !important;
   }
 }
 
 @media only screen and (min-width: 650px) and (max-width: 992px) {
-  /* line 217, scss/elements/_global.scss */
+  /* line 219, scss/elements/_global.scss */
   .show-on-medium {
     display: initial !important;
   }
 }
 
 @media only screen and (max-width: 650px) {
-  /* line 222, scss/elements/_global.scss */
+  /* line 224, scss/elements/_global.scss */
   .show-on-small {
     display: initial !important;
   }
 }
 
 @media only screen and (min-width: 651px) {
-  /* line 227, scss/elements/_global.scss */
+  /* line 229, scss/elements/_global.scss */
   .show-on-medium-and-up {
     display: initial !important;
   }
 }
 
 @media only screen and (max-width: 992px) {
-  /* line 232, scss/elements/_global.scss */
+  /* line 234, scss/elements/_global.scss */
   .show-on-medium-and-down {
     display: initial !important;
   }
 }
 
 @media only screen and (max-width: 650px) {
-  /* line 240, scss/elements/_global.scss */
+  /* line 242, scss/elements/_global.scss */
   .center-on-small-only {
     text-align: center;
   }
 }
 
-/* line 247, scss/elements/_global.scss */
+/* line 249, scss/elements/_global.scss */
 footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
   background-color: #ce2127;
 }
-/* line 252, scss/elements/_global.scss */
+/* line 254, scss/elements/_global.scss */
 footer.page-footer .footer-copyright {
   overflow: hidden;
   height: 50px;
@@ -2707,60 +2714,59 @@ footer.page-footer .footer-copyright {
   background-color: rgba(51, 51, 51, 0.08);
 }
 
-/* line 263, scss/elements/_global.scss */
+/* line 265, scss/elements/_global.scss */
 table, th, td {
   border: none;
 }
 
-/* line 267, scss/elements/_global.scss */
+/* line 269, scss/elements/_global.scss */
 table {
   width: 100%;
   display: table;
 }
-/* line 271, scss/elements/_global.scss */
+/* line 273, scss/elements/_global.scss */
 table thead {
   border-bottom: 1px solid #d0d0d0;
 }
-/* line 274, scss/elements/_global.scss */
+/* line 276, scss/elements/_global.scss */
 table td, table th {
   padding: 15px 5px;
   display: table-cell;
-  text-align: left;
   vertical-align: middle;
   border-radius: 2px;
 }
-/* line 282, scss/elements/_global.scss */
+/* line 283, scss/elements/_global.scss */
 table.bordered > thead > tr, table.bordered > tbody > tr {
   border-bottom: 1px solid #d0d0d0;
 }
-/* line 288, scss/elements/_global.scss */
+/* line 289, scss/elements/_global.scss */
 table.striped > tbody > tr:nth-child(odd) {
   background-color: #f2f2f2;
 }
-/* line 292, scss/elements/_global.scss */
+/* line 293, scss/elements/_global.scss */
 table.striped > tbody > tr > td {
   border-radius: 0px;
 }
-/* line 298, scss/elements/_global.scss */
+/* line 299, scss/elements/_global.scss */
 table.hoverable > tbody > tr:hover {
   background-color: #f2f2f2;
 }
-/* line 304, scss/elements/_global.scss */
+/* line 305, scss/elements/_global.scss */
 table.centered thead tr th, table.centered tbody tr td {
   text-align: center;
 }
-/* line 309, scss/elements/_global.scss */
+/* line 310, scss/elements/_global.scss */
 table.nostyle {
   border: 0;
   margin: 0;
 }
-/* line 312, scss/elements/_global.scss */
+/* line 313, scss/elements/_global.scss */
 table.nostyle td {
   padding: 0;
 }
 
 @media only screen and (max-width: 992px) {
-  /* line 321, scss/elements/_global.scss */
+  /* line 322, scss/elements/_global.scss */
   table.responsive-table {
     width: 100%;
     border-collapse: collapse;
@@ -2769,31 +2775,24 @@ table.nostyle td {
     position: relative
     /* sort out borders */
   }
-  /* line 328, scss/elements/_global.scss */
+  /* line 329, scss/elements/_global.scss */
   table.responsive-table th,
   table.responsive-table td {
     margin: 0;
-    vertical-align: top;
   }
   /* line 334, scss/elements/_global.scss */
-  table.responsive-table th {
-    text-align: left;
-  }
-  /* line 335, scss/elements/_global.scss */
   table.responsive-table thead {
     display: block;
-    float: left;
   }
-  /* line 339, scss/elements/_global.scss */
+  /* line 337, scss/elements/_global.scss */
   table.responsive-table thead tr {
     display: block;
-    padding: 0 10px 0 0;
   }
-  /* line 343, scss/elements/_global.scss */
+  /* line 340, scss/elements/_global.scss */
   table.responsive-table thead tr th::before {
     content: "\00a0";
   }
-  /* line 348, scss/elements/_global.scss */
+  /* line 345, scss/elements/_global.scss */
   table.responsive-table tbody {
     display: block;
     width: auto;
@@ -2801,167 +2800,110 @@ table.nostyle td {
     overflow-x: auto;
     white-space: nowrap;
   }
-  /* line 355, scss/elements/_global.scss */
+  /* line 352, scss/elements/_global.scss */
   table.responsive-table tbody tr {
     display: inline-block;
     vertical-align: top;
   }
-  /* line 360, scss/elements/_global.scss */
+  /* line 357, scss/elements/_global.scss */
   table.responsive-table th {
     display: block;
     text-align: right;
   }
-  /* line 364, scss/elements/_global.scss */
+  /* line 361, scss/elements/_global.scss */
   table.responsive-table td {
     display: block;
     min-height: 1.25em;
     text-align: left;
   }
-  /* line 369, scss/elements/_global.scss */
-  table.responsive-table tr {
-    padding: 0 10px;
-  }
-  /* line 372, scss/elements/_global.scss */
+  /* line 368, scss/elements/_global.scss */
   table.responsive-table thead {
     border: 0;
-    border-right: 1px solid #d0d0d0;
   }
-  /* line 378, scss/elements/_global.scss */
+  /* line 373, scss/elements/_global.scss */
   table.responsive-table.bordered th {
     border-bottom: 0;
     border-left: 0;
   }
-  /* line 379, scss/elements/_global.scss */
+  /* line 374, scss/elements/_global.scss */
   table.responsive-table.bordered td {
     border-left: 0;
     border-right: 0;
     border-bottom: 0;
   }
-  /* line 380, scss/elements/_global.scss */
+  /* line 375, scss/elements/_global.scss */
   table.responsive-table.bordered tr {
     border: 0;
   }
-  /* line 381, scss/elements/_global.scss */
+  /* line 376, scss/elements/_global.scss */
   table.responsive-table.bordered tbody tr {
-    border-right: 1px solid #d0d0d0;
+    border-right: 1px solid #e5e5e5;
   }
 }
-/* line 389, scss/elements/_global.scss */
+/* line 384, scss/elements/_global.scss */
 .table-row {
   display: table-row;
   width: 100%;
   border-top: 1px solid #e5e5e5;
 }
-/* line 394, scss/elements/_global.scss */
+/* line 389, scss/elements/_global.scss */
 .table-row:first-child {
   border-top: 0;
 }
 
-/* line 398, scss/elements/_global.scss */
+/* line 393, scss/elements/_global.scss */
 .table-col {
   display: table-cell;
 }
 
-/* line 401, scss/elements/_global.scss */
+/* line 396, scss/elements/_global.scss */
 .table {
   width: 100%;
   margin: 20px 0 30px;
 }
-/* line 406, scss/elements/_global.scss */
+/* line 401, scss/elements/_global.scss */
 .table .table-col {
   padding: 16px 0;
 }
-/* line 409, scss/elements/_global.scss */
-.table .status-icon {
-  width: 45px;
-  height: 45px;
-  background: #fff;
-  padding: 5px;
-  float: left;
-  margin-right: 30px;
-}
-/* line 417, scss/elements/_global.scss */
-.table .status-icon .icon {
-  fill: #ce2127;
-}
-/* line 421, scss/elements/_global.scss */
-.table .info {
-  width: 38%;
-}
-/* line 424, scss/elements/_global.scss */
-.table .date {
-  width: 24%;
-}
-/* line 427, scss/elements/_global.scss */
-.table .sum {
-  width: 16%;
-}
-/* line 430, scss/elements/_global.scss */
-.table .detail {
-  width: 22%;
-}
-/* line 433, scss/elements/_global.scss */
-.table + .btn {
-  margin-bottom: 20px;
-}
-/* line 436, scss/elements/_global.scss */
-.table .status-done {
-  color: #757575;
-}
-/* line 439, scss/elements/_global.scss */
-.table .status-paid {
-  background: #f7f7f7;
+
+/* line 405, scss/elements/_global.scss */
+.table-header {
+  text-align: center;
+  color: #8c8c8c;
 }
 
-@media only screen and (max-width: 992px) {
-  /* line 445, scss/elements/_global.scss */
-  .table .info {
-    width: 35.6%;
-  }
-  /* line 448, scss/elements/_global.scss */
-  .table .date {
-    width: 22%;
-  }
-  /* line 451, scss/elements/_global.scss */
-  .table .sum {
-    width: 15%;
-  }
-  /* line 454, scss/elements/_global.scss */
-  .table .detail {
-    width: 27.4%;
-  }
+/* line 410, scss/elements/_global.scss */
+.flex-table .table-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #e5e5e5;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-@media screen and (max-width: 550px) {
-  /* line 460, scss/elements/_global.scss */
-  .table {
-    display: block;
-    margin-top: 0;
-  }
-  /* line 463, scss/elements/_global.scss */
-  .table .status-icon {
-    position: absolute;
-    top: 0;
-    left: 20px;
-    float: none;
-  }
-  /* line 469, scss/elements/_global.scss */
-  .table .table-row {
-    display: block;
-    padding: 20px 0;
-  }
-  /* line 473, scss/elements/_global.scss */
-  .table .table-col {
-    display: block;
-    width: 100%;
-    padding: 0 20px;
-    padding-left: 85px;
-  }
-  /* line 479, scss/elements/_global.scss */
-  .table .info,
-  .table .date {
-    margin-bottom: 10px;
-  }
+/* line 415, scss/elements/_global.scss */
+.flex-table .table-row:last-child {
+  border: 0;
 }
+/* line 419, scss/elements/_global.scss */
+.flex-table .col {
+  padding: 1em 20px;
+}
+/* line 422, scss/elements/_global.scss */
+.flex-table .quantity,
+.flex-table .sum,
+.flex-table .delete {
+  text-align: center;
+}
+
 /*/ Collections
 .collection {
   margin: $element-top-margin 0 $element-bottom-margin 0;
@@ -3059,7 +3001,7 @@ table.nostyle td {
   color: $secondary-color;
 }
 */
-/* line 586, scss/elements/_global.scss */
+/* line 530, scss/elements/_global.scss */
 span.badge {
   min-width: 3rem;
   padding: 0 6px;
@@ -3069,19 +3011,19 @@ span.badge {
   position: absolute;
   right: 15px;
 }
-/* line 597, scss/elements/_global.scss */
+/* line 541, scss/elements/_global.scss */
 span.badge.new {
   font-weight: 300;
   font-size: 0.8rem;
   color: #fff;
   border-radius: 2px;
 }
-/* line 604, scss/elements/_global.scss */
+/* line 548, scss/elements/_global.scss */
 span.badge.new:after {
   content: " new";
 }
 
-/* line 610, scss/elements/_global.scss */
+/* line 554, scss/elements/_global.scss */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -3089,11 +3031,11 @@ span.badge.new:after {
   height: 0;
   overflow: hidden;
 }
-/* line 616, scss/elements/_global.scss */
+/* line 560, scss/elements/_global.scss */
 .video-container.no-controls {
   padding-top: 0;
 }
-/* line 620, scss/elements/_global.scss */
+/* line 564, scss/elements/_global.scss */
 .video-container iframe, .video-container object, .video-container embed {
   position: absolute;
   top: 0;
@@ -3183,49 +3125,49 @@ span.badge.new:after {
 /*******************
   Utility Classes
 *******************/
-/* line 711, scss/elements/_global.scss */
+/* line 655, scss/elements/_global.scss */
 .hide {
   display: none !important;
 }
 
-/* line 716, scss/elements/_global.scss */
+/* line 660, scss/elements/_global.scss */
 .left-align {
   text-align: left;
 }
 
-/* line 719, scss/elements/_global.scss */
+/* line 663, scss/elements/_global.scss */
 .right-align {
   text-align: right;
 }
 
-/* line 722, scss/elements/_global.scss */
+/* line 666, scss/elements/_global.scss */
 .center-align {
   text-align: center;
 }
 
-/* line 726, scss/elements/_global.scss */
+/* line 670, scss/elements/_global.scss */
 .left {
   float: left !important;
 }
 
-/* line 729, scss/elements/_global.scss */
+/* line 673, scss/elements/_global.scss */
 .right {
   float: right !important;
 }
 
-/* line 732, scss/elements/_global.scss */
+/* line 676, scss/elements/_global.scss */
 .nofloat {
   float: none !important;
 }
 
-/* line 735, scss/elements/_global.scss */
+/* line 679, scss/elements/_global.scss */
 .center {
   float: none;
   margin-right: auto;
   margin-left: auto;
 }
 
-/* line 742, scss/elements/_global.scss */
+/* line 686, scss/elements/_global.scss */
 .no-select {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -3235,19 +3177,19 @@ span.badge.new:after {
   user-select: none;
 }
 
-/* line 751, scss/elements/_global.scss */
+/* line 695, scss/elements/_global.scss */
 .circle {
   border-radius: 50%;
 }
 
-/* line 755, scss/elements/_global.scss */
+/* line 699, scss/elements/_global.scss */
 .center-block {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 761, scss/elements/_global.scss */
+/* line 705, scss/elements/_global.scss */
 .truncate {
   display: block;
   white-space: nowrap;
@@ -3255,7 +3197,7 @@ span.badge.new:after {
   text-overflow: ellipsis;
 }
 
-/* line 768, scss/elements/_global.scss */
+/* line 712, scss/elements/_global.scss */
 .no-padding, .compare .compare-actions, .compare .compare-products {
   padding: 0 !important;
 }
@@ -3477,19 +3419,27 @@ span.badge.new:after {
   height: 50px;
 }
 /* line 59, scss/elements/_buttons.scss */
+.btn.small {
+  width: 60px;
+}
+/* line 62, scss/elements/_buttons.scss */
 .btn.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 64, scss/elements/_buttons.scss */
+/* line 67, scss/elements/_buttons.scss */
 .btn.btn-icon {
   background: transparent;
   line-height: 100%;
   border: 0;
   padding: 2px;
 }
-/* line 71, scss/elements/_buttons.scss */
+/* line 72, scss/elements/_buttons.scss */
+.btn.btn-icon.primary {
+  background: #ce2127;
+}
+/* line 77, scss/elements/_buttons.scss */
 .btn.btn-with-icon .icon {
   display: inline-block;
   width: 25px;
@@ -3497,34 +3447,34 @@ span.badge.new:after {
   line-height: 100%;
   margin-right: 20px;
 }
-/* line 79, scss/elements/_buttons.scss */
+/* line 85, scss/elements/_buttons.scss */
 .btn.shopping-card {
   padding: 8px 0;
 }
 
-/* line 83, scss/elements/_buttons.scss */
+/* line 89, scss/elements/_buttons.scss */
 .btn-favorite {
   width: 25px;
   height: 20px;
 }
-/* line 86, scss/elements/_buttons.scss */
+/* line 92, scss/elements/_buttons.scss */
 .btn-favorite:hover .icon {
   fill: #ce2127;
 }
 
-/* line 91, scss/elements/_buttons.scss */
+/* line 97, scss/elements/_buttons.scss */
 .icon {
   width: 100%;
   height: 100%;
   vertical-align: top;
 }
 
-/* line 96, scss/elements/_buttons.scss */
+/* line 102, scss/elements/_buttons.scss */
 .btn-more {
   margin-top: 10px;
 }
 
-/* line 99, scss/elements/_buttons.scss */
+/* line 105, scss/elements/_buttons.scss */
 .btn-close {
   width: 17px;
   height: 17px;
@@ -3535,18 +3485,32 @@ span.badge.new:after {
   -webkit-transition: -webkit-transform .3s ease;
           transition: transform .3s ease;
 }
-/* line 105, scss/elements/_buttons.scss */
+/* line 111, scss/elements/_buttons.scss */
 .btn-close .icon {
   fill: #ce2127;
 }
-/* line 108, scss/elements/_buttons.scss */
+/* line 114, scss/elements/_buttons.scss */
 .btn-close:hover {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-/* line 112, scss/elements/_buttons.scss */
+/* line 118, scss/elements/_buttons.scss */
+.btn-delete-from-card {
+  width: 17px;
+  height: 17px;
+}
+/* line 121, scss/elements/_buttons.scss */
+.btn-delete-from-card .icon {
+  fill: #8c8c8c;
+}
+/* line 124, scss/elements/_buttons.scss */
+.btn-delete-from-card:hover .icon {
+  fill: #ce2127;
+}
+
+/* line 128, scss/elements/_buttons.scss */
 .btn-link {
   background: none;
   border: 0;
@@ -3639,7 +3603,7 @@ textarea + .textfield-placeholder, .tabs .tab-header-item .tab-link {
 }
 
 /* line 50, scss/elements/_typography.scss */
-.medium-text, .collapsible .collapsible-header, .horizontal-multilevel-menu > .menu-item > .menu-link, .horizontal-multilevel-menu .submenu-link.default, .horizontal-multilevel-menu .submenu.level-2 > .submenu-item > .submenu-link, .horizontal-multilevel-menu .submenu.level-3 > .submenu-item > .submenu-link, .product-card .item-name, .product-card .product-price .old-price {
+.medium-text, .quantity-field, .collapsible .collapsible-header, .horizontal-multilevel-menu > .menu-item > .menu-link, .horizontal-multilevel-menu .submenu-link.default, .horizontal-multilevel-menu .submenu.level-2 > .submenu-item > .submenu-link, .horizontal-multilevel-menu .submenu.level-3 > .submenu-item > .submenu-link, .product-card .item-name, .product-card .product-price .old-price {
   font-size: 16px;
 }
 
@@ -3907,19 +3871,22 @@ input[type="checkbox"]:checked + .checkbox-lbl:before {
 }
 
 /* line 101, scss/elements/_form.scss */
-.inline-field {
+.inline-field, .promocode-field {
   vertical-align: baseline;
 }
 /* line 103, scss/elements/_form.scss */
-.inline-field .label {
+.inline-field .label, .promocode-field .label {
   display: inline-block;
   margin-right: 25px;
 }
 /* line 107, scss/elements/_form.scss */
-.inline-field input:not(.dropdown-inp),
+.inline-field input:not(.dropdown-inp), .promocode-field input:not(.dropdown-inp),
 .inline-field select,
+.promocode-field select,
 .inline-field .select-box,
-.inline-field .dropdown-box {
+.promocode-field .select-box,
+.inline-field .dropdown-box,
+.promocode-field .dropdown-box {
   display: inline-block;
 }
 
@@ -3969,6 +3936,91 @@ select option {
   -webkit-transform: rotate(90deg) scale(1, 2);
       -ms-transform: rotate(90deg) scale(1, 2);
           transform: rotate(90deg) scale(1, 2);
+}
+
+/* line 156, scss/elements/_form.scss */
+.quantity-field {
+  display: inline-block;
+}
+/* line 159, scss/elements/_form.scss */
+.quantity-field .quantity-value {
+  display: inline-block;
+  width: 3em;
+  max-width: 100%;
+  padding: 0 1em 0 10px;
+  font-size: inherit;
+  line-height: 2em;
+  height: 2em;
+  border: 0;
+  background: #f6f6f6;
+  color: #242424;
+  border-radius: 0;
+}
+/* line 172, scss/elements/_form.scss */
+.quantity-field .btn-up,
+.quantity-field .btn-down {
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  right: 0;
+  background: #f33b42;
+  border: 0;
+}
+/* line 180, scss/elements/_form.scss */
+.quantity-field .btn-up:after,
+.quantity-field .btn-down:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 5px;
+  left: 5px;
+  border-color: white;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-style: solid;
+}
+/* line 193, scss/elements/_form.scss */
+.quantity-field .btn-up:hover,
+.quantity-field .btn-down:hover {
+  background: #ce2127;
+}
+/* line 196, scss/elements/_form.scss */
+.quantity-field .btn-up:disabled,
+.quantity-field .btn-down:disabled {
+  background: #decdcd;
+}
+/* line 200, scss/elements/_form.scss */
+.quantity-field .btn-up {
+  top: 0;
+}
+/* line 202, scss/elements/_form.scss */
+.quantity-field .btn-up:after {
+  border-width: 0 3px 6px 3px;
+}
+/* line 206, scss/elements/_form.scss */
+.quantity-field .btn-down {
+  top: 1em;
+}
+/* line 208, scss/elements/_form.scss */
+.quantity-field .btn-down:after {
+  border-width: 6px 3px 0 3px;
+}
+
+/* line 213, scss/elements/_form.scss */
+.promocode-field {
+  margin-top: 10px;
+}
+/* line 216, scss/elements/_form.scss */
+.promocode-field input {
+  width: auto;
+  max-width: calc(100% - 80px);
+  margin-right: 20px;
+}
+/* line 221, scss/elements/_form.scss */
+.promocode-field .btn {
+  padding: 0 20px;
 }
 
 /* line 2, scss/elements/_search.scss */
@@ -5563,6 +5615,45 @@ select option {
 /* line 106, scss/components/_compare.scss */
 .compare .compare-body .param-line.price .param-value {
   font-size: 24px;
+}
+
+/* line 4, scss/components/_basket.scss */
+.basket-table .product-item > .col {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+/* line 8, scss/components/_basket.scss */
+.basket-table .product-item .product-img {
+  text-align: center;
+}
+/* line 10, scss/components/_basket.scss */
+.basket-table .product-item .product-img img {
+  max-height: 110px;
+}
+
+/* line 16, scss/components/_basket.scss */
+.basket-table .sum,
+.total-sum-box .sum {
+  font-size: 22px;
+}
+
+/* line 20, scss/components/_basket.scss */
+.total-sum-box {
+  margin-bottom: 90px;
+}
+/* line 22, scss/components/_basket.scss */
+.total-sum-box table {
+  margin-top: 20px;
+}
+
+/* line 26, scss/components/_basket.scss */
+.page-title-basket {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+/* line 29, scss/components/_basket.scss */
+.page-title-basket .btn-clear-basket {
+  margin-top: 35px;
 }
 
 /* line 2, scss/pages/_catalog.scss */
