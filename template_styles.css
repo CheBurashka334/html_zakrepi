@@ -2332,61 +2332,66 @@ html, body {
 }
 
 /* line 19, scss/_layout.scss */
+.page-empty {
+  padding: 20vh 0;
+}
+
+/* line 22, scss/_layout.scss */
 .header-wrapper,
 .footer-wrapper {
   background: white;
   color: #434343;
 }
 
-/* line 24, scss/_layout.scss */
+/* line 27, scss/_layout.scss */
 .topbar {
   background: #efefef;
   color: #333333;
 }
 
-/* line 28, scss/_layout.scss */
+/* line 31, scss/_layout.scss */
 .main-menu {
   background: #363636;
   color: white;
 }
 
-/* line 32, scss/_layout.scss */
+/* line 35, scss/_layout.scss */
 .phone-box {
   line-height: 1;
 }
-/* line 34, scss/_layout.scss */
+/* line 37, scss/_layout.scss */
 .phone-box .phone-link {
   display: inline-block;
   margin-bottom: 3px;
 }
 
-/* line 41, scss/_layout.scss */
+/* line 44, scss/_layout.scss */
 .header {
   padding-top: 20px;
   padding-bottom: 15px;
 }
-/* line 44, scss/_layout.scss */
+/* line 47, scss/_layout.scss */
 .header .phone-box {
   padding-top: 8px;
 }
 
-/* line 49, scss/_layout.scss */
+/* line 52, scss/_layout.scss */
 .subscribe-box {
   padding-top: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #f6f6f6;
 }
-/* line 53, scss/_layout.scss */
+/* line 56, scss/_layout.scss */
 .subscribe-box .sbscr-text {
   padding-top: 5px;
   padding-bottom: 10px;
 }
 
-/* line 62, scss/_layout.scss */
+/* line 65, scss/_layout.scss */
 .soc-list .soc-item {
   margin-right: 10px;
 }
-/* line 65, scss/_layout.scss */
+/* line 68, scss/_layout.scss */
 .soc-list .soc-link {
   display: block;
   width: 31px;
@@ -2399,39 +2404,39 @@ html, body {
   text-align: center;
   color: #939393;
 }
-/* line 76, scss/_layout.scss */
+/* line 79, scss/_layout.scss */
 .soc-list .soc-link .icon {
   fill: #939393;
 }
 
-/* line 82, scss/_layout.scss */
+/* line 85, scss/_layout.scss */
 .footer {
   padding: 30px 0 25px;
 }
-/* line 84, scss/_layout.scss */
+/* line 87, scss/_layout.scss */
 .footer .box-title {
   margin-top: 0;
   margin-bottom: 13.2px;
   font-weight: normal;
   color: #ce2127;
 }
-/* line 91, scss/_layout.scss */
+/* line 94, scss/_layout.scss */
 .footer .phone-box,
 .footer .schedule-box {
   margin-bottom: 20px;
 }
-/* line 95, scss/_layout.scss */
+/* line 98, scss/_layout.scss */
 .footer .phone-box .phone-link {
   font-size: 22px;
   margin: 1em 0 0;
   display: block;
 }
-/* line 100, scss/_layout.scss */
+/* line 103, scss/_layout.scss */
 .footer .schedule-box p {
   margin: 10px 0;
 }
 
-/* line 104, scss/_layout.scss */
+/* line 107, scss/_layout.scss */
 .bottombar {
   padding: 30px 0;
   border-top: 1px solid #f6f6f6;

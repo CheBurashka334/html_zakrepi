@@ -79,4 +79,11 @@
 	</div>
 </div>
 </div> <!-- /.workarea -->
+<!-- если корзина пустая, для пустой страницы избранного - то же, текст "списо избранного пуст"
+<div class="workarea">
+	<div class="page-empty">
+		<div class="title large-text color-text text-light light center-align">Ваша корзина пуста</div>
+	</div>
+</div>
+-->
 <?php include('footer.php');?>

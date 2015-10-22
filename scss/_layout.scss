@@ -16,6 +16,9 @@ html, body {
 	background: color("bg", "base");
 	overflow-x: hidden;
 }
+.page-empty {
+	padding: 20vh 0;
+}
 .header-wrapper,
 .footer-wrapper {
 	background: white;

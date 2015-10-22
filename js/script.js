@@ -18,6 +18,7 @@ $(document).ready(function(){
 		}
 	});
 	
+	
 	// modal
 	$('.btn-modal').click(function(){
 		var modal = $(this).attr('data-modal');
@@ -492,6 +493,7 @@ $(document).ready(function(){
 		$($(this).attr('data-block')).toggleClass('hide');
 		return false;
 	});
+	
 
 });
 
