@@ -60,8 +60,8 @@
 		</div>
 	</div>
 	<div class="col l4 right total-sum-box">
-		<div class=" base-card">
-			<div class="big-text">Стоимость товаров</div>
+		<div class="base-card">
+			<div class="big-text title">Стоимость товаров</div>
 			<table class="nostyle">
 				<tr><td>Стоимость без скидки:</td><td class="sum" align="right">29 599 <span class="rouble">i</span></td></tr>
 				<tr><td>Скидка:</td><td class="sum" align="right">0 <span class="rouble">i</span></td></tr>
@@ -75,7 +75,7 @@
 				</tr>
 			</table>
 		</div>
-		<a class="btn primary fullwidth big" href="#">Оформить заказ</a>
+		<a class="btn primary fullwidth big btn-checkout" href="#">Оформить заказ</a>
 	</div>
 </div>
 </div> <!-- /.workarea -->

@@ -75,7 +75,7 @@
 								</select>
 								<div class="triangle"></div>
 							</div>
-							<div class="dropdown-box hide-on-med-and-down second-line right">
+							<div class="dropdown-box hide-on-med-and-down right">
 								<div class="dropdown-value">
 									<div class="item-text"></div>
 									<div class="triangle"></div>

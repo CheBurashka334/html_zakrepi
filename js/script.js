@@ -152,6 +152,15 @@ $(document).ready(function(){
 	});*/
 	
 	// placeholder
+	// init
+	$('.inputtext, input:not([type="submit"])').each(function(){
+		if($(this).val().length > 0){
+			$(this).addClass('dirty');
+		} else {
+			$(this).removeClass('dirty');
+		}
+	});
+	// action
 	$('.inputtext, input:not([type="submit"])').keyup(function(){
 		$(this).change();
 	});
@@ -490,8 +499,18 @@ $(document).ready(function(){
 	
 	// show/hide block
 	$('.btn-toggle-block').click(function(){
-		$($(this).attr('data-block')).toggleClass('hide');
-		return false;
+		if($(this).attr('data-hide-block')){
+			$($(this).attr('data-hide-block')).addClass('hide');
+		}
+		if ($(this).attr('data-show-block')) {
+			$($(this).attr('data-show-block')).removeClass('hide');
+		} 
+		if ($(this).attr('data-block')){
+			$($(this).attr('data-block')).toggleClass('hide');
+		}
+		if($(this).is('a')){
+			return false;
+		}
 	});
 	
 

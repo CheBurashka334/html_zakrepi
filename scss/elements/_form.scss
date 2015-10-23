@@ -60,6 +60,13 @@ textarea {
 		transform: translate(50px,0);
 	}
 }
+.tel-before {
+	position: absolute;
+	top: auto;
+	left: auto;
+	margin-top: 10px;
+	margin-left: -25px;
+}
 .col {
 	>input[type="text"],
 	>input[type="email"],
@@ -98,17 +105,53 @@ input[type="checkbox"] {
 		background: white url('images/tick.png') center no-repeat;
 	}
 }
+
+// radio
+input[type="radio"] {
+	display: none;
+	& + .radio-lbl {
+		display: inline-block;
+		margin: 3px 0;
+		line-height: 19px;
+		vertical-align: middle;
+		cursor: pointer;
+		&:before {
+			content: '';
+			display: inline-block;
+			width: 19px;
+			height: 19px;
+			border: 1px solid color('border', 'base');
+			border-radius: $circle-border-radius;
+			margin-right: 1em;
+			background-color: white;
+			padding: 4px;
+			box-sizing: border-box;
+			background-clip: content-box;
+			vertical-align: top;
+		}
+	}
+	&:checked + .radio-lbl:before {
+		background-color: color('primary', 'base');
+	}
+}
+
 .inline-field {
 	vertical-align: baseline;
+	margin: 1em 0;
 	.label {
 		display: inline-block;
 		margin-right: $gutter-width*1.25;
 	}
-	input:not(.dropdown-inp),
+	>input:not(.dropdown-inp),
 	select,
 	.select-box,
-	.dropdown-box {
+	.dropdown-box,
+	.field {
 		display: inline-block;
+		width: auto;
+	}
+	.field input{
+		width: 100%;
 	}
 }
 

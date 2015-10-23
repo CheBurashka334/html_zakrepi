@@ -17,16 +17,94 @@
 .total-sum-box .sum {
 	font-size: 22px;
 }
-.total-sum-box {
-	margin-bottom: 90px;
-	table {
-		margin-top: $gutter-width;
-	}
-}
 .page-title-basket {
 	margin-top: $gutter-width/2;
 	margin-bottom: $gutter-width*0.75;
 	.btn-clear-basket {
 		margin-top: $gutter-width*1.75;
+	}
+}
+
+// checkout
+.btn-checkout {
+	margin-bottom: 90px;
+}
+.checkout-page {
+	.page-title {
+		margin-top: 25px;
+		margin-bottom: 10px;
+	}
+	.page-note-text {
+		margin-top: 0;
+		margin-bottom: $gutter-width*1.5;
+	}
+	.base-card {
+		margin-bottom: 38px;
+	}
+	.inline-field {
+		.label {
+			width: 31%;
+			margin-right: 10px;
+		}
+		>input,
+		.field {
+			width: 66%;
+			width: calc(69% - 15px);
+			margin: 3px 0;
+			&[type="tel"] {
+				width: 33%;
+			}
+			[type="tel"] {
+				width: 66%;
+			}
+		}
+		&.cols-3 > input,
+		&.cols-3 > .field {
+			width: calc((70% - 60px)/3);
+			margin: 3px 5px;
+			input {
+				width: 100%;
+			}
+			&:first-of-type {
+				margin-left: 0;
+			}
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+	}
+	.delivery-address {
+		margin-top: $gutter-width;
+		margin-bottom: 0;
+		.label {
+			vertical-align: top;
+			margin-top: 7px;
+		}
+		.select-box,
+		.dropdown-box,
+		.addr-actions {
+			width: 66%;
+			width: calc(70% - 20px);
+		}
+		.addr-actions {
+			margin-top: 8px;
+			a {
+				margin-right: 12.5%;
+			}
+		}
+	}
+	.mrg {
+		margin-top: 2em;
+	}
+	.total-sum-box {
+		.title {
+			margin-bottom: 0;
+		}
+		table {
+			margin-bottom: 25px;
+		}
+		table td  {
+			padding: 5px 0;
+		}
 	}
 }

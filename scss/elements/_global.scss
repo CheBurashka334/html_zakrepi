@@ -73,6 +73,18 @@ main {
 	border-radius: $base-border-radius;
 	padding: $gutter-width;
 	margin-bottom: $gutter-width;
+	.title {
+		margin-bottom: $gutter-width/2;
+	}
+	.card-content {
+		padding: $gutter-width;
+		> *:first-child {
+			margin-top: 0;
+		}
+		> *:last-child {
+			margin-bottom: 0;
+		}
+	}
 }
 
 .hoverable:hover {
@@ -130,7 +142,15 @@ video.responsive-video {
   max-width: 100%;
   height: auto;
 }
-
+img.inline-img {
+	max-height: 1.5em;
+	vertical-align: middle;
+	display: inline-block;
+	margin-left: $gutter-width/2;
+	&:first-of-type {
+		margin-left: $gutter-width;
+	}
+}
 
 
 // Parallax
