@@ -513,6 +513,11 @@ $(document).ready(function(){
 		}
 	});
 	
+	// delete address
+	$('.address-book .btn-delete-addr').click(function(){
+		$(this).parents('.address-item').detach();
+	});
+	
 
 });
 

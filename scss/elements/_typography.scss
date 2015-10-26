@@ -112,12 +112,19 @@ h6 { font-size: $h6-fontsize; line-height: 1.5; margin: 1em 0;}
 .page-title, h1 {
 	@extend .large-text;
 	@extend .light;
-	margin: $gutter-width/2 0 $gutter-width*0.75;
+	margin: $gutter-width*1.25 0 $gutter-width*0.75;
 	& + .archive-box {
 		margin: $gutter-width*1.5 0;
 		line-height: 51px;
 		vertical-align: middle;
 	}
+}
+.page-note-text {
+	margin-top: 0;
+	margin-bottom: $gutter-width;
+}
+.breadcrumbs + .workarea .page-title {
+	margin: $gutter-width/2 0 $gutter-width*0.75;
 }
 .box-title {
 	@extend .light;

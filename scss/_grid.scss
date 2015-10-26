@@ -123,6 +123,17 @@
 		padding-left: $gutter-width/2;
 		padding-right: $gutter-width/2;
 	}
+	
+	&.h-boxes {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: stretch;
+		.col {
+			float: none;
+			display: flex;
+			align-items: stretch;
+		}
+	}
 }
 
 .full-width {

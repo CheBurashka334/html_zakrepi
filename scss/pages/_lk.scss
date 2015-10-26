@@ -1,0 +1,92 @@
+// lk 
+.profile-page {
+	.page-title {
+		margin-bottom: 8px;
+	}
+	.breadcrumbs + .workarea .page-title {
+		margin-bottom: 25px;
+	}
+	.page-note-text {
+		margin-bottom: 25px;
+	}
+	.orders-table.row {
+		width: calc(100% + #{$gutter-width*2});
+		margin-right: -1*$gutter-width;
+		margin-left: -1*$gutter-width;
+	}
+	.orders-table {
+		margin-bottom: $gutter-width*1.75;
+		.table-header .col {
+			padding: $gutter-width*0.75  $gutter-width;
+		}
+		.col {
+			padding: 23px $gutter-width;
+		}
+		+ .btn {
+			max-width: 240px;
+			margin-bottom: $gutter-width/2;
+		}
+	}
+	.lk-boxes {
+		margin-bottom: $gutter-width*6;
+		.base-card {
+			padding-bottom: $gutter-width*4.75;
+			p {
+				min-height: 1.5em;
+			}
+		}
+		.card-content {
+			padding-top: 7px;
+		}
+		.card-content p {
+			margin: 8px 0;
+		}
+		.link-box {
+			position: absolute;
+			top: auto;
+			left: 0;
+			bottom: $gutter-width;
+			width: 100%;
+			padding: 0 $gutter-width;
+		}
+	}
+	
+	// order
+	.order-info-item {
+		margin: 1em 0 2em;
+		&:last-child {
+			margin-bottom: 1em;
+		}
+	}
+	.prod-item p,
+	.prod-list + .card-footer p {
+		margin: $gutter-width/2 0;
+	}
+	.prod-item {
+		margin-bottom: $gutter-width*1.5;
+		*:first-child {
+			margin-top: 0;
+		}
+		*:last-child {
+			margin-bottom: 0;
+		}
+	}
+	
+	// address-book
+	.address-book {
+		.base-card {
+			padding-bottom: $gutter-width*4;
+			min-height: 220px;
+		}
+	}
+	.btn-delete-addr {
+		position: absolute;
+		width: 19px;
+		height: 19px;
+		top: 0;
+		right: 0;
+		.icon {
+			fill: color('icons', 'lightest');
+		}
+	}
+}
