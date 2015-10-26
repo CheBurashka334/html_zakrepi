@@ -9,21 +9,21 @@
 		<div class="base-card">
 			<div class="title big-text">1. Контактные данные</div>
 			<div class="card-content">
-				<div class="inline-field">
+				<div class="table-field">
 					<label class="label">Фамилия</label>
 					<div class="field">
 						<input type="text" id="cont-family" />
 						<label for="cont-family" class="textfield-placeholder">Укажите как в паспорте</label>
 					</div>
 				</div>
-				<div class="inline-field">
+				<div class="table-field">
 					<label class="label">Имя</label>
 					<div class="field">
 						<input type="text" id="cont-name" />
 						<label for="cont-name" class="textfield-placeholder">Укажите как в паспорте</label>
 					</div>
 				</div>
-				<div class="inline-field">
+				<div class="table-field">
 					<label class="label">Номер телефона</label>
 					<div class="field">
 						<span class="tel-before">+7</span>
@@ -31,7 +31,7 @@
 						<label for="cont-tel" class="textfield-placeholder">Например: 9222123456</label>
 					</div>
 				</div>
-				<div class="inline-field">
+				<div class="table-field">
 					<label class="label">Электронная почта</label>
 					<div class="field">
 						<input type="email" id="cont-email" />
@@ -52,19 +52,19 @@
 					<label class="radio-lbl btn-toggle-block" data-show-block=".delivery-address" for="delivery-v2">Доставка курьером</label>
 				</p>
 				<div class="delivery-address new-addr">
-					<div class="inline-field">
+					<div class="table-field">
 						<span class="label">Город / Поселок / Деревня</span>
 						<div class="field">
 							<input type="text" id="addr-city"/><label for="addr-city" class="textfield-placeholder">Например: Тюмень</label>
 						</div>
 					</div>
-					<div class="inline-field">
+					<div class="table-field">
 						<span class="label">Улица </span>
 						<div class="field">
 							<input type="text" id="addr-street"/><label for="addr-street" class="textfield-placeholder">Например: Мельникайте</label>
 						</div>
 					</div>
-					<div class="inline-field cols-3">
+					<div class="table-field cols-3">
 						<span class="label">Дом / Корпус / Квартира</span>
 						<div class="field"><input type="text" id="addr-dom"/><label for="addr-dom" class="textfield-placeholder">Дом</label></div>/
 						<div class="field"><input type="text" id="addr-korp"/><label for="addr-korp" class="textfield-placeholder">Корпус</label></div>/

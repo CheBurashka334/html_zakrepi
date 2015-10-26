@@ -74,7 +74,7 @@
 	
 	// address-book
 	.address-book {
-		.base-card {
+		.address-item {
 			padding-bottom: $gutter-width*4;
 			min-height: 220px;
 		}
@@ -88,5 +88,14 @@
 		.icon {
 			fill: color('icons', 'lightest');
 		}
+	}
+	.address-form {
+		margin-bottom: $gutter-width*1.5;
+		.def-addr {
+			margin-top: $gutter-width;
+		}
+	}
+	.address-form + .btn {
+		margin-bottom: $gutter-width*10;
 	}
 }

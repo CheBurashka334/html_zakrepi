@@ -41,39 +41,8 @@
 	.base-card {
 		margin-bottom: 38px;
 	}
-	.inline-field {
-		.label {
-			width: 31%;
-			margin-right: 10px;
-		}
-		>input,
-		.field {
-			width: 66%;
-			width: calc(69% - 15px);
-			margin: 3px 0;
-			&[type="tel"] {
-				width: 33%;
-			}
-			[type="tel"] {
-				width: 66%;
-			}
-		}
-		&.cols-3 > input,
-		&.cols-3 > .field {
-			width: calc((70% - 60px)/3);
-			margin: 3px 5px;
-			input {
-				width: 100%;
-			}
-			&:first-of-type {
-				margin-left: 0;
-			}
-			&:last-of-type {
-				margin-right: 0;
-			}
-		}
-	}
-	.delivery-address {
+	.delivery-address,
+	.table-field.delivery-address{
 		margin-top: $gutter-width;
 		margin-bottom: 0;
 		.label {
