@@ -11,9 +11,9 @@ $(document).ready(function(){
 			}
 		} else {
 			if($(window).scrollTop() > 50) {
-				$('.header').addClass('fixed');
+				$('.header-wrapper').addClass('fixed');
 			} else {
-				$('.header').removeClass('fixed');
+				$('.header-wrapper').removeClass('fixed');
 			}
 		}
 	});

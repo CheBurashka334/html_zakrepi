@@ -52,8 +52,8 @@
 					<p>+7 (922) 123-45-67</p>
 				</div>
 				<div class="link-box">
-					<p><a href="#">Изменить личные данные</a></p>
-					<p><a href="#">Изменить пароль</a></p>
+					<p><a href="lk__change-ld.php">Изменить личные данные</a></p>
+					<p><a href="lk__change-pas.php">Изменить пароль</a></p>
 				</div>
 			</div>
 		</div>
@@ -78,7 +78,7 @@
 					<p class="medium-text">Вы не подписаны ни на одну рассылку новостей</p>
 				</div>
 				<div class="link-box">
-					<p><a href="#">Настроить рассылку</a></p>
+					<p><a href="lk__change-subs.php">Настроить рассылку</a></p>
 				</div>
 			</div>
 		</div>

@@ -10,7 +10,7 @@
 	@extend ul.horizontal;
 	.menu-link {
 		display: block;
-		padding: $gutter-width*0.8 7px $gutter-width/2;
+		padding: 13px 7px;
 	}
 	.menu-item:first-of-type .menu-link {
 		padding-left: 0;

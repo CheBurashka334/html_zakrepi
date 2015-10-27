@@ -67,7 +67,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="addr-actions right">
+					<div class="addr-actions second-field">
 						<a class="btn-toggle-block" href="#" data-show-block=".delivery-address.change-addr" data-hide-block=".delivery-address.new-addr">Изменить адрес </a>
 						<a class="btn-toggle-block" href="#" data-show-block=".delivery-address.new-addr" data-hide-block=".delivery-address.change-addr">Указать новый адрес</a>
 					</div>

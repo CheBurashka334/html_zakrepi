@@ -51,11 +51,12 @@
 		}
 		.select-box,
 		.dropdown-box,
-		.addr-actions {
+		.addr-actions,
+		.second-field {
 			width: 66%;
 			width: calc(70% - 20px);
 		}
-		.addr-actions {
+		.addr-actions{
 			margin-top: 8px;
 			a {
 				margin-right: 12.5%;

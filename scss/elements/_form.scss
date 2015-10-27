@@ -138,7 +138,8 @@ input[type="radio"] {
 .inline-field {
 	vertical-align: baseline;
 	margin: 1em 0;
-	.label {
+	.label,
+	.first-field {
 		display: inline-block;
 		margin-right: $gutter-width*1.25;
 	}
@@ -146,22 +147,27 @@ input[type="radio"] {
 	select,
 	.select-box,
 	.dropdown-box,
-	.field {
+	.field,
+	.second-field{
 		display: inline-block;
 		width: auto;
 	}
-	.field input{
+	.field input,
+	.second-field input{
 		width: 100%;
 	}
 }
 .table-field {
 	@extend .inline-field;
-	.label {
+	@extend .clearfix;
+	.label,
+	.first-field{
 		width: 31%;
 		margin-right: 10px;
 	}
 	>input,
-	.field {
+	.field,
+	.second-field{
 		width: 66%;
 		width: calc(69% - 15px);
 		margin: 3px 0;
@@ -170,6 +176,23 @@ input[type="radio"] {
 		}
 		[type="tel"] {
 			width: 66%;
+		}
+	}
+	.second-field {
+		float: right;
+	}
+	&.cols-2 > input,
+	&.cols-2 > .field {
+		width: calc((70% - 40px)/2);
+		margin: 3px 5px;
+		input {
+			width: 100%;
+		}
+		&:first-of-type {
+			margin-left: 0;
+		}
+		&:last-of-type {
+			margin-right: 0;
 		}
 	}
 	&.cols-3 > input,

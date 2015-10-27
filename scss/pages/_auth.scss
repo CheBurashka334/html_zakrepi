@@ -1,0 +1,87 @@
+// auth-box
+.auth-box {
+	text-align: right;
+	.auth-link {
+		@extend a.nostyle;
+		display: inline-block;
+		padding: 0 $gutter-width*0.35;
+		line-height: 1;
+		height: 1em;
+	}
+	.auth-link.register {
+		border-left: 1px solid;
+		padding-left: $gutter-width/2;
+	}
+	.icon {
+		display: inline-block;
+		width: 1.5em;
+		height: 1.5em;
+		padding: 2px;
+		fill: color('icons', 'dark');
+		vertical-align: middle;
+		margin-right: $gutter-width*0.25;
+		margin-top: -0.25*$gutter-width;
+	}
+	.lk-menu {
+		text-align: center;
+		padding: 13px $gutter-width;
+		width: 100%;
+		.menu-link {
+			line-height: 1;
+			padding: $gutter-width/2;
+			display: block;
+			&:hover {
+				color: color('primary', 'base');
+			}
+		}
+	}
+	&.loged-in .auth-link.login {
+		width: 100%;
+		text-align: left;
+	}
+	&.loged-in:hover {
+		.auth-link.login {
+			color: color('primary', 'base');
+			.icon {
+				fill: color('primary', 'base');
+			}
+		}
+		.lk-menu {
+			@extend .tooltip.show;
+		}
+	}
+}
+//authorize-page 
+.authorize-page {
+	.page-title {
+		margin-bottom: $gutter-width*1.25;
+	}
+	.register-form,
+	.authorize-form {
+		margin-bottom: $gutter-width*1.5;
+	}
+	.register-form {
+		.card-content {
+			padding-top: $gutter-width/4;
+		}
+		& + .btn {
+			margin-bottom: $gutter-width*14.5;
+		}
+	}
+	.authorize-form {
+		.card-content {
+			padding: $gutter-width/2 $gutter-width;
+		}
+		+ .btn {
+			margin-bottom: $gutter-width*9.5;
+		}
+	}
+	.soc-login .soc-link {
+		width: 46px;
+		height: 46px;
+		padding: 12px;
+	}
+	.recpass-form + .btn {
+		margin-bottom: $gutter-width*9.5;
+	}
+}

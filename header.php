@@ -23,8 +23,8 @@
 <body>
 <div id="svg-placeholder" class="hide"></div>
 <div class="layout">
-<!-- для главной добавить класс home-page к page, для сравнения .compare-page, оформление заказа .checkout-page, lk - .profile-page -->
-<div class="page profile-page" ng-app="zakrepi">
+<!-- для главной добавить класс home-page к page, для сравнения .compare-page, оформление заказа .checkout-page, lk - .profile-page, авторизация, регистрация .authorize-page -->
+<div class="page authorize-page" ng-app="zakrepi">
 	<!-- если не 404 -->
 	<div class="header-wrapper">
 		<div class="topbar">
@@ -41,9 +41,22 @@
 						<li class="menu-item"><a class="menu-link" href="#">Наши магазины</a></li>
 					</ul>
 				</div>
-				<div class="auth-box col l3">
-					<a class="auth-link login" href="#"><svg class="icon"><use xlink:href="#profile"/></svg> Вход</a>
-					<a class="auth-link register" href="#">Регистрация</a>
+				<div class="auth-box loged-in col l3">
+					<div class="col l2 right">
+						<a class="auth-link login" id="lk-menu-link" href="lk.php"><svg class="icon"><use xlink:href="#profile"/></svg> Личный кабинет</a>
+						<div class="lk-menu tooltip" data-box="#lk-menu-link" data-position="bottom-center">
+							<div class="tooltip-tngl"></div>
+							<ul class="menu tooltip-content">
+								<li class="menu-item"><a href="#" class="menu-link">Мои заказы</a></li>
+								<li class="menu-item"><a href="#" class="menu-link">Личные данные</a></li>
+								<li class="menu-item"><a href="#" class="menu-link">Выйти</a></li>
+							</ul>
+						</div>
+					</div>
+					<!--
+					<a class="auth-link login" href="authorize.php"><svg class="icon"><use xlink:href="#profile"/></svg> Вход</a>
+					<a class="auth-link register" href="registration.php">Регистрация</a>
+					-->
 				</div>
 			</div>
 		</div>

@@ -95,7 +95,25 @@
 			margin-top: $gutter-width;
 		}
 	}
-	.address-form + .btn {
+	.address-form,
+	.ld-form,
+	.pas-form,
+	.subs-form {
+		margin-bottom: $gutter-width*1.5;
+	}
+	.ld-form,
+	.pas-form {
+		.card-content {
+			padding: $gutter-width/2 $gutter-width;
+		}
+	}
+	.subs-form .card-content {
+		padding-top: $gutter-width/2;
+	}
+	.address-form + .btn,
+	.ld-form + .btn,
+	.pas-form + .btn,
+	.subs-form + .btn{
 		margin-bottom: $gutter-width*10;
 	}
 }

@@ -27,10 +27,19 @@ html, body {
 .topbar {
 	background: color("bg", "topbar");
 	color: color("text", "darker");
+	.geo-box,
+	.auth-box,
+	.menu-link {
+		padding-top: 13px;
+		padding-bottom: 13px;
+	}
 }
 .main-menu {
 	background: color("bg", "dark");
 	color: white;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 .phone-box {
 	line-height: 1;
@@ -39,13 +48,28 @@ html, body {
 		margin-bottom: 3px;
 	}
 }
-
+.header-wrapper {
+	height: 200px;
+}
 // header
 .header {
 	padding-top: $gutter-width;
 	padding-bottom: $gutter-width*0.75;
+	background: white;
+	z-index: 1;
+	transition: z-index .3s ease, box-shadow .3s ease;
 	.phone-box {
 		padding-top: $gutter-width*0.4;
+	}
+}
+.header-wrapper.fixed {
+	.header {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 9999;
+		@extend .z-depth-2;
 	}
 }
 // subsribe-box
