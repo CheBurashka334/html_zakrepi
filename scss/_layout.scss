@@ -19,6 +19,12 @@ html, body {
 .page-empty {
 	padding: 20vh 0;
 }
+.white-page {
+	background: white;
+	.footer-wrapper {
+		border-top: 1px solid color('border', 'lighter');
+	}
+}
 .header-wrapper,
 .footer-wrapper {
 	background: white;

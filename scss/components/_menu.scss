@@ -35,9 +35,16 @@
 		&:first-child {
 			border-top: 0;
 		}
-		&.active .menu-link,
-		.menu-link:hover {
+		&.active > .menu-link,
+		.menu-link:hover,
+		.menu-link.primary-color {
 			color: color('primary', 'base');
+		}
+	}
+	.collapsible-body .menu-link {
+		padding: 5px 0;
+		&:first-child {
+			margin-top: 0;
 		}
 	}
 }
@@ -175,5 +182,20 @@
 	.submenu.level-2 > .submenu-item:hover > .submenu-link{
 		color: color('text', 'base');
 		background: white;
+	}
+}
+
+.alphabet-menu {
+	margin: $gutter-width/2 0;
+	@extend .medium-text;
+	line-height: 1;
+	.menu-link {
+		padding-top: 2px;
+		padding-bottom: 2px;
+		color: color('text', 'base');
+		text-transform: uppercase;
+	}
+	.menu-item {
+		margin-right: 3px;
 	}
 }

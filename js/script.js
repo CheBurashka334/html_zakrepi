@@ -458,7 +458,6 @@ $(document).ready(function(){
 				break;
 				case 'bottom-center':
 					posTop = box.offset().top + box.outerHeight() + off;
-					console.log(box.offset().left+' - '+box.outerWidth()+' - '+tooltipW);
 					posLeft =  box.offset().left + ((box.outerWidth() - tooltipW)/2);
 				break;
 				case 'bottom-right':

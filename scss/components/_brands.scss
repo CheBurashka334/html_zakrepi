@@ -1,5 +1,5 @@
 // brands
-.brand-list {
+.brand-box .brand-list {
 	@extend ul.nostyle;
 	@extend ul.horizontal;
 	font-size: 0;
@@ -31,5 +31,44 @@
 		height: 1rem;
 		line-height: 1rem;
 		vertical-align: middle;
+	}
+}
+
+// brands-page
+.brands-page {
+	.brands-list {
+		margin: $gutter-width/4 0 $gutter-width*2;
+	}
+	.brands-box {
+		padding: $gutter-width*1.25 0 $gutter-width;
+		border-top: 1px solid color('border', 'table-border');
+		&:first-child {
+			border-top: 0;
+		}
+		.letter-marker {
+			font-size: 40px;
+			@extend .light;
+			line-height: 1;
+			text-transform: uppercase;
+			color: color('text', 'dark');
+		}
+		.brands {
+			margin-top: 1em;
+		}
+		.brand-item {
+			margin-bottom: 7px;
+			@extend .medium-text;
+		}
+	}
+}
+.brand-page-single {
+	.brand-logo {
+		margin-top: $gutter-width;
+	}
+	.brand-info {
+		margin-bottom: $gutter-width*2.5;
+	}
+	.catalog {
+		margin-bottom: $gutter-width*5;
 	}
 }

@@ -1169,3 +1169,328 @@ zakrepi.controller('CatalogProductsCtrl', function($scope, $http){
 		},
 	];
 });
+zakrepi.controller('brandsCtrl', function($scope, $http){
+	/*$http.get('content/home-products.json').success(function(data){
+		$scope.products = data;
+		console.log($scope.products);
+	});*/
+	$scope.brands = [
+		{
+			"id": 01,
+			"title": "ABAC",
+			"letter": "a",
+		},
+		{
+			"id": 02,
+			"title": "BALLU",
+			"letter": "b",
+		},
+		{
+			"id": 03,
+			"title": "Belamos",
+			"letter": "b",
+		},
+		{
+			"id": 04,
+			"title": "BLUEWELD",
+			"letter": "b",
+		},
+		{
+			"id": 05,
+			"title": "BOSCH / DREMEL",
+			"letter": "b",
+		},
+		{
+			"id": 06,
+			"title": "Dahatsu",
+			"letter": "d",
+		},
+		{
+			"id": 07,
+			"title": "Denzel",
+			"letter": "d",
+		},
+		{
+			"id": 08,
+			"title": "Dorkel",
+			"letter": "d",
+		},
+		{
+			"id": 09,
+			"title": "DWT",
+			"letter": "d",
+		},
+		{
+			"id": 10,
+			"title": "Daire",
+			"letter": "d",
+		},
+		{
+			"id": 11,
+			"title": "Elitech",
+			"letter": "e",
+		},
+		{
+			"id": 12,
+			"title": "ENDRESS",
+			"letter": "e",
+		},
+		{
+			"id": 13,
+			"title": "ENGY",
+			"letter": "e",
+		},
+		{
+			"id": 14,
+			"title": "Elmos",
+			"letter": "e",
+		},
+		{
+			"id": 15,
+			"title": "Extra",
+			"letter": "e",
+		},
+		{
+			"id": 16,
+			"title": "Ergus",
+			"letter": "e",
+		},
+		{
+			"id": 17,
+			"title": "FIT",
+			"letter": "f",
+		},
+		{
+			"id": 18,
+			"title": "FUBAG",
+			"letter": "f",
+		},
+		{
+			"id": 19,
+			"title": "Golfstream",
+			"letter": "g",
+		},
+		{
+			"id": 20,
+			"title": "Hammer",
+			"letter": "h",
+		},
+		{
+			"id": 21,
+			"title": "HDX",
+			"letter": "h",
+		},
+		{
+			"id": 22,
+			"title": "HILTT",
+			"letter": "h",
+		},
+		{
+			"id": 23,
+			"title": "HITACHI",
+			"letter": "h",
+		},
+		{
+			"id": 24,
+			"title": "Husqvarna",
+			"letter": "h",
+		},
+		{
+			"id": 25,
+			"title": "Karcher",
+			"letter": "k",
+		},
+		{
+			"id": 26,
+			"title": "MAKITA",
+			"letter": "m",
+		},
+		{
+			"id": 27,
+			"title": "Marina",
+			"letter": "m",
+		},
+		{
+			"id": 28,
+			"title": "Matrix, Gross",
+			"letter": "m",
+		},
+		{
+			"id": 29,
+			"title": "PARK",
+			"letter": "p",
+		},
+		{
+			"id": 30,
+			"title": "PARTNER",
+			"letter": "p",
+		},
+		{
+			"id": 31,
+			"title": "PATRIOT GARDEN",
+			"letter": "p",
+		},
+		{
+			"id": 32,
+			"title": "ProRab",
+			"letter": "p",
+		},
+		{
+			"id": 33,
+			"title": "QQW",
+			"letter": "q",
+		},
+		{
+			"id": 34,
+			"title": "Ranger",
+			"letter": "r",
+		},
+		{
+			"id": 35,
+			"title": "REBIR",
+			"letter": "r",
+		},
+		{
+			"id": 36,
+			"title": "Saturn, Atlanta",
+			"letter": "s",
+		},
+		{
+			"id": 37,
+			"title": "Scarlett",
+			"letter": "s",
+		},
+		{
+			"id": 38,
+			"title": "Skat",
+			"letter": "s",
+		},
+		{
+			"id": 39,
+			"title": "Skil",
+			"letter": "s",
+		},
+		{
+			"id": 40,
+			"title": "SPARKY",
+			"letter": "s",
+		},
+		{
+			"id": 41,
+			"title": "Stern",
+			"letter": "s",
+		},
+		{
+			"id": 42,
+			"title": "STIHL, Viking",
+			"letter": "s",
+		},
+		{
+			"id": 43,
+			"title": "Zitrek",
+			"letter": "z",
+		},
+		{
+			"id": 44,
+			"title": "Бикор",
+			"letter": "а-я",
+		},
+		{
+			"id": 45,
+			"title": "Вихрь",
+			"letter": "а-я",
+		},
+		{
+			"id": 46,
+			"title": "Водолей",
+			"letter": "а-я",
+		},
+		{
+			"id": 47,
+			"title": "ДИОЛД",
+			"letter": "а-я",
+		},
+		{
+			"id": 48,
+			"title": "ЕРМАК",
+			"letter": "а-я",
+		},
+		{
+			"id": 49,
+			"title": "ЗУБР",
+			"letter": "а-я",
+		},
+		{
+			"id": 50,
+			"title": "ИНТЕРСКОЛ",
+			"letter": "а-я",
+		},
+		{
+			"id": 51,
+			"title": "Корвет",
+			"letter": "а-я",
+		},
+		{
+			"id": 52,
+			"title": "Кратон",
+			"letter": "а-я",
+		},
+		{
+			"id": 53,
+			"title": "ЛЕПСЕ",
+			"letter": "а-я",
+		},
+		{
+			"id": 54,
+			"title": "Лесник",
+			"letter": "а-я",
+		},
+		{
+			"id": 55,
+			"title": "Мастер-Универсал",
+			"letter": "а-я",
+		},
+		{
+			"id": 56,
+			"title": "ПАРМА",
+			"letter": "а-я",
+		},
+		{
+			"id": 57,
+			"title": "Ресанта ",
+			"letter": "а-я",
+		},
+		{
+			"id": 58,
+			"title": "РИТМ",
+			"letter": "а-я",
+		},
+		{
+			"id": 59,
+			"title": "Рысь",
+			"letter": "а-я",
+		},
+		{
+			"id": 60,
+			"title": "Элвин",
+			"letter": "а-я",
+		},
+		{
+			"id": 61,
+			"title": "Энкор",
+			"letter": "а-я",
+		},
+		{
+			"id": 62,
+			"title": "CONDTROL",
+			"letter": "c",
+		},
+	];
+	$scope.letters = [];
+	for (var $i = 0; $i < $scope.brands.length; $i++){
+		if($scope.letters.indexOf($scope.brands[$i].letter) == -1){
+			$scope.letters.push($scope.brands[$i].letter);
+		}
+	}
+	$scope.letters.sort();
+});

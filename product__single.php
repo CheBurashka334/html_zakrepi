@@ -255,7 +255,7 @@
 								<li class="menu-item"><a href="#" class="menu-link">Средства защиты</a></li>
 							</ul>
 						</div>
-						<div class="col l9 catalog nopadding" ng-controller="CatalogProductsCtrl">
+						<div class="col l9 catalog no-padding" ng-controller="CatalogProductsCtrl">
 							<div class="product-list clearfix">
 								<div class="item col l3" ng-repeat="product in products | orderBy:sort:true">
 									<div class="product-card">

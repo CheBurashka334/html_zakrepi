@@ -23,8 +23,8 @@
 <body>
 <div id="svg-placeholder" class="hide"></div>
 <div class="layout">
-<!-- для главной добавить класс home-page к page, для сравнения .compare-page, оформление заказа .checkout-page, lk - .profile-page, авторизация, регистрация .authorize-page -->
-<div class="page authorize-page" ng-app="zakrepi">
+<!-- для главной добавить класс home-page к page, для сравнения .compare-page, оформление заказа .checkout-page, lk - .profile-page, авторизация, регистрация .authorize-page, бренды - .brands-page.white-page, бренд - .brand-page-single -->
+<div class="page brand-page-single" ng-app="zakrepi">
 	<!-- если не 404 -->
 	<div class="header-wrapper">
 		<div class="topbar">

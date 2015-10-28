@@ -1,5 +1,5 @@
 /* line 71, scss/_color.scss */
-.primary.light, footer.page-footer .primary.footer-copyright, .primary.page-title, h1.primary, .primary.box-title, .primary.subtitle, .product-page .main-info .primary.product-title {
+.primary.light, footer.page-footer .primary.footer-copyright, .primary.page-title, h1.primary, .primary.box-title, .primary.subtitle, .brands-page .brands-box .primary.letter-marker, .product-page .main-info .primary.product-title {
   background-color: #f33b42 !important;
 }
 
@@ -29,7 +29,7 @@
 }
 
 /* line 71, scss/_color.scss */
-.text.light, footer.page-footer .text.footer-copyright, .text.page-title, h1.text, .text.box-title, .text.subtitle, .product-page .main-info .text.product-title {
+.text.light, footer.page-footer .text.footer-copyright, .text.page-title, h1.text, .text.box-title, .text.subtitle, .brands-page .brands-box .text.letter-marker, .product-page .main-info .text.product-title {
   background-color: #8c8c8c !important;
 }
 
@@ -69,7 +69,7 @@
 }
 
 /* line 71, scss/_color.scss */
-.bg.light, footer.page-footer .bg.footer-copyright, .bg.page-title, h1.bg, .bg.box-title, .bg.subtitle, .product-page .main-info .bg.product-title {
+.bg.light, footer.page-footer .bg.footer-copyright, .bg.page-title, h1.bg, .bg.box-title, .bg.subtitle, .brands-page .brands-box .bg.letter-marker, .product-page .main-info .bg.product-title {
   background-color: #f9f9f9 !important;
 }
 
@@ -139,7 +139,7 @@
 }
 
 /* line 71, scss/_color.scss */
-.icons.light, footer.page-footer .icons.footer-copyright, .icons.page-title, h1.icons, .icons.box-title, .icons.subtitle, .product-page .main-info .icons.product-title {
+.icons.light, footer.page-footer .icons.footer-copyright, .icons.page-title, h1.icons, .icons.box-title, .icons.subtitle, .brands-page .brands-box .icons.letter-marker, .product-page .main-info .icons.product-title {
   background-color: #9d9d9d !important;
 }
 
@@ -179,7 +179,7 @@
 }
 
 /* line 71, scss/_color.scss */
-.border.light, footer.page-footer .border.footer-copyright, .border.page-title, h1.border, .border.box-title, .border.subtitle, .product-page .main-info .border.product-title {
+.border.light, footer.page-footer .border.footer-copyright, .border.page-title, h1.border, .border.box-title, .border.subtitle, .brands-page .brands-box .border.letter-marker, .product-page .main-info .border.product-title {
   background-color: #d7d7d7 !important;
 }
 
@@ -2363,18 +2363,27 @@ html, body {
 }
 
 /* line 22, scss/_layout.scss */
+.white-page {
+  background: white;
+}
+/* line 24, scss/_layout.scss */
+.white-page .footer-wrapper {
+  border-top: 1px solid #f6f6f6;
+}
+
+/* line 28, scss/_layout.scss */
 .header-wrapper,
 .footer-wrapper {
   background: white;
   color: #434343;
 }
 
-/* line 27, scss/_layout.scss */
+/* line 33, scss/_layout.scss */
 .topbar {
   background: #efefef;
   color: #333333;
 }
-/* line 30, scss/_layout.scss */
+/* line 36, scss/_layout.scss */
 .topbar .geo-box,
 .topbar .auth-box,
 .topbar .menu-link {
@@ -2382,7 +2391,7 @@ html, body {
   padding-bottom: 13px;
 }
 
-/* line 37, scss/_layout.scss */
+/* line 43, scss/_layout.scss */
 .main-menu {
   background: #363636;
   color: white;
@@ -2391,22 +2400,22 @@ html, body {
   width: 100%;
 }
 
-/* line 44, scss/_layout.scss */
+/* line 50, scss/_layout.scss */
 .phone-box {
   line-height: 1;
 }
-/* line 46, scss/_layout.scss */
+/* line 52, scss/_layout.scss */
 .phone-box .phone-link {
   display: inline-block;
   margin-bottom: 3px;
 }
 
-/* line 51, scss/_layout.scss */
+/* line 57, scss/_layout.scss */
 .header-wrapper {
   height: 200px;
 }
 
-/* line 55, scss/_layout.scss */
+/* line 61, scss/_layout.scss */
 .header {
   padding-top: 20px;
   padding-bottom: 15px;
@@ -2415,12 +2424,12 @@ html, body {
   -webkit-transition: z-index .3s ease, box-shadow .3s ease;
           transition: z-index .3s ease, box-shadow .3s ease;
 }
-/* line 61, scss/_layout.scss */
+/* line 67, scss/_layout.scss */
 .header .phone-box {
   padding-top: 8px;
 }
 
-/* line 66, scss/_layout.scss */
+/* line 72, scss/_layout.scss */
 .header-wrapper.fixed .header {
   position: fixed;
   width: 100%;
@@ -2429,23 +2438,23 @@ html, body {
   z-index: 9999;
 }
 
-/* line 76, scss/_layout.scss */
+/* line 82, scss/_layout.scss */
 .subscribe-box {
   padding-top: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #f6f6f6;
 }
-/* line 80, scss/_layout.scss */
+/* line 86, scss/_layout.scss */
 .subscribe-box .sbscr-text {
   padding-top: 5px;
   padding-bottom: 10px;
 }
 
-/* line 89, scss/_layout.scss */
+/* line 95, scss/_layout.scss */
 .soc-list .soc-item {
   margin-right: 10px;
 }
-/* line 92, scss/_layout.scss */
+/* line 98, scss/_layout.scss */
 .soc-list .soc-link {
   display: block;
   width: 31px;
@@ -2458,39 +2467,39 @@ html, body {
   text-align: center;
   color: #939393;
 }
-/* line 103, scss/_layout.scss */
+/* line 109, scss/_layout.scss */
 .soc-list .soc-link .icon {
   fill: #939393;
 }
 
-/* line 109, scss/_layout.scss */
+/* line 115, scss/_layout.scss */
 .footer {
   padding: 30px 0 25px;
 }
-/* line 111, scss/_layout.scss */
+/* line 117, scss/_layout.scss */
 .footer .box-title {
   margin-top: 0;
   margin-bottom: 13.2px;
   font-weight: normal;
   color: #ce2127;
 }
-/* line 118, scss/_layout.scss */
+/* line 124, scss/_layout.scss */
 .footer .phone-box,
 .footer .schedule-box {
   margin-bottom: 20px;
 }
-/* line 122, scss/_layout.scss */
+/* line 128, scss/_layout.scss */
 .footer .phone-box .phone-link {
   font-size: 22px;
   margin: 1em 0 0;
   display: block;
 }
-/* line 127, scss/_layout.scss */
+/* line 133, scss/_layout.scss */
 .footer .schedule-box p {
   margin: 10px 0;
 }
 
-/* line 131, scss/_layout.scss */
+/* line 137, scss/_layout.scss */
 .bottombar {
   padding: 30px 0;
   border-top: 1px solid #f6f6f6;
@@ -3655,7 +3664,7 @@ em {
 }
 
 /* line 21, scss/elements/_typography.scss */
-.light, footer.page-footer .footer-copyright, .page-title, h1, .box-title, .subtitle, .product-page .main-info .product-title {
+.light, footer.page-footer .footer-copyright, .page-title, h1, .box-title, .subtitle, .brands-page .brands-box .letter-marker, .product-page .main-info .product-title {
   font-weight: 300;
 }
 
@@ -3714,7 +3723,8 @@ textarea + .textfield-placeholder, .tabs .tab-header-item .tab-link {
 }
 
 /* line 50, scss/elements/_typography.scss */
-.medium-text, .quantity-field, .collapsible .collapsible-header, .horizontal-multilevel-menu > .menu-item > .menu-link, .horizontal-multilevel-menu .submenu-link.default, .horizontal-multilevel-menu .submenu.level-2 > .submenu-item > .submenu-link, .horizontal-multilevel-menu .submenu.level-3 > .submenu-item > .submenu-link, .product-card .item-name, .product-card .product-price .old-price {
+.medium-text, .quantity-field, .collapsible.sidebar-menu > .menu-item > .menu-link,
+.collapsible .collapsible-header, .horizontal-multilevel-menu > .menu-item > .menu-link, .horizontal-multilevel-menu .submenu-link.default, .horizontal-multilevel-menu .submenu.level-2 > .submenu-item > .submenu-link, .horizontal-multilevel-menu .submenu.level-3 > .submenu-item > .submenu-link, .alphabet-menu, .product-card .item-name, .product-card .product-price .old-price, .brands-page .brands-box .brand-item {
   font-size: 16px;
 }
 
@@ -3739,18 +3749,18 @@ textarea + .textfield-placeholder, .tabs .tab-header-item .tab-link {
 }
 
 /* line 67, scss/elements/_typography.scss */
-ul.nostyle, .soc-list, .pagination, .dropdown-list, .menu, .horizontal-multilevel-menu .submenu, .filter .filters-list, .carousel-nav, .brand-list, .tabs .tab-header-list, ol.nostyle {
+ul.nostyle, .soc-list, .pagination, .dropdown-list, .menu, .horizontal-multilevel-menu .submenu, .filter .filters-list, .carousel-nav, .brand-box .brand-list, .tabs .tab-header-list, ol.nostyle {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 /* line 71, scss/elements/_typography.scss */
-ul.nostyle li, .soc-list li, .pagination li, .dropdown-list li, .menu li, .horizontal-multilevel-menu .submenu li, .filter .filters-list li, .carousel-nav li, .brand-list li, .tabs .tab-header-list li, ol.nostyle li {
+ul.nostyle li, .soc-list li, .pagination li, .dropdown-list li, .menu li, .horizontal-multilevel-menu .submenu li, .filter .filters-list li, .carousel-nav li, .brand-box .brand-list li, .tabs .tab-header-list li, ol.nostyle li {
   padding: 0;
   margin: 0;
 }
 /* line 76, scss/elements/_typography.scss */
-ul.horizontal li, .horizontal-menu li, .horizontal-multilevel-menu li, .carousel-nav li, .brand-list li, .tabs .tab-header-list li, ol.horizontal li {
+ul.horizontal li, .horizontal-menu li, .horizontal-multilevel-menu li, .carousel-nav li, .brand-box .brand-list li, .tabs .tab-header-list li, ol.horizontal li {
   display: inline-block;
 }
 
@@ -4499,23 +4509,24 @@ select option {
   padding: 1px 20px 10px;
 }
 /* line 9, scss/elements/_collapsible.scss */
-.collapsible .collapsible-body-content *:first-child {
+.collapsible .collapsible-body-content > *:first-child {
   margin-top: 0.5rem;
 }
 /* line 13, scss/elements/_collapsible.scss */
+.collapsible.sidebar-menu > .menu-item > .menu-link,
 .collapsible .collapsible-header {
-  padding: 22px 20px 12px;
+  padding: 18px 20px 16px;
   line-height: 1;
   cursor: pointer;
-  height: 50px;
+  min-height: 50px;
 }
-/* line 19, scss/elements/_collapsible.scss */
+/* line 22, scss/elements/_collapsible.scss */
 .collapsible .collapsible-header:after {
   content: '>';
   display: block;
   position: absolute;
   right: 22px;
-  top: 22px;
+  top: 18px;
   font-size: 16px;
   line-height: 1;
   color: #6b6b6b;
@@ -4523,11 +4534,11 @@ select option {
           transform: scale(2, 1) rotate(90deg) translateZ(0);
   will-change: transform;
 }
-/* line 32, scss/elements/_collapsible.scss */
+/* line 35, scss/elements/_collapsible.scss */
 .collapsible .collapsible-header:not(.active):hover {
   background-color: #f9f9f9;
 }
-/* line 36, scss/elements/_collapsible.scss */
+/* line 39, scss/elements/_collapsible.scss */
 .collapsible .collapsible-header.active:after {
   -webkit-transform: scale(2, 1) rotate(-90deg) translateZ(0);
           transform: scale(2, 1) rotate(-90deg) translateZ(0);
@@ -4777,32 +4788,41 @@ select option {
   border-top: 0;
 }
 /* line 38, scss/components/_menu.scss */
-.sidebar-menu .menu-item.active .menu-link,
-.sidebar-menu .menu-item .menu-link:hover {
+.sidebar-menu .menu-item.active > .menu-link,
+.sidebar-menu .menu-item .menu-link:hover,
+.sidebar-menu .menu-item .menu-link.primary-color {
   color: #ce2127;
 }
+/* line 44, scss/components/_menu.scss */
+.sidebar-menu .collapsible-body .menu-link {
+  padding: 5px 0;
+}
+/* line 46, scss/components/_menu.scss */
+.sidebar-menu .collapsible-body .menu-link:first-child {
+  margin-top: 0;
+}
 
-/* line 45, scss/components/_menu.scss */
+/* line 52, scss/components/_menu.scss */
 .horizontal-multilevel-menu {
   width: 100%;
 }
-/* line 48, scss/components/_menu.scss */
+/* line 55, scss/components/_menu.scss */
 .horizontal-multilevel-menu .menu-link,
 .horizontal-multilevel-menu .submenu-link {
   display: block;
 }
-/* line 52, scss/components/_menu.scss */
+/* line 59, scss/components/_menu.scss */
 .horizontal-multilevel-menu > .menu-item {
   position: static;
 }
-/* line 55, scss/components/_menu.scss */
+/* line 62, scss/components/_menu.scss */
 .horizontal-multilevel-menu > .menu-item > .menu-link {
   font-size: 13px;
   font-weight: 600;
   line-height: 1;
   padding: 19px 22px 18px;
 }
-/* line 65, scss/components/_menu.scss */
+/* line 72, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu {
   position: absolute;
   left: 0;
@@ -4810,32 +4830,32 @@ select option {
   padding: 20px 0;
   color: #434343;
 }
-/* line 73, scss/components/_menu.scss */
+/* line 80, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu-item {
   display: block;
   position: static;
 }
-/* line 77, scss/components/_menu.scss */
+/* line 84, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu-link.default, .horizontal-multilevel-menu .submenu.level-2 > .submenu-item > .submenu-link, .horizontal-multilevel-menu .submenu.level-3 > .submenu-item > .submenu-link {
   line-height: 18px;
   padding: 1em 20px;
   position: static;
 }
-/* line 84, scss/components/_menu.scss */
+/* line 91, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu.level-2 {
   display: none;
   left: auto;
   background: #d8d8d8;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
 }
-/* line 93, scss/components/_menu.scss */
+/* line 100, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu.level-2.parent-box {
   width: 100%;
   width: calc(100% - 20px);
   left: 10px;
   background: white;
 }
-/* line 98, scss/components/_menu.scss */
+/* line 105, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu.level-2.parent-box:before {
   content: '';
   display: block;
@@ -4847,11 +4867,11 @@ select option {
   background: #d8d8d8;
   z-index: -1;
 }
-/* line 109, scss/components/_menu.scss */
+/* line 116, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu.level-2.parent-box > .submenu-item {
   width: 25%;
 }
-/* line 115, scss/components/_menu.scss */
+/* line 122, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu.level-3 {
   display: none;
   top: 0;
@@ -4860,21 +4880,21 @@ select option {
   min-height: 100%;
   background: white;
 }
-/* line 122, scss/components/_menu.scss */
+/* line 129, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu.level-3 > .submenu-item {
   width: 33.33%;
 }
-/* line 125, scss/components/_menu.scss */
+/* line 132, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu.level-3.col-2 > .submenu-item {
   width: 45%;
   display: inline-block;
 }
-/* line 129, scss/components/_menu.scss */
+/* line 136, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu.level-3 > .submenu-item > .submenu-link {
   padding-left: 30px;
   padding-right: 30px;
 }
-/* line 136, scss/components/_menu.scss */
+/* line 143, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu.level-4 {
   top: 0;
   left: 33.34%;
@@ -4884,41 +4904,58 @@ select option {
   display: none;
   font-size: 0;
 }
-/* line 144, scss/components/_menu.scss */
+/* line 151, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu.level-4 .submenu-item {
   display: inline-block;
   width: 100%;
 }
-/* line 148, scss/components/_menu.scss */
+/* line 155, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu.level-4.col-2 .submenu-item {
   width: 49%;
 }
-/* line 151, scss/components/_menu.scss */
+/* line 158, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu.level-4 .submenu-link {
   font-size: 14px;
   padding: 10px 30px;
 }
-/* line 158, scss/components/_menu.scss */
+/* line 165, scss/components/_menu.scss */
 .horizontal-multilevel-menu .menu-item:hover .menu-link {
   background: #ce2127;
 }
-/* line 161, scss/components/_menu.scss */
+/* line 168, scss/components/_menu.scss */
 .horizontal-multilevel-menu .menu-item:hover > .submenu {
   display: block;
 }
-/* line 166, scss/components/_menu.scss */
+/* line 173, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu-item.active > .submenu-link {
   color: #ce2127;
 }
-/* line 169, scss/components/_menu.scss */
+/* line 176, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu-item.active > .submenu {
   display: block;
 }
-/* line 174, scss/components/_menu.scss */
+/* line 181, scss/components/_menu.scss */
 .horizontal-multilevel-menu .submenu.level-2 > .submenu-item.active > .submenu-link,
 .horizontal-multilevel-menu .submenu.level-2 > .submenu-item:hover > .submenu-link {
   color: #434343;
   background: white;
+}
+
+/* line 188, scss/components/_menu.scss */
+.alphabet-menu {
+  margin: 10px 0;
+  line-height: 1;
+}
+/* line 192, scss/components/_menu.scss */
+.alphabet-menu .menu-link {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  color: #434343;
+  text-transform: uppercase;
+}
+/* line 198, scss/components/_menu.scss */
+.alphabet-menu .menu-item {
+  margin-right: 3px;
 }
 
 /* line 3, scss/components/_geo.scss */
@@ -5053,8 +5090,9 @@ select option {
 .product-card .compare {
   padding: 12px 20px 20px;
   border-top: 1px solid #eeeeee;
+  margin-bottom: 0;
 }
-/* line 17, scss/components/_product-card.scss */
+/* line 18, scss/components/_product-card.scss */
 .product-card .item-img {
   display: block;
   width: 100%;
@@ -5063,26 +5101,26 @@ select option {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 25, scss/components/_product-card.scss */
+/* line 26, scss/components/_product-card.scss */
 .product-card .item-name {
   margin: 23px 0 8px;
   min-height: 3em;
 }
-/* line 33, scss/components/_product-card.scss */
+/* line 34, scss/components/_product-card.scss */
 .product-card .product-price {
   line-height: 1;
   height: 50px;
 }
-/* line 36, scss/components/_product-card.scss */
+/* line 37, scss/components/_product-card.scss */
 .product-card .product-price .old-price {
   lone-height: 21px;
 }
-/* line 41, scss/components/_product-card.scss */
+/* line 42, scss/components/_product-card.scss */
 .product-card .product-price .price {
   font-size: 24px;
   padding: 13px 0 12px;
 }
-/* line 49, scss/components/_product-card.scss */
+/* line 50, scss/components/_product-card.scss */
 .product-card .btn.shopping-card {
   width: 70px;
   position: absolute;
@@ -5327,11 +5365,11 @@ select option {
 }
 
 /* line 2, scss/components/_brands.scss */
-.brand-list {
+.brand-box .brand-list {
   font-size: 0;
 }
 /* line 6, scss/components/_brands.scss */
-.brand-list .brand-item {
+.brand-box .brand-list .brand-item {
   padding: 22px 35px 23px 20px;
   font-size: 34px;
   line-height: 1;
@@ -5339,32 +5377,74 @@ select option {
   vertical-align: middle;
 }
 /* line 13, scss/components/_brands.scss */
-.brand-list .brand-item:last-child {
+.brand-box .brand-list .brand-item:last-child {
   padding: 22px 20px 23px 35px;
 }
 /* line 17, scss/components/_brands.scss */
-.brand-list .brand-link {
+.brand-box .brand-list .brand-link {
   height: 1em;
   overflow: hidden;
   display: block;
 }
 /* line 22, scss/components/_brands.scss */
-.brand-list .brand-img {
+.brand-box .brand-list .brand-img {
   will-change: transform;
   -webkit-transform: translate(0, 0) translateZ(0);
           transform: translate(0, 0) translateZ(0);
 }
 /* line 26, scss/components/_brands.scss */
-.brand-list .brand-link:hover .brand-img {
+.brand-box .brand-list .brand-link:hover .brand-img {
   -webkit-transform: translate(0, -1em) translateZ(0);
           transform: translate(0, -1em) translateZ(0);
 }
 /* line 29, scss/components/_brands.scss */
-.brand-list .brand-item:last-child .brand-link {
+.brand-box .brand-list .brand-item:last-child .brand-link {
   font-size: 14px;
   height: 1rem;
   line-height: 1rem;
   vertical-align: middle;
+}
+
+/* line 39, scss/components/_brands.scss */
+.brands-page .brands-list {
+  margin: 5px 0 40px;
+}
+/* line 42, scss/components/_brands.scss */
+.brands-page .brands-box {
+  padding: 25px 0 20px;
+  border-top: 1px solid #e5e5e5;
+}
+/* line 45, scss/components/_brands.scss */
+.brands-page .brands-box:first-child {
+  border-top: 0;
+}
+/* line 48, scss/components/_brands.scss */
+.brands-page .brands-box .letter-marker {
+  font-size: 40px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #363636;
+}
+/* line 55, scss/components/_brands.scss */
+.brands-page .brands-box .brands {
+  margin-top: 1em;
+}
+/* line 58, scss/components/_brands.scss */
+.brands-page .brands-box .brand-item {
+  margin-bottom: 7px;
+}
+
+/* line 65, scss/components/_brands.scss */
+.brand-page-single .brand-logo {
+  margin-top: 20px;
+}
+/* line 68, scss/components/_brands.scss */
+.brand-page-single .brand-info {
+  margin-bottom: 50px;
+}
+/* line 71, scss/components/_brands.scss */
+.brand-page-single .catalog {
+  margin-bottom: 100px;
 }
 
 /* line 2, scss/components/_banners.scss */

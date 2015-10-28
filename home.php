@@ -41,7 +41,7 @@
 			<a href="#" class="brand-link img-link"><img class="brand-img" src="images/content/brands/aeg.png" /></a> 
 		</li>
 		<li class="brand-item">
-			<a href="#" class="brand-link">Все бренды</a> 
+			<a href="brands.php" class="brand-link">Все бренды</a> 
 		</li>
 	</ul>
 </div>

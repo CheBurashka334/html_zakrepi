@@ -6,22 +6,25 @@
 	}
 	.collapsible-body-content {
 		padding: 1px $gutter-width $gutter-width/2;
-		*:first-child {
+		>*:first-child {
 			margin-top: 0.5rem;
 		}
 	}
+	&.sidebar-menu >.menu-item > .menu-link,
 	.collapsible-header {
-		padding: $gutter-width*1.1 $gutter-width $gutter-width*0.6;
+		padding: $gutter-width*0.9 $gutter-width $gutter-width*0.8;
 		@extend .medium-text;
 		line-height: 1;
 		cursor: pointer;
-		height: 50px;
+		min-height: 50px;
+	}
+	.collapsible-header {
 		&:after {
 			content: '>';
 			display: block;
 			position: absolute;
 			right: 22px;
-			top: 22px;
+			top: $gutter-width*0.9;
 			font-size: 16px;
 			line-height: 1;
 			color: color('icons', 'base');
