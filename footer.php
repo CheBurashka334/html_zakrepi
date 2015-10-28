@@ -44,8 +44,8 @@
 			<div class="footer-menu col l3">
 				<div class="menu-title box-title">Информация</div>
 				<ul class="menu vertical-menu">
-					<li class="menu-item"><a class="menu-link" href="#">Оплата и доставка</a></li>
-					<li class="menu-item"><a class="menu-link" href="#">Гарантия и возврат</a></li>
+					<li class="menu-item"><a class="menu-link" href="oplata-dostavka.php">Оплата и доставка</a></li>
+					<li class="menu-item"><a class="menu-link" href="garanties.php">Гарантия и возврат</a></li>
 					<li class="menu-item"><a class="menu-link" href="#">Политика конфиденциальности</a></li>
 					<li class="menu-item"><a class="menu-link" href="#">Договор-оферта</a></li>
 				</ul>

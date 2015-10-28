@@ -85,6 +85,9 @@ main {
 		> *:last-child {
 			margin-bottom: 0;
 		}
+		&.big-g-padding {
+			padding: $gutter-width $gutter-width*3;
+		}
 	}
 	&.v-center {
 		display: flex;
@@ -298,10 +301,10 @@ table {
 	display: table;
 
 	thead {
-		border-bottom: 1px solid $table-border-color;
+		border-bottom: 1px solid color('border', 'table-border');
 	}
 	td, th{
-		padding: 15px 5px;
+		padding: $gutter-width*0.75 $gutter-width;
 		display: table-cell;
 		vertical-align: middle;
 		border-radius: 2px;
@@ -309,7 +312,7 @@ table {
 	
 	&.bordered > thead > tr,
 	&.bordered > tbody > tr {
-		border-bottom: 1px solid $table-border-color;
+		border-bottom: 1px solid color('border', 'table-border');
 	}
 
 	&.striped > tbody {
