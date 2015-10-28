@@ -1,0 +1,17 @@
+// vakansii
+.vakansi-list {
+	margin-top: $gutter-width/2;
+	margin-bottom: $gutter-width*14.5;
+	padding-bottom: $gutter-width*1.5;
+	.item {
+		margin: $gutter-width/2 0;
+		padding-left: $gutter-width*2;
+	}
+}
+.vakansi-single {
+	margin-top: $gutter-width/2;
+	margin-bottom: $gutter-width*1.5;
+	& + .btn {
+		margin-bottom: $gutter-width*9.5;
+	}
+}

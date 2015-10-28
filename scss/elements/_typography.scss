@@ -64,6 +64,12 @@ small {
 }
 
 ul, ol {
+	padding: 0;
+	padding-left: $gutter-width;
+	margin: $gutter-width*1.25 0;
+	li {
+		margin: $gutter-width/2 0;
+	}
 	&.nostyle {
 		list-style: none;
 		padding: 0;

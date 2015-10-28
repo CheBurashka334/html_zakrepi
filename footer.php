@@ -22,7 +22,7 @@
 					<li class="menu-item"><a class="menu-link" href="#">История компании</a></li>
 					<li class="menu-item"><a class="menu-link" href="#">Структура компании</a></li>
 					<li class="menu-item"><a class="menu-link" href="news.php">Новости компании</a></li>
-					<li class="menu-item"><a class="menu-link" href="#">Вакансии</a></li>
+					<li class="menu-item"><a class="menu-link" href="vakansii.php">Вакансии</a></li>
 					<li class="menu-item"><a class="menu-link" href="#">Франшиза</a></li>
 					<li class="menu-item"><a class="menu-link" href="#">Наши магазины</a></li>
 					<li class="menu-item"><a class="menu-link" href="#">Контакты</a></li>
@@ -35,7 +35,7 @@
 					<li class="menu-item"><a class="menu-link" href="#">Помощь в выборе товара</a></li>
 					<li class="menu-item"><a class="menu-link" href="#">Тест-драйв</a></li>
 					<li class="menu-item"><a class="menu-link" href="#">Сервисный центр</a></li>
-					<li class="menu-item"><a class="menu-link" href="#">Бренды</a></li>
+					<li class="menu-item"><a class="menu-link" href="brands.php">Бренды</a></li>
 					<li class="menu-item"><a class="menu-link" href="#">Крепыж-бонус</a></li>
 					<li class="menu-item"><a class="menu-link" href="#">Подарочные сертификаты</a></li>
 					<li class="menu-item"><a class="menu-link" href="#">Центр поддержки пенсионеров-садоводов</a></li>

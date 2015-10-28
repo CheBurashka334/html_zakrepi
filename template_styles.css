@@ -3748,115 +3748,125 @@ textarea + .textfield-placeholder, .tabs .tab-header-item .tab-link {
   font-size: 34px;
 }
 
-/* line 67, scss/elements/_typography.scss */
+/* line 66, scss/elements/_typography.scss */
+ul, ol {
+  padding: 0;
+  padding-left: 20px;
+  margin: 25px 0;
+}
+/* line 70, scss/elements/_typography.scss */
+ul li, ol li {
+  margin: 10px 0;
+}
+/* line 73, scss/elements/_typography.scss */
 ul.nostyle, .soc-list, .pagination, .dropdown-list, .menu, .horizontal-multilevel-menu .submenu, .filter .filters-list, .carousel-nav, .brand-box .brand-list, .tabs .tab-header-list, ol.nostyle {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 71, scss/elements/_typography.scss */
+/* line 77, scss/elements/_typography.scss */
 ul.nostyle li, .soc-list li, .pagination li, .dropdown-list li, .menu li, .horizontal-multilevel-menu .submenu li, .filter .filters-list li, .carousel-nav li, .brand-box .brand-list li, .tabs .tab-header-list li, ol.nostyle li {
   padding: 0;
   margin: 0;
 }
-/* line 76, scss/elements/_typography.scss */
+/* line 82, scss/elements/_typography.scss */
 ul.horizontal li, .horizontal-menu li, .horizontal-multilevel-menu li, .carousel-nav li, .brand-box .brand-list li, .tabs .tab-header-list li, ol.horizontal li {
   display: inline-block;
 }
 
-/* line 81, scss/elements/_typography.scss */
+/* line 87, scss/elements/_typography.scss */
 a, .btn-link {
   color: #ce2127;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
 }
-/* line 88, scss/elements/_typography.scss */
+/* line 94, scss/elements/_typography.scss */
 a.nostyle, .nostyle.btn-link, .menu .menu-link, .horizontal-multilevel-menu .submenu .menu-link,
 .menu .submenu-link,
 .horizontal-multilevel-menu .submenu .submenu-link, .breadcrumbs .brdcmb-link, .product-card .item-name a, .product-card .item-name .btn-link, .auth-box .auth-link {
   color: inherit;
 }
-/* line 91, scss/elements/_typography.scss */
+/* line 97, scss/elements/_typography.scss */
 a.img-link, .img-link.btn-link {
   display: block;
   border: 0;
 }
 
-/* line 98, scss/elements/_typography.scss */
+/* line 104, scss/elements/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-weight: normal;
   line-height: 1.5;
 }
 
-/* line 104, scss/elements/_typography.scss */
+/* line 110, scss/elements/_typography.scss */
 h1 a, h1 .btn-link, h2 a, h2 .btn-link, h3 a, h3 .btn-link, h4 a, h4 .btn-link, h5 a, h5 .btn-link, h6 a, h6 .btn-link {
   font-weight: inherit;
 }
 
-/* line 106, scss/elements/_typography.scss */
+/* line 112, scss/elements/_typography.scss */
 h2 {
   font-size: 3.56rem;
   line-height: 1.5;
   margin: 1em 0;
 }
 
-/* line 107, scss/elements/_typography.scss */
+/* line 113, scss/elements/_typography.scss */
 h3 {
   font-size: 2.92rem;
   line-height: 1.5;
   margin: 1em 0;
 }
 
-/* line 108, scss/elements/_typography.scss */
+/* line 114, scss/elements/_typography.scss */
 h4 {
   font-size: 1.5rem;
   line-height: 1.5;
   margin: 1em 0;
 }
 
-/* line 109, scss/elements/_typography.scss */
+/* line 115, scss/elements/_typography.scss */
 h5 {
   font-size: 1.313rem;
   line-height: 1.5;
   margin: 1em 0;
 }
 
-/* line 110, scss/elements/_typography.scss */
+/* line 116, scss/elements/_typography.scss */
 h6 {
   font-size: 1.125rem;
   line-height: 1.5;
   margin: 1em 0;
 }
 
-/* line 112, scss/elements/_typography.scss */
+/* line 118, scss/elements/_typography.scss */
 .page-title, h1 {
   margin: 25px 0 15px;
 }
-/* line 116, scss/elements/_typography.scss */
+/* line 122, scss/elements/_typography.scss */
 .page-title + .archive-box, h1 + .archive-box {
   margin: 30px 0;
   line-height: 51px;
   vertical-align: middle;
 }
 
-/* line 122, scss/elements/_typography.scss */
+/* line 128, scss/elements/_typography.scss */
 .page-note-text {
   margin-top: 0;
   margin-bottom: 20px;
 }
 
-/* line 126, scss/elements/_typography.scss */
+/* line 132, scss/elements/_typography.scss */
 .breadcrumbs + .workarea .page-title {
   margin: 10px 0 15px;
 }
 
-/* line 129, scss/elements/_typography.scss */
+/* line 135, scss/elements/_typography.scss */
 .box-title {
   font-size: 28px;
   margin: 20px 0;
 }
 
-/* line 134, scss/elements/_typography.scss */
+/* line 140, scss/elements/_typography.scss */
 .subtitle {
   font-size: 24px;
   margin: 1em 0 10px;
@@ -6273,5 +6283,27 @@ select option {
 }
 /* line 84, scss/pages/_auth.scss */
 .authorize-page .recpass-form + .btn {
+  margin-bottom: 190px;
+}
+
+/* line 2, scss/pages/_vakansii.scss */
+.vakansi-list {
+  margin-top: 10px;
+  margin-bottom: 290px;
+  padding-bottom: 30px;
+}
+/* line 6, scss/pages/_vakansii.scss */
+.vakansi-list .item {
+  margin: 10px 0;
+  padding-left: 40px;
+}
+
+/* line 11, scss/pages/_vakansii.scss */
+.vakansi-single {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+/* line 14, scss/pages/_vakansii.scss */
+.vakansi-single + .btn {
   margin-bottom: 190px;
 }
