@@ -37,7 +37,7 @@
 					<ul class="menu horizontal-menu">
 						<li class="menu-item"><a class="menu-link" href="oplata-dostavka.php">Доставка и оплата</a></li>
 						<li class="menu-item"><a class="menu-link" href="garanties.php">Гарантия и возврат</a></li>
-						<li class="menu-item"><a class="menu-link" href="#">Организациям</a></li>
+						<li class="menu-item"><a class="menu-link" href="organizaciam.php">Организациям</a></li>
 						<li class="menu-item"><a class="menu-link" href="#">Наши магазины</a></li>
 					</ul>
 				</div>

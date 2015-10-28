@@ -105,9 +105,10 @@ main {
 // Dividers
 
 .divider {
-  height: 1px;
-  overflow: hidden;
-  background-color: color("grey", "lighten-2");
+	height: 1px;
+	overflow: hidden;
+	background-color: color("border", "table-border");
+	margin: $gutter-width*2 0;
 }
 
 
@@ -275,21 +276,6 @@ ul.staggered-list li {
   }
 }
 
-// Footer
-footer.page-footer {
-  margin-top: 20px;
-  padding-top: 20px;
-  background-color: $footer-bg-color;
-
-  .footer-copyright {
-    overflow: hidden;
-    height: 50px;
-    line-height: 50px;
-    color: rgba(255,255,255,.8);
-    background-color: rgba(51,51,51,.08);;
-    @extend .light;
-  }
-}
 
 // Tables
 table, th, td {
@@ -450,9 +436,30 @@ table {
 	.delete {
 		text-align: center;
 	}
-	
+}
+.contacts-table {
+	.col {
+		padding: 1rem 0;
+	}
+	.table-header {
+		text-align: left;
+	}
 }
 
+.icons-block {
+	margin-bottom: $gutter-width*2;
+	.block-item {
+		margin: $gutter-width 0;
+		flex-direction: column;
+	}
+	.item-icon {
+		width: 100%;
+		margin-bottom: $gutter-width;
+	}
+	.item-title {
+		width: 100%;
+	}
+}
 
 /*/ Collections
 .collection {

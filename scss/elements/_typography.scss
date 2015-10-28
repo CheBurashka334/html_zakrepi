@@ -72,6 +72,9 @@ ul, ol {
 	li {
 		margin: $gutter-width/2 0;
 	}
+	&.type-2 > li {
+		margin: $gutter-width 0;
+	}
 	&.nostyle {
 		list-style: none;
 		padding: 0;
