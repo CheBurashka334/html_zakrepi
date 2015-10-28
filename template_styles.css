@@ -3035,6 +3035,16 @@ table.nostyle td {
   width: 100%;
 }
 
+/* line 464, scss/elements/_global.scss */
+.personal-list {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+/* line 467, scss/elements/_global.scss */
+.personal-list .personal-item p {
+  margin: 0.5em 0;
+}
+
 /*/ Collections
 .collection {
   margin: $element-top-margin 0 $element-bottom-margin 0;
@@ -3132,7 +3142,7 @@ table.nostyle td {
   color: $secondary-color;
 }
 */
-/* line 563, scss/elements/_global.scss */
+/* line 571, scss/elements/_global.scss */
 span.badge {
   min-width: 3rem;
   padding: 0 6px;
@@ -3142,19 +3152,19 @@ span.badge {
   position: absolute;
   right: 15px;
 }
-/* line 574, scss/elements/_global.scss */
+/* line 582, scss/elements/_global.scss */
 span.badge.new {
   font-weight: 300;
   font-size: 0.8rem;
   color: #fff;
   border-radius: 2px;
 }
-/* line 581, scss/elements/_global.scss */
+/* line 589, scss/elements/_global.scss */
 span.badge.new:after {
   content: " new";
 }
 
-/* line 587, scss/elements/_global.scss */
+/* line 595, scss/elements/_global.scss */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -3162,11 +3172,11 @@ span.badge.new:after {
   height: 0;
   overflow: hidden;
 }
-/* line 593, scss/elements/_global.scss */
+/* line 601, scss/elements/_global.scss */
 .video-container.no-controls {
   padding-top: 0;
 }
-/* line 597, scss/elements/_global.scss */
+/* line 605, scss/elements/_global.scss */
 .video-container iframe, .video-container object, .video-container embed {
   position: absolute;
   top: 0;
@@ -3256,49 +3266,49 @@ span.badge.new:after {
 /*******************
   Utility Classes
 *******************/
-/* line 688, scss/elements/_global.scss */
+/* line 696, scss/elements/_global.scss */
 .hide {
   display: none !important;
 }
 
-/* line 693, scss/elements/_global.scss */
+/* line 701, scss/elements/_global.scss */
 .left-align {
   text-align: left;
 }
 
-/* line 696, scss/elements/_global.scss */
+/* line 704, scss/elements/_global.scss */
 .right-align {
   text-align: right;
 }
 
-/* line 699, scss/elements/_global.scss */
+/* line 707, scss/elements/_global.scss */
 .center-align {
   text-align: center;
 }
 
-/* line 703, scss/elements/_global.scss */
+/* line 711, scss/elements/_global.scss */
 .left {
   float: left !important;
 }
 
-/* line 706, scss/elements/_global.scss */
+/* line 714, scss/elements/_global.scss */
 .right {
   float: right !important;
 }
 
-/* line 709, scss/elements/_global.scss */
+/* line 717, scss/elements/_global.scss */
 .nofloat {
   float: none !important;
 }
 
-/* line 712, scss/elements/_global.scss */
+/* line 720, scss/elements/_global.scss */
 .center {
   float: none;
   margin-right: auto;
   margin-left: auto;
 }
 
-/* line 719, scss/elements/_global.scss */
+/* line 727, scss/elements/_global.scss */
 .no-select {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -3308,19 +3318,19 @@ span.badge.new:after {
   user-select: none;
 }
 
-/* line 728, scss/elements/_global.scss */
+/* line 736, scss/elements/_global.scss */
 .circle {
   border-radius: 50%;
 }
 
-/* line 732, scss/elements/_global.scss */
+/* line 740, scss/elements/_global.scss */
 .center-block {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 738, scss/elements/_global.scss */
+/* line 746, scss/elements/_global.scss */
 .truncate {
   display: block;
   white-space: nowrap;
@@ -3328,18 +3338,18 @@ span.badge.new:after {
   text-overflow: ellipsis;
 }
 
-/* line 745, scss/elements/_global.scss */
+/* line 753, scss/elements/_global.scss */
 .no-padding, .compare .compare-actions, .compare .compare-products {
   padding: 0 !important;
 }
 
-/* line 748, scss/elements/_global.scss */
+/* line 756, scss/elements/_global.scss */
 .no-g-padding {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
-/* line 752, scss/elements/_global.scss */
+/* line 760, scss/elements/_global.scss */
 .no-h-padding {
   padding-top: 0 !important;
   padding-bottom: 0 !important;

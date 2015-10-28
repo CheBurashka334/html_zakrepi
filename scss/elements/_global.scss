@@ -461,6 +461,14 @@ table {
 	}
 }
 
+.personal-list {
+	margin-top: $gutter-width;
+	margin-bottom: $gutter-width*2;
+	.personal-item p {
+		margin: 0.5em 0;
+	}
+}
+
 /*/ Collections
 .collection {
   margin: $element-top-margin 0 $element-bottom-margin 0;
