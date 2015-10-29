@@ -290,7 +290,7 @@
 				</div>
 			</div>
 			<div class="tab-content-item" id="reviews">
-				<div class="container">
+				<div class="container" id="reviews-res">
 					<div class="subtitle">Отзывы о гайковерте Hitachi WR14VB-NA 420 Вт</div>
 					<div class="row">
 						<div class="sort-box col l6">
@@ -300,7 +300,7 @@
 							<input type="radio" class="hide sort-ctrl" name="sort" id="sort-rating" value="rating"/>
 							<label class="sort-item" for="sort-rating">рейтингу</label>
 						</div>
-						<button class="btn primary col l2 right">Оставить отзыв</button>
+						<button class="btn primary col l2 right btn-toggle-block" data-block="#reviews-form,#reviews-res">Оставить отзыв</button>
 					</div>
 					<div class="reviews-list">
 						<div class="review-item row">
@@ -343,6 +343,52 @@
 								<p>Тяжелый и громоздкий. Подлезть куда то проблематично.</p>
 								<div class="subtitle">Комментарий:</div>
 								<p>Рекомендую. Не дорогой и надежный.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container hide" id="reviews-form">
+					<div class="subtitle">Ваш отзыв о гайковерте Hitachi WR14VB-NA 420 Вт</div>
+					<div class="row">
+						<div class="col l6">
+							<div class="table-field">
+								<div class="label">Имя</div>
+								<div class="field"><input type="text"/></div>
+							</div>
+							<div class="table-field">
+								<div class="label">Электронная почта</div>
+								<div class="field"><input type="email"/></div>
+							</div>
+							<div class="table-field top-tf">
+								<div class="label">Рейтинг</div>
+								<div class="field rating-field">
+									<input class="hide rating-value" type="text"/>
+									<div class="rating rate-1">
+										<svg class="star"><use xlink:href="#star"/></svg>
+										<svg class="star"><use xlink:href="#star"/></svg>
+										<svg class="star"><use xlink:href="#star"/></svg>
+										<svg class="star"><use xlink:href="#star"/></svg>
+										<svg class="star"><use xlink:href="#star"/></svg>
+									</div>
+								</div>
+							</div>
+							<div class="table-field top-tf">
+								<div class="label">Достоинства</div>
+								<div class="field"><textarea></textarea></div>
+							</div>
+							<div class="table-field top-tf">
+								<div class="label">Недостатки</div>
+								<div class="field"><textarea></textarea></div>
+							</div>
+							<div class="table-field top-tf">
+								<div class="label">Комментарий</div>
+								<div class="field"><textarea></textarea></div>
+							</div>
+							<div class="table-field">
+								<div class="action-box second-field cols-2">
+									<button class="btn standart-color btn-toggle-block" data-block="#reviews-form,#reviews-res">Отменить</button>
+									<button class="btn primary">Оставить отзыв</button>
+								</div>
 							</div>
 						</div>
 					</div>

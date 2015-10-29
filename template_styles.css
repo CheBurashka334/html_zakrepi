@@ -4016,6 +4016,12 @@ textarea.dirty + .textfield-placeholder {
 }
 
 /* line 63, scss/elements/_form.scss */
+textarea {
+  max-width: 100%;
+  min-height: 130px;
+}
+
+/* line 67, scss/elements/_form.scss */
 .tel-before {
   position: absolute;
   top: auto;
@@ -4024,7 +4030,7 @@ textarea.dirty + .textfield-placeholder {
   margin-left: -25px;
 }
 
-/* line 79, scss/elements/_form.scss */
+/* line 83, scss/elements/_form.scss */
 .col > input[type="text"] + .textfield-placeholder,
 .col > input[type="email"] + .textfield-placeholder,
 .col > input[type="url"] + .textfield-placeholder,
@@ -4036,17 +4042,17 @@ textarea.dirty + .textfield-placeholder {
   left: 25px;
 }
 
-/* line 86, scss/elements/_form.scss */
+/* line 90, scss/elements/_form.scss */
 input[type="checkbox"] {
   display: none;
 }
-/* line 88, scss/elements/_form.scss */
+/* line 92, scss/elements/_form.scss */
 input[type="checkbox"] + .checkbox-lbl {
   line-height: 17px;
   vertical-align: middle;
   cursor: pointer;
 }
-/* line 92, scss/elements/_form.scss */
+/* line 96, scss/elements/_form.scss */
 input[type="checkbox"] + .checkbox-lbl:before {
   content: '';
   display: inline-block;
@@ -4058,16 +4064,16 @@ input[type="checkbox"] + .checkbox-lbl:before {
   background-color: white;
   vertical-align: bottom;
 }
-/* line 104, scss/elements/_form.scss */
+/* line 108, scss/elements/_form.scss */
 input[type="checkbox"]:checked + .checkbox-lbl:before {
   background: white url("images/tick.png") center no-repeat;
 }
 
-/* line 110, scss/elements/_form.scss */
+/* line 114, scss/elements/_form.scss */
 input[type="radio"] {
   display: none;
 }
-/* line 112, scss/elements/_form.scss */
+/* line 116, scss/elements/_form.scss */
 input[type="radio"] + .radio-lbl {
   display: inline-block;
   margin: 3px 0;
@@ -4075,7 +4081,7 @@ input[type="radio"] + .radio-lbl {
   vertical-align: middle;
   cursor: pointer;
 }
-/* line 118, scss/elements/_form.scss */
+/* line 122, scss/elements/_form.scss */
 input[type="radio"] + .radio-lbl:before {
   content: '';
   display: inline-block;
@@ -4090,17 +4096,17 @@ input[type="radio"] + .radio-lbl:before {
   background-clip: content-box;
   vertical-align: top;
 }
-/* line 133, scss/elements/_form.scss */
+/* line 137, scss/elements/_form.scss */
 input[type="radio"]:checked + .radio-lbl:before {
   background-color: #ce2127;
 }
 
-/* line 138, scss/elements/_form.scss */
+/* line 142, scss/elements/_form.scss */
 .inline-field, .table-field, .promocode-field {
   vertical-align: baseline;
   margin: 1em 0;
 }
-/* line 141, scss/elements/_form.scss */
+/* line 145, scss/elements/_form.scss */
 .inline-field .label, .table-field .label, .promocode-field .label,
 .inline-field .first-field,
 .table-field .first-field,
@@ -4108,7 +4114,7 @@ input[type="radio"]:checked + .radio-lbl:before {
   display: inline-block;
   margin-right: 25px;
 }
-/* line 146, scss/elements/_form.scss */
+/* line 150, scss/elements/_form.scss */
 .inline-field > input:not(.dropdown-inp), .table-field > input:not(.dropdown-inp), .promocode-field > input:not(.dropdown-inp),
 .inline-field select,
 .table-field select,
@@ -4128,7 +4134,7 @@ input[type="radio"]:checked + .radio-lbl:before {
   display: inline-block;
   width: auto;
 }
-/* line 155, scss/elements/_form.scss */
+/* line 159, scss/elements/_form.scss */
 .inline-field .field input, .table-field .field input, .promocode-field .field input,
 .inline-field .second-field input,
 .table-field .second-field input,
@@ -4136,72 +4142,114 @@ input[type="radio"]:checked + .radio-lbl:before {
   width: 100%;
 }
 
-/* line 163, scss/elements/_form.scss */
+/* line 167, scss/elements/_form.scss */
 .table-field .label,
 .table-field .first-field {
   width: 31%;
   margin-right: 10px;
 }
-/* line 168, scss/elements/_form.scss */
+/* line 172, scss/elements/_form.scss */
 .table-field > input,
 .table-field .field,
-.table-field .second-field {
+.table-field .first-field + .second-field {
   width: 66%;
   width: calc(69% - 15px);
   margin: 3px 0;
 }
-/* line 174, scss/elements/_form.scss */
+/* line 178, scss/elements/_form.scss */
 .table-field > input[type="tel"],
 .table-field .field[type="tel"],
-.table-field .second-field[type="tel"] {
+.table-field .first-field + .second-field[type="tel"] {
   width: 33%;
 }
-/* line 177, scss/elements/_form.scss */
+/* line 181, scss/elements/_form.scss */
 .table-field > input [type="tel"],
 .table-field .field [type="tel"],
-.table-field .second-field [type="tel"] {
+.table-field .first-field + .second-field [type="tel"] {
   width: 66%;
 }
-/* line 181, scss/elements/_form.scss */
+/* line 185, scss/elements/_form.scss */
 .table-field .second-field {
   float: right;
+  width: 66%;
+  width: calc(69% - 10px);
 }
-/* line 184, scss/elements/_form.scss */
-.table-field.cols-2 > input, .table-field.cols-2 > .field {
+/* line 190, scss/elements/_form.scss */
+.table-field.cols-2 > input, .table-field.cols-2 > .field,
+.table-field .cols-2 .btn {
   width: calc((70% - 40px)/2);
   margin: 3px 5px;
 }
-/* line 188, scss/elements/_form.scss */
-.table-field.cols-2 > input input, .table-field.cols-2 > .field input {
+/* line 195, scss/elements/_form.scss */
+.table-field.cols-2 > input input, .table-field.cols-2 > .field input,
+.table-field .cols-2 .btn input {
   width: 100%;
 }
-/* line 191, scss/elements/_form.scss */
-.table-field.cols-2 > input:first-of-type, .table-field.cols-2 > .field:first-of-type {
+/* line 198, scss/elements/_form.scss */
+.table-field.cols-2 > input:first-of-type, .table-field.cols-2 > .field:first-of-type,
+.table-field .cols-2 .btn:first-of-type {
   margin-left: 0;
 }
-/* line 194, scss/elements/_form.scss */
-.table-field.cols-2 > input:last-of-type, .table-field.cols-2 > .field:last-of-type {
+/* line 201, scss/elements/_form.scss */
+.table-field.cols-2 > input:last-of-type, .table-field.cols-2 > .field:last-of-type,
+.table-field .cols-2 .btn:last-of-type {
   margin-right: 0;
 }
-/* line 198, scss/elements/_form.scss */
+/* line 205, scss/elements/_form.scss */
 .table-field.cols-3 > input, .table-field.cols-3 > .field {
   width: calc((70% - 60px)/3);
   margin: 3px 5px;
 }
-/* line 202, scss/elements/_form.scss */
+/* line 209, scss/elements/_form.scss */
 .table-field.cols-3 > input input, .table-field.cols-3 > .field input {
   width: 100%;
 }
-/* line 205, scss/elements/_form.scss */
+/* line 212, scss/elements/_form.scss */
 .table-field.cols-3 > input:first-of-type, .table-field.cols-3 > .field:first-of-type {
   margin-left: 0;
 }
-/* line 208, scss/elements/_form.scss */
+/* line 215, scss/elements/_form.scss */
 .table-field.cols-3 > input:last-of-type, .table-field.cols-3 > .field:last-of-type {
   margin-right: 0;
 }
+/* line 219, scss/elements/_form.scss */
+.table-field.top-tf {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+/* line 222, scss/elements/_form.scss */
+.table-field.top-tf .label,
+.table-field.top-tf .first-field {
+  margin-top: 10px;
+}
+/* line 226, scss/elements/_form.scss */
+.table-field.top-tf > input,
+.table-field.top-tf .field,
+.table-field.top-tf .second-field {
+  width: 66%;
+  width: calc(69% - 10px);
+}
+/* line 233, scss/elements/_form.scss */
+.table-field .action-box {
+  margin-top: 10px;
+}
+/* line 236, scss/elements/_form.scss */
+.table-field .action-box.cols-2 .btn {
+  width: calc((100% - 40px)/2);
+  margin: 0;
+}
+/* line 239, scss/elements/_form.scss */
+.table-field .action-box.cols-2 .btn:first-child {
+  margin-right: 35px;
+}
 
-/* line 215, scss/elements/_form.scss */
+/* line 246, scss/elements/_form.scss */
 select {
   box-sizing: border-box;
   border: 1px solid #d7d7d7;
@@ -4213,18 +4261,18 @@ select {
   vertical-align: baseline;
   cursor: pointer;
 }
-/* line 225, scss/elements/_form.scss */
+/* line 256, scss/elements/_form.scss */
 select option {
   max-width: 100%;
   color: #434343;
 }
 
-/* line 230, scss/elements/_form.scss */
+/* line 261, scss/elements/_form.scss */
 .select-box select {
   width: 100%;
 }
 
-/* line 233, scss/elements/_form.scss */
+/* line 264, scss/elements/_form.scss */
 .triangle {
   position: absolute;
   top: 1px;
@@ -4235,7 +4283,7 @@ select option {
   font-size: 15px;
   border-radius: 3px;
 }
-/* line 242, scss/elements/_form.scss */
+/* line 273, scss/elements/_form.scss */
 .triangle:after {
   content: '>';
   display: block;
@@ -4249,11 +4297,11 @@ select option {
           transform: rotate(90deg) scale(1, 2);
 }
 
-/* line 255, scss/elements/_form.scss */
+/* line 286, scss/elements/_form.scss */
 .quantity-field {
   display: inline-block;
 }
-/* line 258, scss/elements/_form.scss */
+/* line 289, scss/elements/_form.scss */
 .quantity-field .quantity-value {
   display: inline-block;
   width: 3em;
@@ -4267,7 +4315,7 @@ select option {
   color: #242424;
   border-radius: 0;
 }
-/* line 271, scss/elements/_form.scss */
+/* line 302, scss/elements/_form.scss */
 .quantity-field .btn-up,
 .quantity-field .btn-down {
   width: 1em;
@@ -4277,7 +4325,7 @@ select option {
   background: #f33b42;
   border: 0;
 }
-/* line 279, scss/elements/_form.scss */
+/* line 310, scss/elements/_form.scss */
 .quantity-field .btn-up:after,
 .quantity-field .btn-down:after {
   content: '';
@@ -4292,44 +4340,44 @@ select option {
   border-left-color: transparent;
   border-style: solid;
 }
-/* line 292, scss/elements/_form.scss */
+/* line 323, scss/elements/_form.scss */
 .quantity-field .btn-up:hover,
 .quantity-field .btn-down:hover {
   background: #ce2127;
 }
-/* line 295, scss/elements/_form.scss */
+/* line 326, scss/elements/_form.scss */
 .quantity-field .btn-up:disabled,
 .quantity-field .btn-down:disabled {
   background: #decdcd;
 }
-/* line 299, scss/elements/_form.scss */
+/* line 330, scss/elements/_form.scss */
 .quantity-field .btn-up {
   top: 0;
 }
-/* line 301, scss/elements/_form.scss */
+/* line 332, scss/elements/_form.scss */
 .quantity-field .btn-up:after {
   border-width: 0 3px 6px 3px;
 }
-/* line 305, scss/elements/_form.scss */
+/* line 336, scss/elements/_form.scss */
 .quantity-field .btn-down {
   top: 1em;
 }
-/* line 307, scss/elements/_form.scss */
+/* line 338, scss/elements/_form.scss */
 .quantity-field .btn-down:after {
   border-width: 6px 3px 0 3px;
 }
 
-/* line 312, scss/elements/_form.scss */
+/* line 343, scss/elements/_form.scss */
 .promocode-field {
   margin-top: 10px;
 }
-/* line 315, scss/elements/_form.scss */
+/* line 346, scss/elements/_form.scss */
 .promocode-field input {
   width: auto;
   max-width: calc(100% - 80px);
   margin-right: 20px;
 }
-/* line 320, scss/elements/_form.scss */
+/* line 351, scss/elements/_form.scss */
 .promocode-field .btn {
   padding: 0 20px;
 }
@@ -4446,6 +4494,19 @@ select option {
 /* line 13, scss/elements/_rating.scss */
 .rating.rate-5 .star:nth-child(5) {
   fill: #ce2127;
+}
+
+/* line 21, scss/elements/_rating.scss */
+.rating-field .rating {
+  height: 25px;
+}
+/* line 24, scss/elements/_rating.scss */
+.rating-field .star {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+  fill: #363636;
+  cursor: pointer;
 }
 
 /* line 2, scss/elements/_pagination.scss */

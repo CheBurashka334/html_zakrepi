@@ -25,7 +25,7 @@
 <div class="layout">
 <!-- для главной добавить класс home-page к page, для сравнения .compare-page, оформление заказа .checkout-page, lk - .profile-page, авторизация, регистрация .authorize-page, бренды - .brands-page.white-page, бренд - .brand-page-single,
  структура компании .white-page -->
-<div class="page white-page" ng-app="zakrepi">
+<div class="page" ng-app="zakrepi">
 	<!-- если не 404 -->
 	<div class="header-wrapper">
 		<div class="topbar">

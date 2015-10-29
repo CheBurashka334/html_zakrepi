@@ -517,6 +517,13 @@ $(document).ready(function(){
 		$(this).parents('.address-item').detach();
 	});
 	
+	// rating
+	$('.rating-field .star').click(function(){
+		var value = $(this).index() + 1;
+		$(this).parents('.rating-field').children('.rating-value').val(value);
+		console.log($(this).parents('.rating-field').children('.rating-value').val());
+		$(this).parents('.rating-field').children('.rating').removeClass('rate-1 rate-2 rate-3 rate-4 rate-5').addClass('rate-'+value);
+	});
 
 });
 

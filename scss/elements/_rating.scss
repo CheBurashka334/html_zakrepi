@@ -17,3 +17,15 @@
 		}
 	}
 }
+.rating-field {
+	.rating {
+		height: 25px;
+	}
+	.star {
+		width: 25px;
+		height: 25px;
+		margin-right: 5px;
+		fill: color('text', 'dark');
+		cursor: pointer;
+	}
+}
