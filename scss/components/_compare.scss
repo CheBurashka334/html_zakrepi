@@ -9,12 +9,12 @@
 		fill: color('icons', 'lightest');
 	}
 }
-.compare {
+.compare-page .compare {
 	@extend .base-card;
 	padding: $gutter-width $gutter-width*1.5;
 	line-height: 18px;
 	.compare-header {
-		height: 220px;
+		min-height: 220px;
 		border-bottom: 1px solid color('border', 'table-border');
 		&.fixed {
 			position: fixed;
@@ -31,7 +31,7 @@
 		height: 100%;
 		.btn-link {
 			margin-right: $gutter-width*0.9;
-			margin-top: 168px;
+			margin-top: 180px;
 			&.active {
 				color: color('text', 'base');
 			}

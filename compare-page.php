@@ -11,7 +11,7 @@
 			<button class="btn-link">Различия</button>
 		</div>
 		<div class="col compare-products">
-			<div class="carousel">
+			<div class="compare-carousel">
 				<div class="carousel-inner clearfix">
 					<div class="item compare-item col l2" ng-repeat="product in products | orderBy: id">
 						<div class="prod-img"><img ng-src="{{product.image}}"/></div>

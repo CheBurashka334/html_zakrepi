@@ -2540,7 +2540,7 @@ html {
 }
 
 /* line 55, scss/elements/_global.scss */
-.z-depth-1, .base-card, .compare, .sidebar-menu, .filter, .product-card, .product-page .main-info {
+.z-depth-1, .base-card, .compare-page .compare, .sidebar-menu, .filter, .product-card, .product-page .main-info {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -2565,7 +2565,7 @@ html {
 }
 
 /* line 70, scss/elements/_global.scss */
-.base-card, .compare {
+.base-card, .compare-page .compare {
   background: white;
   border-radius: 6px;
   padding: 20px;
@@ -2573,27 +2573,27 @@ html {
   margin-bottom: 20px;
 }
 /* line 77, scss/elements/_global.scss */
-.base-card .title, .compare .title {
+.base-card .title, .compare-page .compare .title {
   margin-bottom: 10px;
 }
 /* line 80, scss/elements/_global.scss */
-.base-card .card-content, .compare .card-content {
+.base-card .card-content, .compare-page .compare .card-content {
   padding: 20px;
 }
 /* line 82, scss/elements/_global.scss */
-.base-card .card-content > *:first-child, .compare .card-content > *:first-child {
+.base-card .card-content > *:first-child, .compare-page .compare .card-content > *:first-child {
   margin-top: 0;
 }
 /* line 85, scss/elements/_global.scss */
-.base-card .card-content > *:last-child, .compare .card-content > *:last-child {
+.base-card .card-content > *:last-child, .compare-page .compare .card-content > *:last-child {
   margin-bottom: 0;
 }
 /* line 88, scss/elements/_global.scss */
-.base-card .card-content.big-g-padding, .compare .card-content.big-g-padding {
+.base-card .card-content.big-g-padding, .compare-page .compare .card-content.big-g-padding {
   padding: 20px 60px;
 }
 /* line 92, scss/elements/_global.scss */
-.base-card.v-center, .v-center.compare {
+.base-card.v-center, .compare-page .v-center.compare {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3339,7 +3339,7 @@ span.badge.new:after {
 }
 
 /* line 753, scss/elements/_global.scss */
-.no-padding, .compare .compare-actions, .compare .compare-products {
+.no-padding, .compare-page .compare .compare-actions, .compare-page .compare .compare-products {
   padding: 0 !important;
 }
 
@@ -4684,9 +4684,9 @@ select option {
 }
 
 /* line 72, scss/elements/_collapsible.scss */
-.base-card .collapsible-type-2:first-child li:first-child .collapsible-header, .compare .collapsible-type-2:first-child li:first-child .collapsible-header,
+.base-card .collapsible-type-2:first-child li:first-child .collapsible-header, .compare-page .compare .collapsible-type-2:first-child li:first-child .collapsible-header,
 .base-card .card-content .collapsible-type-2:first-child li:first-child .collapsible-header,
-.compare .card-content .collapsible-type-2:first-child li:first-child .collapsible-header {
+.compare-page .compare .card-content .collapsible-type-2:first-child li:first-child .collapsible-header {
   border: 0;
 }
 
@@ -5344,35 +5344,38 @@ select option {
 }
 
 /* line 2, scss/components/_carousel.scss */
-.carousel {
+.carousel,
+.compare-carousel {
   overflow: hidden;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 6, scss/components/_carousel.scss */
-.carousel .carousel-inner {
+/* line 7, scss/components/_carousel.scss */
+.carousel .carousel-inner,
+.compare-carousel .carousel-inner {
   width: 99999px;
   z-index: 2;
 }
-/* line 10, scss/components/_carousel.scss */
-.carousel .item {
+/* line 11, scss/components/_carousel.scss */
+.carousel .item,
+.compare-carousel .item {
   margin-bottom: 0;
   box-sizing: border-box;
   position: relative;
 }
 
-/* line 16, scss/components/_carousel.scss */
+/* line 17, scss/components/_carousel.scss */
 .vertical {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 19, scss/components/_carousel.scss */
+/* line 20, scss/components/_carousel.scss */
 .vertical .carousel-inner {
   width: 100%;
   height: 99999px;
 }
 
-/* line 24, scss/components/_carousel.scss */
+/* line 25, scss/components/_carousel.scss */
 .carousel-controlls {
   position: absolute;
   width: 100%;
@@ -5381,7 +5384,7 @@ select option {
   left: 0;
   z-index: 0;
 }
-/* line 31, scss/components/_carousel.scss */
+/* line 32, scss/components/_carousel.scss */
 .carousel-controlls .prev,
 .carousel-controlls .next {
   position: absolute;
@@ -5393,21 +5396,21 @@ select option {
   background: none;
   border: 0;
 }
-/* line 41, scss/components/_carousel.scss */
+/* line 42, scss/components/_carousel.scss */
 .carousel-controlls .prev .icon,
 .carousel-controlls .next .icon {
   fill: #6b6b6b;
 }
-/* line 44, scss/components/_carousel.scss */
+/* line 45, scss/components/_carousel.scss */
 .carousel-controlls .prev:hover .icon,
 .carousel-controlls .next:hover .icon {
   fill: #ce2127;
 }
-/* line 48, scss/components/_carousel.scss */
+/* line 49, scss/components/_carousel.scss */
 .carousel-controlls .prev {
   left: -55px;
 }
-/* line 51, scss/components/_carousel.scss */
+/* line 52, scss/components/_carousel.scss */
 .carousel-controlls .next {
   right: -55px;
   -webkit-transform: rotate(180deg);
@@ -5415,7 +5418,7 @@ select option {
           transform: rotate(180deg);
 }
 
-/* line 57, scss/components/_carousel.scss */
+/* line 58, scss/components/_carousel.scss */
 .vertical .carousel-controlls .prev,
 .vertical .carousel-controlls .next {
   left: 50%;
@@ -5424,14 +5427,14 @@ select option {
   width: 2em;
   height: 2em;
 }
-/* line 65, scss/components/_carousel.scss */
+/* line 66, scss/components/_carousel.scss */
 .vertical .carousel-controlls .prev {
   top: -0.5em;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
 }
-/* line 69, scss/components/_carousel.scss */
+/* line 70, scss/components/_carousel.scss */
 .vertical .carousel-controlls .next {
   top: auto;
   bottom: -0.5em;
@@ -5440,7 +5443,7 @@ select option {
           transform: rotate(-90deg);
 }
 
-/* line 75, scss/components/_carousel.scss */
+/* line 76, scss/components/_carousel.scss */
 .carousel-nav {
   position: absolute;
   width: 100%;
@@ -5451,11 +5454,11 @@ select option {
   text-align: center;
   vertical-align: middle;
 }
-/* line 86, scss/components/_carousel.scss */
+/* line 87, scss/components/_carousel.scss */
 .carousel-nav .nav-item {
   margin: 0 3px;
 }
-/* line 89, scss/components/_carousel.scss */
+/* line 90, scss/components/_carousel.scss */
 .carousel-nav .nav-link {
   display: block;
   width: 13px;
@@ -5467,43 +5470,43 @@ select option {
   -webkit-transition: opacity .3s ease;
           transition: opacity .3s ease;
 }
-/* line 98, scss/components/_carousel.scss */
+/* line 99, scss/components/_carousel.scss */
 .carousel-nav .nav-link.active {
   opacity: 1;
 }
 
-/* line 103, scss/components/_carousel.scss */
+/* line 104, scss/components/_carousel.scss */
 .carousel.home-carousel {
   margin-top: 0;
   margin-bottom: 0;
   padding: 0;
 }
-/* line 107, scss/components/_carousel.scss */
+/* line 108, scss/components/_carousel.scss */
 .carousel.home-carousel .item {
   height: 450px;
   overflow: hidden;
 }
-/* line 111, scss/components/_carousel.scss */
+/* line 112, scss/components/_carousel.scss */
 .carousel.home-carousel .item-img {
   width: 100%;
   height: auto;
 }
-/* line 115, scss/components/_carousel.scss */
+/* line 116, scss/components/_carousel.scss */
 .carousel.home-carousel .item-link {
   height: 100%;
 }
 
-/* line 119, scss/components/_carousel.scss */
+/* line 120, scss/components/_carousel.scss */
 .product-carousel {
   margin-bottom: 20px;
 }
 
-/* line 122, scss/components/_carousel.scss */
+/* line 123, scss/components/_carousel.scss */
 .thumbs.carousel-box {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-/* line 125, scss/components/_carousel.scss */
+/* line 126, scss/components/_carousel.scss */
 .thumbs.carousel-box .carousel {
   padding: 0;
   width: 100%;
@@ -5941,60 +5944,60 @@ select option {
 }
 
 /* line 12, scss/components/_compare.scss */
-.compare {
+.compare-page .compare {
   padding: 20px 30px;
   line-height: 18px;
 }
 /* line 16, scss/components/_compare.scss */
-.compare .compare-header {
-  height: 220px;
+.compare-page .compare .compare-header {
+  min-height: 220px;
   border-bottom: 1px solid #e5e5e5;
 }
 /* line 19, scss/components/_compare.scss */
-.compare .compare-header.fixed {
+.compare-page .compare .compare-header.fixed {
   position: fixed;
   top: 0;
   background: white;
   z-index: 999;
 }
 /* line 25, scss/components/_compare.scss */
-.compare .compare-header.fixed + .compare-body {
+.compare-page .compare .compare-header.fixed + .compare-body {
   padding-top: 240px;
 }
 /* line 29, scss/components/_compare.scss */
-.compare .compare-actions {
+.compare-page .compare .compare-actions {
   height: 100%;
 }
 /* line 32, scss/components/_compare.scss */
-.compare .compare-actions .btn-link {
+.compare-page .compare .compare-actions .btn-link {
   margin-right: 18px;
-  margin-top: 168px;
+  margin-top: 180px;
 }
 /* line 35, scss/components/_compare.scss */
-.compare .compare-actions .btn-link.active {
+.compare-page .compare .compare-actions .btn-link.active {
   color: #434343;
 }
 /* line 40, scss/components/_compare.scss */
-.compare .compare-products {
+.compare-page .compare .compare-products {
   width: 68.4%;
   max-width: 780px;
 }
 /* line 47, scss/components/_compare.scss */
-.compare .compare-products .prod-img {
+.compare-page .compare .compare-products .prod-img {
   padding: 15px 0 20px;
   text-align: center;
 }
 /* line 50, scss/components/_compare.scss */
-.compare .compare-products .prod-img img {
+.compare-page .compare .compare-products .prod-img img {
   height: 130px;
   width: auto;
 }
 /* line 55, scss/components/_compare.scss */
-.compare .compare-products .prod-name {
+.compare-page .compare .compare-products .prod-name {
   padding: 0 30px 0 0;
 }
 /* line 57, scss/components/_compare.scss */
-.compare .compare-products .prod-name .btn-compare-delete {
+.compare-page .compare .compare-products .prod-name .btn-compare-delete {
   position: absolute;
   top: 2px;
   right: 16px;
@@ -6002,58 +6005,58 @@ select option {
   height: 1em;
 }
 /* line 63, scss/components/_compare.scss */
-.compare .compare-products .prod-name .btn-compare-delete .icon {
+.compare-page .compare .compare-products .prod-name .btn-compare-delete .icon {
   fill: #434343;
 }
 /* line 69, scss/components/_compare.scss */
-.compare .carousel {
+.compare-page .compare .carousel {
   padding: 0;
 }
 /* line 73, scss/components/_compare.scss */
-.compare .carousel-controlls .prev,
-.compare .carousel-controlls .next {
+.compare-page .compare .carousel-controlls .prev,
+.compare-page .compare .carousel-controlls .next {
   margin-top: 0;
   top: 55px;
   opacity: 0;
 }
 /* line 78, scss/components/_compare.scss */
-.compare .carousel-controlls .prev.active,
-.compare .carousel-controlls .next.active {
+.compare-page .compare .carousel-controlls .prev.active,
+.compare-page .compare .carousel-controlls .next.active {
   opacity: 1;
 }
 /* line 82, scss/components/_compare.scss */
-.compare .carousel-controlls .prev {
+.compare-page .compare .carousel-controlls .prev {
   left: -86px;
 }
 /* line 85, scss/components/_compare.scss */
-.compare .carousel-controlls .next {
+.compare-page .compare .carousel-controlls .next {
   right: -80px;
 }
 /* line 90, scss/components/_compare.scss */
-.compare .compare-body .param-line {
+.compare-page .compare .compare-body .param-line {
   padding: 16px 0;
   border-bottom: 1px solid #e5e5e5;
 }
 /* line 93, scss/components/_compare.scss */
-.compare .compare-body .param-line:last-child {
+.compare-page .compare .compare-body .param-line:last-child {
   border-bottom: 0;
 }
 /* line 96, scss/components/_compare.scss */
-.compare .compare-body .param-line .param-name {
+.compare-page .compare .compare-body .param-line .param-name {
   padding-left: 0;
   padding-right: 25px;
 }
 /* line 100, scss/components/_compare.scss */
-.compare .compare-body .param-line .param-value {
+.compare-page .compare .compare-body .param-line .param-value {
   width: 68.5%;
   max-width: 780px;
 }
 /* line 104, scss/components/_compare.scss */
-.compare .compare-body .param-line.price {
+.compare-page .compare .compare-body .param-line.price {
   line-height: 24px;
 }
 /* line 106, scss/components/_compare.scss */
-.compare .compare-body .param-line.price .param-value {
+.compare-page .compare .compare-body .param-line.price .param-value {
   font-size: 24px;
 }
 
@@ -6103,7 +6106,7 @@ select option {
   margin-bottom: 30px;
 }
 /* line 41, scss/components/_basket.scss */
-.checkout-page .base-card, .checkout-page .compare {
+.checkout-page .base-card, .checkout-page .compare-page .compare, .compare-page .checkout-page .compare {
   margin-bottom: 38px;
 }
 /* line 44, scss/components/_basket.scss */
@@ -6231,11 +6234,11 @@ select option {
   margin-bottom: 120px;
 }
 /* line 32, scss/pages/_lk.scss */
-.profile-page .lk-boxes .base-card, .profile-page .lk-boxes .compare {
+.profile-page .lk-boxes .base-card, .profile-page .lk-boxes .compare-page .compare, .compare-page .profile-page .lk-boxes .compare {
   padding-bottom: 95px;
 }
 /* line 34, scss/pages/_lk.scss */
-.profile-page .lk-boxes .base-card p, .profile-page .lk-boxes .compare p {
+.profile-page .lk-boxes .base-card p, .profile-page .lk-boxes .compare-page .compare p, .compare-page .profile-page .lk-boxes .compare p {
   min-height: 1.5em;
 }
 /* line 38, scss/pages/_lk.scss */

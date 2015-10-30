@@ -5,7 +5,7 @@ $(document).ready(function(){
 	$(window).scroll(function(){
 		if($('.page').hasClass('compare-page')){
 			if($(window).scrollTop() > $('.compare').offset().top) {
-				$('.compare-header').addClass('fixed').css({'width':$('.compare').width() + 10});
+				$('.compare-header').addClass('fixed').css({'width':$('.compare').width() + 20});
 			} else {
 				$('.compare-header').removeClass('fixed');
 			}
@@ -521,7 +521,6 @@ $(document).ready(function(){
 	$('.rating-field .star').click(function(){
 		var value = $(this).index() + 1;
 		$(this).parents('.rating-field').children('.rating-value').val(value);
-		console.log($(this).parents('.rating-field').children('.rating-value').val());
 		$(this).parents('.rating-field').children('.rating').removeClass('rate-1 rate-2 rate-3 rate-4 rate-5').addClass('rate-'+value);
 	});
 
