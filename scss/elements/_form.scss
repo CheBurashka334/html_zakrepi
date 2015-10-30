@@ -164,6 +164,9 @@ input[type="radio"] {
 .table-field {
 	@extend .inline-field;
 	@extend .clearfix;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 	.label,
 	.first-field{
 		width: 31%;
@@ -191,7 +194,7 @@ input[type="radio"] {
 	&.cols-2 > .field,
 	.cols-2 .btn {
 		width: calc((70% - 40px)/2);
-		margin: 3px 5px;
+		margin: 3px 7px;
 		input {
 			width: 100%;
 		}
