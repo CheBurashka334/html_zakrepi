@@ -2362,28 +2362,39 @@ html, body {
   padding: 20vh 0;
 }
 
-/* line 22, scss/_layout.scss */
+/* line 23, scss/_layout.scss */
+.page-404 .page-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+/* line 27, scss/_layout.scss */
+.page-404 .btn {
+  width: 180px;
+  margin-top: 20px;
+}
+
+/* line 32, scss/_layout.scss */
 .white-page {
   background: white;
 }
-/* line 24, scss/_layout.scss */
+/* line 34, scss/_layout.scss */
 .white-page .footer-wrapper {
   border-top: 1px solid #f6f6f6;
 }
 
-/* line 28, scss/_layout.scss */
+/* line 38, scss/_layout.scss */
 .header-wrapper,
 .footer-wrapper {
   background: white;
   color: #434343;
 }
 
-/* line 33, scss/_layout.scss */
+/* line 43, scss/_layout.scss */
 .topbar {
   background: #efefef;
   color: #333333;
 }
-/* line 36, scss/_layout.scss */
+/* line 46, scss/_layout.scss */
 .topbar .geo-box,
 .topbar .auth-box,
 .topbar .menu-link {
@@ -2391,7 +2402,7 @@ html, body {
   padding-bottom: 13px;
 }
 
-/* line 43, scss/_layout.scss */
+/* line 53, scss/_layout.scss */
 .main-menu {
   background: #363636;
   color: white;
@@ -2400,22 +2411,22 @@ html, body {
   width: 100%;
 }
 
-/* line 50, scss/_layout.scss */
+/* line 60, scss/_layout.scss */
 .phone-box {
   line-height: 1;
 }
-/* line 52, scss/_layout.scss */
+/* line 62, scss/_layout.scss */
 .phone-box .phone-link {
   display: inline-block;
   margin-bottom: 3px;
 }
 
-/* line 57, scss/_layout.scss */
+/* line 67, scss/_layout.scss */
 .header-wrapper {
   height: 200px;
 }
 
-/* line 61, scss/_layout.scss */
+/* line 71, scss/_layout.scss */
 .header {
   padding-top: 20px;
   padding-bottom: 15px;
@@ -2424,12 +2435,12 @@ html, body {
   -webkit-transition: z-index .3s ease, box-shadow .3s ease;
           transition: z-index .3s ease, box-shadow .3s ease;
 }
-/* line 67, scss/_layout.scss */
+/* line 77, scss/_layout.scss */
 .header .phone-box {
   padding-top: 8px;
 }
 
-/* line 72, scss/_layout.scss */
+/* line 82, scss/_layout.scss */
 .header-wrapper.fixed .header {
   position: fixed;
   width: 100%;
@@ -2438,23 +2449,23 @@ html, body {
   z-index: 9999;
 }
 
-/* line 82, scss/_layout.scss */
+/* line 92, scss/_layout.scss */
 .subscribe-box {
   padding-top: 30px;
   padding-bottom: 30px;
   border-bottom: 1px solid #f6f6f6;
 }
-/* line 86, scss/_layout.scss */
+/* line 96, scss/_layout.scss */
 .subscribe-box .sbscr-text {
   padding-top: 5px;
   padding-bottom: 10px;
 }
 
-/* line 95, scss/_layout.scss */
+/* line 105, scss/_layout.scss */
 .soc-list .soc-item {
   margin-right: 10px;
 }
-/* line 98, scss/_layout.scss */
+/* line 108, scss/_layout.scss */
 .soc-list .soc-link {
   display: block;
   width: 31px;
@@ -2467,39 +2478,39 @@ html, body {
   text-align: center;
   color: #939393;
 }
-/* line 109, scss/_layout.scss */
+/* line 119, scss/_layout.scss */
 .soc-list .soc-link .icon {
   fill: #939393;
 }
 
-/* line 115, scss/_layout.scss */
+/* line 125, scss/_layout.scss */
 .footer {
   padding: 30px 0 25px;
 }
-/* line 117, scss/_layout.scss */
+/* line 127, scss/_layout.scss */
 .footer .box-title {
   margin-top: 0;
   margin-bottom: 13.2px;
   font-weight: normal;
   color: #ce2127;
 }
-/* line 124, scss/_layout.scss */
+/* line 134, scss/_layout.scss */
 .footer .phone-box,
 .footer .schedule-box {
   margin-bottom: 20px;
 }
-/* line 128, scss/_layout.scss */
+/* line 138, scss/_layout.scss */
 .footer .phone-box .phone-link {
   font-size: 22px;
   margin: 1em 0 0;
   display: block;
 }
-/* line 133, scss/_layout.scss */
+/* line 143, scss/_layout.scss */
 .footer .schedule-box p {
   margin: 10px 0;
 }
 
-/* line 137, scss/_layout.scss */
+/* line 147, scss/_layout.scss */
 .bottombar {
   padding: 30px 0;
   border-top: 1px solid #f6f6f6;
@@ -2954,29 +2965,33 @@ table.nostyle td {
 .table-row:first-child {
   border-top: 0;
 }
+/* line 408, scss/elements/_global.scss */
+.table-row.table-header {
+  border-bottom: 1px solid #e5e5e5;
+}
 
-/* line 409, scss/elements/_global.scss */
+/* line 412, scss/elements/_global.scss */
 .table-col {
   display: table-cell;
 }
 
-/* line 412, scss/elements/_global.scss */
+/* line 415, scss/elements/_global.scss */
 .table {
   width: 100%;
   margin: 20px 0 30px;
 }
-/* line 417, scss/elements/_global.scss */
+/* line 420, scss/elements/_global.scss */
 .table .table-col {
   padding: 16px 0;
 }
 
-/* line 421, scss/elements/_global.scss */
+/* line 424, scss/elements/_global.scss */
 .table-header {
   text-align: center;
   color: #8c8c8c;
 }
 
-/* line 426, scss/elements/_global.scss */
+/* line 429, scss/elements/_global.scss */
 .flex-table .table-row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -2992,31 +3007,31 @@ table.nostyle td {
       -ms-flex-align: center;
           align-items: center;
 }
-/* line 431, scss/elements/_global.scss */
+/* line 434, scss/elements/_global.scss */
 .flex-table .col {
   padding: 1em 20px;
 }
-/* line 434, scss/elements/_global.scss */
+/* line 437, scss/elements/_global.scss */
 .flex-table .quantity,
 .flex-table .sum,
 .flex-table .delete {
   text-align: center;
 }
 
-/* line 441, scss/elements/_global.scss */
+/* line 444, scss/elements/_global.scss */
 .contacts-table .col {
   padding: 1rem 0;
 }
-/* line 444, scss/elements/_global.scss */
+/* line 447, scss/elements/_global.scss */
 .contacts-table .table-header {
   text-align: left;
 }
 
-/* line 449, scss/elements/_global.scss */
+/* line 452, scss/elements/_global.scss */
 .icons-block {
   margin-bottom: 40px;
 }
-/* line 451, scss/elements/_global.scss */
+/* line 454, scss/elements/_global.scss */
 .icons-block .block-item {
   margin: 20px 0;
   -webkit-box-orient: vertical;
@@ -3025,22 +3040,22 @@ table.nostyle td {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-/* line 455, scss/elements/_global.scss */
+/* line 458, scss/elements/_global.scss */
 .icons-block .item-icon {
   width: 100%;
   margin-bottom: 20px;
 }
-/* line 459, scss/elements/_global.scss */
+/* line 462, scss/elements/_global.scss */
 .icons-block .item-title {
   width: 100%;
 }
 
-/* line 464, scss/elements/_global.scss */
+/* line 467, scss/elements/_global.scss */
 .personal-list {
   margin-top: 20px;
   margin-bottom: 40px;
 }
-/* line 467, scss/elements/_global.scss */
+/* line 470, scss/elements/_global.scss */
 .personal-list .personal-item p {
   margin: 0.5em 0;
 }
@@ -3142,7 +3157,7 @@ table.nostyle td {
   color: $secondary-color;
 }
 */
-/* line 571, scss/elements/_global.scss */
+/* line 574, scss/elements/_global.scss */
 span.badge {
   min-width: 3rem;
   padding: 0 6px;
@@ -3152,19 +3167,19 @@ span.badge {
   position: absolute;
   right: 15px;
 }
-/* line 582, scss/elements/_global.scss */
+/* line 585, scss/elements/_global.scss */
 span.badge.new {
   font-weight: 300;
   font-size: 0.8rem;
   color: #fff;
   border-radius: 2px;
 }
-/* line 589, scss/elements/_global.scss */
+/* line 592, scss/elements/_global.scss */
 span.badge.new:after {
   content: " new";
 }
 
-/* line 595, scss/elements/_global.scss */
+/* line 598, scss/elements/_global.scss */
 .video-container {
   position: relative;
   padding-bottom: 56.25%;
@@ -3172,11 +3187,11 @@ span.badge.new:after {
   height: 0;
   overflow: hidden;
 }
-/* line 601, scss/elements/_global.scss */
+/* line 604, scss/elements/_global.scss */
 .video-container.no-controls {
   padding-top: 0;
 }
-/* line 605, scss/elements/_global.scss */
+/* line 608, scss/elements/_global.scss */
 .video-container iframe, .video-container object, .video-container embed {
   position: absolute;
   top: 0;
@@ -3266,49 +3281,49 @@ span.badge.new:after {
 /*******************
   Utility Classes
 *******************/
-/* line 696, scss/elements/_global.scss */
+/* line 699, scss/elements/_global.scss */
 .hide {
   display: none !important;
 }
 
-/* line 701, scss/elements/_global.scss */
+/* line 704, scss/elements/_global.scss */
 .left-align {
   text-align: left;
 }
 
-/* line 704, scss/elements/_global.scss */
+/* line 707, scss/elements/_global.scss */
 .right-align {
   text-align: right;
 }
 
-/* line 707, scss/elements/_global.scss */
+/* line 710, scss/elements/_global.scss */
 .center-align {
   text-align: center;
 }
 
-/* line 711, scss/elements/_global.scss */
+/* line 714, scss/elements/_global.scss */
 .left {
   float: left !important;
 }
 
-/* line 714, scss/elements/_global.scss */
+/* line 717, scss/elements/_global.scss */
 .right {
   float: right !important;
 }
 
-/* line 717, scss/elements/_global.scss */
+/* line 720, scss/elements/_global.scss */
 .nofloat {
   float: none !important;
 }
 
-/* line 720, scss/elements/_global.scss */
+/* line 723, scss/elements/_global.scss */
 .center {
   float: none;
   margin-right: auto;
   margin-left: auto;
 }
 
-/* line 727, scss/elements/_global.scss */
+/* line 730, scss/elements/_global.scss */
 .no-select {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -3318,19 +3333,19 @@ span.badge.new:after {
   user-select: none;
 }
 
-/* line 736, scss/elements/_global.scss */
+/* line 739, scss/elements/_global.scss */
 .circle {
   border-radius: 50%;
 }
 
-/* line 740, scss/elements/_global.scss */
+/* line 743, scss/elements/_global.scss */
 .center-block {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 746, scss/elements/_global.scss */
+/* line 749, scss/elements/_global.scss */
 .truncate {
   display: block;
   white-space: nowrap;
@@ -3338,18 +3353,18 @@ span.badge.new:after {
   text-overflow: ellipsis;
 }
 
-/* line 753, scss/elements/_global.scss */
+/* line 756, scss/elements/_global.scss */
 .no-padding, .compare-page .compare .compare-actions, .compare-page .compare .compare-products {
   padding: 0 !important;
 }
 
-/* line 756, scss/elements/_global.scss */
+/* line 759, scss/elements/_global.scss */
 .no-g-padding {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
-/* line 760, scss/elements/_global.scss */
+/* line 763, scss/elements/_global.scss */
 .no-h-padding {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
@@ -3604,30 +3619,34 @@ span.badge.new:after {
 .btn.shopping-card {
   padding: 8px 0;
 }
+/* line 88, scss/elements/_buttons.scss */
+.btn.mini {
+  width: 70px;
+}
 
-/* line 89, scss/elements/_buttons.scss */
+/* line 92, scss/elements/_buttons.scss */
 .btn-favorite {
   width: 25px;
   height: 20px;
 }
-/* line 92, scss/elements/_buttons.scss */
+/* line 95, scss/elements/_buttons.scss */
 .btn-favorite:hover .icon {
   fill: #ce2127;
 }
 
-/* line 97, scss/elements/_buttons.scss */
+/* line 100, scss/elements/_buttons.scss */
 .icon {
   width: 100%;
   height: 100%;
   vertical-align: top;
 }
 
-/* line 102, scss/elements/_buttons.scss */
+/* line 105, scss/elements/_buttons.scss */
 .btn-more {
   margin-top: 10px;
 }
 
-/* line 105, scss/elements/_buttons.scss */
+/* line 108, scss/elements/_buttons.scss */
 .btn-close {
   width: 17px;
   height: 17px;
@@ -3638,32 +3657,32 @@ span.badge.new:after {
   -webkit-transition: -webkit-transform .3s ease;
           transition: transform .3s ease;
 }
-/* line 111, scss/elements/_buttons.scss */
+/* line 114, scss/elements/_buttons.scss */
 .btn-close .icon {
   fill: #ce2127;
 }
-/* line 114, scss/elements/_buttons.scss */
+/* line 117, scss/elements/_buttons.scss */
 .btn-close:hover {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-/* line 118, scss/elements/_buttons.scss */
+/* line 121, scss/elements/_buttons.scss */
 .btn-delete-from-card {
   width: 17px;
   height: 17px;
 }
-/* line 121, scss/elements/_buttons.scss */
+/* line 124, scss/elements/_buttons.scss */
 .btn-delete-from-card .icon {
   fill: #8c8c8c;
 }
-/* line 124, scss/elements/_buttons.scss */
+/* line 127, scss/elements/_buttons.scss */
 .btn-delete-from-card:hover .icon {
   fill: #ce2127;
 }
 
-/* line 128, scss/elements/_buttons.scss */
+/* line 131, scss/elements/_buttons.scss */
 .btn-link {
   background: none;
   border: 0;
@@ -5914,23 +5933,49 @@ select option {
   margin-top: 20px;
 }
 
-/* line 7, scss/components/_shops.scss */
-.shops-list .shop-item {
+/* line 8, scss/components/_shops.scss */
+.shops-list .shop-item,
+.shops-list .sc-item,
+.sc-list .shop-item,
+.sc-list .sc-item {
   margin-bottom: 20px;
 }
-/* line 10, scss/components/_shops.scss */
-.shops-list .shop-title {
+/* line 12, scss/components/_shops.scss */
+.shops-list .shop-title,
+.shops-list .sc-title,
+.sc-list .shop-title,
+.sc-list .sc-title {
   color: #ce2127;
 }
-/* line 13, scss/components/_shops.scss */
+/* line 16, scss/components/_shops.scss */
 .shops-list .shop-address,
-.shops-list .shop-workhours {
+.shops-list .shop-workhours,
+.shops-list .shop-phone,
+.shops-list .sc-address,
+.shops-list .sc-workhours,
+.shops-list .sc-phone,
+.sc-list .shop-address,
+.sc-list .shop-workhours,
+.sc-list .shop-phone,
+.sc-list .sc-address,
+.sc-list .sc-workhours,
+.sc-list .sc-phone {
   padding-left: 25px;
   margin: 10px 0;
 }
-/* line 17, scss/components/_shops.scss */
+/* line 24, scss/components/_shops.scss */
 .shops-list .shop-address .icon,
-.shops-list .shop-workhours .icon {
+.shops-list .shop-workhours .icon,
+.shops-list .shop-phone .icon,
+.shops-list .sc-address .icon,
+.shops-list .sc-workhours .icon,
+.shops-list .sc-phone .icon,
+.sc-list .shop-address .icon,
+.sc-list .shop-workhours .icon,
+.sc-list .shop-phone .icon,
+.sc-list .sc-address .icon,
+.sc-list .sc-workhours .icon,
+.sc-list .sc-phone .icon {
   position: absolute;
   width: 15px;
   height: 15px;
@@ -5938,12 +5983,37 @@ select option {
   left: 0;
   fill: #434343;
 }
+/* line 33, scss/components/_shops.scss */
+.shops-list .shop-phone .icon,
+.shops-list .sc-phone .icon,
+.sc-list .shop-phone .icon,
+.sc-list .sc-phone .icon {
+  fill: #ce2127;
+}
 
-/* line 27, scss/components/_shops.scss */
+/* line 38, scss/components/_shops.scss */
 .shops-map,
 .shops-map .map {
   width: 100%;
   height: 650px;
+}
+
+/* line 43, scss/components/_shops.scss */
+.shops-page .shops-map,
+.shops-page .shops-map .map {
+  height: 740px;
+}
+
+/* line 47, scss/components/_shops.scss */
+.sc-list,
+.sc-map {
+  margin-top: 20px;
+}
+
+/* line 51, scss/components/_shops.scss */
+.sc-map,
+.sc-map .map {
+  height: 350px;
 }
 
 /* line 2, scss/components/_compare.scss */
@@ -6103,7 +6173,7 @@ select option {
 }
 /* line 23, scss/components/_basket.scss */
 .page-title-basket .btn-clear-basket {
-  margin-top: 35px;
+  margin-top: 45px;
 }
 
 /* line 29, scss/components/_basket.scss */

@@ -70,12 +70,28 @@
 				</div>
 			</div>
 		</div>
-		<!-- физ. лица -->
+		<!-- физ. лица не подписаны
 		<div class="col l4">
 			<div class="base-card">
 				<div class="title big-text">Рассылка новостей</div>
 				<div class="card-content no-g-padding">
 					<p class="medium-text">Вы не подписаны ни на одну рассылку новостей</p>
+				</div>
+				<div class="link-box">
+					<p><a href="lk__change-subs.php">Настроить рассылку</a></p>
+				</div>
+			</div>
+		</div> -->
+		<!-- физ. лица подписаны -->
+		<div class="col l4">
+			<div class="base-card">
+				<div class="title big-text">Рассылка новостей</div>
+				<div class="card-content no-g-padding">
+					<p class="medium-text">Вы подписаны на рассылку:</p>
+					<ul>
+						<li>Подписка на новости</li>
+						<li>Подписка на спецпредложения недели</li>
+					</ul>
 				</div>
 				<div class="link-box">
 					<p><a href="lk__change-subs.php">Настроить рассылку</a></p>

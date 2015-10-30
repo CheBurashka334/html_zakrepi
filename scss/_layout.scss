@@ -19,6 +19,16 @@ html, body {
 .page-empty {
 	padding: 20vh 0;
 }
+.page-404 {
+	.page-title {
+		margin-top: 0;
+		margin-bottom: $gutter-width;
+	}
+	.btn {
+		width: 180px;
+		margin-top: $gutter-width;
+	}
+}
 .white-page {
 	background: white;
 	.footer-wrapper {

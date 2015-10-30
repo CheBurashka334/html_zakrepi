@@ -405,6 +405,9 @@ table {
 	&:first-child {
 		border-top: 0;
 	}
+	&.table-header {
+		border-bottom: 1px solid color('border', 'table-border');
+	}
 }
 .table-col {
 	display: table-cell;
