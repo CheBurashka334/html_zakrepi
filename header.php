@@ -24,8 +24,21 @@
 <body>
 <div id="svg-placeholder" class="hide"></div>
 <div class="layout">
-<!-- для главной добавить класс home-page к page, для сравнения .compare-page, оформление заказа .checkout-page, lk - .profile-page, авторизация, регистрация .authorize-page, бренды, сервисные центры - .brands-page.white-page, бренд - .brand-page-single, структура компании, сервисцентр детальная - .white-page, магазины - .shops-page.white-page -->
-<div class="page white-page" ng-app="zakrepi">
+<!-- 	для главной добавить класс к page		.home-page, 
+		для сравнения							.compare-page, 
+		оформление заказа 						.checkout-page, 
+		lk - 									.profile-page, 
+		авторизация, регистрация 				.authorize-page, 
+		бренды, сервисные центры - 				.brands-page.white-page, 
+		бренд - 								.brand-page-single, 
+		магазины - 								.shops-page.white-page,
+		---------------------------------------------------
+		структура компании,  					.white-page
+		сервисцентр детальная, 
+		категория 
+-->
+		
+<div class="page" ng-app="zakrepi">
 	<!-- если не 404 -->
 	<div class="header-wrapper">
 		<div class="topbar">
