@@ -4,3 +4,4 @@ makety/*
 config.rb
 js/jquery.togglecontent.js
 js/shops.json
+js/collapsible.js

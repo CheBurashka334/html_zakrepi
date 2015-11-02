@@ -1,0 +1,41 @@
+// category-page
+.categories-list {
+	.category-item {
+		margin-top: $gutter-width;
+		margin-bottom: $gutter-width*2;
+	}
+	.category-name {
+		margin-bottom: $gutter-width;
+	}
+	.subcat-list {
+		
+	}
+	.subcat-item {
+		.subcat-name > .subcat-link,
+		.collapsible-header.subcat-name {
+			display: block;
+			color: color('primary', 'base');
+			font-size: $base-size;
+			padding: $gutter-width/2 0;
+			min-height: 40px;
+			line-height: 1.5;
+			&:after {
+				display: inline-block;
+				position: relative;
+				color: color('primary', 'base');
+				top: auto;
+				left: auto;
+				right: auto;
+				margin-left: 1em;
+				font-size: inherit;
+			}
+			&:hover {
+				background: none;
+			}
+		}
+		.subcat-link {
+			display: block;
+			padding: $gutter-width/2 $gutter-width;
+		}
+	}
+}

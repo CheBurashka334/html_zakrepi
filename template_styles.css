@@ -3820,13 +3820,13 @@ ul.type-2 > li, ol.type-2 > li {
   margin: 20px 0;
 }
 /* line 78, scss/elements/_typography.scss */
-ul.nostyle, .soc-list, .pagination, .dropdown-list, .menu, .horizontal-multilevel-menu .submenu, .filter .filters-list, .carousel-nav, .brand-box .brand-list, .tabs .tab-header-list, ol.nostyle {
+ul.nostyle, .soc-list, .pagination, .collapsible ul.collapsible-body-content, .dropdown-list, .menu, .horizontal-multilevel-menu .submenu, .filter .filters-list, .carousel-nav, .brand-box .brand-list, .tabs .tab-header-list, ol.nostyle {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 /* line 82, scss/elements/_typography.scss */
-ul.nostyle > li, .soc-list > li, .pagination > li, .dropdown-list > li, .menu > li, .horizontal-multilevel-menu .submenu > li, .filter .filters-list > li, .carousel-nav > li, .brand-box .brand-list > li, .tabs .tab-header-list > li, ol.nostyle > li {
+ul.nostyle > li, .soc-list > li, .pagination > li, .collapsible ul.collapsible-body-content > li, .dropdown-list > li, .menu > li, .horizontal-multilevel-menu .submenu > li, .filter .filters-list > li, .carousel-nav > li, .brand-box .brand-list > li, .tabs .tab-header-list > li, ol.nostyle > li {
   padding: 0;
   margin: 0;
 }
@@ -4660,7 +4660,7 @@ select option {
 .collapsible .collapsible-body-content > *:first-child {
   margin-top: 0.5rem;
 }
-/* line 14, scss/elements/_collapsible.scss */
+/* line 17, scss/elements/_collapsible.scss */
 .collapsible.sidebar-menu > .menu-item > .menu-link,
 .collapsible .collapsible-header {
   padding: 18px 20px 16px;
@@ -4668,7 +4668,7 @@ select option {
   cursor: pointer;
   min-height: 50px;
 }
-/* line 23, scss/elements/_collapsible.scss */
+/* line 26, scss/elements/_collapsible.scss */
 .collapsible .collapsible-header:after {
   content: '>';
   display: block;
@@ -4682,20 +4682,20 @@ select option {
           transform: scale(2, 1) rotate(90deg) translateZ(0);
   will-change: transform;
 }
-/* line 36, scss/elements/_collapsible.scss */
+/* line 39, scss/elements/_collapsible.scss */
 .collapsible .collapsible-header:not(.active):hover {
   background-color: #f9f9f9;
 }
-/* line 40, scss/elements/_collapsible.scss */
+/* line 43, scss/elements/_collapsible.scss */
 .collapsible .collapsible-header.active:after {
   -webkit-transform: scale(2, 1) rotate(-90deg) translateZ(0);
           transform: scale(2, 1) rotate(-90deg) translateZ(0);
 }
-/* line 48, scss/elements/_collapsible.scss */
+/* line 51, scss/elements/_collapsible.scss */
 .collapsible.collapsible-type-2 {
   padding: 0;
 }
-/* line 50, scss/elements/_collapsible.scss */
+/* line 53, scss/elements/_collapsible.scss */
 .collapsible.collapsible-type-2 .collapsible-header {
   padding: 30px 0;
   padding-right: 30px;
@@ -4703,22 +4703,22 @@ select option {
   border-top: 1px solid #e5e5e5;
   color: #ce2127;
 }
-/* line 56, scss/elements/_collapsible.scss */
+/* line 59, scss/elements/_collapsible.scss */
 .collapsible.collapsible-type-2 .collapsible-header:after {
   top: 35px;
   right: 0;
   color: inherit;
 }
-/* line 61, scss/elements/_collapsible.scss */
+/* line 64, scss/elements/_collapsible.scss */
 .collapsible.collapsible-type-2 .collapsible-header:hover {
   background: none;
 }
-/* line 65, scss/elements/_collapsible.scss */
+/* line 68, scss/elements/_collapsible.scss */
 .collapsible.collapsible-type-2 .collapsible-body-content {
   padding: 0 0 30px;
 }
 
-/* line 72, scss/elements/_collapsible.scss */
+/* line 75, scss/elements/_collapsible.scss */
 .base-card .collapsible-type-2:first-child li:first-child .collapsible-header, .compare-page .compare .collapsible-type-2:first-child li:first-child .collapsible-header,
 .base-card .card-content .collapsible-type-2:first-child li:first-child .collapsible-header,
 .compare-page .compare .card-content .collapsible-type-2:first-child li:first-child .collapsible-header {
@@ -6570,4 +6570,46 @@ select option {
 /* line 14, scss/pages/_vakansii.scss */
 .vakansi-single + .btn {
   margin-bottom: 190px;
+}
+
+/* line 3, scss/pages/_category.scss */
+.categories-list .category-item {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+/* line 7, scss/pages/_category.scss */
+.categories-list .category-name {
+  margin-bottom: 20px;
+}
+/* line 14, scss/pages/_category.scss */
+.categories-list .subcat-item .subcat-name > .subcat-link,
+.categories-list .subcat-item .collapsible-header.subcat-name {
+  display: block;
+  color: #ce2127;
+  font-size: 14px;
+  padding: 10px 0;
+  min-height: 40px;
+  line-height: 1.5;
+}
+/* line 22, scss/pages/_category.scss */
+.categories-list .subcat-item .subcat-name > .subcat-link:after,
+.categories-list .subcat-item .collapsible-header.subcat-name:after {
+  display: inline-block;
+  position: relative;
+  color: #ce2127;
+  top: auto;
+  left: auto;
+  right: auto;
+  margin-left: 1em;
+  font-size: inherit;
+}
+/* line 32, scss/pages/_category.scss */
+.categories-list .subcat-item .subcat-name > .subcat-link:hover,
+.categories-list .subcat-item .collapsible-header.subcat-name:hover {
+  background: none;
+}
+/* line 36, scss/pages/_category.scss */
+.categories-list .subcat-item .subcat-link {
+  display: block;
+  padding: 10px 20px;
 }

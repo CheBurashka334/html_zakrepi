@@ -11,6 +11,9 @@
 			margin-top: 0.5rem;
 		}
 	}
+	ul.collapsible-body-content {
+		@extend ul.nostyle;
+	}
 	&.sidebar-menu >.menu-item > .menu-link,
 	.collapsible-header {
 		padding: $gutter-width*0.9 $gutter-width $gutter-width*0.8;
