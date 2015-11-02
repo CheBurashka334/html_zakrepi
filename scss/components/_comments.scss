@@ -1,0 +1,25 @@
+// comments 
+.comments-list {
+	margin-bottom: $gutter-width*2;
+	.comment-item {
+		padding: $gutter-width/2 0;
+		border-bottom: 1px solid color('border', 'table-border');
+		margin-bottom: $gutter-width;
+		.item-name {
+			margin-right: $gutter-width;
+		}
+		.item-text {
+			margin: $gutter-width 0;
+			line-height: 1.7;
+		}
+	}
+}
+.comment-form {
+	margin-bottom: $gutter-width*10;
+	.field {
+		margin-bottom: $gutter-width*1.5;
+		input, textarea {
+			margin: 0.5em 0;
+		}
+	}
+}

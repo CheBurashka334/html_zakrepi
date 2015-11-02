@@ -6247,6 +6247,39 @@ select option {
   padding: 5px 0;
 }
 
+/* line 2, scss/components/_comments.scss */
+.comments-list {
+  margin-bottom: 40px;
+}
+/* line 4, scss/components/_comments.scss */
+.comments-list .comment-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+}
+/* line 8, scss/components/_comments.scss */
+.comments-list .comment-item .item-name {
+  margin-right: 20px;
+}
+/* line 11, scss/components/_comments.scss */
+.comments-list .comment-item .item-text {
+  margin: 20px 0;
+  line-height: 1.7;
+}
+
+/* line 17, scss/components/_comments.scss */
+.comment-form {
+  margin-bottom: 200px;
+}
+/* line 19, scss/components/_comments.scss */
+.comment-form .field {
+  margin-bottom: 30px;
+}
+/* line 21, scss/components/_comments.scss */
+.comment-form .field input, .comment-form .field textarea {
+  margin: 0.5em 0;
+}
+
 /* line 2, scss/pages/_catalog.scss */
 .catalog .item,
 .product-list .item {
@@ -6278,6 +6311,12 @@ select option {
 .action-single .product-list {
   margin-top: 80px;
   margin-bottom: 80px;
+}
+
+/* line 18, scss/pages/_news.scss */
+.action-single.test-drive .product-list {
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 /* line 3, scss/pages/_lk.scss */
