@@ -351,13 +351,22 @@
 					<div class="subtitle">Ваш отзыв о гайковерте Hitachi WR14VB-NA 420 Вт</div>
 					<div class="row">
 						<div class="col l6">
-							<div class="table-field">
+							<div class="table-field top-tf">
 								<div class="label">Имя</div>
-								<div class="field"><input type="text"/></div>
+								<div class="field">
+									<input type="text" required />
+									<span class="error-text error-required">Укажите свое имя</span>
+								</div>
 							</div>
-							<div class="table-field">
+							<div class="table-field top-tf">
 								<div class="label">Электронная почта</div>
-								<div class="field"><input type="email"/></div>
+								<div class="field">
+									<input type="email" required />
+									<!-- 	.error-text - для всех ошибок, 
+											.error-required, .error-pattern - можно задать разный текст для разных ошибок
+										-->
+									<span class="error-text error-required error-pattern">Укажите электронную почту в формате mymail@mail.ru</span>
+								</div>
 							</div>
 							<div class="table-field top-tf">
 								<div class="label">Рейтинг</div>
@@ -384,8 +393,8 @@
 								<div class="label">Комментарий</div>
 								<div class="field"><textarea></textarea></div>
 							</div>
-							<div class="table-field">
-								<div class="action-box second-field cols-2">
+							<div class="table-field action-box">
+								<div class="second-field cols-2">
 									<button class="btn standart-color btn-toggle-block" data-block="#reviews-form,#reviews-res">Отменить</button>
 									<button class="btn primary">Оставить отзыв</button>
 								</div>

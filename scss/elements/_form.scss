@@ -59,6 +59,21 @@ textarea {
 		opacity: 0;
 		transform: translate(50px,0);
 	}
+	&[class*='invalid-']{
+		border-color: color('primary', 'base');
+	}
+	&.invalid-required ~ .error-required,
+	&.invalid-pattern ~ .error-pattern {
+		height: 1.5em;
+	}
+}
+.error-text {
+	display: block;
+	height: 0;
+	overflow: hidden;
+	margin-top: 3px;
+	color: color('primary', 'base');
+	transition: height .3s ease;
 }
 textarea {
 	max-width: 100%;
@@ -224,7 +239,7 @@ input[type="radio"] {
 		align-items: flex-start;
 		.label,
 		.first-field {
-			margin-top: $gutter-width/2;
+			margin-top: 13px;
 		}
 		>input,
 		.field,
@@ -233,10 +248,11 @@ input[type="radio"] {
 			width: calc(69% - 10px);
 		}
 	}
-	.action-box {
+	&.action-box {
 		margin-top: $gutter-width/2;
+		justify-content: flex-end;
 	}
-	.action-box.cols-2 .btn {
+	&.action-box .cols-2 .btn {
 		width: calc((100% - 40px)/2);
 		margin: 0;
 		&:first-child {
