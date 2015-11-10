@@ -38,7 +38,7 @@
 		категория 
 -->
 		
-<div class="page" ng-app="zakrepi">
+<div class="page profile-page" ng-app="zakrepi">
 	<!-- если не 404 -->
 	<div class="header-wrapper">
 		<div class="topbar">

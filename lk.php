@@ -109,6 +109,73 @@
 				</div>
 			</div>
 		</div>-->
+		<!-- не привязаны -->
+		<div class="col l4">
+			<div class="base-card">
+				<div class="title big-text">Привязанные аккаунты</div>
+				<div class="card-content no-g-padding">
+					<p class="medium-text">Нет привязанных аккаунтов</p>
+				</div>
+				<div class="link-box">
+					<span class="color-text text-light note left">Связать соц. сети</span>
+					<ul class="soc-list horizontal">
+						<li class="soc-item"><a class="soc-link vk" href="#"><svg class="icon"><use xlink:href="#vk"/></svg></a></li>
+						<li class="soc-item"><a class="soc-link fb" href="#"><svg class="icon"><use xlink:href="#fb"/></svg></a></li>
+						<li class="soc-item"><a class="soc-link ok" href="#"><svg class="icon"><use xlink:href="#ok"/></svg></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- один аккаунт -->
+		<div class="col l4">
+			<div class="base-card">
+				<div class="title big-text">Привязанные аккаунты</div>
+				<div class="card-content no-g-padding">
+					<div class="account clearfix">
+						<div class="soc-item left"><a class="soc-link vk" href="#"><svg class="icon"><use xlink:href="#vk"/></svg></a></div>
+						<div class="account-info">
+							<div class="item-name medium-text">Konstantin Konstantinopolskii</div>
+							<a href="#" class="small-text color-text text-light">Отвязать аккаунт</a>
+						</div>
+					</div>
+				</div>
+				<div class="link-box">
+					<span class="color-text text-light note left">Связать соц. сети</span>
+					<ul class="soc-list horizontal">
+						<li class="soc-item"><a class="soc-link fb" href="#"><svg class="icon"><use xlink:href="#fb"/></svg></a></li>
+						<li class="soc-item"><a class="soc-link ok" href="#"><svg class="icon"><use xlink:href="#ok"/></svg></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- несколько аккаунтов -->
+		<div class="col l4">
+			<div class="base-card">
+				<div class="title big-text">Привязанные аккаунты</div>
+				<div class="card-content no-g-padding">
+					<div class="account clearfix">
+						<div class="soc-item left"><a class="soc-link vk" href="#"><svg class="icon"><use xlink:href="#vk"/></svg></a></div>
+						<div class="account-info">
+							<div class="item-name medium-text">Konstantin Konstantinopolskii</div>
+							<a href="#" class="small-text color-text text-light">Отвязать аккаунт</a>
+						</div>
+					</div>
+					<div class="account clearfix">
+						<div class="soc-item left"><a class="soc-link fb" href="#"><svg class="icon"><use xlink:href="#fb"/></svg></a></div>
+						<div class="account-info">
+							<div class="item-name medium-text">Konstantin Konstantinopolskii</div>
+							<a href="#" class="small-text color-text text-light">Отвязать аккаунт</a>
+						</div>
+					</div>
+				</div>
+				<div class="link-box">
+					<span class="color-text text-light note left">Связать соц. сети</span>
+					<ul class="soc-list horizontal">
+						<li class="soc-item"><a class="soc-link ok" href="#"><svg class="icon"><use xlink:href="#ok"/></svg></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
 	</div>
 </div> <!-- /.workarea -->
 <?php include('footer.php');?>

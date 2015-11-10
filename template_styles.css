@@ -1,289 +1,329 @@
-/* line 71, scss/_color.scss */
+/* line 75, scss/_color.scss */
 .primary.light, .primary.page-title, h1.primary, .primary.box-title, .primary.subtitle, .brands-page .brands-box .primary.letter-marker, .product-page .main-info .primary.product-title {
   background-color: #f33b42 !important;
 }
 
-/* line 74, scss/_color.scss */
+/* line 78, scss/_color.scss */
 .color-primary.text-light {
   color: #f33b42 !important;
 }
 
-/* line 63, scss/_color.scss */
+/* line 67, scss/_color.scss */
 .primary {
   background-color: #ce2127 !important;
 }
 
-/* line 66, scss/_color.scss */
+/* line 70, scss/_color.scss */
 .primary-text {
   color: #ce2127 !important;
 }
 
-/* line 71, scss/_color.scss */
+/* line 75, scss/_color.scss */
 .text.lighter {
   background-color: #b9b9b9 !important;
 }
 
-/* line 74, scss/_color.scss */
+/* line 78, scss/_color.scss */
 .color-text.text-lighter {
   color: #b9b9b9 !important;
 }
 
-/* line 71, scss/_color.scss */
+/* line 75, scss/_color.scss */
 .text.light, .text.page-title, h1.text, .text.box-title, .text.subtitle, .brands-page .brands-box .text.letter-marker, .product-page .main-info .text.product-title {
   background-color: #8c8c8c !important;
 }
 
-/* line 74, scss/_color.scss */
+/* line 78, scss/_color.scss */
 .color-text.text-light {
   color: #8c8c8c !important;
 }
 
-/* line 63, scss/_color.scss */
+/* line 67, scss/_color.scss */
 .text {
   background-color: #434343 !important;
 }
 
-/* line 66, scss/_color.scss */
+/* line 70, scss/_color.scss */
 .text-text {
   color: #434343 !important;
 }
 
-/* line 71, scss/_color.scss */
+/* line 75, scss/_color.scss */
 .text.dark {
   background-color: #363636 !important;
 }
 
-/* line 74, scss/_color.scss */
+/* line 78, scss/_color.scss */
 .color-text.text-dark {
   color: #363636 !important;
 }
 
-/* line 71, scss/_color.scss */
+/* line 75, scss/_color.scss */
 .text.darker {
   background-color: #333333 !important;
 }
 
-/* line 74, scss/_color.scss */
+/* line 78, scss/_color.scss */
 .color-text.text-darker {
   color: #333333 !important;
 }
 
-/* line 71, scss/_color.scss */
+/* line 75, scss/_color.scss */
 .bg.light, .bg.page-title, h1.bg, .bg.box-title, .bg.subtitle, .brands-page .brands-box .bg.letter-marker, .product-page .main-info .bg.product-title {
   background-color: #f9f9f9 !important;
 }
 
-/* line 74, scss/_color.scss */
+/* line 78, scss/_color.scss */
 .color-bg.text-light {
   color: #f9f9f9 !important;
 }
 
-/* line 63, scss/_color.scss */
+/* line 67, scss/_color.scss */
 .bg {
   background-color: #f6f6f6 !important;
 }
 
-/* line 66, scss/_color.scss */
+/* line 70, scss/_color.scss */
 .bg-text {
   color: #f6f6f6 !important;
 }
 
-/* line 71, scss/_color.scss */
+/* line 75, scss/_color.scss */
 .bg.topbar {
   background-color: #efefef !important;
 }
 
-/* line 74, scss/_color.scss */
+/* line 78, scss/_color.scss */
 .color-bg.text-topbar {
   color: #efefef !important;
 }
 
-/* line 71, scss/_color.scss */
+/* line 75, scss/_color.scss */
 .bg.dark {
   background-color: #363636 !important;
 }
 
-/* line 74, scss/_color.scss */
+/* line 78, scss/_color.scss */
 .color-bg.text-dark {
   color: #363636 !important;
 }
 
-/* line 71, scss/_color.scss */
+/* line 75, scss/_color.scss */
 .icons.soc {
   background-color: #939393 !important;
 }
 
-/* line 74, scss/_color.scss */
+/* line 78, scss/_color.scss */
 .color-icons.text-soc {
   color: #939393 !important;
 }
 
-/* line 71, scss/_color.scss */
+/* line 75, scss/_color.scss */
+.icons.vk {
+  background-color: #517397 !important;
+}
+
+/* line 78, scss/_color.scss */
+.color-icons.text-vk {
+  color: #517397 !important;
+}
+
+/* line 75, scss/_color.scss */
+.icons.fb {
+  background-color: #45619D !important;
+}
+
+/* line 78, scss/_color.scss */
+.color-icons.text-fb {
+  color: #45619D !important;
+}
+
+/* line 75, scss/_color.scss */
+.icons.ok {
+  background-color: #f2720c !important;
+}
+
+/* line 78, scss/_color.scss */
+.color-icons.text-ok {
+  color: #f2720c !important;
+}
+
+/* line 75, scss/_color.scss */
+.icons.yt {
+  background-color: #CC181E !important;
+}
+
+/* line 78, scss/_color.scss */
+.color-icons.text-yt {
+  color: #CC181E !important;
+}
+
+/* line 75, scss/_color.scss */
 .icons.lightest {
   background-color: #d8d8d8 !important;
 }
 
-/* line 74, scss/_color.scss */
+/* line 78, scss/_color.scss */
 .color-icons.text-lightest {
   color: #d8d8d8 !important;
 }
 
-/* line 71, scss/_color.scss */
+/* line 75, scss/_color.scss */
 .icons.lighter {
   background-color: #d4d4d4 !important;
 }
 
-/* line 74, scss/_color.scss */
+/* line 78, scss/_color.scss */
 .color-icons.text-lighter {
   color: #d4d4d4 !important;
 }
 
-/* line 71, scss/_color.scss */
+/* line 75, scss/_color.scss */
 .icons.light, .icons.page-title, h1.icons, .icons.box-title, .icons.subtitle, .brands-page .brands-box .icons.letter-marker, .product-page .main-info .icons.product-title {
   background-color: #9d9d9d !important;
 }
 
-/* line 74, scss/_color.scss */
+/* line 78, scss/_color.scss */
 .color-icons.text-light {
   color: #9d9d9d !important;
 }
 
-/* line 63, scss/_color.scss */
+/* line 67, scss/_color.scss */
 .icons {
   background-color: #6b6b6b !important;
 }
 
-/* line 66, scss/_color.scss */
+/* line 70, scss/_color.scss */
 .icons-text {
   color: #6b6b6b !important;
 }
 
-/* line 71, scss/_color.scss */
+/* line 75, scss/_color.scss */
 .icons.dark {
   background-color: #242424 !important;
 }
 
-/* line 74, scss/_color.scss */
+/* line 78, scss/_color.scss */
 .color-icons.text-dark {
   color: #242424 !important;
 }
 
-/* line 71, scss/_color.scss */
+/* line 75, scss/_color.scss */
 .border.lighter {
   background-color: #f6f6f6 !important;
 }
 
-/* line 74, scss/_color.scss */
+/* line 78, scss/_color.scss */
 .color-border.text-lighter {
   color: #f6f6f6 !important;
 }
 
-/* line 71, scss/_color.scss */
+/* line 75, scss/_color.scss */
 .border.light, .border.page-title, h1.border, .border.box-title, .border.subtitle, .brands-page .brands-box .border.letter-marker, .product-page .main-info .border.product-title {
   background-color: #d7d7d7 !important;
 }
 
-/* line 74, scss/_color.scss */
+/* line 78, scss/_color.scss */
 .color-border.text-light {
   color: #d7d7d7 !important;
 }
 
-/* line 63, scss/_color.scss */
+/* line 67, scss/_color.scss */
 .border {
   background-color: #c9c9c9 !important;
 }
 
-/* line 66, scss/_color.scss */
+/* line 70, scss/_color.scss */
 .border-text {
   color: #c9c9c9 !important;
 }
 
-/* line 71, scss/_color.scss */
+/* line 75, scss/_color.scss */
 .border.dark {
   background-color: #aaaaaa !important;
 }
 
-/* line 74, scss/_color.scss */
+/* line 78, scss/_color.scss */
 .color-border.text-dark {
   color: #aaaaaa !important;
 }
 
-/* line 71, scss/_color.scss */
+/* line 75, scss/_color.scss */
 .border.darker {
   background-color: #9c9c9c !important;
 }
 
-/* line 74, scss/_color.scss */
+/* line 78, scss/_color.scss */
 .color-border.text-darker {
   color: #9c9c9c !important;
 }
 
-/* line 71, scss/_color.scss */
+/* line 75, scss/_color.scss */
 .border.table-border {
   background-color: #e5e5e5 !important;
 }
 
-/* line 74, scss/_color.scss */
+/* line 78, scss/_color.scss */
 .color-border.text-table-border {
   color: #e5e5e5 !important;
 }
 
-/* line 71, scss/_color.scss */
+/* line 75, scss/_color.scss */
 .shades.black {
   background-color: #000000 !important;
 }
 
-/* line 74, scss/_color.scss */
+/* line 78, scss/_color.scss */
 .color-shades.text-black {
   color: #000000 !important;
 }
 
-/* line 71, scss/_color.scss */
+/* line 75, scss/_color.scss */
 .shades.white {
   background-color: #FFFFFF !important;
 }
 
-/* line 74, scss/_color.scss */
+/* line 78, scss/_color.scss */
 .color-shades.text-white {
   color: #FFFFFF !important;
 }
 
-/* line 71, scss/_color.scss */
+/* line 75, scss/_color.scss */
 .shades.transparent {
   background-color: transparent !important;
 }
 
-/* line 74, scss/_color.scss */
+/* line 78, scss/_color.scss */
 .color-shades.text-transparent {
   color: transparent !important;
 }
 
-/* line 83, scss/_color.scss */
+/* line 87, scss/_color.scss */
 .black {
   background-color: #000000 !important;
 }
 
-/* line 86, scss/_color.scss */
+/* line 90, scss/_color.scss */
 .black-text {
   color: #000000 !important;
 }
 
-/* line 83, scss/_color.scss */
+/* line 87, scss/_color.scss */
 .white {
   background-color: #FFFFFF !important;
 }
 
-/* line 86, scss/_color.scss */
+/* line 90, scss/_color.scss */
 .white-text {
   color: #FFFFFF !important;
 }
 
-/* line 83, scss/_color.scss */
+/* line 87, scss/_color.scss */
 .transparent {
   background-color: transparent !important;
 }
 
-/* line 86, scss/_color.scss */
+/* line 90, scss/_color.scss */
 .transparent-text {
   color: transparent !important;
 }
@@ -2482,35 +2522,59 @@ html, body {
 .soc-list .soc-link .icon {
   fill: #939393;
 }
+/* line 123, scss/_layout.scss */
+.soc-list .soc-link:hover.vk {
+  background: #517397;
+  border-color: #517397;
+}
+/* line 127, scss/_layout.scss */
+.soc-list .soc-link:hover.fb {
+  background: #45619D;
+  border-color: #45619D;
+}
+/* line 131, scss/_layout.scss */
+.soc-list .soc-link:hover.ok {
+  background: #f2720c;
+  border-color: #f2720c;
+}
+/* line 135, scss/_layout.scss */
+.soc-list .soc-link:hover.yt {
+  background: #CC181E;
+  border-color: #CC181E;
+}
+/* line 139, scss/_layout.scss */
+.soc-list .soc-link:hover .icon {
+  fill: #fff;
+}
 
-/* line 125, scss/_layout.scss */
+/* line 146, scss/_layout.scss */
 .footer {
   padding: 30px 0 25px;
 }
-/* line 127, scss/_layout.scss */
+/* line 148, scss/_layout.scss */
 .footer .box-title {
   margin-top: 0;
   margin-bottom: 13.2px;
   font-weight: normal;
   color: #ce2127;
 }
-/* line 134, scss/_layout.scss */
+/* line 155, scss/_layout.scss */
 .footer .phone-box,
 .footer .schedule-box {
   margin-bottom: 20px;
 }
-/* line 138, scss/_layout.scss */
+/* line 159, scss/_layout.scss */
 .footer .phone-box .phone-link {
   font-size: 22px;
   margin: 1em 0 0;
   display: block;
 }
-/* line 143, scss/_layout.scss */
+/* line 164, scss/_layout.scss */
 .footer .schedule-box p {
   margin: 10px 0;
 }
 
-/* line 147, scss/_layout.scss */
+/* line 168, scss/_layout.scss */
 .bottombar {
   padding: 30px 0;
   border-top: 1px solid #f6f6f6;
@@ -6455,12 +6519,16 @@ select option {
   width: 100%;
   padding: 0 20px;
 }
-/* line 56, scss/pages/_lk.scss */
+/* line 51, scss/pages/_lk.scss */
+.profile-page .lk-boxes .link-box .note {
+  margin: 5px 15px 5px 0;
+}
+/* line 59, scss/pages/_lk.scss */
 .profile-page .address-book .address-item {
   padding-bottom: 80px;
   min-height: 220px;
 }
-/* line 61, scss/pages/_lk.scss */
+/* line 64, scss/pages/_lk.scss */
 .profile-page .btn-delete-addr {
   position: absolute;
   width: 19px;
@@ -6468,40 +6536,86 @@ select option {
   top: 0;
   right: 0;
 }
-/* line 67, scss/pages/_lk.scss */
+/* line 70, scss/pages/_lk.scss */
 .profile-page .btn-delete-addr .icon {
   fill: #d8d8d8;
 }
-/* line 71, scss/pages/_lk.scss */
+/* line 74, scss/pages/_lk.scss */
 .profile-page .address-form {
   margin-bottom: 30px;
 }
-/* line 73, scss/pages/_lk.scss */
+/* line 76, scss/pages/_lk.scss */
 .profile-page .address-form .def-addr {
   margin-top: 20px;
 }
-/* line 77, scss/pages/_lk.scss */
+/* line 80, scss/pages/_lk.scss */
 .profile-page .address-form,
 .profile-page .ld-form,
 .profile-page .pas-form,
 .profile-page .subs-form {
   margin-bottom: 30px;
 }
-/* line 85, scss/pages/_lk.scss */
+/* line 88, scss/pages/_lk.scss */
 .profile-page .ld-form .card-content,
 .profile-page .pas-form .card-content {
   padding: 10px 20px;
 }
-/* line 89, scss/pages/_lk.scss */
+/* line 92, scss/pages/_lk.scss */
 .profile-page .subs-form .card-content {
   padding-top: 10px;
 }
-/* line 92, scss/pages/_lk.scss */
+/* line 95, scss/pages/_lk.scss */
 .profile-page .address-form + .btn,
 .profile-page .ld-form + .btn,
 .profile-page .pas-form + .btn,
 .profile-page .subs-form + .btn {
   margin-bottom: 200px;
+}
+/* line 101, scss/pages/_lk.scss */
+.profile-page .account {
+  margin: 20px 0;
+}
+/* line 103, scss/pages/_lk.scss */
+.profile-page .account .soc-item {
+  width: 43px;
+  height: 41px;
+  margin-right: 15px;
+}
+/* line 107, scss/pages/_lk.scss */
+.profile-page .account .soc-item .soc-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  margin: 0;
+  border-radius: 50%;
+  background: grey;
+}
+/* line 115, scss/pages/_lk.scss */
+.profile-page .account .soc-item .soc-link .icon {
+  width: 100%;
+  height: 100%;
+  fill: #fff;
+}
+/* line 120, scss/pages/_lk.scss */
+.profile-page .account .soc-item .soc-link.vk {
+  background: #517397;
+}
+/* line 123, scss/pages/_lk.scss */
+.profile-page .account .soc-item .soc-link.fb {
+  background: #45619D;
+}
+/* line 126, scss/pages/_lk.scss */
+.profile-page .account .soc-item .soc-link.ok {
+  background: #f2720c;
+}
+/* line 129, scss/pages/_lk.scss */
+.profile-page .account .soc-item .soc-link.yt {
+  background: #CC181E;
+}
+/* line 134, scss/pages/_lk.scss */
+.profile-page .account .account-info a:hover, .profile-page .account .account-info .btn-link:hover {
+  color: #ce2127;
 }
 
 /* line 2, scss/pages/_auth.scss */

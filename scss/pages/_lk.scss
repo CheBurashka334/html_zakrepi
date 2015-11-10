@@ -48,6 +48,9 @@
 			bottom: $gutter-width;
 			width: 100%;
 			padding: 0 $gutter-width;
+			.note {
+				margin: 5px 15px 5px 0;
+			}
 		}
 	}
 	
@@ -94,5 +97,42 @@
 	.pas-form + .btn,
 	.subs-form + .btn{
 		margin-bottom: $gutter-width*10;
+	}
+	.account {
+		margin: $gutter-width 0;
+		.soc-item {
+			width: 43px;
+			height:41px;
+			margin-right: $gutter-width*0.75;
+			.soc-link {
+				display: block;
+				width: 100%;
+				height: 100%;
+				padding: $gutter-width/2;
+				margin: 0;
+				border-radius: $circle-border-radius;
+				background: grey;
+				.icon {
+					width: 100%;
+					height: 100%;
+					fill: #fff;
+				}
+				&.vk {
+					background: color('icons', 'vk');
+				}
+				&.fb {
+					background: color('icons', 'fb');
+				}
+				&.ok {
+					background: color('icons', 'ok');
+				}
+				&.yt {
+					background: color('icons', 'yt');
+				}
+			}
+		}
+		.account-info a:hover {
+			color: color('primary', 'base');
+		}
 	}
 }

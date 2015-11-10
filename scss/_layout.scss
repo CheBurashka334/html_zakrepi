@@ -119,6 +119,27 @@ html, body {
 		.icon {
 			fill: color('icons', 'soc');
 		}
+		&:hover  {
+			&.vk {
+				background: color('icons', 'vk');
+				border-color:  color('icons', 'vk');
+			}
+			&.fb {
+				background: color('icons', 'fb');
+				border-color: color('icons', 'fb');
+			}
+			&.ok {
+				background: color('icons', 'ok');
+				border-color: color('icons', 'ok');
+			}
+			&.yt {
+				background: color('icons', 'yt');
+				border-color: color('icons', 'yt');
+			}
+			.icon {
+				fill: #fff;
+			}
+		}
 	}
 }
 // footer
