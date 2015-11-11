@@ -6399,14 +6399,15 @@ select option {
 .checkout-page .table-field.delivery-address {
   margin-top: 20px;
   margin-bottom: 0;
+  display: block;
 }
-/* line 63, scss/components/_basket.scss */
+/* line 64, scss/components/_basket.scss */
 .checkout-page .delivery-address .label,
 .checkout-page .table-field.delivery-address .label {
   vertical-align: top;
   margin-top: 7px;
 }
-/* line 67, scss/components/_basket.scss */
+/* line 68, scss/components/_basket.scss */
 .checkout-page .delivery-address .select-box,
 .checkout-page .delivery-address .dropdown-box,
 .checkout-page .delivery-address .addr-actions,
@@ -6418,30 +6419,30 @@ select option {
   width: 66%;
   width: calc(70% - 20px);
 }
-/* line 74, scss/components/_basket.scss */
+/* line 75, scss/components/_basket.scss */
 .checkout-page .delivery-address .addr-actions,
 .checkout-page .table-field.delivery-address .addr-actions {
   margin-top: 8px;
 }
-/* line 76, scss/components/_basket.scss */
+/* line 77, scss/components/_basket.scss */
 .checkout-page .delivery-address .addr-actions a, .checkout-page .delivery-address .addr-actions .btn-link,
 .checkout-page .table-field.delivery-address .addr-actions a,
 .checkout-page .table-field.delivery-address .addr-actions .btn-link {
   margin-right: 12.5%;
 }
-/* line 81, scss/components/_basket.scss */
+/* line 82, scss/components/_basket.scss */
 .checkout-page .mrg {
   margin-top: 2em;
 }
-/* line 85, scss/components/_basket.scss */
+/* line 86, scss/components/_basket.scss */
 .checkout-page .total-sum-box .title {
   margin-bottom: 0;
 }
-/* line 88, scss/components/_basket.scss */
+/* line 89, scss/components/_basket.scss */
 .checkout-page .total-sum-box table {
   margin-bottom: 25px;
 }
-/* line 91, scss/components/_basket.scss */
+/* line 92, scss/components/_basket.scss */
 .checkout-page .total-sum-box table td {
   padding: 5px 0;
 }
