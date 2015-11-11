@@ -2486,7 +2486,7 @@ html, body {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 9999;
+  z-index: 9990;
 }
 
 /* line 92, scss/_layout.scss */
@@ -2615,7 +2615,7 @@ html {
 }
 
 /* line 55, scss/elements/_global.scss */
-.z-depth-1, .base-card, .compare-page .compare, .sidebar-menu, .filter, .product-card, .product-page .main-info {
+.z-depth-1, .base-card, .compare-page .compare, .modal, .sidebar-menu, .filter, .product-card, .product-page .main-info {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -2640,7 +2640,7 @@ html {
 }
 
 /* line 70, scss/elements/_global.scss */
-.base-card, .compare-page .compare {
+.base-card, .compare-page .compare, .modal {
   background: white;
   border-radius: 6px;
   padding: 20px;
@@ -2648,27 +2648,27 @@ html {
   margin-bottom: 20px;
 }
 /* line 77, scss/elements/_global.scss */
-.base-card .title, .compare-page .compare .title {
+.base-card .title, .compare-page .compare .title, .modal .title {
   margin-bottom: 10px;
 }
 /* line 80, scss/elements/_global.scss */
-.base-card .card-content, .compare-page .compare .card-content {
+.base-card .card-content, .compare-page .compare .card-content, .modal .card-content {
   padding: 20px;
 }
 /* line 82, scss/elements/_global.scss */
-.base-card .card-content > *:first-child, .compare-page .compare .card-content > *:first-child {
+.base-card .card-content > *:first-child, .compare-page .compare .card-content > *:first-child, .modal .card-content > *:first-child {
   margin-top: 0;
 }
 /* line 85, scss/elements/_global.scss */
-.base-card .card-content > *:last-child, .compare-page .compare .card-content > *:last-child {
+.base-card .card-content > *:last-child, .compare-page .compare .card-content > *:last-child, .modal .card-content > *:last-child {
   margin-bottom: 0;
 }
 /* line 88, scss/elements/_global.scss */
-.base-card .card-content.big-g-padding, .compare-page .compare .card-content.big-g-padding {
+.base-card .card-content.big-g-padding, .compare-page .compare .card-content.big-g-padding, .modal .card-content.big-g-padding {
   padding: 20px 60px;
 }
 /* line 92, scss/elements/_global.scss */
-.base-card.v-center, .compare-page .v-center.compare {
+.base-card.v-center, .compare-page .v-center.compare, .v-center.modal {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -3740,13 +3740,19 @@ span.badge.new:after {
 /* line 124, scss/elements/_buttons.scss */
 .btn-delete-from-card .icon {
   fill: #8c8c8c;
+  will-change: transform;
+  -webkit-transition: -webkit-transform .3s ease;
+          transition: transform .3s ease;
 }
-/* line 127, scss/elements/_buttons.scss */
+/* line 129, scss/elements/_buttons.scss */
 .btn-delete-from-card:hover .icon {
   fill: #ce2127;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
-/* line 131, scss/elements/_buttons.scss */
+/* line 134, scss/elements/_buttons.scss */
 .btn-link {
   background: none;
   border: 0;
@@ -3840,7 +3846,7 @@ textarea + .textfield-placeholder, .tabs .tab-header-item .tab-link {
 
 /* line 50, scss/elements/_typography.scss */
 .medium-text, .quantity-field, .collapsible.sidebar-menu > .menu-item > .menu-link,
-.collapsible .collapsible-header, .horizontal-multilevel-menu > .menu-item > .menu-link, .horizontal-multilevel-menu .submenu-link.default, .horizontal-multilevel-menu .submenu.level-2 > .submenu-item > .submenu-link, .horizontal-multilevel-menu .submenu.level-3 > .submenu-item > .submenu-link, .alphabet-menu, .product-card .item-name, .product-card .product-price .old-price, .brands-page .brands-box .brand-item {
+.collapsible .collapsible-header, .horizontal-multilevel-menu > .menu-item > .menu-link, .horizontal-multilevel-menu .submenu-link.default, .horizontal-multilevel-menu .submenu.level-2 > .submenu-item > .submenu-link, .horizontal-multilevel-menu .submenu.level-3 > .submenu-item > .submenu-link, .alphabet-menu, .product-card .item-name, .product-card .product-price .old-price, .brands-page .brands-box .brand-item, .delete-from-card-box .item-text {
   font-size: 16px;
 }
 
@@ -4893,9 +4899,10 @@ select option {
 }
 
 /* line 75, scss/elements/_collapsible.scss */
-.base-card .collapsible-type-2:first-child li:first-child .collapsible-header, .compare-page .compare .collapsible-type-2:first-child li:first-child .collapsible-header,
+.base-card .collapsible-type-2:first-child li:first-child .collapsible-header, .compare-page .compare .collapsible-type-2:first-child li:first-child .collapsible-header, .modal .collapsible-type-2:first-child li:first-child .collapsible-header,
 .base-card .card-content .collapsible-type-2:first-child li:first-child .collapsible-header,
-.compare-page .compare .card-content .collapsible-type-2:first-child li:first-child .collapsible-header {
+.compare-page .compare .card-content .collapsible-type-2:first-child li:first-child .collapsible-header,
+.modal .card-content .collapsible-type-2:first-child li:first-child .collapsible-header {
   border: 0;
 }
 
@@ -6322,8 +6329,8 @@ select option {
 
 /* line 4, scss/components/_basket.scss */
 .basket-table .product-item > .col {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 /* line 8, scss/components/_basket.scss */
 .basket-table .product-item .product-img {
@@ -6335,53 +6342,71 @@ select option {
 }
 
 /* line 16, scss/components/_basket.scss */
+.delete-from-card-box {
+  top: -20px;
+  right: 35px;
+  width: 445px;
+  max-width: 96vw;
+  padding: 30px;
+}
+/* line 22, scss/components/_basket.scss */
+.delete-from-card-box .item-text {
+  margin: 10px auto;
+}
+/* line 26, scss/components/_basket.scss */
+.delete-from-card-box .btn {
+  padding: 0 30px;
+  margin: 10px;
+}
+
+/* line 31, scss/components/_basket.scss */
 .basket-table .sum,
 .total-sum-box .sum {
   font-size: 22px;
 }
 
-/* line 20, scss/components/_basket.scss */
+/* line 35, scss/components/_basket.scss */
 .page-title-basket {
   margin-top: 10px;
   margin-bottom: 15px;
 }
-/* line 23, scss/components/_basket.scss */
+/* line 38, scss/components/_basket.scss */
 .page-title-basket .btn-clear-basket {
   margin-top: 45px;
 }
 
-/* line 29, scss/components/_basket.scss */
+/* line 44, scss/components/_basket.scss */
 .btn-checkout {
   margin-bottom: 90px;
 }
 
-/* line 33, scss/components/_basket.scss */
+/* line 48, scss/components/_basket.scss */
 .checkout-page .page-title {
   margin-top: 25px;
   margin-bottom: 10px;
 }
-/* line 37, scss/components/_basket.scss */
+/* line 52, scss/components/_basket.scss */
 .checkout-page .page-note-text {
   margin-top: 0;
   margin-bottom: 30px;
 }
-/* line 41, scss/components/_basket.scss */
-.checkout-page .base-card, .checkout-page .compare-page .compare, .compare-page .checkout-page .compare {
+/* line 56, scss/components/_basket.scss */
+.checkout-page .base-card, .checkout-page .compare-page .compare, .compare-page .checkout-page .compare, .checkout-page .modal {
   margin-bottom: 38px;
 }
-/* line 44, scss/components/_basket.scss */
+/* line 59, scss/components/_basket.scss */
 .checkout-page .delivery-address,
 .checkout-page .table-field.delivery-address {
   margin-top: 20px;
   margin-bottom: 0;
 }
-/* line 48, scss/components/_basket.scss */
+/* line 63, scss/components/_basket.scss */
 .checkout-page .delivery-address .label,
 .checkout-page .table-field.delivery-address .label {
   vertical-align: top;
   margin-top: 7px;
 }
-/* line 52, scss/components/_basket.scss */
+/* line 67, scss/components/_basket.scss */
 .checkout-page .delivery-address .select-box,
 .checkout-page .delivery-address .dropdown-box,
 .checkout-page .delivery-address .addr-actions,
@@ -6393,30 +6418,30 @@ select option {
   width: 66%;
   width: calc(70% - 20px);
 }
-/* line 59, scss/components/_basket.scss */
+/* line 74, scss/components/_basket.scss */
 .checkout-page .delivery-address .addr-actions,
 .checkout-page .table-field.delivery-address .addr-actions {
   margin-top: 8px;
 }
-/* line 61, scss/components/_basket.scss */
+/* line 76, scss/components/_basket.scss */
 .checkout-page .delivery-address .addr-actions a, .checkout-page .delivery-address .addr-actions .btn-link,
 .checkout-page .table-field.delivery-address .addr-actions a,
 .checkout-page .table-field.delivery-address .addr-actions .btn-link {
   margin-right: 12.5%;
 }
-/* line 66, scss/components/_basket.scss */
+/* line 81, scss/components/_basket.scss */
 .checkout-page .mrg {
   margin-top: 2em;
 }
-/* line 70, scss/components/_basket.scss */
+/* line 85, scss/components/_basket.scss */
 .checkout-page .total-sum-box .title {
   margin-bottom: 0;
 }
-/* line 73, scss/components/_basket.scss */
+/* line 88, scss/components/_basket.scss */
 .checkout-page .total-sum-box table {
   margin-bottom: 25px;
 }
-/* line 76, scss/components/_basket.scss */
+/* line 91, scss/components/_basket.scss */
 .checkout-page .total-sum-box table td {
   padding: 5px 0;
 }
@@ -6480,6 +6505,25 @@ select option {
 /* line 17, scss/components/_order.scss */
 .profile-page .prod-item *:last-child {
   margin-bottom: 0;
+}
+
+/* line 2, scss/components/_modal.scss */
+.dark-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9998;
+  background: rgba(76, 74, 75, 0.15);
+  display: none;
+}
+
+/* line 12, scss/components/_modal.scss */
+.modal {
+  position: absolute;
+  display: none;
+  z-index: 9999;
 }
 
 /* line 2, scss/pages/_catalog.scss */
@@ -6561,11 +6605,11 @@ select option {
   margin-bottom: 120px;
 }
 /* line 32, scss/pages/_lk.scss */
-.profile-page .lk-boxes .base-card, .profile-page .lk-boxes .compare-page .compare, .compare-page .profile-page .lk-boxes .compare {
+.profile-page .lk-boxes .base-card, .profile-page .lk-boxes .compare-page .compare, .compare-page .profile-page .lk-boxes .compare, .profile-page .lk-boxes .modal {
   padding-bottom: 95px;
 }
 /* line 34, scss/pages/_lk.scss */
-.profile-page .lk-boxes .base-card p, .profile-page .lk-boxes .compare-page .compare p, .compare-page .profile-page .lk-boxes .compare p {
+.profile-page .lk-boxes .base-card p, .profile-page .lk-boxes .compare-page .compare p, .compare-page .profile-page .lk-boxes .compare p, .profile-page .lk-boxes .modal p {
   min-height: 1.5em;
 }
 /* line 38, scss/pages/_lk.scss */

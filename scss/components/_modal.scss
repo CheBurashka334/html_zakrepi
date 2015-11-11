@@ -1,0 +1,17 @@
+// modal 
+.dark-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9998;
+	background: rgba(76,74,75,.15);
+	display: none;
+}
+.modal {
+	@extend .base-card;
+	position: absolute;
+	display: none;
+	z-index: 9999;
+}

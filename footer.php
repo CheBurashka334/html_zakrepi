@@ -89,5 +89,6 @@
 		<p><a href="#">Перейти к оформлению</a></p>
 	</div>
 </div>
+<div class="dark-bg"></div>
 </body>
 </html>

@@ -123,9 +123,12 @@
 	height: 17px;
 	.icon {
 		fill: color('text', 'light');
+		will-change: transform;
+		transition: transform .3s ease;
 	}
 	&:hover .icon {
 		fill: color('primary', 'base');
+		transform: rotate(90deg);
 	}
 }
 .btn-link {

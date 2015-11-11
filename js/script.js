@@ -24,7 +24,7 @@ $(document).ready(function(){
 		var modal = $(this).attr('data-modal');
 		$('.dark-bg, #'+modal).fadeIn(500);
 	});
-	$('.modal .btn-close, .dark-bg').click(function(){
+	$('.modal .btn-close-modal, .dark-bg').click(function(){
 		$('.dark-bg, .modal').fadeOut(500);
 	});
 	

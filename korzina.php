@@ -30,7 +30,16 @@
 					</div>
 				</div>
 				<div class="col l3 sum">8 599 <span class="rouble">i</span></div>
-				<div class="col l1 delete"><button class="btn btn-icon btn-delete-from-card"><svg class="icon"><use xlink:href="#cross"/></svg></button></div>
+				<div class="col l1 delete">
+					<button class="btn btn-icon btn-delete-from-card btn-modal" data-modal="delete-from-card-box_product-1"><svg class="icon"><use xlink:href="#cross"/></svg></button>
+					<div class="modal delete-from-card-box center-align" id="delete-from-card-box_product-1">
+						<div class="item-text">Вы точно хотите удалить этот товар из корзины?</div>
+						<div class="item-actions">
+							<button class="btn primary">Да</button><!-- кнопка удаления товара, можно ссылкой -->
+							<button class="btn standart-color btn-close-modal">Отмена</button>
+						</div>
+					</div>
+				</div>
 			</div>
 			<div class="table-row product-item">
 				<div class="col l2 product-img">
@@ -45,7 +54,16 @@
 					</div>
 				</div>
 				<div class="col l3 sum">20 599 <span class="rouble">i</span></div>
-				<div class="col l1 delete"><button class="btn btn-icon btn-delete-from-card"><svg class="icon"><use xlink:href="#cross"/></svg></button></div>
+				<div class="col l1 delete">
+					<button class="btn btn-icon btn-delete-from-card btn-modal" data-modal="delete-from-card-box_product-2"><svg class="icon"><use xlink:href="#cross"/></svg></button>
+					<div class="modal delete-from-card-box center-align" id="delete-from-card-box_product-2">
+						<div class="item-text">Вы точно хотите удалить этот товар из корзины?</div>
+						<div class="item-actions">
+							<button class="btn primary">Да</button><!-- кнопка удаления товара, можно ссылкой -->
+							<button class="btn standart-color btn-close-modal">Отмена</button>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
