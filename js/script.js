@@ -498,6 +498,7 @@ $(document).ready(function(){
 	$('input[type="email"]').change(function(){
 		validateEmail($(this));
 	});
+	$('input[type="tel"]').inputmask("+7(999)9999999",{"clearMaskOnLostFocus": false,"placeholder":" "});
 	$('input[type="tel"]').change(function(){
 		validateTel($(this));
 	});
@@ -579,7 +580,7 @@ function validateEmail(el){
 	}
 }
 function validateTel(el){
-	var pattern = /\d{10,11}/;
+	var pattern = /\+7\(\d{3}\)\d{7}/;
 	if(pattern.test(el.val())){
 		el.removeClass('invalid-pattern');
 	} else {

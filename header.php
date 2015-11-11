@@ -13,7 +13,7 @@
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 	<script src="js/modernizr-custom.js"></script>
 	<script src="js/materialize.min.js"></script>
-	<!--script src="js/collapsible.js"></script-->
+	<script src="js/jquery.inputmask.bundle.min.js"></script>
 	<script src="js/angular.js"></script>
 	<script src="js/content-app.js"></script>
 	<script src="js/jquery.jcarousel.min.js"></script>
@@ -38,7 +38,7 @@
 		категория 
 -->
 		
-<div class="page profile-page" ng-app="zakrepi">
+<div class="page" ng-app="zakrepi">
 	<!-- если не 404 -->
 	<div class="header-wrapper">
 		<div class="topbar">

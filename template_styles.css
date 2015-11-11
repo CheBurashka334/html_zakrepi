@@ -4295,63 +4295,51 @@ input[type="radio"]:checked + .radio-lbl:before {
   width: calc(69% - 15px);
   margin: 3px 0;
 }
-/* line 196, scss/elements/_form.scss */
-.table-field > input[type="tel"],
-.table-field .field[type="tel"],
-.table-field .first-field + .second-field[type="tel"] {
-  width: 33%;
-}
-/* line 199, scss/elements/_form.scss */
-.table-field > input [type="tel"],
-.table-field .field [type="tel"],
-.table-field .first-field + .second-field [type="tel"] {
-  width: 66%;
-}
-/* line 203, scss/elements/_form.scss */
+/* line 197, scss/elements/_form.scss */
 .table-field .second-field {
   float: right;
   width: 66%;
   width: calc(69% - 10px);
 }
-/* line 208, scss/elements/_form.scss */
+/* line 202, scss/elements/_form.scss */
 .table-field.cols-2 > input, .table-field.cols-2 > .field,
 .table-field .cols-2 .btn {
   width: calc((70% - 40px)/2);
   margin: 3px 7px;
 }
-/* line 213, scss/elements/_form.scss */
+/* line 207, scss/elements/_form.scss */
 .table-field.cols-2 > input input, .table-field.cols-2 > .field input,
 .table-field .cols-2 .btn input {
   width: 100%;
 }
-/* line 216, scss/elements/_form.scss */
+/* line 210, scss/elements/_form.scss */
 .table-field.cols-2 > input:first-of-type, .table-field.cols-2 > .field:first-of-type,
 .table-field .cols-2 .btn:first-of-type {
   margin-left: 0;
 }
-/* line 219, scss/elements/_form.scss */
+/* line 213, scss/elements/_form.scss */
 .table-field.cols-2 > input:last-of-type, .table-field.cols-2 > .field:last-of-type,
 .table-field .cols-2 .btn:last-of-type {
   margin-right: 0;
 }
-/* line 223, scss/elements/_form.scss */
+/* line 217, scss/elements/_form.scss */
 .table-field.cols-3 > input, .table-field.cols-3 > .field {
   width: calc((70% - 60px)/3);
   margin: 3px 5px;
 }
-/* line 227, scss/elements/_form.scss */
+/* line 221, scss/elements/_form.scss */
 .table-field.cols-3 > input input, .table-field.cols-3 > .field input {
   width: 100%;
 }
-/* line 230, scss/elements/_form.scss */
+/* line 224, scss/elements/_form.scss */
 .table-field.cols-3 > input:first-of-type, .table-field.cols-3 > .field:first-of-type {
   margin-left: 0;
 }
-/* line 233, scss/elements/_form.scss */
+/* line 227, scss/elements/_form.scss */
 .table-field.cols-3 > input:last-of-type, .table-field.cols-3 > .field:last-of-type {
   margin-right: 0;
 }
-/* line 237, scss/elements/_form.scss */
+/* line 231, scss/elements/_form.scss */
 .table-field.top-tf {
   display: -webkit-box;
   display: -webkit-flex;
@@ -4362,19 +4350,19 @@ input[type="radio"]:checked + .radio-lbl:before {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-/* line 240, scss/elements/_form.scss */
+/* line 234, scss/elements/_form.scss */
 .table-field.top-tf .label,
 .table-field.top-tf .first-field {
   margin-top: 13px;
 }
-/* line 244, scss/elements/_form.scss */
+/* line 238, scss/elements/_form.scss */
 .table-field.top-tf > input,
 .table-field.top-tf .field,
 .table-field.top-tf .second-field {
   width: 66%;
   width: calc(69% - 10px);
 }
-/* line 251, scss/elements/_form.scss */
+/* line 245, scss/elements/_form.scss */
 .table-field.action-box {
   margin-top: 10px;
   -webkit-box-pack: end;
@@ -4382,17 +4370,17 @@ input[type="radio"]:checked + .radio-lbl:before {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-/* line 255, scss/elements/_form.scss */
+/* line 249, scss/elements/_form.scss */
 .table-field.action-box .cols-2 .btn {
   width: calc((100% - 40px)/2);
   margin: 0;
 }
-/* line 258, scss/elements/_form.scss */
+/* line 252, scss/elements/_form.scss */
 .table-field.action-box .cols-2 .btn:first-child {
   margin-right: 35px;
 }
 
-/* line 265, scss/elements/_form.scss */
+/* line 259, scss/elements/_form.scss */
 select {
   box-sizing: border-box;
   border: 1px solid #d7d7d7;
@@ -4404,18 +4392,18 @@ select {
   vertical-align: baseline;
   cursor: pointer;
 }
-/* line 275, scss/elements/_form.scss */
+/* line 269, scss/elements/_form.scss */
 select option {
   max-width: 100%;
   color: #434343;
 }
 
-/* line 280, scss/elements/_form.scss */
+/* line 274, scss/elements/_form.scss */
 .select-box select {
   width: 100%;
 }
 
-/* line 283, scss/elements/_form.scss */
+/* line 277, scss/elements/_form.scss */
 .triangle {
   position: absolute;
   top: 1px;
@@ -4426,7 +4414,7 @@ select option {
   font-size: 15px;
   border-radius: 3px;
 }
-/* line 292, scss/elements/_form.scss */
+/* line 286, scss/elements/_form.scss */
 .triangle:after {
   content: '>';
   display: block;
@@ -4440,11 +4428,11 @@ select option {
           transform: rotate(90deg) scale(1, 2);
 }
 
-/* line 305, scss/elements/_form.scss */
+/* line 299, scss/elements/_form.scss */
 .quantity-field {
   display: inline-block;
 }
-/* line 308, scss/elements/_form.scss */
+/* line 302, scss/elements/_form.scss */
 .quantity-field .quantity-value {
   display: inline-block;
   width: 3em;
@@ -4458,7 +4446,7 @@ select option {
   color: #242424;
   border-radius: 0;
 }
-/* line 321, scss/elements/_form.scss */
+/* line 315, scss/elements/_form.scss */
 .quantity-field .btn-up,
 .quantity-field .btn-down {
   width: 1em;
@@ -4468,7 +4456,7 @@ select option {
   background: #f33b42;
   border: 0;
 }
-/* line 329, scss/elements/_form.scss */
+/* line 323, scss/elements/_form.scss */
 .quantity-field .btn-up:after,
 .quantity-field .btn-down:after {
   content: '';
@@ -4483,46 +4471,124 @@ select option {
   border-left-color: transparent;
   border-style: solid;
 }
-/* line 342, scss/elements/_form.scss */
+/* line 336, scss/elements/_form.scss */
 .quantity-field .btn-up:hover,
 .quantity-field .btn-down:hover {
   background: #ce2127;
 }
-/* line 345, scss/elements/_form.scss */
+/* line 339, scss/elements/_form.scss */
 .quantity-field .btn-up:disabled,
 .quantity-field .btn-down:disabled {
   background: #decdcd;
 }
-/* line 349, scss/elements/_form.scss */
+/* line 343, scss/elements/_form.scss */
 .quantity-field .btn-up {
   top: 0;
 }
-/* line 351, scss/elements/_form.scss */
+/* line 345, scss/elements/_form.scss */
 .quantity-field .btn-up:after {
   border-width: 0 3px 6px 3px;
 }
-/* line 355, scss/elements/_form.scss */
+/* line 349, scss/elements/_form.scss */
 .quantity-field .btn-down {
   top: 1em;
 }
-/* line 357, scss/elements/_form.scss */
+/* line 351, scss/elements/_form.scss */
 .quantity-field .btn-down:after {
   border-width: 6px 3px 0 3px;
 }
 
-/* line 362, scss/elements/_form.scss */
+/* line 356, scss/elements/_form.scss */
 .promocode-field {
   margin-top: 10px;
 }
-/* line 365, scss/elements/_form.scss */
+/* line 359, scss/elements/_form.scss */
 .promocode-field input {
   width: auto;
   max-width: calc(100% - 80px);
   margin-right: 20px;
 }
-/* line 370, scss/elements/_form.scss */
+/* line 364, scss/elements/_form.scss */
 .promocode-field .btn {
   padding: 0 20px;
+}
+
+/* line 370, scss/elements/_form.scss */
+.inputfile-box,
+.field.inputfile-box {
+  margin: 10px 0;
+}
+
+/* line 375, scss/elements/_form.scss */
+.inputfile-box input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0;
+  cursor: pointer;
+}
+/* line 385, scss/elements/_form.scss */
+.inputfile-box .inputfile {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 15px;
+  line-height: 39px;
+  vertical-align: middle;
+  max-width: 100%;
+}
+/* line 393, scss/elements/_form.scss */
+.inputfile-box .inputfile-value {
+  display: none;
+  height: 100%;
+  background: #f6f6f6;
+  padding: 0 40px 0 30px;
+  margin-right: 20px;
+  vertical-align: middle;
+  min-width: 200px;
+  max-width: 62%;
+  max-width: calc(100% - 190px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+/* line 406, scss/elements/_form.scss */
+.inputfile-box .inputfile-value.shown {
+  display: inline-block;
+}
+/* line 410, scss/elements/_form.scss */
+.inputfile-box .btn-delete {
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  z-index: 3;
+  will-change: transform;
+  -webkit-transition: -webkit-transform .3s ease;
+          transition: transform .3s ease;
+}
+/* line 420, scss/elements/_form.scss */
+.inputfile-box .btn-delete .icon {
+  fill: #ce2127;
+}
+/* line 423, scss/elements/_form.scss */
+.inputfile-box .btn-delete:hover {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+/* line 427, scss/elements/_form.scss */
+.inputfile-box .btn-inputfile {
+  padding: 0 2em;
+}
+/* line 430, scss/elements/_form.scss */
+.inputfile-box .note-text {
+  display: block;
+  vertical-align: middle;
 }
 
 /* line 2, scss/elements/_search.scss */

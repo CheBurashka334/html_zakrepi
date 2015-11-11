@@ -193,12 +193,6 @@ input[type="radio"] {
 		width: 66%;
 		width: calc(69% - 15px);
 		margin: 3px 0;
-		&[type="tel"] {
-			width: 33%;
-		}
-		[type="tel"] {
-			width: 66%;
-		}
 	}
 	.second-field {
 		float: right;
@@ -369,5 +363,72 @@ select {
 	}
 	.btn {
 		padding: 0 $gutter-width;
+	}
+}
+
+// inputfile
+.inputfile-box,
+.field.inputfile-box {
+	margin: $gutter-width/2 0;
+}
+.inputfile-box {
+	input[type="file"]{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+		opacity: 0;
+		cursor: pointer;
+	}
+	.inputfile {
+		display: inline-block;
+		margin-bottom: $gutter-width;
+		font-size: 15px;
+		line-height: 39px;
+		vertical-align: middle;
+		max-width: 100%;
+	}
+	.inputfile-value {
+		display: none;
+		height: 100%;
+		background: color('bg', 'base');
+		padding: 0 2*$gutter-width 0 1.5*$gutter-width;
+		margin-right: $gutter-width;
+		vertical-align: middle;
+		min-width: 200px;
+		max-width: 62%;
+		max-width: calc(100% - 190px);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		&.shown {
+			display: inline-block;
+		}
+	}
+	.btn-delete {
+		position: absolute;
+		top: 13px;
+		right: 13px;
+		width: 15px;
+		height: 15px;
+		cursor: pointer;
+		z-index: 3;
+		will-change: transform;
+		transition: transform .3s ease;
+		.icon {
+			fill: color('primary', 'base');
+		}
+		&:hover {
+			transform: rotate(90deg);
+		}
+	}
+	.btn-inputfile {
+		padding: 0 2em;
+	}
+	.note-text {
+		display: block;
+		vertical-align: middle;
 	}
 }
