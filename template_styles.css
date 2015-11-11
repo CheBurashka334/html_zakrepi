@@ -1,5 +1,5 @@
 /* line 75, scss/_color.scss */
-.primary.light, .primary.page-title, h1.primary, .primary.box-title, .primary.subtitle, .brands-page .brands-box .primary.letter-marker, .product-page .main-info .primary.product-title {
+.primary.light, .primary.page-title, h1.primary, .primary.box-title, .primary.subtitle, .brands-page .brands-box .primary.letter-marker, .product-page .main-info .primary.product-title, .modal.one-click-form-box .primary.title {
   background-color: #f33b42 !important;
 }
 
@@ -29,7 +29,7 @@
 }
 
 /* line 75, scss/_color.scss */
-.text.light, .text.page-title, h1.text, .text.box-title, .text.subtitle, .brands-page .brands-box .text.letter-marker, .product-page .main-info .text.product-title {
+.text.light, .text.page-title, h1.text, .text.box-title, .text.subtitle, .brands-page .brands-box .text.letter-marker, .product-page .main-info .text.product-title, .modal.one-click-form-box .text.title {
   background-color: #8c8c8c !important;
 }
 
@@ -69,7 +69,7 @@
 }
 
 /* line 75, scss/_color.scss */
-.bg.light, .bg.page-title, h1.bg, .bg.box-title, .bg.subtitle, .brands-page .brands-box .bg.letter-marker, .product-page .main-info .bg.product-title {
+.bg.light, .bg.page-title, h1.bg, .bg.box-title, .bg.subtitle, .brands-page .brands-box .bg.letter-marker, .product-page .main-info .bg.product-title, .modal.one-click-form-box .bg.title {
   background-color: #f9f9f9 !important;
 }
 
@@ -179,7 +179,7 @@
 }
 
 /* line 75, scss/_color.scss */
-.icons.light, .icons.page-title, h1.icons, .icons.box-title, .icons.subtitle, .brands-page .brands-box .icons.letter-marker, .product-page .main-info .icons.product-title {
+.icons.light, .icons.page-title, h1.icons, .icons.box-title, .icons.subtitle, .brands-page .brands-box .icons.letter-marker, .product-page .main-info .icons.product-title, .modal.one-click-form-box .icons.title {
   background-color: #9d9d9d !important;
 }
 
@@ -219,7 +219,7 @@
 }
 
 /* line 75, scss/_color.scss */
-.border.light, .border.page-title, h1.border, .border.box-title, .border.subtitle, .brands-page .brands-box .border.letter-marker, .product-page .main-info .border.product-title {
+.border.light, .border.page-title, h1.border, .border.box-title, .border.subtitle, .brands-page .brands-box .border.letter-marker, .product-page .main-info .border.product-title, .modal.one-click-form-box .border.title {
   background-color: #d7d7d7 !important;
 }
 
@@ -3637,41 +3637,49 @@ span.badge.new:after {
   border-color: white;
   color: #363636;
 }
-/* line 49, scss/elements/_buttons.scss */
+/* line 48, scss/elements/_buttons.scss */
+.btn.mini {
+  width: 70px;
+}
+/* line 51, scss/elements/_buttons.scss */
 .btn.mediumsize {
   width: 140px;
 }
-/* line 52, scss/elements/_buttons.scss */
+/* line 54, scss/elements/_buttons.scss */
+.btn.bigsize {
+  width: 200px;
+}
+/* line 57, scss/elements/_buttons.scss */
 .btn.fullwidth {
   width: 100%;
 }
-/* line 55, scss/elements/_buttons.scss */
+/* line 60, scss/elements/_buttons.scss */
 .btn.big {
   line-height: 48px;
   height: 50px;
 }
-/* line 59, scss/elements/_buttons.scss */
+/* line 64, scss/elements/_buttons.scss */
 .btn.small {
   width: 60px;
 }
-/* line 62, scss/elements/_buttons.scss */
+/* line 67, scss/elements/_buttons.scss */
 .btn.center {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 67, scss/elements/_buttons.scss */
+/* line 72, scss/elements/_buttons.scss */
 .btn.btn-icon {
   background: transparent;
   line-height: 100%;
   border: 0;
   padding: 2px;
 }
-/* line 72, scss/elements/_buttons.scss */
+/* line 77, scss/elements/_buttons.scss */
 .btn.btn-icon.primary {
   background: #ce2127;
 }
-/* line 77, scss/elements/_buttons.scss */
+/* line 82, scss/elements/_buttons.scss */
 .btn.btn-with-icon .icon {
   display: inline-block;
   width: 25px;
@@ -3679,38 +3687,34 @@ span.badge.new:after {
   line-height: 100%;
   margin-right: 20px;
 }
-/* line 85, scss/elements/_buttons.scss */
+/* line 90, scss/elements/_buttons.scss */
 .btn.shopping-card {
   padding: 8px 0;
 }
-/* line 88, scss/elements/_buttons.scss */
-.btn.mini {
-  width: 70px;
-}
 
-/* line 92, scss/elements/_buttons.scss */
+/* line 94, scss/elements/_buttons.scss */
 .btn-favorite {
   width: 25px;
   height: 20px;
 }
-/* line 95, scss/elements/_buttons.scss */
+/* line 97, scss/elements/_buttons.scss */
 .btn-favorite:hover .icon {
   fill: #ce2127;
 }
 
-/* line 100, scss/elements/_buttons.scss */
+/* line 102, scss/elements/_buttons.scss */
 .icon {
   width: 100%;
   height: 100%;
   vertical-align: top;
 }
 
-/* line 105, scss/elements/_buttons.scss */
+/* line 107, scss/elements/_buttons.scss */
 .btn-more {
   margin-top: 10px;
 }
 
-/* line 108, scss/elements/_buttons.scss */
+/* line 110, scss/elements/_buttons.scss */
 .btn-close {
   width: 17px;
   height: 17px;
@@ -3721,30 +3725,30 @@ span.badge.new:after {
   -webkit-transition: -webkit-transform .3s ease;
           transition: transform .3s ease;
 }
-/* line 114, scss/elements/_buttons.scss */
+/* line 116, scss/elements/_buttons.scss */
 .btn-close .icon {
   fill: #ce2127;
 }
-/* line 117, scss/elements/_buttons.scss */
+/* line 119, scss/elements/_buttons.scss */
 .btn-close:hover {
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-/* line 121, scss/elements/_buttons.scss */
+/* line 123, scss/elements/_buttons.scss */
 .btn-delete-from-card {
   width: 17px;
   height: 17px;
 }
-/* line 124, scss/elements/_buttons.scss */
+/* line 126, scss/elements/_buttons.scss */
 .btn-delete-from-card .icon {
   fill: #8c8c8c;
   will-change: transform;
   -webkit-transition: -webkit-transform .3s ease;
           transition: transform .3s ease;
 }
-/* line 129, scss/elements/_buttons.scss */
+/* line 131, scss/elements/_buttons.scss */
 .btn-delete-from-card:hover .icon {
   fill: #ce2127;
   -webkit-transform: rotate(90deg);
@@ -3752,7 +3756,7 @@ span.badge.new:after {
           transform: rotate(90deg);
 }
 
-/* line 134, scss/elements/_buttons.scss */
+/* line 136, scss/elements/_buttons.scss */
 .btn-link {
   background: none;
   border: 0;
@@ -3786,7 +3790,7 @@ em {
 }
 
 /* line 21, scss/elements/_typography.scss */
-.light, .page-title, h1, .box-title, .subtitle, .brands-page .brands-box .letter-marker, .product-page .main-info .product-title {
+.light, .page-title, h1, .box-title, .subtitle, .brands-page .brands-box .letter-marker, .product-page .main-info .product-title, .modal.one-click-form-box .title {
   font-weight: 300;
 }
 
@@ -3846,7 +3850,7 @@ textarea + .textfield-placeholder, .tabs .tab-header-item .tab-link {
 
 /* line 50, scss/elements/_typography.scss */
 .medium-text, .quantity-field, .collapsible.sidebar-menu > .menu-item > .menu-link,
-.collapsible .collapsible-header, .horizontal-multilevel-menu > .menu-item > .menu-link, .horizontal-multilevel-menu .submenu-link.default, .horizontal-multilevel-menu .submenu.level-2 > .submenu-item > .submenu-link, .horizontal-multilevel-menu .submenu.level-3 > .submenu-item > .submenu-link, .alphabet-menu, .product-card .item-name, .product-card .product-price .old-price, .brands-page .brands-box .brand-item, .delete-from-card-box .item-text {
+.collapsible .collapsible-header, .horizontal-multilevel-menu > .menu-item > .menu-link, .horizontal-multilevel-menu .submenu-link.default, .horizontal-multilevel-menu .submenu.level-2 > .submenu-item > .submenu-link, .horizontal-multilevel-menu .submenu.level-3 > .submenu-item > .submenu-link, .alphabet-menu, .product-card .item-name, .product-card .product-price .old-price, .brands-page .brands-box .brand-item, .delete-from-card-box .item-text, .modal.one-click-form-box .table-field .label, .modal.one-click-form-box .table-field.time-field .radio-lbl {
   font-size: 16px;
 }
 
@@ -6525,6 +6529,66 @@ select option {
   position: absolute;
   display: none;
   z-index: 9999;
+}
+
+/* line 18, scss/components/_modal.scss */
+.modal.one-click-form-box {
+  top: 235px;
+  left: 50%;
+  width: 500px;
+  max-width: 100%;
+  margin-left: -250px;
+  padding: 40px;
+}
+/* line 25, scss/components/_modal.scss */
+.modal.one-click-form-box .btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+/* line 30, scss/components/_modal.scss */
+.modal.one-click-form-box .title {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+/* line 35, scss/components/_modal.scss */
+.modal.one-click-form-box .note-text {
+  margin-bottom: 20px;
+}
+/* line 38, scss/components/_modal.scss */
+.modal.one-click-form-box .table-field {
+  margin: 10px 0 25px;
+}
+/* line 40, scss/components/_modal.scss */
+.modal.one-click-form-box .table-field .label {
+  width: 24%;
+}
+/* line 44, scss/components/_modal.scss */
+.modal.one-click-form-box .table-field .field {
+  width: 73%;
+  width: calc(76% - 10px);
+}
+/* line 49, scss/components/_modal.scss */
+.modal.one-click-form-box .table-field.time-field {
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-top: 30px;
+}
+/* line 52, scss/components/_modal.scss */
+.modal.one-click-form-box .table-field.time-field .label {
+  width: 100%;
+  display: block;
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+/* line 58, scss/components/_modal.scss */
+.modal.one-click-form-box .table-field.time-field .first-field {
+  width: 44%;
+}
+/* line 61, scss/components/_modal.scss */
+.modal.one-click-form-box .table-field.time-field .field {
+  width: 53%;
 }
 
 /* line 2, scss/pages/_catalog.scss */

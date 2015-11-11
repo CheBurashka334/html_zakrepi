@@ -116,8 +116,8 @@
 						</div>
 					</div>
 					<div class="action-buttons">
-						<a class="btn primary center fullwidth" href="#">В корзину</a>
-						<a class="btn standart-color center fullwidth" href="#">Купить в 1 клик</a>
+						<a class="btn primary center big fullwidth" href="#">В корзину</a>
+						<button class="btn standart-color big center fullwidth btn-modal" data-modal="one-click-form_product-id">Купить в 1 клик</button>
 					</div>
 					<div class="delivery-text">
 						<table>
@@ -518,7 +518,7 @@
 								<div class="price">{{product.price}} <i class="rouble">i</i></div>
 							</div>
 							<a href="#" class="shopping-card btn btn-icon primary">
-								<svg class="icon"><use xlink:href="#cart"/>
+								<svg class="icon"><use xlink:href="#cart"/></svg>
 							</a>
 						</div>
 						<div class="compare">
@@ -533,6 +533,34 @@
 			<button class="prev" data-target="-=4"><svg class="icon"><use xlink:href="#arrow"/></svg></button>
 			<button class="next" data-target="+=4"><svg class="icon"><use xlink:href="#arrow"/></svg></button>
 		</div>
+	</div>
+</div>
+
+<div class="one-click-form-box modal" id="one-click-form_product-id">
+	<button class="btn-close-modal btn btn-icon btn-close"><svg class="icon"><use xlink:href="#cross"/></svg></button>
+	<div class="modal-content">
+		<div class="title">Купить в 1 клик</div>
+		<p class="note-text">Укажите Ваши данные, и наш менеджер свяжется с Вами для оформления заказа.</p>
+		<div class="table-field">
+			<span class="label">Имя</span>
+			<div class="field"><input type="text"/></div>
+		</div>
+		<div class="table-field">
+			<span class="label">Телефон</span>
+			<div class="field"><input type="tel"/></div>
+		</div>
+		<div class="table-field time-field">
+		<span class="label">Удобное время для звонка:</span>
+			<div class="first-field">
+				<input type="radio" name="usertype" value="v1" id="time-v1"/>
+				<label class="radio-lbl" for="time-v1">8:00 - 12:00</label>
+			</div>
+			<div class="field">
+				<input type="radio" checked name="usertype" value="v2" id="time-v2"/>
+				<label class="radio-lbl" for="time-v2">12:00 - 18:00</label>
+			</div>
+		</div>
+		<button class="btn primary big bigsize center">Купить</button>
 	</div>
 </div>
 </div> <!-- /.workarea -->

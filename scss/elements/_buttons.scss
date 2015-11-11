@@ -45,9 +45,14 @@
 		border-color: white;
 		color: color('text', 'dark');
 	}
-	
+	&.mini {
+		width: 70px;
+	}
 	&.mediumsize {
 		width: 140px;
+	}
+	&.bigsize {
+		width: 200px;
 	}
 	&.fullwidth {
 		width: 100%;
@@ -84,9 +89,6 @@
 	}
 	&.shopping-card {
 		padding: 8px 0;
-	}
-	&.mini {
-		width: 70px;
 	}
 }
 .btn-favorite {

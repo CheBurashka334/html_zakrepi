@@ -286,7 +286,6 @@ $(document).ready(function(){
 	// https://tech.yandex.ru/maps/doc/jsapi/2.1/quick-start/tasks/quick-start-docpage/
 	ymaps.ready(init);
 	var shopsMap;
-	
 	function init(){
 		shopsMap = new ymaps.Map("shops-map",{
 			center: [57.16565145867384,65.54499550000001], // Тюмень
@@ -321,6 +320,8 @@ $(document).ready(function(){
 			});
 		}
 	}
+	
+	
 	$('.toggle-content-box').each(function(){
 		if($(this).attr('data-state')){
 			var state = $(this).attr('data-state');
