@@ -2615,12 +2615,12 @@ html {
 }
 
 /* line 55, scss/elements/_global.scss */
-.z-depth-1, .base-card, .compare-page .compare, .modal, .sidebar-menu, .filter, .product-card, .product-page .main-info {
+.z-depth-1, .base-card, .balloon, .compare-page .compare, .modal, .sidebar-menu, .filter, .product-card, .product-page .main-info {
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* line 58, scss/elements/_global.scss */
-.z-depth-2, .header-wrapper.fixed .header, .dropdown-list, .tooltip {
+.z-depth-2, .header-wrapper.fixed .header, .dropdown-list, .tooltip, .balloon {
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -2640,7 +2640,7 @@ html {
 }
 
 /* line 70, scss/elements/_global.scss */
-.base-card, .compare-page .compare, .modal {
+.base-card, .balloon, .compare-page .compare, .modal {
   background: white;
   border-radius: 6px;
   padding: 20px;
@@ -2648,27 +2648,27 @@ html {
   margin-bottom: 20px;
 }
 /* line 77, scss/elements/_global.scss */
-.base-card .title, .compare-page .compare .title, .modal .title {
+.base-card .title, .balloon .title, .compare-page .compare .title, .modal .title {
   margin-bottom: 10px;
 }
 /* line 80, scss/elements/_global.scss */
-.base-card .card-content, .compare-page .compare .card-content, .modal .card-content {
+.base-card .card-content, .balloon .card-content, .compare-page .compare .card-content, .modal .card-content {
   padding: 20px;
 }
 /* line 82, scss/elements/_global.scss */
-.base-card .card-content > *:first-child, .compare-page .compare .card-content > *:first-child, .modal .card-content > *:first-child {
+.base-card .card-content > *:first-child, .balloon .card-content > *:first-child, .compare-page .compare .card-content > *:first-child, .modal .card-content > *:first-child {
   margin-top: 0;
 }
 /* line 85, scss/elements/_global.scss */
-.base-card .card-content > *:last-child, .compare-page .compare .card-content > *:last-child, .modal .card-content > *:last-child {
+.base-card .card-content > *:last-child, .balloon .card-content > *:last-child, .compare-page .compare .card-content > *:last-child, .modal .card-content > *:last-child {
   margin-bottom: 0;
 }
 /* line 88, scss/elements/_global.scss */
-.base-card .card-content.big-g-padding, .compare-page .compare .card-content.big-g-padding, .modal .card-content.big-g-padding {
+.base-card .card-content.big-g-padding, .balloon .card-content.big-g-padding, .compare-page .compare .card-content.big-g-padding, .modal .card-content.big-g-padding {
   padding: 20px 60px;
 }
 /* line 92, scss/elements/_global.scss */
-.base-card.v-center, .compare-page .v-center.compare, .v-center.modal {
+.base-card.v-center, .v-center.balloon, .compare-page .v-center.compare, .v-center.modal {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -4919,8 +4919,9 @@ select option {
 }
 
 /* line 75, scss/elements/_collapsible.scss */
-.base-card .collapsible-type-2:first-child li:first-child .collapsible-header, .compare-page .compare .collapsible-type-2:first-child li:first-child .collapsible-header, .modal .collapsible-type-2:first-child li:first-child .collapsible-header,
+.base-card .collapsible-type-2:first-child li:first-child .collapsible-header, .balloon .collapsible-type-2:first-child li:first-child .collapsible-header, .compare-page .compare .collapsible-type-2:first-child li:first-child .collapsible-header, .modal .collapsible-type-2:first-child li:first-child .collapsible-header,
 .base-card .card-content .collapsible-type-2:first-child li:first-child .collapsible-header,
+.balloon .card-content .collapsible-type-2:first-child li:first-child .collapsible-header,
 .compare-page .compare .card-content .collapsible-type-2:first-child li:first-child .collapsible-header,
 .modal .card-content .collapsible-type-2:first-child li:first-child .collapsible-header {
   border: 0;
@@ -5133,6 +5134,58 @@ select option {
 /* line 68, scss/elements/_tooltip.scss */
 .tooltip .tooltip-content p {
   margin: 0.5em 0;
+}
+
+/* line 2, scss/elements/_balloon.scss */
+.balloon {
+  box-sizing: border-box;
+  width: 340px;
+  max-width: 96vw;
+  line-height: 1.5;
+}
+/* line 9, scss/elements/_balloon.scss */
+.balloon ymaps {
+  width: 100%;
+}
+/* line 12, scss/elements/_balloon.scss */
+.balloon .btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+/* line 17, scss/elements/_balloon.scss */
+.balloon .balloon-header,
+.balloon .balloon-content {
+  width: 100%;
+  padding: 15px 0;
+}
+/* line 22, scss/elements/_balloon.scss */
+.balloon .balloon-header {
+  border-bottom: 1px solid #d7d7d7;
+}
+/* line 25, scss/elements/_balloon.scss */
+.balloon .title {
+  margin: 0 0 1em;
+}
+/* line 28, scss/elements/_balloon.scss */
+.balloon .phone {
+  margin-top: 5px;
+}
+/* line 31, scss/elements/_balloon.scss */
+.balloon .address {
+  margin-bottom: 10px;
+}
+/* line 34, scss/elements/_balloon.scss */
+.balloon .balloon-tngl {
+  width: 25px;
+  height: 16px;
+  position: absolute;
+  background: url("images/tooltip-tngl.png") center no-repeat;
+  bottom: -16px;
+  left: 30px;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 /* line 11, scss/components/_menu.scss */
@@ -6417,7 +6470,7 @@ select option {
   margin-bottom: 30px;
 }
 /* line 61, scss/components/_basket.scss */
-.checkout-page .base-card, .checkout-page .compare-page .compare, .compare-page .checkout-page .compare, .checkout-page .modal {
+.checkout-page .base-card, .checkout-page .balloon, .checkout-page .compare-page .compare, .compare-page .checkout-page .compare, .checkout-page .modal {
   margin-bottom: 38px;
 }
 /* line 64, scss/components/_basket.scss */
@@ -6705,11 +6758,11 @@ select option {
   margin-bottom: 120px;
 }
 /* line 32, scss/pages/_lk.scss */
-.profile-page .lk-boxes .base-card, .profile-page .lk-boxes .compare-page .compare, .compare-page .profile-page .lk-boxes .compare, .profile-page .lk-boxes .modal {
+.profile-page .lk-boxes .base-card, .profile-page .lk-boxes .balloon, .profile-page .lk-boxes .compare-page .compare, .compare-page .profile-page .lk-boxes .compare, .profile-page .lk-boxes .modal {
   padding-bottom: 95px;
 }
 /* line 34, scss/pages/_lk.scss */
-.profile-page .lk-boxes .base-card p, .profile-page .lk-boxes .compare-page .compare p, .compare-page .profile-page .lk-boxes .compare p, .profile-page .lk-boxes .modal p {
+.profile-page .lk-boxes .base-card p, .profile-page .lk-boxes .balloon p, .profile-page .lk-boxes .compare-page .compare p, .compare-page .profile-page .lk-boxes .compare p, .profile-page .lk-boxes .modal p {
   min-height: 1.5em;
 }
 /* line 38, scss/pages/_lk.scss */
