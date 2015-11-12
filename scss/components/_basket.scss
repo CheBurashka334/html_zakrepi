@@ -16,7 +16,7 @@
 .delete-from-card-box {
 	top: -1*$gutter-width;
 	right: $gutter-width*1.75;
-	width: 445px;
+	width: 444px;
 	max-width: 96vw;
 	padding: $gutter-width*1.5;
 	.item-text {
@@ -26,6 +26,11 @@
 	.btn {
 		padding: 0 $gutter-width*1.5;
 		margin: $gutter-width/2;
+	}
+	&.delete-all {
+		top: $gutter-width*5;
+		left: 50%;
+		margin-left: -222px;
 	}
 }
 .basket-table .sum,

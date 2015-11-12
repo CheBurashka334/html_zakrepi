@@ -2,7 +2,7 @@
 <div class="workarea" ng-controller="CatalogProductsCtrl">
 <div class="row page-title-basket">
 	<div class="page-title col l10">Корзина</div>
-	<div class="col l2 right-align"><button class="btn-link btn-clear-basket">Очистить корзину</button></div>
+	<div class="col l2 right-align"><button class="btn-link btn-clear-basket btn-modal" data-modal="delete-from-card-box_all">Очистить корзину</button></div>
 </div>
 <div class="base-card">
 	Бесплатная доставка курьером по г. Тюмень на заказы свыше 10 000 <span class="rouble">i</span>
@@ -65,6 +65,13 @@
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+	<div class="modal delete-from-card-box delete-all center-align" id="delete-from-card-box_all">
+		<div class="item-text">Вы точно хотите удалить все товары из корзины?</div>
+		<div class="item-actions">
+			<button class="btn primary">Да</button><!-- кнопка удаления товаров, можно ссылкой -->
+			<button class="btn standart-color btn-close-modal">Отмена</button>
 		</div>
 	</div>
 </div>

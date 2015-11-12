@@ -61,54 +61,39 @@ $(document).ready(function(){
 			l3.children('.submenu-item').each(function(){
 				l3height = l3height + $(this).height();
 			});
-			//console.log(l3height);
 			if(l2height > l3height){
-				//console.log('l2 > l3');
 				if(l3.children('.submenu-item.parent').length > 0){
-					//console.log('l3 has childs');
 					var l4 = l3.children('.submenu-item.parent.active').children('.submenu.level-4');
 					l4height = 40;
 					l4.children('.submenu-item').each(function(){
 						l4height = l4height + $(this).height();
 					});
 					if(l4height > l2.outerHeight()){
-						//console.log('l4 > l2');
 						if((l4.children('.submenu-item').length - l2.children('.submenu-item').length) >= 4){
-							//console.log('l4 childs >= 4');
 							l4.addClass('col-2');
 							if((l4height / 2 + 20) > l2.outerHeight()){
-								//console.log('l4 height > l2');
 								l2.stop().animate({'height':l4.outerHeight()},300);
 							}
 						} else {
-							//console.log('l4 childs < 4');
 							l2.stop().animate({'height':l4.outerHeight()},300);
 						}
 					} else {
-						//console.log('l2 > l4');
 						l2.stop().animate({'height':l2height},300);
 					}
 				} else {
-					//console.log('l3 hasn\'t childs');
 					l2.stop().animate({'height':l2height},300);
 				}
 			} else {
-				//console.log('l3 > l2');
-				//console.log(l3height+' > '+l2.outerHeight());
 				if((l3.children('.submenu-item').length - l2.children('.submenu-item').length) >= 3){
-					//console.log('l3 childs >=3');
 					if(l3.children('.submenu-item.parent').length > 0){
-						//console.log('l3 has childs');
 						l2.stop().animate({'height':l3height},300);
 					} else {
-						//console.log('l3 hasn\'t childs');
 						l3.addClass('col-2');
 						if((l3height / 2) > l2height){
 							l2.stop().animate({'height':(l3height / 2 + 20)},300);
 						}
 					}
 				} else {
-					//console.log('l3 childs < 3');
 					l2.stop().animate({'height':l3height},300);
 				}
 			}
@@ -527,6 +512,22 @@ $(document).ready(function(){
 		if($(this).find('.invalid-required, .invalid-pattern, .invalid-file').length > 0){
 			return false;
 		} 
+	});
+	
+	// compare 
+	$('.compare input[type="checkbox"]').change(function(){
+		if($('.compare input[type="checkbox"]:checked').length == 5){
+			$('.compare input[type="checkbox"]:not(:checked)').prop('disabled', true);
+		} else {
+			$('.compare input[type="checkbox"]:not(:checked)').prop('disabled', false);
+		}
+	});
+	$('.compare .checkbox-lbl').click(function(){
+		if($('#'+$(this).attr('for')).prop('disabled') == true){
+			$('#compare-full-notification').css('top',$(this).offset().top - 500);
+			$('.dark-bg, #compare-full-notification').fadeIn(500);
+			return false;
+		}
 	});
 
 });

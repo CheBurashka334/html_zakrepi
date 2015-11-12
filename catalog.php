@@ -51,11 +51,15 @@
 						</a>
 					</div>
 					<div class="compare">
-						<input type="checkbox" id="compare_today_{{product.id}}" />
+						<input type="checkbox" id="compare_today_{{product.id}}"/>
 						<label class="checkbox-lbl" for="compare_today_{{product.id}}">Cравнить</label>
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="modal notification compare-full" id="compare-full-notification">
+			<button class="btn btn-icon btn-close btn-close-modal"><svg class="icon"><use xlink:href="#cross"/></svg></button>
+			<div class="item-text medium-text">Вы можете добавить к сравнению не более 5 товаров.</div>
 		</div>
 		<div class="col l12">
 			<a class="btn flat fullwidth big btn-more" href="#">Показать еще</a>

@@ -14,6 +14,11 @@
 	position: absolute;
 	display: none;
 	z-index: 9999;
+	.btn-close {
+		position: absolute;
+		top: $gutter-width/2;
+		right: $gutter-width/2;
+	}
 }
 .modal.one-click-form-box {
 	top: 235px;
@@ -22,11 +27,6 @@
 	max-width: 100%;
 	margin-left: -250px;
 	padding: $gutter-width*2;
-	.btn-close {
-		position: absolute;
-		top: $gutter-width/2;
-		right: $gutter-width/2;
-	}
 	.title {
 		font-size: 24px;
 		margin-bottom: $gutter-width*1.5;
@@ -64,5 +64,15 @@
 		.radio-lbl {
 			@extend .medium-text;
 		}
+	}
+}
+.modal.notification {
+	padding: $gutter-width*2;
+	&.compare-full {
+		top: $gutter-width*5;
+		left: 50%;
+		width: 354px;
+		max-width: 96vw;
+		margin-left: -177px;
 	}
 }

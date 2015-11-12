@@ -108,6 +108,9 @@ input[type="checkbox"] {
 		line-height: 17px;
 		vertical-align: middle;
 		cursor: pointer;
+		will-change: color;
+		transition: color .3s ease;
+		user-select: none;
 		&:before {
 			content: '';
 			display: inline-block;
@@ -123,6 +126,10 @@ input[type="checkbox"] {
 	&:checked + .checkbox-lbl:before {
 		background: white url('images/tick.png') center no-repeat;
 	}
+	&:disabled + .checkbox-lbl {
+		color: color('text', 'lighter');
+		cursor: default;
+	}
 }
 
 // radio
@@ -134,6 +141,7 @@ input[type="radio"] {
 		line-height: 19px;
 		vertical-align: middle;
 		cursor: pointer;
+		user-select: none;
 		&:before {
 			content: '';
 			display: inline-block;
