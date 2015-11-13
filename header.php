@@ -93,6 +93,14 @@
 					<!-- <a class="btn standart btn-with-icon col l2 btn-minicart" href="#"><svg class="icon"><use xlink:href="#cart"/></svg><div class="notification"></div> Нет товаров</a>-->
 					<!-- товар добавлен в корзину-->
 					<a class="btn standart btn-with-icon col l2 btn-minicart" href="#" id="minicard"><svg class="icon"><use xlink:href="#cart"/></svg><div class="notification">1</div> 7&nbsp;299 <span class="rouble">i</span></a>
+					<div class="tooltip minicard-notification noaction" data-box="#minicard" data-position="bottom-right">
+						<div class="tooltip-tngl"></div>
+						<button class="btn btn-close btn-icon"><svg class="icon"><use xlink:href="#cross"/></svg></button>
+						<div class="tooltip-content">
+							<p>Товар успешно добавлен в корзину</p>
+							<p><a href="#">Перейти к оформлению</a></p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

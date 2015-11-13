@@ -437,7 +437,7 @@ $(document).ready(function(){
 	
 	// tooltips 
 	// init
-	$('.tooltip').each(function(){
+	$('.tooltip:not(.noaction)').each(function(){
 		if($(this).attr('data-box')){
 			var box = $($(this).attr('data-box'));
 		} else {
