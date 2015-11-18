@@ -95,6 +95,26 @@ main {
 		align-items: center;
 		padding: $gutter-width!important;
 	}
+	&.error-box {
+		border: 1px solid color('primary', 'base');
+		box-shadow: none;
+		.title {
+			margin-bottom: 0;
+			font-size: 24px;
+		}
+		p.medium-text {
+			margin: 0.5rem 0;
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+		ul {
+			margin-top: $gutter-width;
+			li:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
 }
 
 .hoverable:hover {
