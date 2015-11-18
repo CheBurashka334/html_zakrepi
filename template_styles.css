@@ -5003,18 +5003,12 @@ select option {
   display: none;
 }
 
-/* line 44, scss/elements/_dropdown.scss */
-.dropdown-box.open {
-  /*.dropdown-value {
-  	transform: translate(0,10px);
-  }*/
-}
-/* line 48, scss/elements/_dropdown.scss */
+/* line 42, scss/elements/_dropdown.scss */
 .dropdown-box.open .dropdown-list {
   display: block;
 }
 
-/* line 54, scss/elements/_dropdown.scss */
+/* line 46, scss/elements/_dropdown.scss */
 .dropdown-title {
   display: block;
   padding: 2px 15px;
@@ -5023,25 +5017,50 @@ select option {
   cursor: pointer;
 }
 
-/* line 61, scss/elements/_dropdown.scss */
+/* line 53, scss/elements/_dropdown.scss */
 .dropdown-item {
   display: block;
   color: #ce2127;
 }
-/* line 64, scss/elements/_dropdown.scss */
+/* line 56, scss/elements/_dropdown.scss */
 .dropdown-item:hover {
   color: #f33b42;
 }
 
-/* line 68, scss/elements/_dropdown.scss */
+/* line 60, scss/elements/_dropdown.scss */
 .dropdown-item[data-active="active"],
 .dropdown-item[data-active="active"]:hover {
   color: #434343;
 }
-/* line 71, scss/elements/_dropdown.scss */
+/* line 63, scss/elements/_dropdown.scss */
 .dropdown-item[data-active="active"] .dropdown-title,
 .dropdown-item[data-active="active"]:hover .dropdown-title {
   cursor: default;
+}
+
+/* line 70, scss/elements/_dropdown.scss */
+.dropdown-box.style-2 .dropdown-value {
+  line-height: 29px;
+  height: 31px;
+}
+/* line 73, scss/elements/_dropdown.scss */
+.dropdown-box.style-2 .dropdown-value .triangle {
+  height: 29px;
+}
+/* line 75, scss/elements/_dropdown.scss */
+.dropdown-box.style-2 .dropdown-value .triangle:after {
+  top: 7px;
+  right: -5px;
+}
+/* line 81, scss/elements/_dropdown.scss */
+.dropdown-box.style-2 .dropdown-list {
+  top: 30px;
+  border-radius: 0 0 3px 3px;
+  box-shadow: none;
+}
+/* line 86, scss/elements/_dropdown.scss */
+.dropdown-box.style-2.open .dropdown-value {
+  border-radius: 3px 3px 0 0;
 }
 
 /* line 2, scss/elements/_tooltip.scss */
@@ -5569,6 +5588,55 @@ select option {
   position: absolute;
   right: 20px;
   bottom: 20px;
+}
+
+/* line 57, scss/components/_product-card.scss */
+.with-offer {
+  height: 460px;
+}
+/* line 59, scss/components/_product-card.scss */
+.with-offer .product-card {
+  height: 460px;
+  -webkit-transition: height .3s ease, box-shadow .3s ease;
+          transition: height .3s ease, box-shadow .3s ease;
+}
+/* line 62, scss/components/_product-card.scss */
+.with-offer .product-card .offer {
+  position: absolute;
+  top: 400px;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+  opacity: 0;
+  z-index: 6;
+  -webkit-transition: opacity .3s ease;
+          transition: opacity .3s ease;
+}
+/* line 71, scss/components/_product-card.scss */
+.with-offer .product-card .offer .table-field {
+  margin-top: 0;
+}
+/* line 73, scss/components/_product-card.scss */
+.with-offer .product-card .offer .table-field .field {
+  width: calc(69% - 10px);
+}
+/* line 78, scss/components/_product-card.scss */
+.with-offer .product-card .compare {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+/* line 84, scss/components/_product-card.scss */
+.with-offer .product-card:hover {
+  height: 502px;
+  position: absolute;
+  width: calc(100% - 20px);
+  z-index: 5;
+}
+/* line 89, scss/components/_product-card.scss */
+.with-offer .product-card:hover .offer {
+  opacity: 1;
 }
 
 /* line 2, scss/components/_news-card.scss */

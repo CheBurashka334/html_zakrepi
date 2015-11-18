@@ -54,3 +54,41 @@
 		bottom: $gutter-width;
 	}
 }
+.with-offer {
+	height: 460px;
+	.product-card {
+		height: 460px;
+		transition: height .3s ease, box-shadow .3s ease;
+		.offer {
+			position: absolute;
+			top: 400px;
+			left: 0;
+			width: 100%;
+			padding: 0 $gutter-width;
+			opacity: 0;
+			z-index: 6;
+			transition: opacity .3s ease;
+			.table-field {
+				margin-top: 0;
+				.field {
+					width: calc(69% - 10px);
+				}
+			}
+		}
+		.compare {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+		}
+		&:hover  {
+			height: 502px;
+			position: absolute;
+			width: calc(100% - #{$gutter-width});
+			z-index: 5;
+			.offer {
+				opacity: 1;
+			}
+		}
+	}
+}
