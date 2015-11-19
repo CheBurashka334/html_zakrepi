@@ -1494,3 +1494,32 @@ zakrepi.controller('brandsCtrl', function($scope, $http){
 	}
 	$scope.letters.sort();
 });
+zakrepi.controller('geoCtrl', function($scope, $http){
+	$scope.cities = [
+		{
+			"id": 1,
+			"name": "Тюмень",
+			"region": "Тюменская область"
+		},
+		{
+			"id": 2,
+			"name": "Салехард",
+			"region": "Ямало-Ненецкий автономный округ"
+		},
+		{
+			"id": 3,
+			"name": "Заводоуковск",
+			"region": "Тюменская область"
+		},
+		{
+			"id": 4,
+			"name": "Екатеринбург",
+			"region": "Свердловская область"
+		},
+		{
+			"id": 5,
+			"name": "Тюкалинск",
+			"region": "Омская область"
+		},
+	];
+});

@@ -76,3 +76,16 @@
 		margin-left: -177px;
 	}
 }
+.modal.geo-modal {
+	width: 500px;
+	min-height: 490px;
+	top: 20vh;
+	left: 50%;
+	margin-left: -250px;
+	padding: $gutter-width*2;
+	.title {
+		@extend .light;
+		font-size: 24px;
+		margin: 0 0 $gutter-width*4;
+	}
+}

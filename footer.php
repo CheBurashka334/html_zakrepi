@@ -82,5 +82,21 @@
 </div> <!-- /.page -->
 </div> <!-- /.layout -->
 <div class="dark-bg"></div>
+<div class="modal geo-modal" id="geo">
+	<button class="btn btn-icon btn-close btn-close-modal"><svg class="icon"><use xlink:href="#cross"/></svg></button>
+	<div class="modal-content" ng-controller="geoCtrl">
+		<div class="title">Выбор города</div>
+		<div class="geo-search-box search-box">
+			<input type="text" class="search inputtext" id="h-search" ng-model="geosearch.name">
+			<label for="h-search" class="textfield-placeholder">Введите название для поиска</label>
+			<button class="search-btn btn btn-icon"><svg class="icon"><use xlink:href="#search"></use></svg></button>
+		</div>
+		<ul class="geo-list">
+			<li class="geo-item" ng-repeat="city in cities | filter:geosearch">
+				<a class="item-name" href="#">{{city.name}}</a>, <span class="item-region color-text text-light">{{city.region}}</span>
+			</li>
+		</ul>
+	</div>
+</div>
 </body>
 </html>

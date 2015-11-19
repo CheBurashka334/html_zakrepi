@@ -21,7 +21,7 @@
 	<script src="js/script.js"></script>
 	<link rel="stylesheet" type="text/css" href="template_styles.css" />
 </head>
-<body>
+<body ng-app="zakrepi">
 <div id="svg-placeholder" class="hide"></div>
 <div class="layout">
 <!-- 	для главной добавить класс к page		.home-page, 
@@ -38,14 +38,16 @@
 		категория 
 -->
 		
-<div class="page" ng-app="zakrepi">
+<div class="page">
 	<!-- если не 404 -->
 	<div class="header-wrapper">
 		<div class="topbar">
 			<div class="container row">
 				<div class="geo-box col l3">
-					<svg class="icon"><use xlink:href="#location"/></svg>
-					Петропавловск-Камчатский
+					<button class="nostyle btn-modal" data-modal="geo">
+						<svg class="icon"><use xlink:href="#location"/></svg>
+						Петропавловск-Камчатский
+					</button>
 				</div>
 				<div class="top-menu col l6">
 					<ul class="menu horizontal-menu">

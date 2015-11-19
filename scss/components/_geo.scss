@@ -9,3 +9,26 @@
 		vertical-align: top;
 	}
 }
+.geo-search-box {
+	margin-bottom: $gutter-width*1.5;
+	.search-btn {
+		position: absolute;
+		top: $gutter-width/2;
+		right: $gutter-width/2;
+		width: $gutter-width;
+		height: $gutter-width;
+		padding: 2px;
+		.icon {
+			fill: color('icons', 'light');
+		}
+	}
+	.inputtext.search:focus ~ .search-btn .icon {
+		fill: color('bg', 'dark');
+	}
+}
+.geo-list {
+	@extend ul.nostyle;
+	li {
+		margin: $gutter-width 0;
+	}
+}
