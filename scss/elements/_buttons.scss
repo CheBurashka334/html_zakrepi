@@ -35,6 +35,11 @@
 		}
 	}
 	
+	&.standart-white {
+		background: transparent;
+		color: #fff;
+		border-color: #fff;
+	}
 	&.standart-color {
 		background: transparent;
 		color: color('primary', 'base');

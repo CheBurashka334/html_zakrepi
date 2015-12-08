@@ -52,3 +52,23 @@
 .sc-map .map {
 	height: 350px;
 }
+
+.small-map {
+	height: 280px;
+	.map {
+		height: 100%;
+	}
+}
+.map-overlay {
+	position: absolute;
+	width: 37.5%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	background: rgba(69,69,69,.8);
+	color: #fff;
+	padding: $gutter-width*2.25 $gutter-width*1.5 $gutter-width*1.5;
+	.btn {
+		margin-top: $gutter-width*1.25;
+	}
+}

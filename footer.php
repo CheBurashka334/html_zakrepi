@@ -19,12 +19,12 @@
 			<div class="footer-menu col l3">
 				<div class="menu-title box-title">Компания</div>
 				<ul class="menu vertical-menu">
-					<li class="menu-item"><a class="menu-link" href="#">История компании</a></li>
+					<li class="menu-item"><a class="menu-link" href="history.php">История компании</a></li>
 					<li class="menu-item"><a class="menu-link" href="structura-companii.php">Структура компании</a></li>
 					<li class="menu-item"><a class="menu-link" href="news.php">Новости компании</a></li>
 					<li class="menu-item"><a class="menu-link" href="vakansii.php">Вакансии</a></li>
 					<li class="menu-item"><a class="menu-link" href="#">Франшиза</a></li>
-					<li class="menu-item"><a class="menu-link" href="#">Наши магазины</a></li>
+					<li class="menu-item"><a class="menu-link" href="shops.php">Наши магазины</a></li>
 					<li class="menu-item"><a class="menu-link" href="#">Контакты</a></li>
 				</ul>
 			</div>

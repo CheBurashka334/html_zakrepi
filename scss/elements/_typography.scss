@@ -130,6 +130,9 @@ h6 { font-size: $h6-fontsize; line-height: 1.5; margin: 1em 0;}
 		vertical-align: middle;
 	}
 }
+.page-title-link {
+	margin-top: $gutter-width*1.5;
+}
 .page-note-text {
 	margin-top: 0;
 	margin-bottom: $gutter-width;

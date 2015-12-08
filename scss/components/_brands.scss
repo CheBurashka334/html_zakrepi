@@ -1,4 +1,4 @@
-// brands
+// brands-box
 .brand-box .brand-list {
 	@extend ul.nostyle;
 	@extend ul.horizontal;
@@ -31,6 +31,23 @@
 		height: 1rem;
 		line-height: 1rem;
 		vertical-align: middle;
+	}
+}
+.small-brand-box .brand-list {
+	border-bottom: 1px solid color('border', 'light');
+	.brand-item {
+		padding: 18px;
+		&:first-child {
+			padding-left: 0;
+		}
+		&:last-child {
+			padding: 18px;
+			padding-right: 0;
+			.brand-link {
+				font-size: 34px;
+				height: 1em;
+			}
+		}
 	}
 }
 
