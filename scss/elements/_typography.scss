@@ -149,4 +149,24 @@ h6 { font-size: $h6-fontsize; line-height: 1.5; margin: 1em 0;}
 	@extend .light;
 	font-size: 24px;
 	margin: 1em 0 $gutter-width*0.5;
+	&.with-logo {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: center;
+		margin: $gutter-width*2 0;
+		.title-text {
+			padding-top: 1em;
+		}
+		.title-logo img {
+			display: block;
+		}
+	}
+}
+
+//  Blockquote
+blockquote {
+  margin: $gutter-width*1.75 0;
+  padding: $gutter-width 0 $gutter-width 2rem;
+  border-left: 1px solid $primary-color;
 }

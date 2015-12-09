@@ -49,15 +49,13 @@
 	margin-top: $gutter-width;
 }
 .sc-map,
-.sc-map .map {
+.sc-map .map,
+.small-map,
+.small-map .map {
 	height: 350px;
 }
-
 .small-map {
-	height: 280px;
-	.map {
-		height: 100%;
-	}
+	margin-top: $gutter-width*1.5;
 }
 .map-overlay {
 	position: absolute;
