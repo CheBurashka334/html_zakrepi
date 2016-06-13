@@ -208,7 +208,7 @@ $(document).ready(function(){
 		.on('jcarouselpagination:inactive', 'li', function(){ // - и эта (а должна!)
 			$(this).children('a').removeClass('active');
 		});
-	$('.carousel-controlls .prev')
+	$('.carousel-controls .prev')
 		.on('jcarouselcontrol:active', function(){
 			$(this).addClass('active');
 		})
@@ -226,7 +226,7 @@ $(document).ready(function(){
 			});
 		})
 		.jcarouselControl();
-	$('.carousel-controlls .next')
+	$('.carousel-controls .next')
 		.on('jcarouselcontrol:active', function(){
 			$(this).addClass('active');
 		})
@@ -244,7 +244,7 @@ $(document).ready(function(){
 			});
 		})
 		.jcarouselControl();
-	$('.compare .carousel-controlls').jcarouselControl({
+	$('.compare .carousel-controls').jcarouselControl({
 		carousel: $('.compare .carousel')
 	});
 	

@@ -99,7 +99,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="carousel-controlls">
+	<div class="carousel-controls">
 		<button class="prev" data-target="-=4"><svg class="icon"><use xlink:href="#arrow"/></svg></button>
 		<button class="next" data-target="+=4"><svg class="icon"><use xlink:href="#arrow"/></svg></button>
 	</div>
@@ -136,7 +136,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="carousel-controlls">
+	<div class="carousel-controls">
 		<button class="prev" data-target="-=4"><svg class="icon"><use xlink:href="#arrow"/></svg></button>
 		<button class="next" data-target="+=4"><svg class="icon"><use xlink:href="#arrow"/></svg></button>
 	</div>
