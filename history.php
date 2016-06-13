@@ -60,7 +60,7 @@
 				<div class="item col l3"><img src="images/content/slides/history/history-slide-4.png"/></div>
 			</div>
 		</div>
-		<div class="carousel-controlls">
+		<div class="carousel-controls">
 			<button class="prev"><svg class="icon"><use xlink:href="#arrow"/></svg></button>
 			<button class="next"><svg class="icon"><use xlink:href="#arrow"/></svg></button>
 		</div>
@@ -96,7 +96,7 @@
 				<div class="item col l3"><img src="images/content/slides/odejda/odejda-slide-4.png"/></div>
 			</div>
 		</div>
-		<div class="carousel-controlls">
+		<div class="carousel-controls">
 			<button class="prev"><svg class="icon"><use xlink:href="#arrow"/></svg></button>
 			<button class="next"><svg class="icon"><use xlink:href="#arrow"/></svg></button>
 		</div>
@@ -134,7 +134,7 @@
 				<div class="item col l3"><img src="images/content/slides/sad/sad-slide-4.png"/></div>
 			</div>
 		</div>
-		<div class="carousel-controlls">
+		<div class="carousel-controls">
 			<button class="prev"><svg class="icon"><use xlink:href="#arrow"/></svg></button>
 			<button class="next"><svg class="icon"><use xlink:href="#arrow"/></svg></button>
 		</div>
@@ -175,7 +175,7 @@
 				<div class="item col l3"><img src="images/content/slides/tourism/tourism-slide-4.png"/></div>
 			</div>
 		</div>
-		<div class="carousel-controlls">
+		<div class="carousel-controls">
 			<button class="prev"><svg class="icon"><use xlink:href="#arrow"/></svg></button>
 			<button class="next"><svg class="icon"><use xlink:href="#arrow"/></svg></button>
 		</div>

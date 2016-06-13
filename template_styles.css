@@ -5923,7 +5923,7 @@ select option {
 }
 
 /* line 25, scss/components/_carousel.scss */
-.carousel-controlls {
+.carousel-controls {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -5932,8 +5932,8 @@ select option {
   z-index: 0;
 }
 /* line 32, scss/components/_carousel.scss */
-.carousel-controlls .prev,
-.carousel-controlls .next {
+.carousel-controls .prev,
+.carousel-controls .next {
   position: absolute;
   top: 50%;
   margin-top: -20px;
@@ -5944,21 +5944,21 @@ select option {
   border: 0;
 }
 /* line 42, scss/components/_carousel.scss */
-.carousel-controlls .prev .icon,
-.carousel-controlls .next .icon {
+.carousel-controls .prev .icon,
+.carousel-controls .next .icon {
   fill: #6b6b6b;
 }
 /* line 45, scss/components/_carousel.scss */
-.carousel-controlls .prev:hover .icon,
-.carousel-controlls .next:hover .icon {
+.carousel-controls .prev:hover .icon,
+.carousel-controls .next:hover .icon {
   fill: #ce2127;
 }
 /* line 49, scss/components/_carousel.scss */
-.carousel-controlls .prev {
+.carousel-controls .prev {
   left: -55px;
 }
 /* line 52, scss/components/_carousel.scss */
-.carousel-controlls .next {
+.carousel-controls .next {
   right: -55px;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
@@ -5966,8 +5966,8 @@ select option {
 }
 
 /* line 58, scss/components/_carousel.scss */
-.vertical .carousel-controlls .prev,
-.vertical .carousel-controlls .next {
+.vertical .carousel-controls .prev,
+.vertical .carousel-controls .next {
   left: 50%;
   margin-left: -1em;
   margin-top: 0;
@@ -5975,14 +5975,14 @@ select option {
   height: 2em;
 }
 /* line 66, scss/components/_carousel.scss */
-.vertical .carousel-controlls .prev {
+.vertical .carousel-controls .prev {
   top: -0.5em;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 /* line 70, scss/components/_carousel.scss */
-.vertical .carousel-controlls .next {
+.vertical .carousel-controls .next {
   top: auto;
   bottom: -0.5em;
   -webkit-transform: rotate(-90deg);
@@ -6065,11 +6065,11 @@ select option {
   margin-bottom: 50px;
 }
 /* line 135, scss/components/_carousel.scss */
-.photo-carousel + .carousel-controlls .prev {
+.photo-carousel + .carousel-controls .prev {
   left: -45px;
 }
 /* line 138, scss/components/_carousel.scss */
-.photo-carousel + .carousel-controlls .next {
+.photo-carousel + .carousel-controls .next {
   right: -45px;
 }
 
@@ -6670,23 +6670,23 @@ select option {
   padding: 0;
 }
 /* line 73, scss/components/_compare.scss */
-.compare-page .compare .carousel-controlls .prev,
-.compare-page .compare .carousel-controlls .next {
+.compare-page .compare .carousel-controls .prev,
+.compare-page .compare .carousel-controls .next {
   margin-top: 0;
   top: 55px;
   opacity: 0;
 }
 /* line 78, scss/components/_compare.scss */
-.compare-page .compare .carousel-controlls .prev.active,
-.compare-page .compare .carousel-controlls .next.active {
+.compare-page .compare .carousel-controls .prev.active,
+.compare-page .compare .carousel-controls .next.active {
   opacity: 1;
 }
 /* line 82, scss/components/_compare.scss */
-.compare-page .compare .carousel-controlls .prev {
+.compare-page .compare .carousel-controls .prev {
   left: -86px;
 }
 /* line 85, scss/components/_compare.scss */
-.compare-page .compare .carousel-controlls .next {
+.compare-page .compare .carousel-controls .next {
   right: -80px;
 }
 /* line 90, scss/components/_compare.scss */
